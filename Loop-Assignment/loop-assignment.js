@@ -30,19 +30,19 @@
     // 2       j= 1  n-i   k=3
     // 1       j= 2   n-i  k=1
   
-   let n=3;
+//    let n=3;
   
-  for (let i=n; i>=1; i--){
-      let str=""
-      for (let j=1;j<=n-i+1; j++ ){
-          str=str+" "
-      }
+//   for (let i=n; i>=1; i--){
+//       let str=""
+//       for (let j=1;j<=n-i+1; j++ ){
+//           str=str+" "
+//       }
   
-      for (let k=1; k<=2*i-1 ; k++){
-          str=str+"*"
-      }
-      console.log(str)
-  }
+//       for (let k=1; k<=2*i-1 ; k++){
+//           str=str+"*"
+//       }
+//       console.log(str)
+//   }
 
 // 3.
 //  1
@@ -50,20 +50,20 @@
 //  4 5 6
 //  7 8 9 10 
 
-// let n = 1;
+let n = 1;
 // // let m = 4;
 
 // // row-i = 4;
 // // col-j = 4;
 
-// for(let i=1; i<=4; i++){
-//     let str ="";
-//     for(let j=1; j<=i; j++){
-//         str = str + n + " ";
-//         n++;
-//     }
-//     console.log(str);
-// }
+for(let i=1; i<=4; i++){
+    let str ="";
+    for(let j=1; j<=i; j++){
+        str = str + n + " ";
+        n++;
+    }
+    console.log(str);
+}
 
 //  4.
 //     *
@@ -144,4 +144,4 @@
 // }
 //   }
 // console.log(str)
-}
+// }
