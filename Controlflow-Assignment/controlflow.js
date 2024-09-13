@@ -101,7 +101,7 @@
 // 6. Write code that checks if the variable `num` is positive. If it is, then check if it is greater than 100. Print "Large Positive" if it is greater than 100; otherwise, print "Small Positive".
 //    let num = 120;  // You can change this value to test
 
-let positive = prompt("Enter the value");
+// let positive = prompt("Enter the value");
 
 // if(positive>100){
 //     console.log("Number is positive greater than");
@@ -110,6 +110,14 @@ let positive = prompt("Enter the value");
 // }
    
 //    7.Write code that checks if the variable `num` is even or odd. Print "Even" if it is even, and "Odd" if it is odd.
+
+//    let num = 5;  // You can change this value to test
+
+//    if (num %2 === 0) {
+//     console.log("Even");
+// } else {
+//     console.log("Odd");
+// }
 
 //    let num = 7;  // You can change this value to test
 
@@ -124,12 +132,47 @@ let positive = prompt("Enter the value");
 
 //    let vehicleType = "plane";  // You can change this value to test
 
+// let vehicletype = prompt("Enter name") 
+
+// switch(vehicletype){
+
+//     case"car":
+//     console.log("Car");
+//     break;
+
+//     case"bike":
+//     console.log("Bike");
+//     break;
+
+//     case"truck":
+//     console.log("Truck");
+//     break;
+
+//     case"other":
+//     console.log("Other");
+//     break;
+
+//     default:{
+//         console.log("Enter the valide name");
+//     }
+
+// }
+
 
 // 9.Write code that classifies the age of a person based on the variable `age` and prints:
 //    - "Child" for ages less than 13
 //    - "Teenager" for ages between 13 and 19
 //    - "Adult" for ages 20 and above
 
+// let age = prompt("Enter the age");
+
+// if(age<13){
+//     console.log("Child");
+// }else if(age>=13 && age<=19){
+//     console.log("Teenager");
+// }else{
+//     console.log("Adult");
+// }
 
 //    let age = 16;  // You can change this value to test
 
@@ -151,54 +194,60 @@ let positive = prompt("Enter the value");
 
     // let month = 7;  // You can change this value to test
 
-    // let month = 1;
+
+    // let month = prompt("Enter the month number");
 
     // switch (month){
-    //     case 1:
+    //     case "1":
     //         console.log("January");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "2":
+    //         console.log("Fruary");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "3":
+    //         console.log("March");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "4":
+    //         console.log("April");
     //     break;        
 
-    //     case 1:
-    //         console.log("January");
+    //     case "5":
+    //         console.log("may");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "6":
+    //         console.log("June");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "7":
+    //         console.log("July");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "8":
+    //         console.log("August");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "9":
+    //         console.log("September");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "10":
+    //         console.log("Ouktuber");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "11":
+    //         console.log("Nobember");
     //     break;
 
-    //     case 1:
-    //         console.log("January");
+    //     case "12":
+    //         console.log("Desember");
     //     break;
+
+    //     default:{
+    //         console.log("Enter the valide month number");
+    //     }
+
     // }
