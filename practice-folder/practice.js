@@ -740,15 +740,20 @@
 
 // FINDINDEX:- finindex method array me di gaye kisi bhi value ko funtion me di gaye conditon ko pass karke us value ka index number provide karna hota he 
 
-let ages = [10,13,4,130,15,18,20];
-console.log(ages);
+// let ages = [10,13,4,130,15,18,20];
+// console.log(ages);
 
-let b = ages.findIndex(checkAdult)
-console.log(b);
+// let b = ages.findIndex(checkAdult)
+// console.log(b);
 
-function checkAdult(age){
-    return age >= 18;
-}
+// function checkAdult(age){
+//     return age >= 18;
+// }
+
+// function checkadult(age){
+//     return age >= 18;
+// }
+
 
 
 // 11. FILTER
@@ -761,12 +766,97 @@ function checkAdult(age){
 // let b = ages.filter(checkadult);
 // console.log(b);
 
-// function checkadult(age){
-//     return age >= 18;
+
+// 12. forEach
+
+// forEach:- forEach method ka use array ki all value ko print karane me hota he.
+
+// let forEacharray = ["Raghav","Shonu","Mithlesh","Umakant","Alfaz"];
+
+// let print = forEacharray.forEach(forlooparray);
+// function forlooparray(val,index,arry){
+//     // console.log(`value=${val} and index= ${index} and array= ${arry} `);
+//     console.log(val,index,arry);
+// }
+
+  
+            //    YA
+         
+
+// let num = [1,23,4,55,54,3,98,08,3];
+
+// let newnum = num.forEach(numberarray);
+
+// function numberarray(val,index,array){
+//     let sq = val*val;
+//        console.log(`Value = ${val} Burg = ${sq} index= ${index} array = ${array}`);
+// }
+
+// 13.MAP  
+
+// let numbermap = [1,34,54,45,6,65,6,2,4,6,66,77];
+
+// sum = 0;
+// let newnumbermap = numbermap.map((val)=>{
+//     sum = sum + val;
+// })
+// console.log(sum);
+
+
+// 14.multidimantional array
+
+// let multiplearray = [
+//     ["Anil","Raju","Mohan",["Python","Mongodb"],"Harshit","Lovekush"],
+//     ["Aniket","Sontu","Kumkum","Lovely",["Java","JavaScript","c++",["Simran","Anjli","Mahek"]]],
+//     ["Lokendra","Sakshi","Namritra",[1,34,4,6,6,2,56,45,["Local","tree",[2,4,45,334,2,5,6,78,["Dbms","iot","Desctop"]]]]]
+// ]
+// console.log(multiplearray);
+// console.log(multiplearray[2][3][8][2][8][1]);
+
+
+
+
+// 15.iterating
+
+// let studentdata1=[
+//     ['jack',23],
+//     ['sara',25]
+// ];
+// 1. iterating over studentdata 
+
+// studentdata1.forEach((val)=>{
+//         val.forEach((data,ind)=>{
+//             console.log("name is ",data,"  index is ",ind)
+//         })
+
+// })
+
+// 2. iterating over studentdeta
+
+let studentdata2 = [
+    ["Anil",20],
+    ["Afzal",23]
+]
+studentdata2.forEach((val)=>{
+    val.forEach((data2,ind,ary)=>{
+        console.log(data2,ind,ary);
+    })
+})
+
+// 3. iterating over studentdata for-----of
+
+// let studentdata=[
+//     ['sam',23],
+//     ['jesica',25]
+// ];
+// for (let i of studentdata){
+//     for (let j of i){
+//         console.log(j)
+//     }
 // }
 
 
-// 12. toString , value , fill method 
+// 16. toString , value , fill method 
 
 // toString:- toString method ka use array me di gaye value ko string me convert karne me hota he 
 
