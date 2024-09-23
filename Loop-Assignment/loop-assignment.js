@@ -50,20 +50,20 @@
 //  4 5 6
 //  7 8 9 10 
 
-let n = 1;
-// // let m = 4;
+// let n = 1;
+// let m = 4;
 
-// // row-i = 4;
-// // col-j = 4;
+// row-i = 4;
+// col-j = 4;
 
-for(let i=1; i<=4; i++){
-    let str ="";
-    for(let j=1; j<=i; j++){
-        str = str + n + " ";
-        n++;
-    }
-    console.log(str);
-}
+// for(let i=1; i<=4; i++){
+//     let str ="";
+//     for(let j=1; j<=i; j++){
+//         str = str + n + " ";
+//         n++;
+//     }
+//     console.log(str);
+// }
 
 //  4.
 //     *

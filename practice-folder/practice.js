@@ -18,6 +18,7 @@
 //     console.log(str);
 // }
 
+
 // 2.
 
 // 1
@@ -25,6 +26,7 @@
 // 3 3 3
 // 4 4 4 4
 // 5 5 5 5 5
+
 
 // let n = 5;
 // let m = 5;
@@ -45,6 +47,8 @@
 // 2 2
 // 1
 
+
+
 // let n = 5;
 // let m = 5;
 
@@ -63,6 +67,7 @@
 // 3 2 1
 // 2 1
 // 1
+
 
 // let n = 5;
 // let m = 5;
@@ -83,6 +88,7 @@
 // **
 // *
 
+
 // let n = 5;
 // let m = 5;
 
@@ -98,7 +104,8 @@
 // *****
 //  ***
 //   *
-  
+
+
  // row      space      star      
     // i=3        j= 0 n-i    k=5
     // 2       j= 1  n-i   k=3
@@ -124,6 +131,7 @@
 //  4 5 6
 //  7 8 9 10 
 
+
 // let n = 1;
 // let m = 4;
 
@@ -142,7 +150,8 @@
 //    **
 //   ***
 //  ****
- 
+
+
 // let n = 4;
 // let m = 4;
 
@@ -164,6 +173,7 @@
 //  1 2
 //  1
 
+
 // let n = 5;
 // let m = 5;
 
@@ -181,6 +191,7 @@
 //  *   *
 //  *****
 
+
 // let n = 4;
 // let m = 5;
 
@@ -192,10 +203,7 @@
 //     }else{
 //         str = str+ " "
 //     }
-
-
 //    }
-
 //    console.log(str);
 // }
 
@@ -234,6 +242,7 @@
 
 // let grade= prompt("Enter the percentage");
 
+
 // if(grade >=90 && grade <= 100){
 //     console.log("Excellent");
 // }else if(grade >= 70 && grade <= 89){
@@ -255,6 +264,7 @@
 //    let day = 4;  // You can change this value to test
 
 // let day = prompt("Enter the day");
+
 
 // switch(day){
 
@@ -450,8 +460,8 @@
                 // 0        1    2     3 ye array ke index number he 
 // let array = ["Himanshu", 8, "Male", 4];
 
-// document.write(array+ "<br><br>");
-// document.write(array[0]);
+// console.log(array);
+// console.log(array[0]);
 
 
 // 1. multidimensional Array start 
@@ -463,14 +473,14 @@
 //     ["Harry", 28, "Male", "B.com"],
 //     ["Sunny", 29, "Male", "B.ed"],
 // ];
-// // document.write(array1 [0]+ "<br>");
-// // document.write(array1 [1]+ "<br>");
-// // document.write(array1 [2]+ "<br>");
-// // document.write(array1 [3]+ "<br>");
-// // document.write(array1 [4]+ "<br>");
+// console.log(array1 [0]);
+// console.log(array1 [1]);
+// console.log(array1 [2]);
+// console.log(array1 [3]);
+// console.log(array1 [4]);
 
 // document.write("<table border='1px' cellspacing='4px'>");
-// for(let a=0; a<4; a++){
+// for(let a=0; a<5; a++){
 //     document.write("<tr>");
 //     for(let b=0; b<4; b++){
 //         document.write("<td>" + array1[a][b] + "</td>");
@@ -503,18 +513,19 @@
 
 // var e =["Rahul", 34, "PHD"];
 
-// document.write(e + "<br>")
+// console.log(e)
 
 // //MODIFY
 // e[0] = "Mohan";
-// document.write(e + "<br>");
+// console.log(e);
 
-//DELETE
+// // DELETE
+// var e =["Rahul", 34, "PHD"];
 // delete e[1];
-// document.write(e + "<br>")
-// document.write(e[1] + "<br>")
+// console.log(e)
+// console.log(e[1])
 
-// //MODIFY
+//MODIFY
 // var r = [
 //     ["Eritik", "Manoj", "Rishabh", "Daibik"],
 //     ["Tilak Verma", "Anil", "Ajay", "Dinesh"],
@@ -522,59 +533,248 @@
 //     ["Kartik", "Sunjeev", "Rajeev", "Bikki"]
 // ];
 
-// document.write(r +"<br><br>");
+// console.log(r);
 
 // r[0][0,1,2,3] = ["Rinkesh", "Nikil", "Harshit", "Dolly"];
-// document.write(r + "<br><br>")
+// console.log(r)
 
 // //DELETE
+// var r = [
+//     ["Eritik", "Manoj", "Rishabh", "Daibik"],
+//     ["Tilak Verma", "Anil", "Ajay", "Dinesh"],
+//     ["Rinkesh", "Nikil", "Harshit", "Dolly"],
+//     ["Kartik", "Sunjeev", "Rajeev", "Bikki"]
+// ];
 // delete r[0];
-// document.write(r + "<br><br>");
-// document.write(r[1] + "<br>");
+// console.log(r);
+// console.log(r[1]);
 
 // ARRAY METHOD START 
 
 //1. SORT & REVERSE
  
-// let method = ["Rahul", "Mohan", "Raman", "PHD"]
+// let method = ["Ritu", "Mohan", "Raman", "PHD"]
 
-// document.write(method + "<br><br>");
+// console.log(method);
 
-// //SORT:- sort method ka use sequense ya number  by kisi bhi  data ko represent karne ka hota he 1,2,3 ya a,b,c etc.
+// // //SORT:- sort method ka use sequense ya number  by kisi bhi  data ko represent karne ka hota he 1,2,3 ya a,b,c // sort elements aphabetically in string and number in asecending order.
 // method.sort();
-// document.write(method + "<br><br>");
+// console.log(method);
 
-// // RESERVE:- reserve method ka use sequense by kisi bhi data ko represent karne ka hota he
-// // yadi data me R name jitna bhi data hoga usko sequense by lake represent kar dega 
-
+// // REVERSE:-reverse method ka use sequense by kisi bhi data ko reverse state me represent karne me hota he
+// let method = ["Ritu", "Mohan", "Raman", "PHD"]
+// console.log(method);
 // method.reverse();
-// document.write(method + "<br><br>");
+// console.log(method);
 
 // 2. POP & PUSH 
 
 // let method2 = ["Kartik", "Sunjeev", "Rajeev", "Bikki"];
-// document.write(method2 + "<br><br>");
-
+// console.log(method2);
 // // POP:- pop method ka use array ki last bali value ko delete karne me hota he 
 // method2.pop();
-// document.write(method2 + "<br><br>");
+// console.log(method2);
 
-// // PUSH:- push method ka use array ke last me value ko push karne me hota he 
+// // PUSH:- push method ka use array ke last me value ko push ya anay value ko addd  karne me hota he 
+// let method2 = ["Kartik", "Sunjeev", "Rajeev", "Bikki"];
+// console.log(method2);
 // method2.push("Harshit");
-// document.write(method2 + "<br>");
+// console.log(method2);
 
 // 3. SHIFT & UNSHIFT 
 
 // let metod3 = ["Tilak", "Anil", "Ajay", "Dinesh"];
-// document.write(metod3 + "<br><br>");
+// console.log(metod3);
 
 // // SHIFT:- shift method ka use array ki start bali value ko delete karne me hota he
 // metod3.shift();
-// document.write(metod3 + "<br><br>");
+// console.log(metod3);
 
-// //UNSHIFT:- unshift method ka use array ke start me value ko unshift karne me hota he 
+// //UNSHIFT:- unshift method ka use array ke start me value ko unshift ya kisi bhi value ko add  karne me hota he 
+// let metod3 = ["Tilak", "Anil", "Ajay", "Dinesh"];
+// console.log(metod3);
 // metod3.unshift("Prembabu");
-// document.write(metod3 + "<br><br>");
+// console.log(metod3);
+
+
+// 4. CONCAT & JOIN
+
+// CONCAT:- concat method ka use multiple array ko concat karana ya marge karne me hota he 
+
+// let a = ["Anil","keshav","Rohit","Hitesh"];
+// let b = ["Somveer","Vebhab","Tilak","Lucky"];
+// let c = [87,90,45,60];
+// let d = ["Lovekush","Lakshay","Subhnesh",true];
+
+// let e = a.concat(b,c,d);
+// console.log(e)
+
+// JOIN:- join method ka use array me di gayi kisi bhi value ko ek string ke roop me represent karna hota he or hum chahe to eske beech me koi bhi sighn ya space create kar sakte he 
+
+
+// let a = ["Anil","keshav","Rohit","Hitesh"];
+// let b = ["Somveer","Vebhab","Tilak","Lucky"];
+// let c = [87,90,45,60];
+// let d = ["Lovekush","Lakshay","Subhnesh",true];
+
+// let e = a.concat(b,c,d);
+// console.log(e)
+
+// let f = e.join(" / ")
+// console.log(f)
+
+
+// 5. SLICE & SPLICE 
+
+// SLICE:- slice method ka use kisi bhi array ki index value ko us array me se nikalne ke liye hota he 
+
+// slice (start,end)
+
+// let a = ["Anil","keshav","Rohit","Hitesh","Jaiswal","Aniket","Rodash"];
+// console.log(a);
+// let b = a.slice(0,4)
+// console.log(b)
+
+// SPLICE:- splice method ka use array me di gaye  kisi bhi value ke beech me or value ko add karna ya end ya start ya beech bali value ko delete karne me hota he  
+
+// splice(index, howmanydelet, "new value")
+
+// let a = ["Anil","keshav","Rohit","Hitesh"];
+// console.log(a)
+// a.splice(2,0,"Rajeev","Shorabh")
+// console.log(a)
+// // delete ke liye use splice 
+// a.splice(2,3,"Rajeev","Shorabh")
+// console.log(a)
+
+
+// 6. ISARRAY
+
+// IsArray:- isarray method ka use karke hum ye pta lga sakte he ki kisi bhi variable me de gaye value array he ya nahi
+
+// let a = ["Somveer","Vebhab","Tilak","Lucky"];
+// let a = 20;
+// console.log(a)
+// let b = Array.isArray(a);
+// console.log(b)
+
+        //  YA
+
+// let a = ["Somveer","Vebhab","Tilak","Lucky"]
+// let a = 20;
+// let a = "Anil";
+
+// if(Array.isArray(a)){
+//     console.log("This is an Array");
+// }else{
+//     console.log("This is not an Araay");
+// }
+
+
+// 7. INDEXOF & LASTINDEXOF
+
+// INDEXOF:- indexOf method ka use array me di gaye kisi bhi value ka index number nikalne ke liye hota he chahe usme value ka name ya value same de rkhi ho 
+
+// let a = ["Anil","keshav","Rohit","Hitesh","lovlesh","keshav","Mohit","Nakul"];
+// console.log(a);
+// let b = a.indexOf("keshav",0)
+// console.log(b);
+ 
+// // LASTINDEXOF:- lastIndexOf method ka use array me di gaye value ke last bali value se suru karta he
+
+// let a = ["Anil","keshav","Rohit","Hitesh","lovlesh","keshav","Mohit","Nakul"];
+// console.log(a);
+// let c = a.lastIndexOf("keshav" , 7)
+// console.log(c);
+
+// 8. INCLUDES
+
+// INCLUDES:- includes method ka use karke array ke kisi bhi value ka pta laga sakte he ki bo value us array me he ke nahi
+
+// let a = ["Anil","keshav","Rohit","Hitesh","lovelesh","keshav","Mohit","Nakul"];
+// console.log(a);
+
+// let b = a.includes("lovelesh")
+// console.log(b);
+
+// 9.SOME & EVERY
+
+// SOME:- some method ka use array me di gaye value me yeh check karnne ka hota he jo bhi value array me di gaye he bo us value se adult he ya == he ya di gaye condition ke anushar answer.
+
+// let ages = [10,13,15,18,20];
+// console.log(ages);
+
+// let b = ages.some(checkAdult)
+// console.log(b);
+
+// function checkAdult(age){
+//     return age < 13;
+// }
+
+// EVERY:- every method ka use array me di gaye sabhi value chekAdult ke age se ya to == ho ya Grater ho tabhi ervey method work karega ya di gaye conditon ko pass karle
+
+// let ages = [12,14,15,19,34,45,18,20];
+// console.log(ages);
+
+// let b = ages.some(checkAdult)
+// console.log(b);
+
+// function checkAdult(age){
+//     return age >= 18;
+// }
+
+
+// 10. FIND & FINDINDEX
+
+// FIND:- find method ka use array me di gaye value ko funtion me di gaye condition value ko pass karne ke bad value ko print karana 
+
+// let ages = [10,13,15,18,20];
+// console.log(ages);
+
+// let b = ages.find(checkAdult)
+// console.log(b);
+
+// function checkAdult(age){
+//     return age >18;
+// }
+
+// FINDINDEX:- finindex method array me di gaye kisi bhi value ko funtion me di gaye conditon ko pass karke us value ka index number provide karna hota he 
+
+let ages = [10,13,4,130,15,18,20];
+console.log(ages);
+
+let b = ages.findIndex(checkAdult)
+console.log(b);
+
+function checkAdult(age){
+    return age >= 18;
+}
+
+
+// 11. FILTER
+
+// FILTER:- filter method ka use array me di gaye value ko function me di gaye condition ke anushar value ko filter karna 
+
+// let ages = [50,12,19,15,20];
+// console.log(ages);
+
+// let b = ages.filter(checkadult);
+// console.log(b);
+
+// function checkadult(age){
+//     return age >= 18;
+// }
+
+
+// 12. toString , value , fill method 
+
+// toString:- toString method ka use array me di gaye value ko string me convert karne me hota he 
+
+// let s = ["Rakesh","Manoj","Prem","Raju"];
+
+// s.toString();
+
+// console.log(s);
 
 
 // 4.Function concept start
@@ -650,19 +850,6 @@
 // per(fn)
 
 
-
-// function generetOtp(){
-//     let deget = "1238596701";
-//     let OTP = "";
-//     for(let i=0; i<4; i++){
-//         OTP+= deget[Math.floor(Math.random() * 10)];
-//     }
-//     return OTP;
-// }
-// console.log("OTP 4 deget: ", generetOtp());
-
-
-
 // function generatotp(){
 //     let degite = "1234567895";
 //     let otp2 = "";
@@ -684,4 +871,3 @@
 //     return otp3;
 // }
 // console.log("OTP generate 8 degite: ", generateotp3());
-

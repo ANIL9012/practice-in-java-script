@@ -115,22 +115,23 @@
 
 // 2.
 // area=pi*R*R
-// function AreaofCicle(radius){
+// function AreaofCircle(radius){
 // let pi=3.14
 //     let area=pi*radius*radius
 // console.log(area)
 // }
 
-// AreaofCicle(5)
-// AreaofCicle(56)
+// AreaofCircle(5)
+// AreaofCircle(56)
 
-// function AreaofCicle(radius){
+// function AreaofCircle(radius){
 
 //     let area=Math.PI*Math.pow(radius,2)
 // console.log(area)
 // }
-// AreaofCicle(5)
-// AreaofCicle(56)
+// AreaofCircle(5)
+// AreaofCircle(56)
+
 
 // 3. AreaofTriangle
 // area= 1/2*base*height
@@ -152,6 +153,13 @@
 // }
 
 // celciusTOFahrenheit(45)
+
+// function fahrenheittocelcius(c){
+//     tempre = (c*5/9)+32
+//     console.log(tempre + "c");
+// }
+// fahrenheittocelcius(34)
+
 
 // Function to generate OTP
 // function generateOTP() {
@@ -421,3 +429,4 @@
 //     console.log("hitech mentor")
 // }
 // var and function
+
