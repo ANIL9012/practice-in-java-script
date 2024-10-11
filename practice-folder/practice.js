@@ -454,6 +454,139 @@
     // }
 
 
+// 10.what is switch controlflow statement in javaScript with example in calculator
+
+
+// function calculator(num1, num2, operator) {
+//     let result;
+  
+//     switch (operator) {
+//       case '+':
+//         result = num1 + num2;
+//         break;
+//       case '-':
+//         result = num1 - num2;
+//         break;
+//       case '*':
+//       case 'x': // 'x' can also be used for multiplication
+//         result = num1 * num2;
+//         break;
+//       case '/':
+//         if (num2 !== 0) {
+//           result = num1 / num2;
+//         } else {
+//           return "Error: Division by zero is not allowed.";
+//         }
+//         break;
+//       default:
+//         return "Error: Invalid operator.";
+//     }
+  
+//     return result;
+//   }
+  
+//   // Example usage:
+//   const num1 = 10;
+//   const num2 = 5;
+  
+//   console.log(calculator(num1, num2, '+')); // Output: 15
+//   console.log(calculator(num1, num2, '-')); // Output: 5
+//   console.log(calculator(num1, num2, '*')); // Output: 50
+//   console.log(calculator(num1, num2, 'x')); // Output: 50
+//   console.log(calculator(num1, num2, '/')); // Output: 2
+//   console.log(calculator(num1, 0, '/'));    // Output: Error: Division by zero is not allowed.
+//   console.log(calculator(num1, num2, '%')); // Output: Error: Invalid operator.
+  
+
+// 11.what is switch controlflow statement in javaScript with example in calculator value Get user input for numbers and operatoruser 
+
+// exam.1 
+
+// function calculator() {
+//     // Get user input for numbers and operator
+//     const num1 = parseFloat(prompt("Enter the first number:"));
+//     const num2 = parseFloat(prompt("Enter the second number:"));
+//     const operator = prompt("Enter the operator (+, -, *, /, %, **):");
+  
+//     let result;
+  
+//     switch (operator) {
+//       case '+':
+//         result = num1 + num2;
+//         break;
+//       case '-':
+//         result = num1 - num2;
+//         break;
+//       case '%':
+//         result = num1 % num2
+//         break;
+//       case '*':
+//       case 'x': // allowing 'x' for multiplication
+//         result = num1 * num2;
+//         break;
+//       case '/':
+//         if (num2 !== 0) {
+//           result = num1 / num2;
+//         } else {
+//           return "Error: Division by zero is not allowed.";
+//         }
+//         break;
+//       default:
+//         return "Error: Invalid operator.";
+//     }
+  
+//     return `The result of ${num1} ${operator} ${num2} is: ${result}`;
+//   }
+  
+//   // Run the calculator
+//   console.log(calculator());
+  
+
+// exam.2
+
+//   function calculator2(){
+//     let number1 = parseInt(prompt("Enter the first value"));
+//     let number2 = parseInt(prompt("Enter the second value"));
+//     // let number2 = parseInt(prompt("Enter the second value"));
+//     let operaror2 = prompt("+, -, *, /, %, x,");
+//     let result2;
+
+//     switch(operaror2){
+//         case '+':
+//             result2 = number1 + number2;
+//         break;
+
+//         case '-':
+//             result2 = number1 - number2;
+//         break;
+
+//         case '*':
+//             result2 = number1 * number2;
+//         break;
+
+//         case '%':
+//             result2 = number1 + number2;
+//         break;
+
+//         case '/':
+//             if(number2 !==0){
+//                 result2 = number1/number2
+//             }else{
+//                 return` zero devisiable not allowed`
+//             }
+//         break;
+
+//         default:
+//             "return the invalid operator"
+        
+//     }
+//     return`"The calculator totale value = first value= ${number1} Second value= ${number2} operator{ ${operaror2} } and result2= ${result2}`
+//   }
+
+// console.log(calculator2());
+
+
+
 
 // 1. ARRAY ALL CONCEPT START 
 
@@ -545,7 +678,7 @@
 //     ["Rinkesh", "Nikil", "Harshit", "Dolly"],
 //     ["Kartik", "Sunjeev", "Rajeev", "Bikki"]
 // ];
-// delete r[0];
+// delete r[2];
 // console.log(r);
 // console.log(r[1]);
 
@@ -553,48 +686,53 @@
 
 //1. SORT & REVERSE
  
-// let method = ["Ritu", "Mohan", "Raman", "PHD"]
+// let method = ["Ritu", "Mohan", "Raman", "PHD",4,7,9,3,2,6,51,1]
 
 // console.log(method);
 
-// // //SORT:- sort method ka use sequense ya number  by kisi bhi  data ko represent karne ka hota he 1,2,3 ya a,b,c // sort elements aphabetically in string and number in asecending order.
-// method.sort();
-// console.log(method);
+// // // //SORT:- sort method ka use sequense ya number  by kisi bhi  data ko represent karne ka hota he 1,2,3 ya a,b,c // sort elements aphabetically in string and number in asecending order.
+// let sortmethod = method.sort();
+// console.log(sortmethod);
+
 
 // // REVERSE:-reverse method ka use sequense by kisi bhi data ko reverse state me represent karne me hota he
 // let method = ["Ritu", "Mohan", "Raman", "PHD"]
 // console.log(method);
-// method.reverse();
-// console.log(method);
+// let reversemethod = method.reverse();
+// console.log(reversemethod);
 
 // 2. POP & PUSH 
 
+// // POP:- pop method ka use array ki last bali value ko delete karne me hota he 
+
 // let method2 = ["Kartik", "Sunjeev", "Rajeev", "Bikki"];
 // console.log(method2);
-// // POP:- pop method ka use array ki last bali value ko delete karne me hota he 
-// method2.pop();
-// console.log(method2);
+// let popmethod = method2.pop();
+// console.log(popmethod);
 
 // // PUSH:- push method ka use array ke last me value ko push ya anay value ko addd  karne me hota he 
+
 // let method2 = ["Kartik", "Sunjeev", "Rajeev", "Bikki"];
 // console.log(method2);
-// method2.push("Harshit");
+// let pushmethod = method2.push("Harshit");
 // console.log(method2);
 
 // 3. SHIFT & UNSHIFT 
 
+// // SHIFT:- shift method ka use array ki start bali value ko delete karne me hota he
+
 // let metod3 = ["Tilak", "Anil", "Ajay", "Dinesh"];
 // console.log(metod3);
 
-// // SHIFT:- shift method ka use array ki start bali value ko delete karne me hota he
-// metod3.shift();
+// let shiftmethod = metod3.shift();
 // console.log(metod3);
 
 // //UNSHIFT:- unshift method ka use array ke start me value ko unshift ya kisi bhi value ko add  karne me hota he 
+
 // let metod3 = ["Tilak", "Anil", "Ajay", "Dinesh"];
 // console.log(metod3);
-// metod3.unshift("Prembabu");
-// console.log(metod3);
+// let unshiftmethod = metod3.unshift("Prembabu");
+// console.log(unshiftmethod);
 
 
 // 4. CONCAT & JOIN
@@ -619,16 +757,15 @@
 
 // let e = a.concat(b,c,d);
 // console.log(e)
-
-// let f = e.join(" / ")
+// let f = a.join(" / ")
 // console.log(f)
 
 
 // 5. SLICE & SPLICE 
 
-// SLICE:- slice method ka use kisi bhi array ki index value ko us array me se nikalne ke liye hota he 
+// SLICE:- slice method ka use kisi bhi array ki index value ka use karke us array me se indexing me di gaye value se us index ki length ko nikalna me hota he 
 
-// slice (start,end)
+// slice (start,end) //(executed karta he value ko)
 
 // let a = ["Anil","keshav","Rohit","Hitesh","Jaiswal","Aniket","Rodash"];
 // console.log(a);
@@ -644,7 +781,7 @@
 // a.splice(2,0,"Rajeev","Shorabh")
 // console.log(a)
 // // delete ke liye use splice 
-// a.splice(2,3,"Rajeev","Shorabh")
+// a.splice(2,4,"Rajeev","Shorabh")
 // console.log(a)
 
 
@@ -677,14 +814,15 @@
 
 // let a = ["Anil","keshav","Rohit","Hitesh","lovlesh","keshav","Mohit","Nakul"];
 // console.log(a);
-// let b = a.indexOf("keshav",0)
+// let b = a.indexOf("keshav",3)
 // console.log(b);
  
+
 // // LASTINDEXOF:- lastIndexOf method ka use array me di gaye value ke last bali value se suru karta he
 
 // let a = ["Anil","keshav","Rohit","Hitesh","lovlesh","keshav","Mohit","Nakul"];
 // console.log(a);
-// let c = a.lastIndexOf("keshav" , 7)
+// let c = a.lastIndexOf("keshav",2)
 // console.log(c);
 
 // 8. INCLUDES
@@ -711,16 +849,17 @@
 //     return age < 13;
 // }
 
+
 // EVERY:- every method ka use array me di gaye sabhi value chekAdult ke age se ya to == ho ya Grater ho tabhi ervey method work karega ya di gaye conditon ko pass karle
 
-// let ages = [12,14,15,19,34,45,18,20];
+// let ages = [12,14,15,19,34,45,18,20,];
 // console.log(ages);
 
-// let b = ages.some(checkAdult)
+// let b = ages.every(checkAdult)
 // console.log(b);
 
 // function checkAdult(age){
-//     return age >= 18;
+//     return age > 11;
 // }
 
 
@@ -728,17 +867,17 @@
 
 // FIND:- find method ka use array me di gaye value ko funtion me di gaye condition value ko pass karne ke bad value ko print karana 
 
-// let ages = [10,13,15,18,20];
+// let ages = [10,13,15,18,20,56,90];
 // console.log(ages);
 
 // let b = ages.find(checkAdult)
 // console.log(b);
 
 // function checkAdult(age){
-//     return age >18;
+//     return age > 15;
 // }
 
-// FINDINDEX:- finindex method array me di gaye kisi bhi value ko funtion me di gaye conditon ko pass karke us value ka index number provide karna hota he 
+// FINDINDEX:- finindex method ka use array me di gaye kisi bhi value ko funtion me di gaye conditon ko pass karke us value ka index number provide karna hota he 
 
 // let ages = [10,13,4,130,15,18,20];
 // console.log(ages);
@@ -750,9 +889,7 @@
 //     return age >= 18;
 // }
 
-// function checkadult(age){
-//     return age >= 18;
-// }
+
 
 
 
@@ -760,12 +897,15 @@
 
 // FILTER:- filter method ka use array me di gaye value ko function me di gaye condition ke anushar value ko filter karna 
 
-// let ages = [50,12,19,15,20];
+// let ages = [50,12,19,15,20,9,13,4,8];
 // console.log(ages);
 
 // let b = ages.filter(checkadult);
 // console.log(b);
 
+// function checkadult(filtersone){
+//     return filtersone > 13
+// }
 
 // 12. forEach
 
@@ -775,14 +915,14 @@
 
 // let print = forEacharray.forEach(forlooparray);
 // function forlooparray(val,index,arry){
-//     // console.log(`value=${val} and index= ${index} and array= ${arry} `);
-//     console.log(val,index,arry);
+//     console.log(`value=${val} and index= ${index} and array= ${arry} `);
+//     // console.log(val,index,arry);
 // }
 
-  
+
             //    YA
          
-
+                   
 // let num = [1,23,4,55,54,3,98,08,3];
 
 // let newnum = num.forEach(numberarray);
@@ -792,15 +932,28 @@
 //        console.log(`Value = ${val} Burg = ${sq} index= ${index} array = ${array}`);
 // }
 
+
 // 13.MAP  
 
 // let numbermap = [1,34,54,45,6,65,6,2,4,6,66,77];
 
-// sum = 0;
+// let sum = 0;
 // let newnumbermap = numbermap.map((val)=>{
 //     sum = sum + val;
 // })
-// console.log(sum);
+// console.log(`sum= ${sum}`);
+
+        //      Ya
+
+// let arrayww = [3,23,45,34,254,35,54];
+
+// let b = arrayww.map(mapsfun);
+
+// function mapsfun(multiply){
+//         return multiply * 10;
+// }
+// console.log(b);
+
 
 
 // 14.multidimantional array
@@ -822,26 +975,46 @@
 //     ['jack',23],
 //     ['sara',25]
 // ];
-// 1. iterating over studentdata 
+// // // 1. iterating over studentdata 
 
 // studentdata1.forEach((val)=>{
 //         val.forEach((data,ind)=>{
-//             console.log("name is ",data,"  index is ",ind)
+//             // console.log("name is ",data,"  index is ",ind)
+//             console.log(`data= ${data} index= ${ind}`);
 //         })
 
 // })
 
+
+// let student = [
+//     ["Anil",22],
+//     ["Lokesh",28],
+// ]
+
+// console.log(student);
+
+// student.forEach((val)=>{
+//     val.forEach((data,ind)=>{
+//                 console.log(`data = ${data} index= ${ind}`);
+//             })
+// });
+// console.log(forech);
+
+// function namaste((val)=>{
+//    
+// })
+
 // 2. iterating over studentdeta
 
-let studentdata2 = [
-    ["Anil",20],
-    ["Afzal",23]
-]
-studentdata2.forEach((val)=>{
-    val.forEach((data2,ind,ary)=>{
-        console.log(data2,ind,ary);
-    })
-})
+// let studentdata2 = [
+//     ["Anil",20],
+//     ["Afzal",23]
+// ]
+// studentdata2.forEach((val)=>{
+//     val.forEach((data2,ind,ary)=>{
+//         console.log(data2,ind,ary);
+//     })
+// })
 
 // 3. iterating over studentdata for-----of
 
@@ -861,10 +1034,671 @@ studentdata2.forEach((val)=>{
 // toString:- toString method ka use array me di gaye value ko string me convert karne me hota he 
 
 // let s = ["Rakesh","Manoj","Prem","Raju"];
-
-// s.toString();
-
 // console.log(s);
+
+// let r = s.toString();
+// console.log(r);
+
+
+// STRING METHOD START 
+
+// 1.LENGTH 
+
+// LENGTH:- string ke length method ka use kisi bhi variabal me di gaye value ki length ko pta karna se hota he 
+
+// let str = "JavaScript is a GREAT Language"
+// // console.log(str);
+// let a = str.length;
+// console.log(a);
+
+
+// 2.toLowerCase
+
+// toLowerCase:- string ke toLowerCase method ka use kisi bhi variabal me di gaye value ko lower case me ya bole o small case me karne ka 
+
+// let str = "JAVASCRIPT IS A GREAT LANGUAGE"
+// // console.log(str);
+// let a = str.toLowerCase();
+// console.log(a);
+
+
+// 3. toUpperCase
+
+// toUpperCase:- string ke toUpperCase method ka use kisi bhi variabal me di gaye value ko uppercase me convert karne ka hota he 
+
+
+// let str = "javascript is a great language"
+// // console.log(str);
+// let a = str.toUpperCase();
+// console.log(a);
+
+
+// 4.Includes 
+
+// Includes:- string ke includes method ka use kisi bhi variabal me di gaye vakue me ye pta karna hota he ki variabal me bo value he ya nahi
+
+
+// let str = "JavaScript is a GREAT Language"
+// // console.log(str);
+// let a = str.includes("is");
+// console.log(a);
+
+
+// 5.startWith 
+
+// startWith:- string ke startWith method ka use variabal me di gaye kisi bhi value ke start bali value ko print karna 
+
+
+let str = "JavaScript is a GREAT Language"
+// console.log(str);
+let a = str.startsWith("J");
+console.log(a);
+
+
+// 6.endWith
+
+// endWith:- string ke  endWith method ka use kisi bhi variabal me di gaye gaye value ke end bale part ko print karna 
+
+
+// let str = "JavaScript is a GREAT Language"
+// // console.log(str);
+// let a = str.endsWith("e");
+// console.log(a);
+
+// 7.search
+
+// search:-string ke serch method ka use kisi bhi variabal me di gaye value ka index number provide karna 
+
+
+// let str = "JavaScript is a GREAT Language"
+// // console.log(str);
+// let a = str.search("Language");
+// console.log(a);
+
+// 8.match
+
+// match:- string ke match method ka use kisi bhi variabal me di gaye value ko array me convert karna ya 
+
+
+// let str = "JavaScript is a  is GREAT Language"
+// // console.log(str);
+// let a = str.match(/is/g);
+// console.log(a);
+
+// 9.indexOf 
+
+// indexOf:- string ke indexOf method ka use kisi bhi variabal me di gaye value ki index number batana 
+
+// let str = "JavaScript is a  is GREAT Language"
+// // console.log(str);
+// let a = str.indexOf("is");
+// console.log(a);
+
+// 10.lastIndexOf 
+
+// lastIndexOf:- string ke lastIndexOf method ka use kisi bhi variabal me di gaye value ke last index number ko batana
+
+// let str = "JavaScript is a is GREAT Language"
+// // console.log(str);
+// let a = str.lastIndexOf("a");
+// console.log(a);
+
+// 11.replace
+
+// replace:- string ke replace method ka use kisi bhi variabal me di gaye value ko replace karne me hota he 
+
+// let str = "JavaScript is a GREAT Language"
+// // console.log(str);
+// let a = str.replace("JavaScript","PHP");
+// console.log(a);
+
+// let str = "JavaScript is a  is GREAT Language"
+// // console.log(str);
+// let a = str.replace(/is/g ,"PHP"); //globl tarike se value ko replace karna
+// console.log(a);
+
+// 12.trim
+
+// trim:- string ke trim method ka use kisi bhi variabal me di gaye value ke beech bale space ko remove karne me hota he 
+
+// let str = "        JavaScript is a  is GREAT Language   "
+// // console.log(a);
+// let a = str.trim();
+// alert(a);
+
+// 13.charAt 
+
+// charAt:- string ke charAt method ka use kisi bhi variabal me di gaye value ka koi bhi index numbaer dekar yeh pta karna hota he ki es index number per kon se value de hue he 
+
+// let str = "JavaScript is a  is GREAT Language"
+// // console.log(str);
+// let a = str.charAt(14);
+// console.log(a);
+
+
+// 14.charCodeAt
+
+// charCodeAt:- string ke charcodeat method ka use kisi bhi variable me di gaye value ka charcodeat print karane me hota he 
+
+// let str = "JavaScript is a is GREAT Language"
+// // console.log(str);
+// let a = str.charCodeAt(22);
+// console.log(a);
+
+// 15.fromCharCode
+
+// fromCharCode:- string ke fromcharcode method ka use kisi bhi variable me di gaye value ascii table ka nuber sighn ya number print karana hota he 
+
+// let str = "JavaScript is a  is GREAT Language"
+// console.log(str);
+// let a = String.fromCharCode(34);
+// console.log(a);
+
+// 16.concat 
+
+// concat:- string ke concat method ka use kisi bhi variable me di gaye value ko concat karna
+
+// let str = "JavaScript is a  is GREAT Language"
+// let str2 = "Python is a machine learning  Language"
+// // console.log(str);
+// let a = str.concat(" "+str2);
+// console.log(a);
+
+// 17.split   (converting string  to an array)
+
+// split:- string ke split method ka use variable me di gaye vlue ko split karna ya bole to todna 
+
+// let str = "JavaScript is a  is GREAT Language"
+// console.log(str);
+// let a = str.split(" ");
+// document.write(a)
+// console.log(a);
+
+// 18.repeat
+
+// repeat:- string ke repeat method ka use variable me di gaye value ko repeat karbane ke liye hota he 
+
+// let str = "JavaScript is a  is GREAT Language"
+// // console.log(str);
+// let a = str.repeat(2);
+// console.log(a);
+
+// 19.slice (slice value ko execute karta he)
+
+// slice:- string ke slice method ka use variable me di gaye value index value de kar us value ko git karna ya prapt karna 
+
+// let str = "JavaScript is a  is GREAT Language"
+// // console.log(str);
+// let a = str.slice(2,9);
+// console.log(a);
+
+// 20.substr (substr value ko execut karta he) or (extracts a part of string.2.does not change the original array.(include))
+
+// substr:- string ke substr method ka use kisi bhi variable me di gaye value ko index number de kar value ko prapt karna hota he 
+
+// let str = "JavaScript is a  is GREAT Language"
+// // console.log(str);
+// let a = str.substr(1,10);
+// console.log(a);
+
+// 21.substring
+
+// substring:- string ke substring method ka use kisi bhi variable me di gaye value ko index number dekar us value ko prapt karna hota he 
+
+// let str = "JavaScript is a  is GREAT Language"
+// // console.log(str);
+// let a = str.substring(2,12);
+// console.log(a);
+
+// 22.toString
+
+// tostring:- string ke tostring method ka use variable me di gaye value ko string me convert karna hota he 
+
+// let str = 234;
+// let str2 = 50;
+// // console.log(str);
+// let a = str+str2.toString();
+// console.log(a);
+
+
+    //    Number Method Start 
+
+// 1.NUMBER 
+
+// Number:- number method ke number method ka use karke variable me string ke roop me diye gaye stringnumber ko number me convert karne me hota he
+
+// let string = "100";
+// console.log(typeof (string));
+
+//         // Conbert to number 
+
+// let num = Number(string);
+// console.log(typeof (num));
+
+
+// 2.parseInt 
+
+// parseInt:- number method ke parseInt method ka use kisi bhi variable me di gaye decimal value ko Integer me conbert karne me hota he 
+
+// let decimal = "10.33";
+
+// let conInteger = Number.parseInt(decimal);
+
+// console.log(conInteger);
+
+
+// 3.parseFloat
+
+// parseFloat:- Number method ke parseFloat method ka use kisi bhi variable me de gaye value jo decimal ke roop me he use  parseFloatdecimal me hi print karta he 
+
+// let decimal2 = "90.3445";
+
+// let flot = Number.parseFloat(decimal2);
+// console.log(flot);
+
+
+// 4.isFinite
+
+// isFinite:- number method ke isFinite method ka use kisi bhi variable me di gaye number value ko count (di gaye number value countable he ya nahi) karne me hota he 
+
+// let num2 = "100";
+
+// let count = Number.isFinite(num2);
+// console.log(count); // False examle ho gaya
+// console.log(typeof count); // False examle ho gaya
+ 
+// let num3 = Infinity;
+
+// let count3 = Number.isFinite(num3);
+// console.log(count3); // False examle ho gaya
+// console.log(typeof count3); // False examle ho gaya
+
+
+      // true ke liye example 
+
+// let num4 = 100;
+
+// let count4 = Number.isFinite(num4);
+// console.log(count4);
+// console.log(typeof count4);
+ 
+
+// 5.isInteger 
+
+// isInteger:- number method ke isInteger method ka use kisi bhi variable me di value ko count karne liye hota he (yadi value decimal number ya string me di gaye hogi to count nahi karega)
+
+        //  False ke liye
+
+// let isInt = "20";
+// isInt = 50.34;
+// let countInt = Number.isInteger(isInt);
+
+// console.log(countInt);
+
+//         //    True value ke liye 
+
+// let isInt1 = -345;
+
+// let countInt1 = Number.isInteger(isInt1);
+
+// console.log(countInt1);
+
+
+// 6.toFixed 
+
+// toFixed:- Number method ke toFixed method ka use kisi bhi variable me di gaye decimale value ko index number dekar value ke point me se tiFixed badi se badi value ko leta he 
+
+// let tofixed = 20.56789;
+
+// let aberage = tofixed.toFixed(2)
+// console.log(aberage);
+
+
+// 7.toPrecision
+
+// toPrecision:- Number method ke toPrecision method ka use kisi bhi variable me di gaye decimale value ko index number dekar value ke point me badi se badi value ko leta he 
+
+// let toPrecision = 39.75869;
+
+// let aberage2 = toPrecision.toFixed(2)
+// console.log(aberage2);
+
+
+        //   MATH METHODS START 
+
+// 1.CEIL
+
+// ceil:- MATH method ke ceil method ka use number float ke roop me di gaye value ko upper value pirdan karega jab value non negative hogi (yadi value negative form hogi to down me value dega). 
+
+// let ceil1 = Math.ceil(1.78); //value 3 aayi
+// console.log(ceil1);
+
+// //         // negative ke liye 
+
+// let ceilnega = Math.ceil(-3.34)   
+// console.log(ceilnega);     // value -3 aayi
+
+
+// 2.FLOOR
+
+ // floor:- MATH method ke floor method ka use number float ke roop me di gaye value ko down afferd value pirdan karega jub value non negative hogi (yadi value negative form hogi to upper afferd me value dega). 
+
+// let floor1 = Math.floor(2.93); //value 2 aayi
+// console.log(floor1);
+
+//        // negative ke liye 
+
+// let floornega = Math.floor(-5.34)   
+// console.log(floornega);     // value -6 aayi
+
+
+// 3.ROUND
+
+// round:- Math method ke round method ka use decimal number float ki di gaye value me .50 se kam hogi to ye niche bali value dega yadi .50 hue ya .50 se jyada hue to ye jyada bali value dega 
+
+// let round1 = Math.round(2.33); //value 2 aayi (jub value .50 se kam thi)
+// console.log(round1);
+
+
+// let round2 = Math.round(2.63); //value 3 aayi (jub value .50 se jyada thi)
+// console.log(round2);
+
+
+// 4.TRUNC
+
+// trunc:- Math ke trunc method ka use decimal number float value kisi bhi variable me di gaye ho per trunc jo he bo integer value hi dega 
+
+// let trunc1 = Math.trunc(2.34);
+// console.log(trunc1);
+
+
+// 5.MAX 
+
+// max:- Math ke max method ka use kisi bhi variable me di gaye multiple value me se max value ko lega (ya bole to jyada bali value lega)
+
+        //  max method jo he bo (x axes or y axes per kam karta he)          
+
+//      let max1 = Math.max(32, 4, 87.999, 34,90.234, 76,)
+//      console.log(max1);
+ 
+    //   negative value 
+
+//       let max2 = Math.max(-76.234,-32.324,)
+//       console.log(max2);
+ 
+
+// 5.MIN 
+
+// min:- Math ke min method ka use kisi bhi variable me di gaye multiple value me se min value ko lega (ya bole to sabse chhoti bali value lega)
+
+        // min method jo he bo (x axes or y axes per kam karta he)          
+
+
+// let min1 = Math.min(32, 4, 87, 34,90, 76,)
+// console.log(min1);
+
+
+// let min2 = Math.min(-10, -2,)
+// console.log(min2);
+
+
+// 6.SQRT
+
+// sqrt:- Math ke sqrt method ka use kisi bhi value ka squar ya burg nikalne me kiya jata he 
+
+// let sqrt1 = Math.sqrt(25); // 5 ka sqr he 
+// console.log(sqrt1);
+
+// let sqrt2 = Math.sqrt(144); // 12 ka sqr he 
+// console.log(sqrt2);
+
+
+
+// 6.CBRT
+
+// cbrt:- Math ke cbrt method ka use kisi bhi value ka cbrt ya bole to kisi bhi value ka 3 ki ghat nikalne me kiya jata he 
+
+// let cbrt1 = Math.cbrt(125); // 5 ka sqr he 
+// console.log(cbrt1);
+
+// let cbrt2 = Math.cbrt(27); // 3 ka sqr he 
+// console.log(cbrt2);
+
+
+// 7.POW
+
+// pow:- Math ke pow method ka use kisi bhi value ka power nikalne me kiya jata he 
+
+// let pow1 = Math.pow(2,5); // 2 ka sqr he 5
+// console.log(pow1);
+
+// let pow2 = Math.pow(4,3); // 4 ka sqr he 3
+// console.log(pow2);
+
+
+// 8.RANDOM 
+
+// random:- Math method ke random method ka kisi bhi variable me di gaye value chahe bo value 0 ya 100 ke beech ki kyu na ho random method jo bo random hi value provide karega 
+
+// let random1 = Math.random(); //yadi random me koi value na de to bo 0. se random value dega
+// console.log(random1);
+ 
+//         //       or 
+
+// let random2 =Math.floor(Math.random() * 10) + 10 // aap chaho to kisi bhi value ko (+) kar sakte ho 
+// console.log(random2);       
+
+//         //    ya
+
+// let random3 = Math.floor(Math.random()*100)
+// console.log(random3);
+
+
+// 9.ABS 
+
+// abs:- Math method ke abs method ka use kisi bhi variable me di gaye value ka absolut value dega 
+
+// let abs1 = Math.abs(3.43);
+// console.log(abs1);
+
+// //        or 
+
+// let abs2 = Math.abs(null);
+// console.log(abs2);
+        
+// //        or 
+
+// let abs3 = Math.abs(true);
+// console.log(abs3);
+         
+// //        or 
+
+// let abs4 = Math.abs("Anil");
+// console.log(abs4);
+
+
+
+// 9. PI 
+
+// PI:- Math method ke PI metho ka use PI ki value ko represent karne ke liye hota he 
+
+// let pi1 = Math.PI; // PI is not a function
+// console.log(pi1);
+
+
+
+        //    DATE MATHOD START 
+
+// 1.DATE METHOD KE LIKHNE KA TARIKA 
+
+// let now = new Date();
+// console.log(now);
+
+// 1. toDateString
+
+// toDateString:- Date method ke toDateString method ka use kisi bhi date ko print karne me hota he 
+
+// let now = new Date();
+// console.log(now.toDateString());
+
+
+// 2.getDate 
+
+// getDate:- Date method ke getDate method ka use kisi bhi date ko print karne me hota he 
+
+// let now1 = new Date();
+// console.log(now1.getDate());
+
+
+// 3.getMonth
+
+// getMonth:-Date method ke getMonth method ka use kisi bhi month ko print karne me hota he 
+
+// let now3 = new Date();
+// console.log(now3.getMonth()); //Month ya day ka index number he bo 0 se leta he
+
+// let now33 = new Date('march 05 2009');
+// console.log(now33.getMonth()); 
+
+// 4.getFullYear
+
+// getFullYear:-Date method ke getFullYear method ka use kisi bhi year ke full year ko print karne me hota he 
+
+// let now4 = new Date();
+// console.log(now4.getFullYear());
+
+
+// 5.getDay
+
+// getDay:-Date method ke getDay method ka use day ko print karne me hota he 
+
+// let now5 = new Date();
+// console.log(now5.getDay());
+
+// let now6 = new Date('january 5 2010'); // 5 january 2010 ko tuesday tha
+// console.log(now6.getDay());
+
+// let now7 = new Date('january 5 2030'); // 5 january 2030 ko saturday hoga
+// console.log(now7.getDay());
+
+// 6.getHours
+
+// getHours:- Date method ke getHours method ka use time me hours ka print karne me hota he 
+
+// let hours1 = new Date();
+// console.log(hours1.getHours());
+
+// let hours2 = new Date('febuary 04 2012');
+// console.log(hours2.getHours());
+
+// 7.getMinutes
+
+// getMinutes:- Date method ke getMinuts method ka use minuts ko print karne ke liye hota he 
+
+// let minutes1 = new Date();
+// console.log(minutes1.getMinutes());
+
+// let minutes2 = new Date('march 10 2023');
+// console.log(minutes2.getMinutes());
+
+// 8.getSecondes
+
+// getSeconds:- Date method ke getSeconds method ko use secondes ko print karne ke liye hota he 
+
+// let seconds1 = new Date();
+// console.log(seconds1.getSeconds());
+
+// let seconds2 = new Date('january 06 2013');
+// console.log(seconds2.getSeconds());
+
+
+// 9.getMilliseconds
+
+// getMilliseconds:- Date method ke getMilliseconds ka use Milliseconds ko print karne me use hota he 
+
+// let milliseconds1 = new Date();
+// console.log(milliseconds1.getMilliseconds());
+
+// let milliseconds1 = new Date('may 30 2009');
+// console.log(milliseconds1.getMilliseconds());
+
+
+// 10.setDate
+
+// setDate:- Date method ke setDate method ka use date ko set karne ke liye use kiya jata he 
+
+// let setdate1 = new Date();
+
+// setdate1.setDate(20);
+
+// console.log(setdate1);
+
+
+// 11.setFullYear
+
+// setFullYear:-Date method ke setFullYear method ka use Year ko full set karne me hota he 
+
+// let setyear1 = new Date();
+
+// setyear1.setFullYear(2026)
+
+// console.log(setyear1);
+
+
+// 12.setMonth
+
+// setMonth:-Date method ke setMonth method ka use month ko set karne me hota he 
+
+// let setmonth1 = new Date();
+// setmonth1.setMonth(4)
+
+// console.log(setmonth1);
+
+
+// 13.setHours
+
+// setHours:- Date method ke setHours method ka use hours ko set karne me hota he 
+
+// let sethours1 = new Date();
+
+// sethours1.setHours(15);
+
+// console.log(sethours1);
+
+
+// 14.setMinutes 
+
+// setMinutes:- Date method ke set setMinutes method ka use minutes ko set karne me hota
+
+// let setminut1 = new Date();
+
+// setminut1.setMinutes(24)
+// console.log(setminut1);
+
+
+// 15.setSeconds
+
+// setSeconds:-Date method ke setSeconds method ka seconds set karne me ota he
+
+// let setseconds1 = new Date();
+// setseconds1.setSeconds(23);
+// console.log(setseconds1);
+
+
+// 16.setMilliSeconde 
+
+// setMilliSeconde:- Date method ke setMillseconds method ka use milliseconds ko set karne me hota he 
+
+// let setmillise1 = new Date();
+// setmillise1.setMilliseconds(254);
+// console.log(setmillise1);
+
+        // DATE METHODS KE ACTUAL LIFE ME USE 
+
+
+        //     let nowall = new Date();
+
+        //     console.log(nowall.getDay() + "/" + nowall.getMonth() + "/" + nowall.getFullYear() + "/" + nowall.getHours() + "/" + nowall.getMinutes() + "/" + nowall.getSeconds() + "/" + nowall.getMilliseconds());
 
 
 // 4.Function concept start

@@ -148,40 +148,40 @@
 // console.log("select choice:\n 1.Addtion \n 2.Subtraction \n 3.Multiply \n 4.divide")
 
 
-let choice=prompt("Enter choice :");
-console.log("your choice is:",choice)
+// let choice=prompt("Enter choice :");
+// console.log("your choice is:",choice)
 
 
-const value1= parseFloat(prompt("Enter first number:"));
-console.log("first number is :",value1)
-const value2= parseFloat(prompt("Enter second number:"));
-console.log("second number is :",value2)
+// const value1= parseFloat(prompt("Enter first number:"));
+// console.log("first number is :",value1)
+// const value2= parseFloat(prompt("Enter second number:"));
+// console.log("second number is :",value2)
 
 
-switch(choice){
-    case "1":
-        result=value1+value2;
-        console.log("addtion is :",result)
-        break;
-   case "2":  
-   result=value1-value2;
-   console.log("subtraction is :",result)
-   break;
-   case "3":  
-   result=value1*value2;
-   console.log("multiplication is :",result)
-   break;  
-   case "4":  
-   result=value1/value2;
-   console.log("Division is :",result)
-   break;  
-   default:
-    console.log("invalid operator");
-    break;
+// switch(choice){
+//     case "1":
+//         result=value1+value2;
+//         console.log("addtion is :",result)
+//         break;
+//    case "2":  
+//    result=value1-value2;
+//    console.log("subtraction is :",result)
+//    break;
+//    case "3":  
+//    result=value1*value2;
+//    console.log("multiplication is :",result)
+//    break;  
+//    case "4":  
+//    result=value1/value2;
+//    console.log("Division is :",result)
+//    break;  
+//    default:
+//     console.log("invalid operator");
+//     break;
 
+// }
 
-}
-
+// console.log(`choice= ${choice} value1= ${value1} value2= ${value2} result= ${result}`);
 
 // nested
 // const num= prompt("Enter number:");

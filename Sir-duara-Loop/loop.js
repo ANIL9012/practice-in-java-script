@@ -46,6 +46,20 @@
 // 3
 // 4
 // 5
+// exam.2
+
+// let count = 0;
+
+// while (count < 5) {
+//   console.log("Count is: " + count);
+//   count++;
+// }
+
+// count is : 0
+// count is : 1
+// count is : 2
+// count is : 3
+// count is : 4
 
 // 2. do...while
 // 2. do...while
@@ -67,6 +81,16 @@
 //     firstnum++;
 
 // }while(firstnum<=lastnum);
+
+// exam.2
+
+// let count = 0;
+
+// do {
+//   console.log("Count is: " + count);
+//   count++;
+// } while (count <= 15);
+
 
 // for loop
 
@@ -124,6 +148,37 @@
 //     }
 // }
 
+// exam.1
+
+// for (initialization; condition; increment) {
+//         // Outer loop code
+//         for (initialization; condition; increment) {
+//           // Inner loop code
+//         }
+//       }
+      
+
+// for (let i = 1; i <= 3; i++) {
+//         console.log("Outer loop iteration: " + i);
+        
+//         for (let j = 1; j <= 2; j++) {
+//           console.log("  Inner loop iteration: " + j);
+//         }
+//       }
+
+        //  Outer loop iteration: 1
+        //  Inner loop iteration: 1
+        //  Inner loop iteration: 2
+        //  Outer loop iteration: 2
+        //  Inner loop iteration: 1
+        //  Inner loop iteration: 2
+        //  Outer loop iteration: 3
+        //  Inner loop iteration: 1
+        //  Inner loop iteration: 2     
+         
+         
+// exam.2         
+
 // * * * * * *            
 // ******
 // ******
@@ -133,17 +188,13 @@
 
 // let n=4;
 // let  m=6;
-// for (let i=1; i<=4; i++){
 
+// for (let i=1; i<=4; i++){
 //     let str=""
 //     for (let j=1; j<=6; j++){
 //        str=str+"* "
-   
-
 //     }
 //     console.log(str)
-   
-
 // }
 
 

@@ -426,36 +426,36 @@
 // let mularray=[["java","javascript"],["python","dbms","dotnet","mongodb",],["DSA","OS"]]
 
 
-let mularray=[
-    ["java","javascript"],
+// let mularray=[
+//     ["java","javascript"],
         
-    ["python","dbms","dotnet","mongodb",["cyber-sec","os",["c++","Ruby"]]],
+//     ["python","dbms","dotnet","mongodb",["cyber-sec","os",["c++","Ruby"]]],
           
-    ["DSA","OS",["2","4","6",["34","45","57"["23"]]]]
+//     ["DSA","OS",["2","4","6",["34","45","57"["23"]]]]
         
- ]
- console.log(mularray[1][4][2][0])
+//  ]
+//  console.log(mularray[1][4][2][0])
 
- console.log("print 45")
- console.log("anil",mularray[2][2][1])//4 
- console.log("shoeb",mularray[2][2][3][1]) 
- console.log("afzal",mularray[2][2][3][1]) 
- console.log("monish",mularray[2][2][3][1]) 
- console.log("what should be print here ???",mularray[2][1][3]) 
- console.log("what should be print here ???",mularray[1][1][4]) 
- console.log("what should be print here ???",mularray[1][4]) 
- console.log("what should be print here ???",mularray[1][4][1]) 
- console.log("what should be print here ???",mularray[1][4][2]) 
- console.log("what should be print here ???",mularray[1][4][2][1]) 
+//  console.log("print 45")
+//  console.log("anil",mularray[2][2][1])//4 
+//  console.log("shoeb",mularray[2][2][3][1]) 
+//  console.log("afzal",mularray[2][2][3][1]) 
+//  console.log("monish",mularray[2][2][3][1]) 
+//  console.log("what should be print here ???",mularray[2][1][3]) 
+//  console.log("what should be print here ???",mularray[1][1][4]) 
+//  console.log("what should be print here ???",mularray[1][4]) 
+//  console.log("what should be print here ???",mularray[1][4][1]) 
+//  console.log("what should be print here ???",mularray[1][4][2]) 
+//  console.log("what should be print here ???",mularray[1][4][2][1]) 
 
- mularray.push("1,3,46,8,8,89,8")
-mularray[0].push("1,3,46,8,8,89,8")
+//  mularray.push("1,3,46,8,8,89,8")
+// mularray[0].push("1,3,46,8,8,89,8")
 
- console.log(mularray)
+//  console.log(mularray)
 
-mularray.pop()
-mularray[1][4].pop()
-console.log(mularray)
+// mularray.pop()
+// mularray[1][4].pop()
+// console.log(mularray)
 
 
 

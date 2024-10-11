@@ -103,11 +103,11 @@
 
 // 15. Assign `value = 7`. Log the results of `++value`, `value++`, `--value`, and `value--` to the console.  
 
-//    let value = 7;
-//    console.log(++value); // Pre-increment
-//    console.log(value++); // Post-increment
-//    console.log(--value); // Pre-decrement
-//    console.log(value--); // Post-decrement
+   let value = 7;
+   console.log(++value); // Pre-increment
+   console.log(value++); // Post-increment
+   console.log(--value); // Pre-decrement
+   console.log(value--); // Post-decrement
 
 // 1. Arithmetic Operators
 // Addition:

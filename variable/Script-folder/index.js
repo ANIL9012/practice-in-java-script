@@ -1,13 +1,13 @@
 
 // 1. Declare variables using let, var, and const to store a name, age, and favorite color.
 
-var name = "Anil Kumar"; //var is a global variable
-let color = "#f928c4"; //let is a local variavle
-const age = "21";  //const is a local variable
+// var name = "Anil Kumar"; //var is a global variable
+// let color = "#f928c4"; //let is a local variavle
+// const age = "21";  //const is a local variable
 
-console.log(name);
-console.log(color);
-console.log(age);
+// console.log(name);
+// console.log(color);
+// console.log(age);
 
 // 2. Create variables inside and outside a block ({}) using let and const.
 
@@ -20,12 +20,12 @@ console.log(age);
 
 // inside-block
 
-{
+// {
     // let inside = "Inside-Block"
     // let insideTwo = "Inside-Block-Const"
     // console.log(inside);
     // console.log(insideTwo);
-}
+// }
 
 // 3. Follow JavaScript naming conventions to create variables for a username, email address, and password. 
 
@@ -40,10 +40,10 @@ console.log(age);
 // 4. Use let to declare a variable inside a block ({}) and try accessing it outside. Explain the result.
 
 // inside-Block-variable
-{
+// {
     // let AccessingResult = "Result"
     // console.log(AccessingResult);
-}
+// }
 
 // console.log(AccessingResult);
 
@@ -55,7 +55,7 @@ console.log(age);
 
 // 6. Create a global variable named count and a local variable with the same name inside a block ({}). Output both values to observe variable .
 
-{
+// {
     // Global-variable
     // var global = "var is a global variable";
     // var global = "var is not local variable";
@@ -72,7 +72,7 @@ console.log(age);
     // local = " Const variable is not a assign new values";
     // console.log(local);
 
-}
+// }
 
 // 7. Declare a variable with let for a number. Then assign it a string value and console.
 
