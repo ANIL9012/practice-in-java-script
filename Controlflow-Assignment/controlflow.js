@@ -1,6 +1,18 @@
 // 1. Write code that checks if the variable `num` is greater than 10. If it is, print "Greater than 10".
 //    let num = 15;  // You can change this value to test
 
+
+
+// let num = 15; 
+
+// if (num > 10) {
+//   console.log("Greater than 10");
+// }
+
+
+                // Ya
+
+
 // let num  = prompt("Enter the value");
 // if(num>10){
 //     console.log("Number is greater than 10");
@@ -15,6 +27,7 @@
 // 2. Write code that checks if the variable `num` is greater than or equal to 0. If it is, print "Non-negative"; otherwise, print "Negative".
 //    let num = -3;  // You can change this value to test
   
+
 // let num1 = prompt("Enter a value");
 // if(num1>0){
 //     console.log("Number is Positive");
@@ -31,16 +44,32 @@
 //    let score = 85;  // You can change this value to test
 
 
-// let per = prompt("Enter percentage");
-//  if(per >=90 && per <=100){
+// let score = prompt("Enter the score percentage");
+
+// if (score >= 90) {
 //     console.log("Excellent");
-//  }else if(per >=70 && per <89){
+// } else if (score >= 70) {
+//     console.log("Very Good");
+// }else if(score >= 60){
 //     console.log("Good");
-//  }else if(per >=40 && per <70){
+// }else {
+//     console.log("Needs Improvement");
+// }
+
+
+                //  YA
+
+// let per = prompt("Enter percentage");
+//  if(per >= 90 && per <= 100){
+//     console.log("Excellent");
+//  }else if(per >= 70 && per <= 89){
+//     console.log("Good");
+//  }else if(per >= 40 && per < 70){
 //     console.log("Need Improvement");
 //  }else{
 //     console.log("Please enter valid percentage");
 //  }
+
 
 // 4. Write code that uses a `switch` statement to print the name of the day based on the variable `day`. Use the following values:
 //    - 1 for "Monday"
@@ -51,6 +80,7 @@
 //    - 6 for "Saturday"
 //    - 7 for "Sunday"
 //    let day = 4;  // You can change this value to test
+
 
 // let day = parseInt(prompt("Enter day number"));
 
@@ -101,13 +131,18 @@
 // 6. Write code that checks if the variable `num` is positive. If it is, then check if it is greater than 100. Print "Large Positive" if it is greater than 100; otherwise, print "Small Positive".
 //    let num = 120;  // You can change this value to test
 
-// let positive = prompt("Enter the value");
+// let num = 120; 
 
-// if(positive>100){
-//     console.log("Number is positive greater than");
-// }else if(positive<100){
-//     console.log("Number is positive and small");
+// if (num > 0) {
+//   if (num > 100) {
+//     console.log("Large Positive");
+//   } else {
+//     console.log("Small Positive");
+//   }
+// } else {
+//   console.log("Not Positive");
 // }
+
    
 //    7.Write code that checks if the variable `num` is even or odd. Print "Even" if it is even, and "Odd" if it is odd.
 
@@ -119,8 +154,24 @@
 //     console.log("Odd");
 // }
 
-//    let num = 7;  // You can change this value to test
 
+            //    FUNTION SE ODD OR EVEN NUMBER RECIEVE 
+
+// function checkEvenOrOdd() {
+//     // Get user input and convert it to a number
+//     let num = parseFloat(prompt("Enter a number:"));
+  
+//     // Check if the input is a valid number
+//     if (num %2 === 0) {
+//       console.log("Even");
+//     }else {
+//       console.log("Odd");
+//     }
+//   }
+  
+//   // Call the function
+//   checkEvenOrOdd();
+  
 
 // 8. Write code that uses a `switch` statement to print the type of vehicle based on the variable `vehicleType`. Use the following values:
 //    - "car" for "Car"
@@ -166,9 +217,9 @@
 
 // let age = prompt("Enter the age");
 
-// if(age<13){
+// if(age<=13){
 //     console.log("Child");
-// }else if(age>=13 && age<=19){
+// }else if(age>13 && age<=19){
 //     console.log("Teenager");
 // }else{
 //     console.log("Adult");

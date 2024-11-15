@@ -55,8 +55,8 @@
 
 // 7. What will be the result of the following code?
 
-// let num = 10; number
-// let str = '10'; number but into a typeof in string
+// let num = 10; //number
+// let str = '10'; //number but into a typeof in string
 // console.log(num == str); true
 // console.log(num === str);  false
 
@@ -133,6 +133,7 @@
 // let y = "10"; String
 // console.log(typeof x); Number
 // console.log(typeof y); String
+
 // 14.Determine the datatype of the result of these expressions:
 // console.log(typeof (10 + 20)); Number
 // console.log(typeof (10 - "2")); Number
@@ -149,7 +150,7 @@
 //  const res="3"+2; //=>type string =>"32"
 // console.log(res);
 
-// const res1="3"+false;  //3true
+// const res1="3"+true;  //3true
 // console.log(res1)
 
 
@@ -170,11 +171,11 @@
 // console.log("impilicit conversion to number",val);
 
 
-// const val2= "4"*"2";  
+// const val2= "4"*"2";  //8
 // console.log("impilicit conversion to number",val2);
 
 
-// const val3 ="8"/"2";
+// const val3 ="8"/"2"; //4
 // console.log(val3);
 
 

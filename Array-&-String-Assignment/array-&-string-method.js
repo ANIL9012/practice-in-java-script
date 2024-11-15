@@ -523,7 +523,7 @@
 // console.log(splitString);
 
 //                 //  After using split method string 
-// let splitArray = splitString.split();
+// let splitArray = splitString.split(",");
 // console.log(splitArray);
 
 // 20. Write a JavaScript function to replace the word `"night"` with `"day"` in the string `"Good night everyone!"` using the `replace()` method.

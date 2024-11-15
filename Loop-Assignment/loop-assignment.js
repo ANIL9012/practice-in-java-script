@@ -9,6 +9,7 @@
 // let n = 5;
 // let m = 5;
 
+
 // // row-i = 5;
 // // col-j = 5;
 
@@ -24,7 +25,8 @@
 // *****
 //  ***
 //   *
-  
+
+
     // row      space      star      
     // i=3        j= 0 n-i    k=5
     // 2       j= 1  n-i   k=3
@@ -32,17 +34,22 @@
   
 //    let n=3;
   
-//   for (let i=n; i>=1; i--){
-//       let str=""
-//       for (let j=1;j<=n-i+1; j++ ){
-//           str=str+" "
-//       }
-  
-//       for (let k=1; k<=2*i-1 ; k++){
-//           str=str+"*"
-//       }
-//       console.log(str)
-//   }
+
+
+
+
+// for(let i=n; i>=1; i--){
+//     let str = "";
+//     for(let j=1; j<=n-i+1; j++){
+//         str = str+" ";
+//     }
+//     for(let k=1; k<=2*i-1; k++){
+//         str = str+"*";
+//     }
+//     console.log(str);
+// }
+
+
 
 // 3.
 //  1

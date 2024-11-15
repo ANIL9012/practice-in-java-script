@@ -59,18 +59,20 @@
 //    console.log(a === b); // Answer False
    
 
-// 9. Assign `a = 15` and `b = 20`. Log whether `a` is greater than, less than, or equal to `b`.     let a = 15;
+// 9. Assign `a = 15` and `b = 20`. Log whether `a` is greater than, less than, or equal to `b`. 
+
 //    let a = 15;
 //    let b = 20;
 //    if (a > b) {
-//        console.log('greater than');
+//       console.log("a is greater than b");
 //    } else if (a < b) {
-//        console.log('less than');
+//       console.log("a is less than b");
 //    } else {
-//        console.log('equal to');
+//        console.log('a is equal to b');
 //    }
 
 //    10. Assign `x = true` and `y = false`. Log the result of `x && y` and `x || y` to the console.  
+
 
 //    let x = true;
 //    let y = false;
@@ -90,7 +92,8 @@
 //    console.log(age >= 18 ? 'Adult' : 'Minor'); //Answer Adult
 
 
-// 13. Assign `value = 100`. Log the result of `typeof value` to the console.  
+// 13. Assign `value = 100`. Log the result of `typeof value` to the console. 
+
 
 //    let value = 100;
 //    console.log(typeof value); //Answer Number
@@ -103,11 +106,12 @@
 
 // 15. Assign `value = 7`. Log the results of `++value`, `value++`, `--value`, and `value--` to the console.  
 
-   let value = 7;
-   console.log(++value); // Pre-increment
-   console.log(value++); // Post-increment
-   console.log(--value); // Pre-decrement
-   console.log(value--); // Post-decrement
+
+//    let value = 7;
+//    console.log(++value); // Pre-increment
+//    console.log(value++); // Post-increment
+//    console.log(--value); // Pre-decrement
+//    console.log(value--); // Post-decrement
 
 // 1. Arithmetic Operators
 // Addition:

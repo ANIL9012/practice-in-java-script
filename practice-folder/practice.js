@@ -7,6 +7,7 @@
 // 1 2 3 4
 // 1 2 3 4 5
 
+
 // let n = 5;
 // let m = 5;
 
@@ -46,7 +47,6 @@
 // 3 3 3
 // 2 2
 // 1
-
 
 
 // let n = 5;
@@ -151,7 +151,6 @@
 //   ***
 //  ****
 
-
 // let n = 4;
 // let m = 4;
 
@@ -190,6 +189,7 @@
 //  *   *
 //  *   *
 //  *****
+
 
 
 // let n = 4;
@@ -1089,10 +1089,10 @@
 // startWith:- string ke startWith method ka use variabal me di gaye kisi bhi value ke start bali value ko print karna 
 
 
-let str = "JavaScript is a GREAT Language"
-// console.log(str);
-let a = str.startsWith("J");
-console.log(a);
+// let str = "JavaScript is a GREAT Language"
+// // console.log(str);
+// let a = str.startsWith("J");
+// console.log(a);
 
 
 // 6.endWith

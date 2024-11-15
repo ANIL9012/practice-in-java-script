@@ -9,6 +9,7 @@
 // console.log(color);
 // console.log(age);
 
+
 // 2. Create variables inside and outside a block ({}) using let and const.
 
 // Outside
@@ -21,10 +22,10 @@
 // inside-block
 
 // {
-    // let inside = "Inside-Block"
-    // let insideTwo = "Inside-Block-Const"
-    // console.log(inside);
-    // console.log(insideTwo);
+//     let inside = "Inside-Block"
+//     let insideTwo = "Inside-Block-Const"
+//     console.log(inside);
+//     console.log(insideTwo);
 // }
 
 // 3. Follow JavaScript naming conventions to create variables for a username, email address, and password. 
@@ -41,8 +42,8 @@
 
 // inside-Block-variable
 // {
-    // let AccessingResult = "Result"
-    // console.log(AccessingResult);
+//     let AccessingResult = "Result"
+//     console.log(AccessingResult);
 // }
 
 // console.log(AccessingResult);
@@ -53,39 +54,64 @@
 // pi = 3.143;
 // console.log(pi);
 
-// 6. Create a global variable named count and a local variable with the same name inside a block ({}). Output both values to observe variable .
+// 6. Create a global variable named count and a local variable with the same name inside a block ({}). Output both values to observe variable.
+
+// let count = 10; // Global variable
 
 // {
-    // Global-variable
-    // var global = "var is a global variable";
-    // var global = "var is not local variable";
-    // global = "variable is a assign new values";
-    // console.log(global);
-
-    // Local-Variable
-
-    // let local = "Let is a local variable";
-    // local = " Let variable is a assign new values";
-    // console.log(global);
-
-    // const local = "Const is a local variable";
-    // local = " Const variable is not a assign new values";
-    // console.log(local);
-
+//   let count = 5; // Local variable within block scope
+//   console.log("Local count inside block:", count); // Outputs the local variable (5)
 // }
+
+// console.log("Global count outside block:", count); // Outputs the global variable (10)
+
 
 // 7. Declare a variable with let for a number. Then assign it a string value and console.
 
-// let num = 1234;
-// num = "1234";
-// console.log(num);
+// let value = 42; // Initially assigned a number
+// console.log("Number value:", value); // Outputs 42
+
+// value = "Hello, world!"; // Reassigning it to a string
+// console.log("String value:", value); // Outputs "Hello, world!"
 
 // 8. Try creating variables with names that start with numbers or contain special characters. Discuss why some names are invalid.
 
-// var 123invalid = "varianble are not declare  that start with numbers or contain";
-// console.log(123invalid);
+// let 1name = "Alice";      // Invalid - starts with a number
+// let $name = "Bob";        // Valid - starts with a dollar sign
+// let _name = "Charlie";    // Valid - starts with an underscore
+// let name# = "David";      // Invalid - contains a special character '#'
+// let firstName = "Eve";    // Valid - camelCase with letters only
+// let name! = "Frank";      // Invalid - contains a special character '!'
+
+// console.log(1name);
+// console.log($name);
+// console.log(_name);
+// console.log(name#);
+// console.log(firstName);
+// console.log(name!);
 
 // 9. Declare variables with let and const in different scopes (e.g., global scope, block scope). Discuss their visibility and scope.
+
+// let globalVar = "I am global";  // Global scope variable with let
+// const globalConst = "I am a global constant";  // Global scope constant with const
+
+// console.log("Global scope - globalVar:", globalVar);        // Accessible here
+// console.log("Global scope - globalConst:", globalConst);    // Accessible here
+
+// {
+//   let blockVar = "I am in a block";  // Block scope variable with let
+//   const blockConst = "I am a block constant";  // Block scope constant with const
+
+//   console.log("Inside block - blockVar:", blockVar);         // Accessible here
+//   console.log("Inside block - blockConst:", blockConst);     // Accessible here
+//   console.log("Inside block - globalVar:", globalVar);       // Accessible here
+//   console.log("Inside block - globalConst:", globalConst);   // Accessible here
+// }
+
+// // Trying to access block-scoped variables outside the block
+// console.log("Outside block - blockVar:", typeof blockVar);      // undefined
+// console.log("Outside block - blockConst:", typeof blockConst);  // undefined
+
 
 // 10. Declare a variable without assigning a value.
 
