@@ -63,6 +63,8 @@
 
 //    let a = 15;
 //    let b = 20;
+
+
 //    if (a > b) {
 //       console.log("a is greater than b");
 //    } else if (a < b) {
@@ -89,7 +91,9 @@
 // 12. Assign `age = 22`. Use a ternary operator to log `'Adult'` if `age` is 18 or older, and `'Minor'` otherwise.  
 
 //    let age = 22;
-//    console.log(age >= 18 ? 'Adult' : 'Minor'); //Answer Adult
+
+// console.log(age > 15 ?  "adult" : "Minor");
+
 
 
 // 13. Assign `value = 100`. Log the result of `typeof value` to the console. 
@@ -112,6 +116,9 @@
 //    console.log(value++); // Post-increment
 //    console.log(--value); // Pre-decrement
 //    console.log(value--); // Post-decrement
+
+
+
 
 // 1. Arithmetic Operators
 // Addition:

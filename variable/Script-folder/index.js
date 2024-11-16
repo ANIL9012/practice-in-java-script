@@ -12,6 +12,7 @@
 
 // 2. Create variables inside and outside a block ({}) using let and const.
 
+
 // Outside
 
 // let outside = 420;

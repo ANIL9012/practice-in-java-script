@@ -408,18 +408,20 @@
 // i=2     j=2 n-i      3 =2*i-1
 // i=3     j=1 n-i      5 =2*i-1
 // i=4     j=0 n-i      7 =2*i-1
-// let n=4;
-// for (let i=1; i<=n; i++){
-//     let str=""
-//     for (let j=1;j<=n-i; j++ ){
-//         str=str+" "
-//     }
 
-//     for (let k=1; k<=2*i-1 ; k++){
-//         str=str+"*"
-//     }
-//     console.log(str)
-// }
+let n=4;
+
+for (let i=1; i<=n; i++){
+    let str=""
+    for (let j=1;j<=n-i; j++ ){
+        str=str+" "
+    }
+
+    for (let k=1; k<=2*i-1 ; k++){
+        str=str+"*"
+    }
+    console.log(str)
+}
 
 
 

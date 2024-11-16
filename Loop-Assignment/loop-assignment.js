@@ -9,7 +9,6 @@
 // let n = 5;
 // let m = 5;
 
-
 // // row-i = 5;
 // // col-j = 5;
 
@@ -27,28 +26,29 @@
 //   *
 
 
-    // row      space      star      
-    // i=3        j= 0 n-i    k=5
-    // 2       j= 1  n-i   k=3
-    // 1       j= 2   n-i  k=1
-  
-//    let n=3;
-  
+
+// let n = 3;
+// let m = 5;
+
+// row             space                  star
+
+// 3. i = 3         j = 0  n-i              k = 5
+                   
+// 2. i = 3         j = 2  n-i              k = 3
+
+// 1. i = 3         j = 1  n-i              k = 1
 
 
-
-
-// for(let i=n; i>=1; i--){
+// for(let i=3; i>=1; i--){
 //     let str = "";
 //     for(let j=1; j<=n-i+1; j++){
 //         str = str+" ";
 //     }
 //     for(let k=1; k<=2*i-1; k++){
-//         str = str+"*";
+//         str =str+"*"
 //     }
 //     console.log(str);
 // }
-
 
 
 // 3.
@@ -59,6 +59,7 @@
 
 // let n = 1;
 // let m = 4;
+
 
 // row-i = 4;
 // col-j = 4;
@@ -78,13 +79,18 @@
 //   ***
 //  ****
 
-// let n = 4;
-// let m = 4;
+
+// row             space               star 
+// 1.  i = 4       j = 0  n-i           k = 1
+// 2.  i = 4       j = 1  n-i           k = 2
+// 3.  i = 4       j = 2  n-i           k = 3
+// 4.  i = 4       j = 3  n-i           k = 4
+
+
 
 // // row-i = 4;
 // // col-j = 4;
 
-// let m = 4
 
 // for (let i = 1; i <= m; i++) {
 //     let str = "";
@@ -111,6 +117,7 @@
 // row-i = 5;
 // col-j = 5;
 
+
 // for(let i=5; i>=1; i--){
 
 //     let str = "";
@@ -128,6 +135,7 @@
 //  *   *
 //  *   *
 //  *****
+
 
 // row i = 4;
 // let n=4;

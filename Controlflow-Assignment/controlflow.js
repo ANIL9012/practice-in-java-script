@@ -19,7 +19,7 @@
 // }else if(num>=10){
 //     console.log("number is equal 10");
 // }else if(num<=0){
-//     console.log("number is zero");
+//     console.log("Enter the valid number");
 // }else{
 //     console.log("Enter the correct value");
 // }
@@ -43,19 +43,15 @@
 //    - "Needs Improvement" for scores below 70
 //    let score = 85;  // You can change this value to test
 
-
-// let score = prompt("Enter the score percentage");
+// let score = 85; // You can change this value to test
 
 // if (score >= 90) {
-//     console.log("Excellent");
-// } else if (score >= 70) {
-//     console.log("Very Good");
-// }else if(score >= 60){
-//     console.log("Good");
-// }else {
-//     console.log("Needs Improvement");
+//   console.log("Excellent");
+// } else if (score >= 70 && score <= 89) {
+//   console.log("Good");
+// } else {
+//   console.log("Needs Improvement");
 // }
-
 
                 //  YA
 

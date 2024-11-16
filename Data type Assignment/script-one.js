@@ -51,7 +51,7 @@
 // 6. What data type is returned by the expression `3 + '3'`?
 
 // let exprension = 3+'3';
-// console.log(typeof(exprension));
+// console.log(typeof(exprension)); //answer string
 
 // 7. What will be the result of the following code?
 
