@@ -1,12 +1,12 @@
 // 1.Create variables for a first name, last name, and age. Apply camelCase naming convention .
 
-let firstName = "Anil";
-let lastName = "Kumar";
-let age = 20;
+// let firstName = "Anil";
+// let lastName = "Kumar";
+// let age = 20;
 
-console.log(firstName);
-console.log(lastName);
-console.log(age);
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
 
 // 2.What will the following code output?
 
@@ -35,14 +35,14 @@ console.log(age);
 
 // 4.Create a variable value and assign it a numeric value. Use the pre-increment (++value), post-increment (value++), pre-decrement (--value), and post-decrement (value--) operators. Log the value of value before and after each operation.
 // let value = 7;
-// console.log(++value); Answer 8
-// console.log(value);   Answer  8
-// console.log(value++); Answer  8
-// console.log(value);  Answer   9
-// console.log(--value); Answer   8
-// console.log(value);  Answer   8
-// console.log(value--); Answer   8
-// console.log(value);  Answer   7
+// console.log(++value); //Answer 8
+// console.log(value);   //Answer  8
+// console.log(value++);// Answer  8
+// console.log(value);  //Answer   9
+// console.log(--value);// Answer   8
+// console.log(value);  //Answer   8
+// console.log(value--);// Answer   8
+// console.log(value);  //Answer   7
 
 // 5.Assign `a = 15` and `b = 20`. Log whether `a` is greater than, less than, or equal to `b`.  
 
