@@ -44,14 +44,22 @@
 // define
 // function addition (a=3,b=5){
 
-//     let c=a+b
-//     console.log(c)
+//     let f=a+b
+//     console.log(f)
 // }
 // // calling
 // addition(5,6);//11
 // addition(4,6);// 10
 // addition(7);//5
 
+        //  Example-2
+
+// function additionFormate (a,b,c,d,e,f,g,h){
+//     let i = a+b+c+d+e+f+g+h;
+//     console.log("Addition all Latter", i);
+// }
+
+// additionFormate(4,3,5,2,7,5,8,10)
 
 // Function parameters are listed inside the parentheses () in the function definition.
 // function myFunction(x, y) {
@@ -87,6 +95,7 @@
 // The return value is the output that a function produces. It is sent back to the part of the code that called the function.
 
 // Example
+
 // let c = myFunction(12, 2);   // Function is called, return value will end up in c
 // console.log(c); // here, get the value of c
 // function myFunction(a, b) {
@@ -95,6 +104,17 @@
 
 // let myvalue=myFunction(3,5)
 // console.log(myvalue)
+
+        //    Example 2 Multipllication 
+
+// function multipleMlValue(a,b,c,d,e,f){
+
+//     return a*b*c*d*e*f
+
+// }
+
+// let AllValueml = multipleMlValue(2,3,8,5,4,9);
+// console.log(AllValueml);
 
 // D. Why Functions?
 // You can reuse code: Define the code once, and use it many times.
@@ -123,6 +143,7 @@
 
 // AreaofCircle(5)
 // AreaofCircle(56)
+
 
 // function AreaofCircle(radius){
 
@@ -158,10 +179,11 @@
 //     tempre = (c*5/9)+32
 //     console.log(tempre + "c");
 // }
-// fahrenheittocelcius(34)
+// fahrenheittocelcius(45)
 
 
 // Function to generate OTP
+
 // function generateOTP() {
 		
 // 	// Declare a digits variable
@@ -175,6 +197,7 @@
 // }
 
 // console.log("OTP of 4 digits: ", generateOTP())
+
 
 
 // JavaScript Hoisting:
@@ -326,25 +349,6 @@
 // 3*  2*factorial(1)
 // 3*2*1*factorial(0)
 // 3*2*1*1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // var x =5;

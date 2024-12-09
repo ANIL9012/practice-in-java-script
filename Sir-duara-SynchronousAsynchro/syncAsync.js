@@ -5,7 +5,9 @@
 // // Promise: An object that represents a future result of an async operation.
 // // async/await: Syntax that makes asynchronous code look synchronous, improving readability.
 // // A web API is an application programming interface (API) for either a web server or a web browser.
-// //event loop ==it manages async operations and  ensures non-blocking behavior. while javascript code is executed sequentially , asynchronous tasks, such as timers ,ajax requests are scheduled and managed by event loop.
+// //event loop ==it manages async operations and  ensures non-blocking behavior.
+//  while javascript code is executed sequentially , asynchronous tasks, such as timers 
+// ajax requests are scheduled and managed by event loop.
 
 
 // // 1. Synchronous vs. Asynchronous JavaScript
@@ -17,156 +19,162 @@
 
 
 // //  Synchronous Example:
-// //  console.log("Start");
+//  console.log("Start");
 
-// // for (let i = 0; i < 5; i++) {
-// //   console.log(i);
-// // }
+// for (let i = 0; i < 5; i++) {
+//   console.log(i);
+// }
 
-// // console.log("End");
+// console.log("End");
 
-// // ---------------------------------------------------------------------------
-// // Asynchronous code allows multiple operations to occur simultaneously, 
-// // improving efficiency for tasks like fetching data from a server.
+// ---------------------------------------------------------------------------
+// Asynchronous code allows multiple operations to occur simultaneously, 
+// improving efficiency for tasks like fetching data from a server.
 
-// // Asynchronous Example using setTimeout:
-// // console.log("Start");
+// Asynchronous Example using setTimeout:
+// console.log("Start");
 
-// // setTimeout(() => {
-// //   console.log("Async operation complete");
-// // }, 2000);
+// setTimeout(() => {
+//   console.log("Async operation complete");
+// },1000);
 
-// // console.log("End");
-
-
-
-
-
-// // console.log(" hello , i am roll no 1.")
-// // alert()
-// // console.log(" hello , i am roll no 2.")
-// // console.log(" hello , i am roll no 3.")
-// // console.log(" hello , i am roll no 4.")
-// // console.log(" hello , i am roll no 5.")
+// console.log("End");
 
 
 
 
 
-// // function fn1(){
-// //   console.log(" hello , i am roll no 1.")
-// // }
-
-// // alert()
-
-// // function fn2(){
-// //   console.log(" hello , i am roll no 2.")
-// // }
-
-// // function fn3(){
-// //   console.log(" hello , i am roll no 3.")
-// // }
-
-// // function fn4(){
-// //  let a=5;
-// //  let b=7;
-// // console.log("sum of a and b is:",a+b);
-// // }
-
-// // fn1();
-// // fn2();
-// // fn3();
-// // fn4();
+// console.log(" hello , i am roll no 1.")
+// alert()
+// console.log(" hello , i am roll no 2.")
+// console.log(" hello , i am roll no 3.")
+// console.log(" hello , i am roll no 4.")
+// console.log(" hello , i am roll no 5.")
 
 
 
-// // setTimeout();
-// // setInterval()
-// // callback();
-// // Promise
-// // async /await
 
-// // function fn1(){
-// //   setTimeout(()=>{
-// //     console.log(" hello , i am roll no 1. after 2 sec")
+
+// function fn1(){
+//   console.log(" hello , i am roll no 1.")
+// }
+
+// alert()
+
+// function fn2(){
+//   console.log(" hello , i am roll no 2.")
+// }
+
+// function fn3(){
+//   console.log(" hello , i am roll no 3.")
+// }
+
+// function fn4(){
+//  let a=5;
+//  let b=7;
+// console.log("sum of a and b is:",a+b);
+// }
+
+// fn1();
+// fn2();
+// fn3();
+// fn4();
+
+
+
+// setTimeout();
+// setInterval()
+// callback();
+// Promise
+// async /await
+
+// function fn1(){
+//   setTimeout(()=>{
+//     console.log(" hello , i am roll no 1. after 6 sec")
   
-// //   },6000)
-// // }
+//   },6000)
+// }
 
-// // function fn2(){
-// //   setTimeout(()=>{
-// //     console.log(" hello , i am roll no 2. after 2 sec")
+// function fn2(){
+//   setTimeout(()=>{
+//     console.log(" hello , i am roll no 2. after 1 sec")
   
-// //   },1000)
-// // }
+//   },1000)
+// }
 
-// // function fn3(){
-// //   setTimeout(()=>{
-// //     console.log(" hello , i am roll no 3.after 2 sec ")
+
+// function fn3(){
+//   setTimeout(()=>{
+//     console.log(" hello , i am roll no 3.after 3 sec ")
   
-// //   },3000)
-// // }
+//   },3000)
+// }
 
-// // function fn4(){
-// //   setTimeout(()=>{
-// //     console.log(" hello , i am roll no 4.after 2 sec")
+// function fn4(){
+//   setTimeout(()=>{
+//     console.log(" hello , i am roll no 4.after 5 sec")
   
-// //   },5000)
-// // }
+//   },5000)
+// }
 
-// // fn1();
-// // fn2();
-// // fn3();
-// // fn4();
-
-
-
-// // register
-// // send email 
-// // login 
-// // get user data 
-// // diplay data
-
-
-// // function waitForthreeSeconds(){
-// //   let ms=3000+ new Date().getTime();
-// //   while (new Date()<ms){}
-// // }
-
-// // function register(){
-// //   waitForthreeSeconds()
-// //   console.log("register here!!")
-// // };
-// // function sendEmail(){
-// //   waitForthreeSeconds()
-
-// //   console.log("registration is completed!!")
-// // }
-// // function logIn(){
-// //   waitForthreeSeconds()
-
-// //   console.log("welcome user!!!")
-// // }
-// // function getUserData(){
-// //   waitForthreeSeconds()
-
-// //   console.log("you found your data!!!")
-// // }
-// // function displayUserData(){
-// //   waitForthreeSeconds()
-
-// //   console.log("display data is here !!!")
-// // }
+// fn1();
+// fn2();
+// fn3();
+// fn4();
 
 
 
-// // register()
-// // sendEmail()
-// // logIn()
-// // getUserData()
-// // displayUserData()
+// register
+// send email 
+// login 
+// get user data 
+// diplay data
 
-// // console.log("other code !!!!")
+
+// function waitForthreeSeconds(){
+//   let ms=new Date().getTime();
+//   while (new Date()<ms){}
+//   console.log(ms);
+// }
+
+// function register(){
+//   waitForthreeSeconds()
+//   console.log("register here!!")
+// };
+
+// function sendEmail(){
+//   waitForthreeSeconds()
+
+//   console.log("registration is completed!!")
+// }
+
+// function logIn(){
+//   waitForthreeSeconds()
+
+//   console.log("welcome user!!!")
+// }
+
+// function getUserData(){
+//   waitForthreeSeconds()
+
+//   console.log("you found your data!!!")
+// }
+
+// function displayUserData(){
+//   waitForthreeSeconds()
+
+//   console.log("display data is here !!!")
+// }
+
+
+
+// register()
+// sendEmail()
+// logIn()
+// getUserData()
+// displayUserData()
+
+// console.log("other code !!!!")
 
 
 // // async 
@@ -174,55 +182,55 @@
 // // async 
 // // async 
 
-// // function waitForthreeSeconds(){
-// //   let ms=3000+ new Date().getTime();
-// //   while (new Date()<ms){}
-// // }
+// function waitForthreeSeconds(){
+//   let ms=3000+ new Date().getTime();
+//   while (new Date()<ms){}
+// }
 
-// // function register(){
-// // setTimeout(()=>{
-// //    console.log("register here!!")
-// //   },3000)
+// function register(){
+// setTimeout(()=>{
+//    console.log("register here!!")
+//   },3000)
  
-// // };
+// };
 
-// // function sendEmail(){
+// function sendEmail(){
 
-// // setTimeout(()=>{
-// //   console.log("sendemail is completed!!")
+// setTimeout(()=>{
+//   console.log("sendemail is completed!!")
 
-// // },1000)
-// // }
-// // function logIn(){
+// },1000)
+// }
+// function logIn(){
 
-// //   setTimeout(()=>{
-// //     console.log("welcome user!!!")
+//   setTimeout(()=>{
+//     console.log("welcome user!!!")
 
-// //   },2000)
-// // }
-// // function getUserData(){
-// //   setTimeout(()=>{
-// //     console.log("you found your data!!!")
+//   },2000)
+// }
+// function getUserData(){
+//   setTimeout(()=>{
+//     console.log("you found your data!!!")
 
-// //   },3000)
-// // }
-// // function displayUserData(){
-// //   setTimeout(()=>{
-// //   console.log("display data is here !!!")
+//   },3000)
+// }
+// function displayUserData(){
+//   setTimeout(()=>{
+//   console.log("display data is here !!!")
 
-// //   },4000)
+//   },4000)
 
-// // }
+// }
 
 
 
-// // register( )
-// // sendEmail()
-// // logIn()
-// // getUserData()
-// // displayUserData()
+// register( )
+// sendEmail()
+// logIn()
+// getUserData()
+// displayUserData()
 
-// // console.log("other code !!!!")
+// console.log("other code !!!!")
 
 
 
@@ -238,6 +246,7 @@
 //       },3000)
      
 //     };
+
     
 //     function sendEmail( callback){
     
@@ -292,7 +301,7 @@
   
   
   
-//     // function number(a){
-//     //   console.log(a)
-//     // }
-//     // number(3);
+    // function number(a){
+    //   console.log(a)
+    // }
+    // number(3);
