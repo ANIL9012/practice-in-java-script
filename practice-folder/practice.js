@@ -604,7 +604,7 @@
 //     ["Himanshu", 8, "Male", 4],
 //     ["Monika", 15, "Female", 10],
 //     ["Harry", 28, "Male", "B.com"],
-//     ["Sunny", 29, "Male", "B.ed"],
+//     ["Sunny", 29, "Male", "B.ed"]
 // ];
 // console.log(array1 [0]);
 // console.log(array1 [1]);
@@ -709,6 +709,7 @@
 // console.log(method2);
 // let popmethod = method2.pop();
 // console.log(popmethod);
+// console.log(method2);
 
 // // PUSH:- push method ka use array ke last me value ko push ya anay value ko addd  karne me hota he 
 
@@ -716,6 +717,7 @@
 // console.log(method2);
 // let pushmethod = method2.push("Harshit");
 // console.log(method2);
+
 
 // 3. SHIFT & UNSHIFT 
 
@@ -757,7 +759,7 @@
 
 // let e = a.concat(b,c,d);
 // console.log(e)
-// let f = a.join(" / ")
+// let f = e.join(" / ")
 // console.log(f)
 
 
@@ -781,7 +783,7 @@
 // a.splice(2,0,"Rajeev","Shorabh")
 // console.log(a)
 // // delete ke liye use splice 
-// a.splice(2,4,"Rajeev","Shorabh")
+// a.splice(0,4,"Rajeev","Shorabh")
 // console.log(a)
 
 
@@ -790,7 +792,7 @@
 // IsArray:- isarray method ka use karke hum ye pta lga sakte he ki kisi bhi variable me de gaye value array he ya nahi
 
 // let a = ["Somveer","Vebhab","Tilak","Lucky"];
-// let a = 20;
+// // let a = 20;
 // console.log(a)
 // let b = Array.isArray(a);
 // console.log(b)
@@ -810,11 +812,11 @@
 
 // 7. INDEXOF & LASTINDEXOF
 
-// INDEXOF:- indexOf method ka use array me di gaye kisi bhi value ka index number nikalne ke liye hota he chahe usme value ka name ya value same de rkhi ho 
+// INDEXOF:- indexOf method ka use array me di gaye kisi bhi value ka index number nikalne ke liye hota he chahe usme value ka name ya value same de rakhi ho 
 
 // let a = ["Anil","keshav","Rohit","Hitesh","lovlesh","keshav","Mohit","Nakul"];
 // console.log(a);
-// let b = a.indexOf("keshav",3)
+// let b = a.indexOf("keshav",2)
 // console.log(b);
  
 
@@ -822,7 +824,7 @@
 
 // let a = ["Anil","keshav","Rohit","Hitesh","lovlesh","keshav","Mohit","Nakul"];
 // console.log(a);
-// let c = a.lastIndexOf("keshav",2)
+// let c = a.lastIndexOf("keshav",5)
 // console.log(c);
 
 // 8. INCLUDES
@@ -846,7 +848,7 @@
 // console.log(b);
 
 // function checkAdult(age){
-//     return age < 13;
+//     return age < 12;
 // }
 
 
@@ -859,7 +861,7 @@
 // console.log(b);
 
 // function checkAdult(age){
-//     return age > 11;
+//     return age > 9;
 // }
 
 
@@ -873,8 +875,8 @@
 // let b = ages.find(checkAdult)
 // console.log(b);
 
-// function checkAdult(age){
-//     return age > 15;
+// function checkAdult(ages){
+//     return ages > 15;
 // }
 
 // FINDINDEX:- finindex method ka use array me di gaye kisi bhi value ko funtion me di gaye conditon ko pass karke us value ka index number provide karna hota he 
@@ -888,9 +890,6 @@
 // function checkAdult(age){
 //     return age >= 18;
 // }
-
-
-
 
 
 // 11. FILTER
@@ -931,6 +930,7 @@
 //     let sq = val*val;
 //        console.log(`Value = ${val} Burg = ${sq} index= ${index} array = ${array}`);
 // }
+
 
 
 // 13.MAP  
@@ -998,11 +998,7 @@
 //                 console.log(`data = ${data} index= ${ind}`);
 //             })
 // });
-// console.log(forech);
 
-// function namaste((val)=>{
-//    
-// })
 
 // 2. iterating over studentdeta
 
@@ -1168,7 +1164,7 @@
 
 // 13.charAt 
 
-// charAt:- string ke charAt method ka use kisi bhi variabal me di gaye value ka koi bhi index numbaer dekar yeh pta karna hota he ki es index number per kon se value de hue he 
+// charAt:- string ke charAt method ka use kisi bhi variabal me di gaye value ka koi bhi index numbar dekar yeh pta karna hota he ki es index number per kon se value de hue he 
 
 // let str = "JavaScript is a  is GREAT Language"
 // // console.log(str);
@@ -1210,7 +1206,7 @@
 
 // let str = "JavaScript is a  is GREAT Language"
 // console.log(str);
-// let a = str.split(" ");
+// let a = str.split("a");
 // document.write(a)
 // console.log(a);
 

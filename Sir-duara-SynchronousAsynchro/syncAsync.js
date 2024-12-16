@@ -41,9 +41,6 @@
 // console.log("End");
 
 
-
-
-
 // console.log(" hello , i am roll no 1.")
 // alert()
 // console.log(" hello , i am roll no 2.")
@@ -133,7 +130,7 @@
 
 // function waitForthreeSeconds(){
 //   let ms=new Date().getTime();
-//   while (new Date()<ms){}
+//   while (new Date()< ms){}
 //   console.log(ms);
 // }
 

@@ -96,7 +96,7 @@
 // let price = parseInt(prompt("Enter the price of the product"))
 // let quantity = parseInt(prompt("Enter the quantity of the product"))
 
-// let = totalprice = price + quantity;
+// let totalprice = price + quantity;
 
 // console.log("Totale price of items = ", totalprice);
 
@@ -256,13 +256,13 @@
 // let number = parseInt(prompt("Enter how many times to repeat it:"));
 // // Calling the function and showing the result
 // let result = RepeatCharacter(character, number);
-// console.log(result); // Print the repeated character string
+// // console.log(result); // Print the repeated character string
 // function RepeatCharacter(char, count) {
 //     console.log(char.repeat(count));
 // }
-// let character = prompt("Enter a character:");
+// let characterrryp = prompt("Enter a character:");
 // let repeatCount = parseInt(prompt("Enter a number:"));
-// RepeatCharacter(character, repeatCount);
+// RepeatCharacter(characterrryp, repeatCount);
 
 
 

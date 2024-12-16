@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <div id="1" class="main-claas">
+      <h1>dom/bom</h1>
+      <h2 id="heading" class="heading-one">document object model</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+        voluptatibus?
+      </p>
+      <!-- <img id="myImage" src="smiley.gif"> -->
+      <ul>
+        <li id="month1" class="list-item">1</li>
+        <li id="month2" class="list-item">1</li>
+        <li id="month3" class="list-item">1</li>
+        <li id="month4" class="list-item">1</li>
+        <li id="month5" class="list-item">1</li>
+      </ul>
+      <input type="text" />
+    </div>
+
+    <script>
+
+        document.getElementById("heading").innerText="document classs..."
+        document.getElementById("heading").style.backgroundColor="green";
+        document.getElementById("heading").style.padding="20px";
+        const ele=document.createElement("h3");
+        // console.log(ele)
+
+        const addText=document.createTextNode("i am h3")
+        ele.appendChild(addText)
+        console.log(ele)
+        document.body.appendChild(ele)
+        // document.getElementById("myImage").src = "landscape.jpg";
+        // document.getElementById("demo").innerHTML = "Date : " + Date();
+        document.write(Date());
+
+    </script>
+    <!-- A property is a value that you can get or set (like changing the content of an HTML element).
+
+A method is an action you can do (like add or deleting an HTML element). -->
+
+<!-- In the example above, getElementById is a method, while innerHTML is a property. -->
+  </body>
+</html>
+
+
+<!-- With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page -->
+
+<!-- document.write()
+In JavaScript, document.write() can be used to write directly to the HTML output stream: -->
+
+
+<!-- Changing HTML Style -->
+<!-- document.getElementById(id).style.property = new style -->
+<!-- document.getElementById("p2").style.color = "blue"; -->

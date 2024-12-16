@@ -117,7 +117,12 @@
 
 
 // 12. Write a JavaScript function that searches for the first occurrence of the word `"world"` in the string `"Hello world, welcome to JavaScript"` using the `search()` method.
+// let search = "Hello world";
+// console.log(search);
 
+//             // After using search method 
+// let search2 = search.search("world");
+// console.log(search2);
 
 // 13. Write a program to concatenate two arrays `['apple', 'banana']` and `['cherry', 'mango']` using the `concat()` method.
 
