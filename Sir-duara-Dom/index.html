@@ -6,14 +6,14 @@
     <title>Dom</title>
   </head>
   <body>
-    <div id="1" class="main-claas">
-      <h1>dom/bom</h1>
+     <div id="1" class="main-claas">
+      <h1 id="hone">dom/bom</h1>
       <h2 id="heading" class="heading-one">document object model</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
         voluptatibus?
       </p>
-      <!-- <img id="myImage" src="smiley.gif"> -->
+      <img id="myImage" src="/Sir-duara-Dom/test1.jpg">
       <ul>
         <li id="month1" class="list-item">1</li>
         <li id="month2" class="list-item">1</li>
@@ -30,22 +30,30 @@
         document.getElementById("heading").style.backgroundColor="green";
         document.getElementById("heading").style.padding="20px";
         const ele=document.createElement("h3");
-        // console.log(ele)
+        console.log(ele)
 
         const addText=document.createTextNode("i am h3")
         ele.appendChild(addText)
         console.log(ele)
         document.body.appendChild(ele)
-        // document.getElementById("myImage").src = "landscape.jpg";
+
+        document.getElementById("myImage").src = "pic_bulboff.gif";
         // document.getElementById("demo").innerHTML = "Date : " + Date();
         document.write(Date());
-
+        document.getElementById("hone").style.backgroundColor="red"
+        document.getElementById("hone").style.margin="0px 39px 36px 44px"
+       let pless = document.createElement("h4");
+       console.log(pless);
+       let addtextpless = document.createTextNode("Hi Anil Kumar");
+       pless.appendChild(addtextpless);
+       console.log(pless);
+       document.body.appendChild(pless)
     </script>
     <!-- A property is a value that you can get or set (like changing the content of an HTML element).
 
-A method is an action you can do (like add or deleting an HTML element). -->
+    A method is an action you can do (like add or deleting an HTML element). -->
 
-<!-- In the example above, getElementById is a method, while innerHTML is a property. -->
+    <!-- In the example above, getElementById is a method, while innerHTML is a property. -->
   </body>
 </html>
 

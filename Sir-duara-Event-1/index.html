@@ -1,6 +1,6 @@
 
 
-<!-- Events
+ <!-- Events
 A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
 
 To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute:
@@ -14,10 +14,10 @@ When an image has been loaded
 When the mouse moves over an element
 When an input field is changed
 When an HTML form is submitted
-When a user strokes a key -->
+When a user strokes a key 
 
-<!-- Types -->
- <!-- 1. onclick
+Types
+ 1. onclick
  2.onchange
  3.onmouseover
  4.onmouseout
@@ -28,10 +28,10 @@ When a user strokes a key -->
  9.scroll  -->
 
 
-<!DOCTYPE html> 
-<<html>
+<!-- <!DOCTYPE html> 
+<html>
 <body>
-<!-- <h1>JavaScript HTML Events</h1>
+<h1>JavaScript HTML Events</h1>
 <h2>The onclick Attribute</h2>
 
 <p>Click the button to display the date.</p>
@@ -39,7 +39,7 @@ When a user strokes a key -->
 <p id="demo"> </p>
 
 <button onclick="displayTime()"> click for time!</button>
-<button onclick="displayDate()">The time is?</button>
+<button onclick="">The time is?</button>
  
 
 
@@ -50,30 +50,40 @@ When a user strokes a key -->
  }
 
 
- </script> -->
+ </script>
 </body>
-</html>
+</html> -->
 
 
 
 
-<!-- onchanage -->
+ <!-- onchanage  -->
 
 <!DOCTYPE html>
 <html>
 <body>
-<!-- <h1>JavaScript HTML Events</h1>
+<h1>JavaScript HTML Events</h1>
 <h2>The onchange Attribute</h2>
 
 Enter your name: <input type="text" id="fname" onchange="upperCase()">
-<p>When you leave the input field, a function transforms the input to upper case.</p>
+Enter your lname: <input type="text" id="lname" onchange="lastName()">
+<p id="demo"> </p>
+<button onclick="displayClock()">Clock Time</button>
+
 
 <script>
 function upperCase() {
   const x = document.getElementById("fname");
   x.value = x.value.toUpperCase();
 }
-</script> -->
+function displayClock(){
+  document.getElementById("demo").innerHTML=Date()
+}
+function lastName() {
+  let till = document.getElementById("lname");
+  till.value = till.value.toUpperCase();
+}
+</script>
 
 </body>
 </html>
