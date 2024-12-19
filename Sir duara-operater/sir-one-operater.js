@@ -139,14 +139,14 @@
 
 // 5=101
 // 1=001
-    // 5=101
+//     5=101
 
 
 
 
 
 
-    // XOR "^" if both bits are diffrent it returns 1
+//     XOR "^" if both bits are diffrent it returns 1
 // console.log("XOR",5^1)
 // 5=101
 // 1=001

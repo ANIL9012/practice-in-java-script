@@ -95,7 +95,6 @@
 // console.log(age > 15 ?  "adult" : "Minor");
 
 
-
 // 13. Assign `value = 100`. Log the result of `typeof value` to the console. 
 
 
@@ -122,6 +121,7 @@
 
 // 1. Arithmetic Operators
 // Addition:
+
 // Create two variables, a and b, and assign them numeric values. Use the + operator to find their sum and log the result.
     // let a = 10;
     // let b = 20;
@@ -150,6 +150,20 @@
 //    }else{
 //     console.log("B devide a the Answer 2");
 //    }
+
+          
+            //   Ya 
+
+// let a = 10;
+// let b = 0; 
+
+// if (b === 0) {
+//     console.log("Error: Division by zero is not allowed.");
+// } else {
+//     let result = a / b;
+//     console.log("Result:", result);
+// }
+
 // Modulus:
 // Create two variables, a and b, and assign them numeric values. Use the % operator to find the remainder of a divided by b and log the result.
 //    let a = 10;

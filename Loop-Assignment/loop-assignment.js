@@ -25,8 +25,6 @@
 //  ***
 //   *
 
-
-
 // let n = 3;
 // let m = 5;
 
@@ -86,16 +84,17 @@
 // 3.  i = 4       j = 2  n-i           k = 3
 // 4.  i = 4       j = 3  n-i           k = 4
 
-
+// let n = 4; 
+// let m = 6; 
 
 // // row-i = 4;
 // // col-j = 4;
 
 
-// for (let i = 1; i <= m; i++) {
+// for (let i = 1; i <= n; i++) {
 //     let str = "";
 
-//     for (let j = 1; j <= m - i; j++){
+//     for (let j = 1; j <= n - i; j++){
 //         str =str+ " ";
 //     }
 //     for (let k = 1; k <= i; k++){
@@ -147,15 +146,14 @@
 
 // let n=4;
 // let m=5;
+
 // for (let i=1; i<=n; i++){
-
 //   let str =" ";
-
 //   for (j=1; j<=m; j++){
 // if (i===1||i===n||j===1||j===m){
 //   str +="*"
 // }else{
-//   str+=" "
+//   str +=" "
 // }
 //   }
 // console.log(str)

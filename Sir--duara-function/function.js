@@ -59,7 +59,7 @@
 //     console.log("Addition all Latter", i);
 // }
 
-// additionFormate(4,3,5,2,7,5,8,10)
+// additionFormate(3,5,2,7,5,8,10)
 
 // Function parameters are listed inside the parentheses () in the function definition.
 // function myFunction(x, y) {
