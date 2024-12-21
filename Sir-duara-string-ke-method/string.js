@@ -71,7 +71,7 @@
 // let message="hitech is an institute in delhi."
 
 // let resultOfmsg=message.charAt(7)
-// // console.log(resultOfmsg)
+// console.log(resultOfmsg)
 
 // // 2.concat()
 // // 2.concat()
@@ -81,7 +81,7 @@
 // let firstName="shamshad";;
 // let lasname="Husain";
 //   let  fullname=firstName.concat(" ",lasname);
-//   // console.log(fullname)
+//   console.log(fullname)
 
 
 // // 3.replace()===>replaces a string with another string

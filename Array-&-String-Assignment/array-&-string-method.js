@@ -51,7 +51,7 @@
 // console.log(substr1);
 
 //             // After using with substr
-// let substr2 = substr1.substr(4);
+// let substr2 = substr1.substr(4,7);
 // console.log(substr2);
 
 // 6. Write a program to extract the word `"Java"` from the string `"I am learning JavaScript"` using the `substring()` method.
@@ -184,11 +184,12 @@
 // console.log(forEach1);
 
 //             // After using with forEach method array 
-
+// let sum = 0;
 // let forEach2 = forEach1.forEach(forechfunction);
-
 // function forechfunction(value,index,array){
-//     console.log(`value= ${value} index= ${index} array= ${array}`);
+// sum = value+value;
+
+//     console.log(`value= ${value} Sum= ${sum} index= ${index} array= ${array}`);
 // }
 
 
@@ -205,7 +206,13 @@
 // function mapMethod(multiply){
 //     return multiply * 2
 // }
+//         //    Ya multiplies * 5
 
+// let arrayMap = [2,4,6,8];
+// console.log(arrayMap);
+
+// let multipliesInarray = arrayMap.map(val=> val*5);
+// console.log(multipliesInarray);
 
 // 19. Write a program to filter out all numbers less than 10 from the array `[5, 12, 8, 19, 3]` using the `filter()` method.
 
@@ -462,6 +469,16 @@
 
 // 13. Explain the `reduce()` method. Write a function to sum all elements of an array `[3, 6, 9, 12]` using `reduce()`.
 
+// let numbers = [3, 6, 9, 12];
+
+// // Use reduce() to calculate the sum
+
+// let sum = numbers.reduce((val1,val2) => {
+//     return val1 + val2;
+// });
+
+// console.log("Sum of array elements:", sum);
+
 
 // 14. Write a program that finds the first even number in the array `[1, 7, 9, 12, 15, 18]` using the `find()` method.
 
@@ -476,8 +493,20 @@
 // function evennumberfunc(evenNumber){
 //     return evenNumber % 2 === 0;
 // }
-// // console.log(evennumberfunc());
+// console.log(evennumberfunc());
 
+
+                //   Ya Filter Method in array 
+
+// let arrayValue = [2,3,5,6,79,25,18]; 
+// console.log(arrayValue);
+
+// let filtersValue = arrayValue.filter(evenFilter);
+// console.log(filtersValue);
+
+// function evenFilter(acceptvlue){
+//     return acceptvlue% 2===0;
+// }
 
 // 15. Use the `sort()` method to sort the array `[34, 12, 25, 9, 57]` in ascending order.
 // String Manipulation

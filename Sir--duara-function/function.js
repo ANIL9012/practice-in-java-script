@@ -169,7 +169,7 @@
 // celcius=(c*9/5)+32
 
 // function celciusTOFahrenheit(C){
-//    temp =(C*9/5)+32
+//   let temp =(C*9/5)+32
 //    console.log(temp+"f")
 // }
 
@@ -197,7 +197,6 @@
 // }
 
 // console.log("OTP of 4 digits: ", generateOTP())
-
 
 
 // JavaScript Hoisting:

@@ -30,7 +30,7 @@
           
         //         let array1=new Array("hello","javascript");
 
-            
+        //     console.log(array1);
                 // array can store array, function , other objects inside an array ;
 
                 // const newData=[
@@ -42,9 +42,7 @@
 
                 // ];
 
-
-
-              
+            
 
 
                 // let array1=1;

@@ -13,7 +13,7 @@
 // 1bytes=8 bits
 
 // datatypes
-// 1.  primitve //predifined // single data
+// 1.  primitive //predifined // single data
 // 2.non-primitive // userdefined //sequence data
 
 
@@ -66,8 +66,8 @@
 // console.log(name5)
 
 // null
-//const number=null; //casesensitive
-
+// const number=null; //casesensitive
+// console.log(number);
 // Symbol Es6(Es2015 ) immutable and unique
 // const value1 =Symbol('hello');  
 // console.log(value1)

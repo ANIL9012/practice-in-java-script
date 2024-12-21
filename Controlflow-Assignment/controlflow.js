@@ -6,7 +6,7 @@
 // let num = 15; 
 
 // if (num > 10) {
-//   console.log("Greater than 10");
+//   console.log("Number is Greater than 10");
 // }
 
 
@@ -27,6 +27,16 @@
 // 2. Write code that checks if the variable `num` is greater than or equal to 0. If it is, print "Non-negative"; otherwise, print "Negative".
 //    let num = -3;  // You can change this value to test
   
+// let num = -3;
+
+// if(num>=0){
+//     console.log("Number is Non-negative");
+// }else{
+//     console.log("Number is Negative");
+// }
+
+
+                // Ya 
 
 // let num1 = prompt("Enter a value");
 // if(num1>0){

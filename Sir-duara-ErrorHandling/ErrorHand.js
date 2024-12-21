@@ -69,12 +69,12 @@
 // Example of try and catch:
 
 
-// try {
-//   let x = y + 1; // Error: y is not defined
-//   console.log("This will not execute");
-// } catch (error) {
-//   console.log("Error caught:", error.message);
-// }
+try {
+  let x = y + 1; // Error: y is not defined
+  console.log("This will not execute");
+} catch (error) {
+  console.log("Error caught:", error.message);
+}
 
 
 // Output:
