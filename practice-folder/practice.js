@@ -1791,3 +1791,18 @@
 //     return otp3;
 // }
 // console.log("OTP generate 8 degite: ", generateotp3());
+
+
+
+
+
+
+
+
+        //     JavaScript Tutorial practice
+
+
+let now = new Date("Febuary 5 2025");
+// now.setDate(5)
+document.write(now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear())
+        

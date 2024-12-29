@@ -2,7 +2,7 @@
 // promise is an object .
 //  a promise is a good way to handle asynchronous operations. 
 //  it is used to find out if the asynchronous operation is successfully
-//  comleted or not 
+//  completed or not 
 
 
 // there are three states of any Promise
