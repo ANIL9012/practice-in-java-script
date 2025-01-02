@@ -19,13 +19,13 @@
                         // setTimeout & clearTimeout
 
 
-var set = setTimeout(Anim, 5000);
+// var set = setTimeout(Anim, 5000);
 
-function Anim(){
-    var target2 = document.getElementById("dom-animation");
-    target2.style.width = "500px"
-}
+// function Anim(){
+//     var target2 = document.getElementById("dom-animation");
+//     target2.style.width = "500px"
+// }
 
-function stopAnimation(){
-    clearTimeout(set)
-}
+// function stopAnimation(){
+//     clearTimeout(set)
+// }
