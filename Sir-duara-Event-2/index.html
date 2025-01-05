@@ -15,16 +15,17 @@
 Enter Your name:<input type="text" name="" id="inputFild">
 
 <script>
-document.getElementById("myBtn").addEventListener("click", displayDate);
+document.getElementById("myBtn").addEventListener("click",displayDate);
 
 function displayDate() {
   document.getElementById("demo").innerHTML = Date();
 }
 
-// document.getElementById("inputFild").addEventListener("onchange", textCapital);
-// function textCapital(){
-//   document.getElementById("inputFild").innerHTML=toUpperCase()
-// }
+
+document.getElementById("inputFild").addEventListener("onchange", textCapital);
+function textCapital(){
+  document.getElementById("inputFild").innerHTML=toUpperCase()
+}
 
 
 document.getElementById("inputFild").addEventListener("input", textCapital);
@@ -32,6 +33,11 @@ document.getElementById("inputFild").addEventListener("input", textCapital);
   function textCapital() {
     var input = document.getElementById("inputFild");
     input.value = input.value.toUpperCase();
+  }
+
+  function textCapital(){
+    document.getElementById("inputFild").style.background = "yellow"
+    document.getElementById("inputFild").style.color = "red"
   }
 </script>
 

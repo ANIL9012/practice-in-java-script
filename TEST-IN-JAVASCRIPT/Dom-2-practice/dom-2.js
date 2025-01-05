@@ -47,18 +47,18 @@
                 //   screenX & screenY
 
 
-document.querySelector("#box-2").addEventListener("click", function(elvent){
-    var x = elvent.screenX;
-    var y = elvent.screenY;
+// document.querySelector("#box-2").addEventListener("click", function(elvent){
+//     var x = elvent.screenX;
+//     var y = elvent.screenY;
 
-    var x2 = elvent.clientX;
-    var y2 = elvent.clientY;
+//     var x2 = elvent.clientX;
+//     var y2 = elvent.clientY;
 
-    console.clear();
+//     console.clear();
 
-    console.log("screenX value : " + x);
-    console.log("ClientX2 value : " + x2);
+//     console.log("screenX value : " + x);
+//     console.log("ClientX2 value : " + x2);
 
-    console.log("screenY value : " + y);
-    console.log("ClientY value : " + y2);
-})  
+//     console.log("screenY value : " + y);
+//     console.log("ClientY value : " + y2);
+// })  

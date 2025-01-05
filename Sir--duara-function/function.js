@@ -21,6 +21,7 @@
 //     function body   
 // }
 // exp:
+
 // function addition (){
 //     let a=5;
 //     let b=6;
@@ -29,8 +30,7 @@
 // }
 
 // addition();
-// addition();
-// addition();
+
 
 
 // Declare the function with parameters
@@ -59,7 +59,8 @@
 //     console.log("Addition all Latter", i);
 // }
 
-// additionFormate(3,5,2,7,5,8,10)
+// additionFormate(14,15,18,14,17,24,44,74)
+
 
 // Function parameters are listed inside the parentheses () in the function definition.
 // function myFunction(x, y) {
@@ -96,14 +97,65 @@
 
 // Example
 
-// let c = myFunction(12, 2);   // Function is called, return value will end up in c
+// let c = myFunction(12,2);   // Function is called, return value will end up in c
 // console.log(c); // here, get the value of c
-// function myFunction(a, b) {
-//  return a * b;       	  // Function returns the product of a and b
+// function myFunction(d,c) {
+//  return d * c;       	  // Function returns the product of a and b
 // }
 
 // let myvalue=myFunction(3,5)
 // console.log(myvalue)
+
+
+// let addition = myFunction1(2,4)
+
+function myFunction1(){
+    // return a+b;
+    var a = 5;
+    var b = 7;
+    var b1 = 6;
+    var b2 = 90;
+    var b3 = 70;
+
+    var f = a+b
+    var f1 = b1*b2
+    var f2 = a-b3
+
+    console.log(f);
+    console.log(f1);
+    console.log(f2);
+
+}
+myFunction1()
+
+// console.log(addition);
+
+// let multiplication = myFunction(40,2)
+
+// function myFunction(i,j){
+//     return i*j;
+// }
+// console.log(multiplication);
+
+
+// let subtraction = myFunction(15,12)
+// function myFunction(e,f){
+//     return e-f;
+// }
+// console.log(subtraction);
+
+// let division = myFunction(30,10)
+// function myFunction(g,h){
+//     return g/h;
+// } 
+// console.log(division);
+
+// let modulus = myFunction(4,2)
+// function myFunction(i,j){
+//     return i%j;
+// }
+// console.log(modulus);
+
 
         //    Example 2 Multipllication 
 
