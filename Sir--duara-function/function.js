@@ -119,7 +119,7 @@ function myFunction1(){
 
     var f = a+b
     var f1 = b1*b2
-    var f2 = a-b3
+    var f2 = b3-a
 
     console.log(f);
     console.log(f1);
@@ -127,34 +127,6 @@ function myFunction1(){
 
 }
 myFunction1()
-
-// console.log(addition);
-
-// let multiplication = myFunction(40,2)
-
-// function myFunction(i,j){
-//     return i*j;
-// }
-// console.log(multiplication);
-
-
-// let subtraction = myFunction(15,12)
-// function myFunction(e,f){
-//     return e-f;
-// }
-// console.log(subtraction);
-
-// let division = myFunction(30,10)
-// function myFunction(g,h){
-//     return g/h;
-// } 
-// console.log(division);
-
-// let modulus = myFunction(4,2)
-// function myFunction(i,j){
-//     return i%j;
-// }
-// console.log(modulus);
 
 
         //    Example 2 Multipllication 
