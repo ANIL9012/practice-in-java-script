@@ -109,24 +109,24 @@
 
 // let addition = myFunction1(2,4)
 
-function myFunction1(){
-    // return a+b;
-    var a = 5;
-    var b = 7;
-    var b1 = 6;
-    var b2 = 90;
-    var b3 = 70;
+// function myFunction1(){
+//     // return a+b;
+//     var a = 5;
+//     var b = 7;
+//     var b1 = 6;
+//     var b2 = 90;
+//     var b3 = 70;
 
-    var f = a+b
-    var f1 = b1*b2
-    var f2 = b3-a
+//     var f = a+b
+//     var f1 = b1*b2
+//     var f2 = b3-a
 
-    console.log(f);
-    console.log(f1);
-    console.log(f2);
+//     console.log(f);
+//     console.log(f1);
+//     console.log(f2);
 
-}
-myFunction1()
+// }
+// myFunction1()
 
 
         //    Example 2 Multipllication 
@@ -457,3 +457,20 @@ myFunction1()
 // }
 // var and function
 
+
+
+
+              // Uses arrow function 
+
+// let hello = ()=>{
+//     console.log("Hii arrow function are you great");
+//     // yadi arow funtion me return value get karni ho to function call karte time kisi dusre variable me calling function ko add karte he 
+//     return "Hii Anil Kumar" ;
+// };
+
+// // return value get karne pehle function me di gayi console ki value print hogi 
+// hello();  //Hii arrow function are you great 
+
+//     // yadi arow funtion me return value get karni ho to function call karte time kisi dusre variable me calling function ko add karte he 
+// let returnValueget = hello();
+// console.log(returnValueget);
