@@ -308,3 +308,181 @@
     //     }
 
     // }
+
+// 11.Write code that classifies the age of a person/student based on the variable `student working` `leraning person` and prints:
+
+// let studentAge = 18;
+
+// if(studentAge >= 18 && studentAge <= 24){
+//     console.log("He is a student");
+//     console.log("He is a learning computer science");
+// }
+
+// 12.Write code that classifies the age of a person based on the variable `working` `profacenal` get the user and prints:
+
+// let userName = prompt("please enter your Name");
+// let userAge = prompt("please enter your Age");
+
+// if(userAge >= 25 && userAge <= 45){
+//     console.log("user is a working profacinal");
+//     console.log("He is a web Developer");
+// }
+
+
+
+// 13.Write code that classifies the name age gender of a person based on the variable `working` `profacenal` get the user and prints:
+// // He/she part can also be doen with the help of if else, i have tried 
+
+
+// const name = prompt('enter you name')  || ('procoder')
+// const age = prompt('enter you age') || (25) 
+// const gen  = prompt('enter you gender as Male or Female')
+
+// console.log( `Name of the Student is : ${name}`)
+// console.log (`User Age is': ${age}`)
+// console.log (`Gender: ${gen}`)
+
+// if(gen == 'male') {
+//     console.log('he reads newspaper daily')
+// }
+// else 
+// {
+//     console.log('she reads newspaper daily')
+// }
+
+
+// 14. Write code that uses a `if` statement to print the name of the day based on the variable `dayNumber`. Use the following values:
+//    - 1 for "Monday"
+//    - 2 for "Tuesday"
+//    - 3 for "Wednesday"
+//    - 4 for "Thursday"
+//    - 5 for "Friday"
+//    - 6 for "Saturday"
+//    - 7 for "Sunday"
+
+// const dayNumber = parseFloat(prompt("Enter day number"))
+
+// if (dayNumber === 0) {
+//   console.log('It is Sunday Today')
+// } else if (dayNumber === 1) {
+//   console.log('It is Monday Today')
+// } else if (dayNumber === 2) {
+//   console.log('It is Tuesday Today')
+// } else if (dayNumber === 3) {
+//   console.log('It is Wednesday Today')
+// } else if (dayNumber === 4) {
+//   console.log('It is Thursday Today')
+// } else if (dayNumber === 5) {
+//   console.log('It is Friday Today')
+// } else if (dayNumber === 6) {
+//   console.log('It is Saturday Today')
+// } else {
+//   console.log('Please Enter a Valid Day Number')
+// }
+
+// .15 Write code that checks the variable `score` and prints a grade based on the following criteria:
+//    - "Excellent" for scores 90 and above
+//    - "Good" for scores between 70 and 89
+//    - "Needs Improvement" for scores below 70
+
+
+// const grade = prompt("Enter the grade");
+
+// switch (grade) {
+//   case 'a':
+//     console.log('Your score is between 85% to 100%.')
+//     break
+//   case 'b':
+//     console.log('Your score is between 75% to 85%')
+//     break
+//   case 'c':
+//     console.log('Your score is between 60% to 75%')
+//     break
+//   case 'd':
+//     console.log('Your score is between 50% to 60%')
+//     break
+//   case 'e':
+//     console.log('Your score is between 30% to 50%')
+//     break
+//   default:
+//     console.log('Sorry, you failed.')
+// }
+
+                //   Example----2
+
+// let userName = prompt("Enter user name")
+// let grade = parseFloat(prompt("Enter the grade/percentage"));
+
+// // Classify the grade into a range
+
+// let range;
+
+// if (grade >= 85 && grade <= 100) {
+//   range = 'A';
+// } else if (grade >= 75 && grade < 85) {
+//   range = 'B';
+// } else if (grade >= 60 && grade < 75) {
+//   range = 'C';
+// } else if (grade >= 50 && grade < 60) {
+//   range = 'D';
+// } else if (grade >= 30 && grade < 50) {
+//   range = 'E';
+// } else {
+//   range = 'F';
+// }
+
+// // Use the switch statement with the categorized range
+// switch (range) {
+//   case 'A':
+//     console.log(`${userName} Your score is between 85% to 100%.`);
+//     break;
+//   case 'B':
+//     console.log(`${userName} Your score is between 75% to 85%.`);
+//     break;
+//   case 'C':
+//     console.log(`${userName} Your score is between 60% to 75%.`);
+//     break;
+//   case 'D':
+//     console.log(`${userName} Your score is between 50% to 60%.`);
+//     break;
+//   case 'E':
+//     console.log(`${userName} Your score is between 30% to 50%.`);
+//     break;
+//   default:
+//     console.log(`${userName} Sorry, you failed.`);
+// }
+
+                //   Example----2 END
+
+
+// 16. Write code that checks the variable `age` and prints a grade based on the following criteria:
+// Get user input
+
+let username = prompt("Enter your name:");
+let userAge = parseInt(prompt("Enter your age:"), 10);
+
+// Validate the userAge input
+if (isNaN(userAge) || userAge < 0 || userAge > 120) {
+  console.log("Please enter a valid age between 0 and 120.");
+} else {
+  // Use switch with true to handle range-based conditions
+  switch (true) {
+    case userAge >= 0 && userAge <= 4:
+      console.log(`${username} is a kid.`);
+      break;
+    case userAge >= 5 && userAge <= 17:
+      console.log(`${username} is a school student.`);
+      break;
+    case userAge >= 18 && userAge <= 24:
+      console.log(`${username} is a college student.`);
+      break;
+    case userAge > 24 && userAge <= 45:
+      console.log(`${username} is a working professional.`);
+      break;
+    case userAge > 45 && userAge <= 120:
+      console.log(`${username} is retired.`);
+      break;
+    default:
+      console.log("Please enter a valid age.");
+  }
+}
