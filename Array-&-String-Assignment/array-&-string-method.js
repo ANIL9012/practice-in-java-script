@@ -673,4 +673,28 @@
   
 //   let result = Substringfunc("Coding", "ing");
 //   console.log(result); 
-  
+
+
+                //  practice
+
+
+// let fruits = ["Mango","Apple","orange"]
+
+// // Shallow copy 
+// // use sprit operator
+// const myFruits = [...fruits]
+
+
+
+// const user1 = {
+//     firstName: "Anil",
+//     lastName: "Kumar"
+// }
+
+// // Shallow copy 
+// // use sprit operator
+// const user2 = {...user1}
+
+// Object.assign(user2, user1)
+// user2.lastName = "Shrivastava"
+// user2.firstName = "Pintu"

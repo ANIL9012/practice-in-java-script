@@ -239,3 +239,54 @@
 //    console.log(sum_vlue++); //post-increment
 //    console.log(--sum_vlue); //pre-Decrement
 //    console.log(sum_vlue--); //post-Decrement
+
+
+
+                // Practice
+
+
+// let num = 5;
+
+
+// num = num + 2
+// num = num + 2
+// num = num + 2
+// num = num + 2
+
+// num += 2
+// num += 2
+// num += 2
+// num += 2
+
+// num = num - 1
+// num = num - 2
+// num = num - 3
+
+// num -= 1
+// num -= 2
+// num -= 3 
+
+// num = num * 2
+// num = num * 2
+// num = num * 2
+// num = num * 2
+
+// num *= 2 
+
+// num = num / 2
+// num = num / 2
+
+// num /=2 
+
+// num = num % 3
+// num = num % 3
+// num = num % 3 
+
+// num %= 3 
+
+// num = num ** 2
+// num = num ** 2
+// num = num ** 2 
+
+// num **= 2
+// num **= 2

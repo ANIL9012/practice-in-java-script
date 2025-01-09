@@ -299,3 +299,43 @@
 // console.log(person_1);
 // console.log(person_2);
 // console.log(person_3);
+
+
+// // object me value ko nested karna ka tarika 
+
+// let user2 = {
+//     firstName: "Anil",
+//     lastName: "Kumar",
+//     pata:{
+//         city: "Banglore",
+//         pinCode: 296434,
+//         state: "karnatka",
+//         moreDetails:{
+//             population:3873329686,
+//             area: "787 sq km",
+//         }
+//     }
+// }
+
+// // object me value assign arne ka tarika
+
+// user2.pata.moreDetails.weather = "80deg"
+
+// // object me value ko delete karne ka tarika
+
+// delete user2.firstName
+
+
+// // object ki sabhi value ko freez karne ka tarika jisse koie bhi person delete ya value assign na kar sake 
+
+// Object.seal(user2) //object seal method ka use karke value ko delete or new value ko add nahi  kar sakte he
+// //  per value ko refrece kar sakte he
+
+// user2.lastName = "Shrivastava"
+// //  do not add new value 
+// user2.age = 23
+
+// // object ke freeze method ka use object ki sabhi value ko freez karne me hota he jisse object ki kisi bhi value ko
+// //  koie bhi person delete ya value assign na kar sake 
+
+// Object.freeze(user2)
