@@ -158,3 +158,26 @@
 //   }
 // console.log(str)
 // }
+
+
+             // practice
+
+            //  debugger
+           //  let step = 1;
+            //  while (step <= 100) {
+            //     // Runs 5 times, with values of step 0 through 4.
+            //     console.log(step + 1);
+               
+            //   }
+
+
+            let friends = ["Anil","Lalit","Yunish","Lalit","Harshit"]
+
+            let num = 0
+            while(num < friends.length){
+    
+                console.log(`${num + 1}. ${friends[num]}`);
+
+                friends[num] = friends[num] + "developer"
+                num++
+            }

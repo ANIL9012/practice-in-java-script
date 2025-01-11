@@ -63,13 +63,17 @@
 
 
 // // D. adding methods to objects
-// let car = {};
-// // // adding a method
-// car.speed = function (){
-//     console.log("hello   iam BMW and my speed is 600 km/hr")
-// }
-// car.name="BMW";
-// car.colour="Red";
+let car = {};
+// // adding a method
+car.speed = function (){
+    console.log("hello   iam BMW and my speed is 600 km/hr")
+}
+car.name="BMW";
+car.colour="Red";
+car.colour = "pink"
+car.speed = function (){
+  console.log("Hello any car and hw much your speed");
+}
 // car.speed();
 // console.log(car.name)
 // console.log(car.colour)
@@ -353,16 +357,16 @@
 // we loop through the properties of an object and log both the property name and its value.
 // for......in
 
-const person = {
-  name: 'John',
-  age: 30,
-  city: 'New York'
-};
+// const person = {
+//   name: 'John',
+//   age: 30,
+//   city: 'New York'
+// };
 
 // // Looping through the properties of the object
-for (const pintu in person) {
-  console.log(pintu + ': ' + person[pintu]);  // Logs key and its value
-}
+// for (const pintu in person) {
+//   console.log(pintu + ': ' + person[pintu]);  // Logs key and its value
+// }
 // Output:
 
 // name: John

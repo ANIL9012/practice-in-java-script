@@ -245,9 +245,9 @@
                 // Practice
 
 
-// let num = 5;
+let num = 5;
 
-
+const username = "Anil"
 // num = num + 2
 // num = num + 2
 // num = num + 2
@@ -271,7 +271,7 @@
 // num = num * 2
 // num = num * 2
 
-// num *= 2 
+num *= 2 
 
 // num = num / 2
 // num = num / 2
