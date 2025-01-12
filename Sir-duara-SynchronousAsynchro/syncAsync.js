@@ -40,6 +40,13 @@
 
 // console.log("End");
 
+// setTimeout(()=>{
+//     function anil(a,b){
+//         let c  = a+b;
+//         return c;
+//     }
+//     console.log("Addition is successful", anil(4,7));
+// },2000)
 
 
 // console.log(" hello , i am roll no 1.")
@@ -305,4 +312,43 @@
     // }
     // number(3);
 
+// setTimeout(()=>{
+// let array = ["Apple", "Banana", "Pineapple","Guava","Watermalon"]
+// console.log(array);
 
+// let dayName =parseInt(prompt("Enter the day Numbar"))
+
+// switch(dayName){
+//     case 1:
+//         console.log("Sunday");
+//     break;
+
+//     case 2:
+//         console.log("Monday");
+//     break;
+
+//     case 3:
+//         console.log("Tuesday");
+//     break;
+
+//     case 4:
+//         console.log("Wednesday");
+//     break;
+
+//     case 5:
+//         console.log("Thursday");
+//     break;
+
+//     case 6:
+//         console.log("Friday");
+//     break;
+
+//     case 7:
+//         console.log("Saturnday");
+//     break;
+
+//     default:
+//         console.log("Enter valid day Number");
+// }
+
+// }, 2000)

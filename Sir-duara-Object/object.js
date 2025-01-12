@@ -63,17 +63,17 @@
 
 
 // // D. adding methods to objects
-let car = {};
+// let car = {};
 // // adding a method
-car.speed = function (){
-    console.log("hello   iam BMW and my speed is 600 km/hr")
-}
-car.name="BMW";
-car.colour="Red";
-car.colour = "pink"
-car.speed = function (){
-  console.log("Hello any car and hw much your speed");
-}
+// car.speed = function (){
+//     console.log("hello   iam BMW and my speed is 600 km/hr")
+// }
+// car.name="BMW";
+// car.colour="Red";
+// car.colour = "pink"
+// car.speed = function (){
+//   console.log("Hello any car and hw much your speed");
+// }
 // car.speed();
 // console.log(car.name)
 // console.log(car.colour)
