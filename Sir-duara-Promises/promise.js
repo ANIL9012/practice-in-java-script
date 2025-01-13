@@ -50,8 +50,8 @@
   
 //     console.log(OrderStatus);
   
-// //   // 1 resolve=>>>>then
-// //   // 2. reject===>>>catch
+// // //   // 1 resolve=>>>>then
+// // //   // 2. reject===>>>catch
   
 //   OrderStatus.then((value)=>{
 //       console.log(value)
@@ -98,33 +98,76 @@
 
   
 
-//   user = {
-//     name: "mujeeb",
-//     rollno: 1
-//   }
+  // user = {
+  //   name: "mujeeb",
+  //   rollno: 1
+  // }
   
-//   const pro1 = new Promise((resolve, reject) => {
+  // const pro1 = new Promise((resolve, reject) => {
   
-//     const apicall = true;
+  //   const apicall = true;
   
-//     if (apicall) {
-//       resolve(user)
-//     } else {
-//       reject("Error: something is wrong.....")
+  //   if (apicall) {
+  //     resolve(user)
+  //   } else {
+  //     reject("Error: something is wrong.....")
   
+  //   }
+  
+  // })
+  
+  // pro1.then((value) => {
+  //   console.log(value)
+  //   return value.name
+  // }).then((username) => {
+  //   console.log(username)
+  // }).catch((e) => {
+  //   console.log(e)
+  // })
+  
+
+
+            // Example-2
+
+
+//   let userObject = {
+//     firstName: "Anil",
+//     lastName: "Kumar",
+//     rollNo: 22,
+//     class: "Bca",
+//     nestedObj:{
+//       population: 222009940,
+//       area: "9876 burg KM Squar",
+//       city:"Bengluru",
 //     }
-  
-//   })
-  
-//   pro1.then((value) => {
-//     console.log(value)
-//     return value.name
-//   }).then((username) => {
-//     console.log(username)
-//   }).catch((e) => {
-//     console.log(e)
-//   })
-  
+//   }
+
+// let promiseEquation = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     let a = 5;
+//     let b = 0;
+
+//     if(a > b){
+//       resolve(userObject)
+//     }else{
+//       reject("Error : something is went wrong")
+//     }
+
+//   }, 3000)
+// })
+
+// promiseEquation.then((value)=>{
+//   console.log(value);
+//   return value.firstName
+// }).then((username)=>{
+//   console.log(username);
+// }).catch((WrongAnswer)=>{
+//   console.log(WrongAnswer);
+// })
+
+
+
+
   // promises methods (apis)
   // 1.Promise.all
   // 2.Promise.allSettled
@@ -145,66 +188,67 @@
   
   // if anyapi becomes reject it will give error
   
-//   const p1 = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       reject("Error: p1 is rejected")
-//     //   resolve("p1 is success")
-//     }, 5000)
+  // const p1 = new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     reject("Error: p1 is rejected")
+  //     // resolve("p1 is success")
+  //   }, 5000)
   
   
-//   })
+  // })
   
-//   const p2 = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve("p2 is success")
-//     //   reject("Error: p2 is rejected")
-//     }, 4000)
+  // const p2 = new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     // resolve("p2 is success")
+  //     reject("Error: p2 is rejected")
+  //   }, 4000)
   
-//   })
+  // })
   
-//   const p3 = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//     //   resolve("p3 is success")
-//       reject("p3 is reject")
+  // const p3 = new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     resolve("p3 is success")
+  //     // reject("p3 is reject")
   
-//     }, 2000)
+  //   }, 2000)
   
-//   })
+  // })
   
  
 
   
   // it waits for all of them to finish and if all are resolved  it gives an array of all result if any of them is rejected it will give error
  
-//   Promise.all([p1, p2, p3]).then((result) => {
-//     console.log(result)
-//     }).catch((e) => {
-//       console.log(e)
-//   })
+  // Promise.all([p1, p2, p3])
+  // .then((result) => {
+  //   console.log("All API results", result)
+  //   }).catch((e) => {
+  //     console.log(e)
+  // })
   
   // it waits for all of them and give an array either resolve or reject 
   
-//   Promise.allSettled([p1, p2, p3]).then((result) => {
-//     console.log(result)
-//     }).catch((e) => {
-//       console.log(e)
-//   })
+  // Promise.allSettled([p1, p2, p3]).then((result) => {
+  //   console.log(result)
+  //   }).catch((e) => {
+  //     console.log(e)
+  // })
   
   
   // it waits for first settled api result
-//   Promise.race([p1, p2, p3]).then((result) => {
-//     console.log(result)
-//     }).catch((e) => {
-//       console.log(e)
-//   })
+  // Promise.race([p1, p2, p3]).then((result) => {
+  //   console.log(result)
+  //   }).catch((e) => {
+  //     console.log(e)
+  // })
   
   // it waits for first success api result if all are rejected it will give aggregated Error (itrated)
   
-//   Promise.any([p1, p2, p3]).then((result) => {
-//     console.log(result)
-//     }).catch((e) => {
-//       console.log(e.errors)
-//   })
+  // Promise.any([p1, p2, p3]).then((result) => {
+  //   console.log(result)
+  //   }).catch((e) => {
+  //     console.log(e.errors)
+  // })
   
   
   // async await...
@@ -214,21 +258,21 @@
   // is used for handle promises and aynchronous oprations 
   // it always retrurn a promise 
   
-//   async function userData() {
+  // async function userData() {
   
-//     //  fetch("https://user.com")
+  //   //  fetch("https://user.com")
   
-//     return "shamshad husain"
+  //   return "shamshad husain"
   
-//   }
+  // }
   
-//   const data = userData()
+  // const data = userData()
   
-//   console.log(data)
+  // console.log(data)
   
-//   data.then((result) => {
-//     console.log(result)
-//   })
+  // data.then((result) => {
+  //   console.log(result)
+  // })
   
   
   
@@ -272,87 +316,102 @@
 //   getDataP3();
   
   
+  // asynch Example-3
+
+
+// let async4 = new Promise((resolve,reject)=>{
+//   resolve("async4 is successfull")
+// })
+
+// async function AllDeta(){
+//   setTimeout(()=>{
+//     async4.then((result)=>{
+//       console.log("async4 : result is successful", result);
+//     })
+//   },4000)
+// }
+
+// AllDeta();
+
+
   
+  // const p4 = new Promise(function (resolve, reject) {
   
-//   const p4 = new Promise(function (resolve, reject) {
-  
-//     setTimeout(()=>{
-//       resolve("promise 4 is resolved ......")
-//     },10000)
+  //   setTimeout(()=>{
+  //     resolve("promise 4 is resolved ......")
+  //   },10000)
     
   
-//   })
-//   const p5 = new Promise(function (resolve, reject) {
+  // })
+
+  // const p5 = new Promise(function (resolve, reject) {
   
-//     setTimeout(()=>{
-//       resolve("promise 5 is resolved ......")
-//     },5000)
+  //   setTimeout(()=>{
+  //     resolve("promise 5 is resolved ......")
+  //   },5000)
     
   
-//   })
+  // })
   
-//   async function handlePromise(){
-//     console.log("shamshad ")
+  // async function handlePromise(){
+  //   console.log("shamshad ")
   
-//         const value= await p4;
-//         console.log(value)
-//         const value2= await p5;
-//         console.log(value2)
+  //       const value= await p4;
+  //       console.log(value)
+  //       const value2= await p5;
+  //       console.log(value2)
         
-//         console.log("shamshad ")
+  //       console.log("shamshad ")
   
-//   }
+  // }
   
-//   handlePromise();
+  // handlePromise();
   
   
 //   // Error handling is handled by using try and catch in asunc await 
   
-//   const p6 = new Promise(function (resolve, reject) {
+  // const p6 = new Promise(function (resolve, reject) {
   
-//     setTimeout(()=>{
-//       reject("promise 6 is reject......")
-//     },5000)
+  //   setTimeout(()=>{
+  //     reject("promise 6 is reject......")
+  //   },5000)
     
   
-//   })
+  // })
   
-//   async function handlePromisewithTryCatch(){
-//      try{
+  // async function handlePromisewithTryCatch(){
+  //    try{
    
-//       const value= await p6;
-//       console.log(value)
+  //     const value= await p6;
+  //     console.log(value)
   
-//      }catch(e){
-//     console.log(e)
-//      }
+  //    }catch(e){
+  //   console.log(e)
+  //    }
+  // }
   
-      
-  
-//   }
-  
-//   handlePromisewithTryCatch();
+  // handlePromisewithTryCatch();
   
   
 //   // fetch apis wit promises
   
-//   const p7= new Promise((resolve,reject)=>{
+  // const p7= new Promise((resolve,reject)=>{
    
-//     const data= fetch('https://jsonplaceholder.typicode.com/photos')
+  //   const data= fetch('https://jsonplaceholder.typicode.com/photos')
   
-//     if (data){
-//       resolve(data)
+  //   if (data){
+  //     resolve(data)
   
-//   }else{
-//     console.log("error ......")
-//   }
-//   }
-//     )
+  // }else{
+  //   console.log("error ......")
+  // }
+  // }
+  //   )
   
-//     p7.then(response => response.json())
-//     .then(photo => console.log(photo)).catch((e)=>{
-//       console.log(e)
-//     })
+  //   p7.then(response => response.json())
+  //   .then(photo => console.log(photo)).catch((e)=>{
+  //     console.log(e)
+  //   })
   
   
     // fetch apis with async await 
@@ -375,3 +434,20 @@
     // response.then((users)=>{
     //   console.log(users)
     // })
+
+
+    // let p99 = new Promise(function(resolve,reject){
+    //   setTimeout(() => {
+    //     resolve("p99 is a successfull-----")
+    //   },2000);
+    // })
+
+
+    // async function pData9(){
+
+    //   const value = await p99;
+    //   console.log(value);
+
+    // }
+
+    // pData9();

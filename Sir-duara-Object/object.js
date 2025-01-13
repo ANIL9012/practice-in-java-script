@@ -80,21 +80,21 @@
 
     //    Example --- 2
 
-// let Bike = {};
+let Bike = {};
 
-// Bike.color = function(){
-//     console.log("Hellow I am Royal Enefild");
-// };
+Bike.color = function(){
+    console.log("Hellow I am Royal Enefild");
+};
 
-// Bike.Color = "Black";
-// Bike.Name = "Royal Enefield"
-// Bike.Speed = "80Km/h"
+Bike.Color = "Black";
+Bike.Name = "Royal Enefield"
+Bike.Speed = "80Km/h"
 
-// Bike.color();
+Bike.color();
 
-// console.log(Bike.Name);
-// console.log(Bike.Color);
-// console.log(Bike.Speed);
+console.log(Bike.Name);
+console.log(Bike.Color);
+console.log(Bike.Speed);
 
 
 // // (this)  keyword which is used for access the value of same objects within methods
