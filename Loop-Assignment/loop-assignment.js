@@ -163,6 +163,7 @@
              // practice
 
             //  debugger
+
            //  let step = 1;
             //  while (step <= 100) {
             //     // Runs 5 times, with values of step 0 through 4.
@@ -170,14 +171,115 @@
                
             //   }
 
+           // // debugger  [debugger ka use code ko line by line execuite karne me karte ]
+           
 
-            let friends = ["Anil","Lalit","Yunish","Lalit","Harshit"]
+         // //    for loop ka use karke Array Ki value prapt karte he 
 
-            let num = 0
-            while(num < friends.length){
+            // let friends = ["Anil","Lalit","Yunish","Labi","Harshit","Ramesh"]
+
+
+            // let num = 0
+            // while(num < friends.length){
     
-                console.log(`${num + 1}. ${friends[num]}`);
+            //     console.log(`${num + 1}. ${friends[num]}`);
 
-                friends[num] = friends[num] + "developer"
-                num++
-            }
+            //     friends[num] = friends[num] + "developer"
+            //     num++
+            // }
+
+
+
+            // for(let i = 0; i < 10; i++){
+            //     console.log("Anil Kumar");
+            // }
+
+           // Example-2
+           // Use For Loop  get Even number 
+           
+        //    for(let i = 0; i <= 100; i++){
+
+        //     if(i % 2 === 0){
+        //         console.log(i);
+        //     }
+
+        //    }
+
+
+              // Example-2
+           // Use For Loop  get Odd number 
+           
+        //    for(let i = 0; i <= 100; i++){
+
+        //     if(i % 2 === 1){
+        //         console.log(i);
+        //     }
+
+        //    }
+
+
+
+        // Example For in Loop 
+
+        // for in loop ka use object ki value prapt karne me hota he 
+
+
+                    //   Example--1
+
+                    // let friends = {
+                    //     Anil: "anil",
+                    //     Lalit: "lalit",
+                    //     Rajeev: "rajeev",
+                    //     Labi: "labi",
+                    //     Harshit: "harshit",
+                    //     Ramesh: "Ramesh"
+                    // };
+                    
+                    // let count = 1; // Counter for numbering
+                    // for (let key in friends) {
+                    //     console.log(`${count}. ${key}: ${friends[key]}`);
+                    //     count++;
+                    // }
+
+                    // Example--2
+
+                    let NestedObject = {
+                        firstName: "Anil",
+                        lastName: "Kumar",
+                        course: {
+                            class: "BCA",
+                            marks: "80%",
+                            University: "IFTM",
+                            population: {
+                                UniversityMember: 13963,
+                                area: "1380 burg sqr",
+                                student: 294283,
+                            },
+                        },
+                    };
+                    
+                    let count1 = 1;
+                    
+                    for (let key in NestedObject) {
+                        if (typeof NestedObject[key] === "object") {
+                            console.log(`${count1}. ${key}:`);
+                            let nestedCount = 1;
+                            for (let subKey in NestedObject[key]) {
+                                if (typeof NestedObject[key][subKey] === "object") {
+                                    console.log(`   ${nestedCount}. ${subKey}:`);
+                                    let subNestedCount = 1;
+                                    for (let innerKey in NestedObject[key][subKey]) {
+                                        console.log(`      ${subNestedCount}. ${innerKey}: ${NestedObject[key][subKey][innerKey]}`);
+                                        subNestedCount++;
+                                    }
+                                } else {
+                                    console.log(`   ${nestedCount}. ${subKey}: ${NestedObject[key][subKey]}`);
+                                }
+                                nestedCount++;
+                            }
+                        } else {
+                            console.log(`${count1}. ${key}: ${NestedObject[key]}`);
+                        }
+                        count1++;
+                    }
+                    
