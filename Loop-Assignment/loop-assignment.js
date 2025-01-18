@@ -162,19 +162,36 @@
 
              // practice
 
-            //  debugger
+            //  1.While Loop
 
-           //  let step = 1;
+            //  debugger
+            // let step = 1;
             //  while (step <= 100) {
             //     // Runs 5 times, with values of step 0 through 4.
             //     console.log(step + 1);
-               
+            //     step++
             //   }
 
-           // // debugger  [debugger ka use code ko line by line execuite karne me karte ]
+        //  //  debugger 
+            // [debugger ka use code ko line by line execuite karne me karte ]
            
+            // 2.Do While Loop 
 
-         // //    for loop ka use karke Array Ki value prapt karte he 
+
+            // let i = 0;
+
+            // do{
+            //     console.log("Hii Anil Kumar");
+
+            //     i++
+            // }while(i < 10)
+
+
+
+
+
+         //    for loop ka use karke Array Ki value prapt karte he 
+
 
             // let friends = ["Anil","Lalit","Yunish","Labi","Harshit","Ramesh"]
 
@@ -184,17 +201,24 @@
     
             //     console.log(`${num + 1}. ${friends[num]}`);
 
-            //     friends[num] = friends[num] + "developer"
+            //     // friends[num] = friends[num] + "developer"
             //     num++
             // }
 
+           // // debugger
+            
+            // let friends = ["Anil","Lalit","Yunish","Labi","Harshit","Ramesh"]
 
 
-            // for(let i = 0; i < 10; i++){
-            //     console.log("Anil Kumar");
+            // for(let i = 0; i < friends.length; i++){
+            //     // console.log("Anil Kumar");
+            //     console.log(`${i + 1}. ${friends[i]}`);
             // }
 
            // Example-2
+
+        //    3.For Loop 
+
            // Use For Loop  get Even number 
            
         //    for(let i = 0; i <= 100; i++){
@@ -243,43 +267,44 @@
 
                     // Example--2
 
-                    let NestedObject = {
-                        firstName: "Anil",
-                        lastName: "Kumar",
-                        course: {
-                            class: "BCA",
-                            marks: "80%",
-                            University: "IFTM",
-                            population: {
-                                UniversityMember: 13963,
-                                area: "1380 burg sqr",
-                                student: 294283,
-                            },
-                        },
-                    };
+                    // let NestedObject = {
+                    //     firstName: "Anil",
+                    //     lastName: "Kumar",
+                    //     course: {
+                    //         class: "BCA",
+                    //         marks: "80%",
+                    //         University: "IFTM",
+                    //         population: {
+                    //             UniversityMember: 13963,
+                    //             area: "1380 burg sqr",
+                    //             student: 294283,
+                    //         },
+                    //     },
+                    // };
                     
-                    let count1 = 1;
+                    // let count1 = 1;
                     
-                    for (let key in NestedObject) {
-                        if (typeof NestedObject[key] === "object") {
-                            console.log(`${count1}. ${key}:`);
-                            let nestedCount = 1;
-                            for (let subKey in NestedObject[key]) {
-                                if (typeof NestedObject[key][subKey] === "object") {
-                                    console.log(`   ${nestedCount}. ${subKey}:`);
-                                    let subNestedCount = 1;
-                                    for (let innerKey in NestedObject[key][subKey]) {
-                                        console.log(`      ${subNestedCount}. ${innerKey}: ${NestedObject[key][subKey][innerKey]}`);
-                                        subNestedCount++;
-                                    }
-                                } else {
-                                    console.log(`   ${nestedCount}. ${subKey}: ${NestedObject[key][subKey]}`);
-                                }
-                                nestedCount++;
-                            }
-                        } else {
-                            console.log(`${count1}. ${key}: ${NestedObject[key]}`);
-                        }
-                        count1++;
-                    }
+                    // for (let key in NestedObject) {
+                    //     if (typeof NestedObject[key] === "object") {
+                    //         console.log(`${count1}. ${key}:`);
+                    //         let nestedCount = 1;
+                    //         for (let subKey in NestedObject[key]) {
+                    //             if (typeof NestedObject[key][subKey] === "object") {
+                    //                 console.log(`   ${nestedCount}. ${subKey}:`);
+                    //                 let subNestedCount = 1;
+                    //                 for (let innerKey in NestedObject[key][subKey]) {
+                    //                     console.log(`      ${subNestedCount}. ${innerKey}: ${NestedObject[key][subKey][innerKey]}`);
+                    //                     subNestedCount++;
+                    //                 }
+                    //             } else {
+                    //                 console.log(`   ${nestedCount}. ${subKey}: ${NestedObject[key][subKey]}`);
+                    //             }
+                    //             nestedCount++;
+                    //         }
+                    //     } else {
+                    //         console.log(`${count1}. ${key}: ${NestedObject[key]}`);
+                    //     }
+                    //     count1++;
+                    // }
                     
+

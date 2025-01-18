@@ -274,3 +274,52 @@
 // }
 // let num = parseInt(prompt("Enter a positive integer:"));
 // console.log("Factorial:", calculateFactorial(num));
+
+
+               //  Practice Function in Self Study 
+
+            //    function EvenNumber(number){
+
+            //     for(let number = 0; number <= 100; number++){
+            //         if(number % 2 === 0){
+            //             console.log(`${number}`)
+            //         }
+            //     }
+               
+            // }
+            
+            // EvenNumber()
+
+
+            // function EvenNumber() {
+            //     let max = parseInt(prompt("Enter the maximum number to find even numbers:"));
+            
+            //     for (let number = 0; number <= max; number++) {
+            //         if (number % 2 === 0) {
+            //             console.log(number);
+            //         }
+            //     }
+            // }
+            
+            // // Call the function
+            // EvenNumber();
+
+            
+        //    Use Return Keyword in Function 
+
+        // function AddNumber(a,b){
+        //  return a+b;
+        // }
+
+
+        // const result = AddNumber(4,6);
+        // console.log(result);
+        // const result1 = AddNumber(AddNumber(15,5),AddNumber(20,10));
+        // console.log(result1);
+
+
+        
+        //    Execution Context in JavaScript
+
+
+        
