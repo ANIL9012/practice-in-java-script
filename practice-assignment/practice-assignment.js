@@ -325,17 +325,100 @@
 
         // outer[(bahar bale function ko kahte he Heigher function),(Inner function ko kahte he callback function)]
 
-        function outer() {
-            const a = 4
-            function parent() {
-              const b = 6
-              return function() {
-                console.log(a + b)
-              }
-            }
-            return parent()
-          }
+        // function outer() {
+        //     const a = 4
+        //     function parent() {
+        //       const b = 6
+        //       return function() {
+        //         console.log(a + b)
+        //       }
+        //     }
+        //     return parent()
+        //   }
           
-          const add1 = outer()
+        //   const add1 = outer()
           
-          console.dir(add1)
+        //   console.dir(add1)
+
+
+        // Mathod and Function Different 
+
+        // const maths = {
+        //     E: 2.718281828459045,
+        //     add: function (a, b) {
+        //       return a + b
+        //     },
+        //     square: function(num) {
+        //        return num * num;
+        //     },
+        //     subtract(a, b) {
+        //       return a - b
+        //     },
+        //     cube(num) {
+        //       return num ** 3
+        //     }
+        //   }
+
+
+        // Arrow Functions in JavaScript
+
+        // let ArrowFunction = (a,b)=> a + b 
+
+        // let ArrowFunctionM = (num)=> num * num
+
+        // let ArrowFunctionCube = (num)=> num ** 3
+
+        // let ArrowFunctionSub = (num)=> num - num
+
+        // const random = () => Math.floor(Math.random() * 10) + 1
+
+
+        // for of vs for in Loop  practice
+
+
+        // let fruits = ["Banana","Apple","Guava","Pineapple"] // use for of loop in array
+
+        // for(let i = 0; i<fruits.length; i++){
+        //     debugger
+        //     console.log(fruits[i]);
+        // }
+
+        // for(const fruit of fruits){
+        //     debugger
+
+        //     console.log(fruit);
+        // }
+
+
+        // let String = "Anil Kumar" // use for of loop in string
+
+        // for(let latter of String){
+        //     console.log(latter);
+        // }
+
+
+    //     const person = {
+    //         firstName: 'John',
+    //         lastName: 'Doe',
+    //         age: 50,
+    //         eyeColor: 'blue',
+    //         city: 'Bangalore',
+    //         population: {
+    //             a:200,
+    //             b:"2783 burg sqr km",
+    //         }
+    //     }
+
+    //     for (let key in person){
+    //         console.log(person[key]);
+    //     }
+        
+    //     console.log("********************************");
+
+    //     const personKeys = Object.keys(person)
+    //     const personValues = Object.values(person)
+    //     const personEntries = Object.entries(person)
+        
+    //    for(const key of personKeys){
+    //     console.log(key);
+    //    }
