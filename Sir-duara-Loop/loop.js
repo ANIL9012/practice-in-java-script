@@ -48,18 +48,27 @@
 // 5
 // exam.2
 
-// let count = 0;
+// let count = 100;
 
-// while (count < 5) {
+// while (count > 0) {
 //   console.log("Count is: " + count);
-//   count++;
+//   count--;
 // }
 
-// count is : 0
+// count is : 100
+// count is : 99
+// count is : 98
+// count is : 97
 // count is : 1
-// count is : 2
-// count is : 3
-// count is : 4
+
+// let count11 = 1;
+// let count22 = 100;
+
+// while(count11 <= count22){
+//     console.log(count11)
+//     count11++;
+// }
+
 
 // 2. do...while
 // 2. do...while
@@ -192,7 +201,7 @@
 // for (let i=1; i<=4; i++){
 //     let str=""
 //     for (let j=1; j<=6; j++){
-//        str=str+"* "
+//        str=str+"*"
 //     }
 //     console.log(str)
 // }
@@ -359,7 +368,7 @@
 
 
 //    for (let i=1; i<=n ; i++){
-
+//     debugger
 //     let str =""
 //     for (let j=1; j<=i; j++){
 //         str=str+j+" ";
@@ -409,19 +418,20 @@
 // i=3     j=1 n-i      5 =2*i-1
 // i=4     j=0 n-i      7 =2*i-1
 
-let n=4;
+// let n=4;
 
-for (let i=1; i<=n; i++){
-    let str=""
-    for (let j=1;j<=n-i; j++ ){
-        str=str+" "
-    }
+// for (let i=1; i<=n; i++){
+//     debugger
+//     let str=""
+//     for (let j=1;j<=n-i; j++ ){
+//         str=str+" "
+//     }
 
-    for (let k=1; k<=2*i-1 ; k++){
-        str=str+"*"
-    }
-    console.log(str)
-}
+//     for (let k=1; k<=2*i-1 ; k++){
+//         str=str+"*"
+//     }
+//     console.log(str)
+// }
 
 
 

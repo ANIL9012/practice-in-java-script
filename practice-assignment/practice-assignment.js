@@ -422,3 +422,27 @@
     //    for(const key of personKeys){
     //     console.log(key);
     //    }
+
+
+    
+
+                //  forEach Array Method
+
+
+                // let vegitable = ["gobi","tamatar","chukandar","foolgobi","aalu"];
+
+                // vegitable.forEach(function(multivegi){
+                //     console.log(multivegi);
+                // })
+                
+                // use Arrow function 
+
+                // vegitable.forEach((Multivegitable)=>{
+                //     console.log(Multivegitable);
+                // })
+
+                // vegitable.map((Mvegitable)=>{
+                //     console.log(Mvegitable);
+                //    let upper =  Mvegitable.toUpperCase();
+                //    return upper
+                // })

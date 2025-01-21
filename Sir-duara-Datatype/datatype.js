@@ -190,13 +190,14 @@
 // console.log(typeof(res)); 
 
 // let result=Number(true); //
+// console.log(result);
 
-// let res=parseInt(29.94645);
-// console.log(res)
+// let res1=parseInt(29.94645);
+// console.log(res1)
 
 
-// let res=parseFloat(29.000);
-// console.log(typeof(res));
+// let res2=parseFloat(29.000);
+// console.log(typeof(res2));
 
 
 // 1.convert to string
@@ -219,5 +220,3 @@
 // let res=obj.toString();
 // console.log(typeof(res));
 
-
-// let name=parseFloa

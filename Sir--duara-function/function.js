@@ -223,6 +223,7 @@
 // console.log("OTP of 4 digits: ", generateOTP())
 
 
+
 // JavaScript Hoisting:
 
 // 	Hoisting in JavaScript is a behavior in which a function or a variable can be 
@@ -271,7 +272,6 @@
 // program to display value
 // console.log(a);
 // var a = 5;
-
 
 // The above program behaves as:
 // var a;
@@ -474,3 +474,30 @@
 //     // yadi arow funtion me return value get karni ho to function call karte time kisi dusre variable me calling function ko add karte he 
 // let returnValueget = hello();
 // console.log(returnValueget);
+
+
+
+          // Practice Recursive Function 
+
+        //   function factorial(n) {
+        //     // Base case: Factorial of 0 or 1 is 1
+        //     if (n === 0 || n === 1) {
+        //         return 1;
+        //     }
+        //     // Recursive case: n! = n * (n - 1)!
+        //     return n * factorial(n - 1);
+        // }
+        
+        // // Example usage:
+        // console.log(factorial(5)); // Output: 120
+        
+
+        // function sumArray(arr) {
+        //     if (arr.length === 0) { // Base case
+        //         return 0;
+        //     }
+        //     return arr[0] + sumArray(arr.slice(1)); // Recursive case
+        // }
+        
+        // console.log(sumArray([1, 2, 3, 4])); // Output: 10
+        

@@ -35,6 +35,7 @@
 // 6. Assign `num = 10`. Use `num += 7`, `num -= 3`, `num *= 2`, and `num /= 5`, logging the value of `num` after each operation.  
 
 //    let num = 10;
+//    console.log(num);
 //    num += 7;
 //    console.log(num);
 //    num -= 3;
@@ -245,9 +246,9 @@
                 // Practice
 
 
-let num = 5;
+// let num = 5;
 
-const username = "Anil"
+// const username = "Anil"
 // num = num + 2
 // num = num + 2
 // num = num + 2
@@ -271,7 +272,7 @@ const username = "Anil"
 // num = num * 2
 // num = num * 2
 
-num *= 2 
+// num *= 2 
 
 // num = num / 2
 // num = num / 2
