@@ -159,19 +159,19 @@
 
 
 // switch(choice){
-//     case "1":
+//     case "+":
 //         result=value1+value2;
 //         console.log("addtion is :",result)
 //         break;
-//    case "2":  
+//    case "-":  
 //    result=value1-value2;
 //    console.log("subtraction is :",result)
 //    break;
-//    case "3":  
+//    case "*":  
 //    result=value1*value2;
 //    console.log("multiplication is :",result)
 //    break;  
-//    case "4":  
+//    case "/":  
 //    result=value1/value2;
 //    console.log("Division is :",result)
 //    break;  
@@ -197,8 +197,6 @@
 //                     }
 // }else{
 //     console.log("number is negative!!")
-
-
 // }
 
 

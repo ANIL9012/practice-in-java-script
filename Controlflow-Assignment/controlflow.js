@@ -16,12 +16,12 @@
 // let num  = prompt("Enter the value");
 // if(num>10){
 //     console.log("Number is greater than 10");
-// }else if(num>=10){
-//     console.log("number is equal 10");
-// }else if(num<=0){
-//     console.log("Enter the valid number");
+// }else if(num == 10){
+//   console.log("Number is Equal to 10");
+// }else if (num < 10){
+//   console.log("Number is Lessthan 10");
 // }else{
-//     console.log("Enter the correct value");
+//   console.log("Enter the correct value");
 // }
 
 // 2. Write code that checks if the variable `num` is greater than or equal to 0. If it is, print "Non-negative"; otherwise, print "Negative".
@@ -29,7 +29,7 @@
   
 // let num = -3;
 
-// if(num>=0){
+// if(num >=0 ){
 //     console.log("Number is Non-negative");
 // }else{
 //     console.log("Number is Negative");
@@ -39,10 +39,8 @@
                 // Ya 
 
 // let num1 = prompt("Enter a value");
-// if(num1>0){
+// if(num1>=0){
 //     console.log("Number is Positive");
-// }else if(num1==0){
-//     console.log("Number is equal either zero");
 // }else{
 //     console.log("Number is Negative");
 // }
@@ -53,7 +51,7 @@
 //    - "Needs Improvement" for scores below 70
 //    let score = 85;  // You can change this value to test
 
-// let score = 85; // You can change this value to test
+// let score =85; // You can change this value to test
 
 // if (score >= 90) {
 //   console.log("Excellent");
@@ -68,7 +66,7 @@
 // let per = prompt("Enter percentage");
 //  if(per >= 90 && per <= 100){
 //     console.log("Excellent");
-//  }else if(per >= 70 && per <= 89){
+//  }else if(per >= 70 && per < 90){
 //     console.log("Good");
 //  }else if(per >= 40 && per < 70){
 //     console.log("Need Improvement");
@@ -149,6 +147,20 @@
 //   console.log("Not Positive");
 // }
 
+                  //  Ya
+
+// let num100 = parseInt(prompt("Enter the number"))
+
+// if(num100 > 0){
+//   if(num100 > 100){
+//     console.log("Large Positive");
+//   }else{
+//     console.log("Small Positive");
+//   }
+// }else{
+//   console.log("Enter Valid Number");
+// }
+
    
 //    7.Write code that checks if the variable `num` is even or odd. Print "Even" if it is even, and "Odd" if it is odd.
 
@@ -159,6 +171,37 @@
 // } else {
 //     console.log("Odd");
 // }
+
+            //  Get User Number Odd and Even 
+
+// let oddEven = parseInt(prompt("Enter Any Number"));
+
+// if(oddEven %2 === 0){
+//   console.log("Even Number");
+// }else{
+//   console.log("Odd Number");
+// }
+
+
+            //  Get User Number 100 hw many different Odd and Even  
+
+// let userNumber = parseInt(prompt("Enter a number:"));
+
+// // Arrays to store even and odd numbers
+// let evenNumbers = [];
+// let oddNumbers = [];
+
+// for (let i = 1; i <= userNumber; i++) {
+//     if (i % 2 === 0) {
+//         evenNumbers.push(i);
+//     } else {
+//         oddNumbers.push(i);
+//     }
+// }
+
+// console.log("Even Numbers:", evenNumbers);
+// console.log("Odd Numbers:", oddNumbers);
+
 
 
             //    FUNTION SE ODD OR EVEN NUMBER RECIEVE 
@@ -458,31 +501,31 @@
 // 16. Write code that checks the variable `age` and prints a grade based on the following criteria:
 // Get user input
 
-let username = prompt("Enter your name:");
-let userAge = parseInt(prompt("Enter your age:"), 10);
+// let username = prompt("Enter your name:");
+// let userAge = parseInt(prompt("Enter your age:"), 10);
 
-// Validate the userAge input
-if (isNaN(userAge) || userAge < 0 || userAge > 120) {
-  console.log("Please enter a valid age between 0 and 120.");
-} else {
-  // Use switch with true to handle range-based conditions
-  switch (true) {
-    case userAge >= 0 && userAge <= 4:
-      console.log(`${username} is a kid.`);
-      break;
-    case userAge >= 5 && userAge <= 17:
-      console.log(`${username} is a school student.`);
-      break;
-    case userAge >= 18 && userAge <= 24:
-      console.log(`${username} is a college student.`);
-      break;
-    case userAge > 24 && userAge <= 45:
-      console.log(`${username} is a working professional.`);
-      break;
-    case userAge > 45 && userAge <= 120:
-      console.log(`${username} is retired.`);
-      break;
-    default:
-      console.log("Please enter a valid age.");
-  }
-}
+// // Validate the userAge input
+// if (isNaN(userAge) || userAge < 0 || userAge > 120) {
+//   console.log("Please enter a valid age between 0 and 120.");
+// } else {
+//   // Use switch with true to handle range-based conditions
+//   switch (true) {
+//     case userAge >= 0 && userAge <= 4:
+//       console.log(`${username} is a kid.`);
+//       break;
+//     case userAge >= 5 && userAge <= 17:
+//       console.log(`${username} is a school student.`);
+//       break;
+//     case userAge >= 18 && userAge <= 24:
+//       console.log(`${username} is a college student.`);
+//       break;
+//     case userAge > 24 && userAge <= 45:
+//       console.log(`${username} is a working professional.`);
+//       break;
+//     case userAge > 45 && userAge <= 120:
+//       console.log(`${username} is retired.`);
+//       break;
+//     default:
+//       console.log("Please enter a valid age.");
+//   }
+// }
