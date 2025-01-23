@@ -80,21 +80,21 @@
 
     //    Example --- 2
 
-let Bike = {};
+// let Bike = {};
 
-Bike.color = function(){
-    console.log("Hellow I am Royal Enefild");
-};
+// Bike.color = function(){
+//     console.log("Hellow I am Royal Enefild");
+// };
 
-Bike.Color = "Black";
-Bike.Name = "Royal Enefield"
-Bike.Speed = "80Km/h"
+// Bike.Color = "Black";
+// Bike.Name = "Royal Enefield"
+// Bike.Speed = "80Km/h"
 
-Bike.color();
+// Bike.color();
 
-console.log(Bike.Name);
-console.log(Bike.Color);
-console.log(Bike.Speed);
+// console.log(Bike.Name);
+// console.log(Bike.Color);
+// console.log(Bike.Speed);
 
 
 // // (this)  keyword which is used for access the value of same objects within methods
@@ -116,7 +116,7 @@ console.log(Bike.Speed);
 //     age1:20,
 //     great2:function(){
 //         let rollno1 = 33
-//         console.log("Hello"+" "+Boy2.name1+" "+Boy2.age1+" "+rollno1);
+//         console.log(`Hello`+" "+Boy2.name1+" "+`Age = ${Boy2.age1}`+" "+`Roll-no= ${rollno1}`);
 //     }
 // }
 
@@ -139,10 +139,10 @@ console.log(Bike.Speed);
 
 // // without parameter
 
-// function Men (){
-//     this.name="Shamshad",
-//     this.age=80
-// }
+function Men (){
+    this.name="Shamshad",
+    this.age=80
+}
 
 
 // // create an objects
@@ -307,7 +307,7 @@ console.log(Bike.Speed);
 //    person.age = 35;  // This will work
 //    person.city = 'New York';  // This will not work (can't add new properties)
 //    console.log(person);  // { name: 'John', age: 35 }
-//    ```
+
 
 // 7. `Object.create()`
 //    - Creates a new object with the specified prototype object and properties.
@@ -323,12 +323,6 @@ console.log(Bike.Speed);
 // The `in` operator is used to check if a property exists in an object (or an index exists in an array). It returns `true` if the property exists, and `false` otherwise.
 
 //  Example: Using the `in` operator with an object
-
-// const person = {
-//   name: 'John',
-//   age: 30,
-//   city: 'New York'
-// };
 
 
 // // Checking if the 'age' property exists in the person object
@@ -364,9 +358,10 @@ console.log(Bike.Speed);
 // };
 
 // // Looping through the properties of the object
-// for (const pintu in person) {
-//   console.log(pintu + ': ' + person[pintu]);  // Logs key and its value
+// for (const key in person) {
+//   console.log(key + ': ' + person[key]);  // Logs key and its value
 // }
+
 // Output:
 
 // name: John
@@ -400,6 +395,7 @@ console.log(Bike.Speed);
 // const name = "John";
 
 // // Looping over the string to access each character
+
 // for (const char of name) {
 //   console.log(char);  // Logs each character in the string
 // }

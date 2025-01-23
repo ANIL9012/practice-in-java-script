@@ -274,7 +274,6 @@
 //     console.log("Adult");
 // }
 
-//    let age = 16;  // You can change this value to test
 
 
 // 10.Write code that uses a `switch` statement to print a message based on the variable `month`. Use the following values:
@@ -361,36 +360,36 @@
 //     console.log("He is a learning computer science");
 // }
 
-// 12.Write code that classifies the age of a person based on the variable `working` `profacenal` get the user and prints:
+// 12.Write code that classifies the user name get the user age of a person based on the variable `working` `Professional ` get the user and prints:
 
 // let userName = prompt("please enter your Name");
 // let userAge = prompt("please enter your Age");
 
 // if(userAge >= 25 && userAge <= 45){
-//     console.log("user is a working profacinal");
+//     console.log(userName,"is a working Professional ");
 //     console.log("He is a web Developer");
 // }
 
 
 
-// 13.Write code that classifies the name age gender of a person based on the variable `working` `profacenal` get the user and prints:
+// 13.Write code that classifies the name age gender of a person based on the variable `working` `Professional` get the user and prints:
 // // He/she part can also be doen with the help of if else, i have tried 
 
 
-// const name = prompt('enter you name')  || ('procoder')
+// const name = prompt('enter you name')  || ('Educational')
 // const age = prompt('enter you age') || (25) 
-// const gen  = prompt('enter you gender as Male or Female')
+// const gen  = prompt('enter you gender as Male or Female') || (`Others`)
 
 // console.log( `Name of the Student is : ${name}`)
 // console.log (`User Age is': ${age}`)
 // console.log (`Gender: ${gen}`)
 
 // if(gen == 'male') {
-//     console.log('he reads newspaper daily')
+//     console.log('He reads newspaper daily')
 // }
 // else 
 // {
-//     console.log('she reads newspaper daily')
+//     console.log('She reads newspaper daily')
 // }
 
 
@@ -448,10 +447,10 @@
 //     console.log('Your score is between 30% to 50%')
 //     break
 //   default:
-//     console.log('Sorry, you failed.')
+//     console.log('Sorry, you are failed.')
 // }
 
-                //   Example----2
+                //   Example----2 Start
 
 // let userName = prompt("Enter user name")
 // let grade = parseFloat(prompt("Enter the grade/percentage"));
