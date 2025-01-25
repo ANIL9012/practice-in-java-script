@@ -50,8 +50,8 @@
   
 //     console.log(OrderStatus);
   
-// // //   // 1 resolve=>>>>then
-// // //   // 2. reject===>>>catch
+//  // 1 resolve=>>>>then
+//  // 2. reject===>>>catch
   
 //   OrderStatus.then((value)=>{
 //       console.log(value)
@@ -67,7 +67,7 @@
   // get student api and print roll no 
   
   
-  // let promiseOfStudentData=new Promise( (resolve, reject)=>{
+  // let promiseOfStudentData = new Promise( (resolve, reject)=>{
   //   setTimeout(()=>{
   
   //          let roll_no=[1,2,3,4,5,6,7,8]; //assume api data
@@ -77,7 +77,7 @@
   //         if (Roll_nodata) {
   //           resolve(roll_no)
   //         }else{
-  //           reject("data is not found , something is went wrong")
+  //           reject("Data is not found , something is went wrong")
   
   //         }
   
@@ -91,6 +91,7 @@
   // }).catch((e)=>{
   // console.log(e)
   // })
+
 
 
 //   console.log("other program is here......")

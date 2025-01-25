@@ -816,7 +816,7 @@
 
 // let a = ["Anil","keshav","Rohit","Hitesh","lovlesh","keshav","Mohit","Nakul"];
 // console.log(a);
-// let b = a.indexOf("keshav",2)
+// let b = a.indexOf("keshav"2)
 // console.log(b);
  
 
@@ -852,6 +852,20 @@
 // }
 
 
+                //   Ya
+
+// let age2 = [10,30,40,15,20];
+
+// let someResult = age2.some((oddNum,index)=>{
+//         if(oddNum %2 === 1){
+//                 console.log(`Oddnumber = ${oddNum} OddnumberIndex = ${index}`);
+//         }
+
+//         return oddNum %2 === 1
+// })
+
+// console.log(someResult);
+
 // EVERY:- every method ka use array me di gaye sabhi value chekAdult ke age se ya to == ho ya Grater ho tabhi ervey method work karega ya di gaye conditon ko pass karle
 
 // let ages = [12,14,15,19,34,45,18,20,];
@@ -864,6 +878,20 @@
 //     return age > 9;
 // }
 
+        //     Ya 
+
+// const evenNumbers = [4, 2, 10, 4, 60, 8]
+
+
+// const result2 = evenNumbers.every((num, index) => {
+//         if(num % 2 === 0) {
+//         console.log(`EvenNumbar = ${num} EvenNumberIndex = ${index}`);
+//         }
+//         return num % 2 === 1
+// })
+
+// console.log(result2);
+        
 
 // 10. FIND & FINDINDEX
 
@@ -1034,6 +1062,125 @@
 
 // let r = s.toString();
 // console.log(r);
+
+
+
+// Reduce method in Array 
+
+
+// Reduce:- Array ke reduce method ka use array me di gayi value ki accumulation and current value or 
+// array ki indexvalue ko get karne me hota he 
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let sum = numbers.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue;
+// }, 0);
+
+// console.log(sum); 
+
+
+// Exa--2.
+
+// Flatten an Array 
+
+// let nestedArray = [[1, 2], [3, 4], [5, 6]];
+
+// let flattened = nestedArray.reduce((accumulator, currentValue) => {
+//     return accumulator.concat(currentValue);
+// }, []);
+
+// console.log(flattened); // Output: [1, 2, 3, 4, 5, 6]
+
+
+// Exam---3
+
+// Count Occurrences
+
+// let fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+
+// let fruitCount = fruits.reduce((accumulator, currentValue) => {
+//     accumulator[currentValue] = (accumulator[currentValue] || 0) + 1;
+//     return accumulator;
+// }, {});
+
+// console.log(fruitCount); 
+
+// // Output: { apple: 3, banana: 2, orange: 1 }
+
+
+
+// Exam---4
+
+// Create an Object from an Array
+
+// let keyValuePairs = [["name", "John"], ["age", 30], ["city", "New York"]];
+// debugger
+// let obj = keyValuePairs.reduce((accumulator, currentValue) => {
+//     accumulator[currentValue[0]] = currentValue[1];
+//     return accumulator;
+// }, {});
+
+// console.log(obj); 
+
+
+// // Output: { name: 'John', age: 30, city: 'New York' }
+
+
+        //     ARGUMENT CONVERT TO ARRAY  With Example 
+
+// Exam---1
+
+// function convertToArray() {
+// let argsArray = [...arguments];
+// console.log(argsArray); // Logs the arguments as an array
+// }
+        
+// convertToArray(1, 2, 3, 4);
+
+
+// Exam--2
+
+// function convertToArray() {
+// let argsArray = [];
+// for (let i = 0; i < arguments.length; i++) {
+//         argsArray.push(arguments[i]);
+// }
+// console.log(argsArray); // Logs the arguments as an array
+// }
+
+// convertToArray(1, 2, 3, 4,39,78,20,34); // Output: [1, 2, 3, 4]
+    
+
+        //    Use Spread Oprator
+
+
+// const nums1 = [1, 2, 3, 4]
+// const nums2 = [5, 6, 7, 8, 9]
+
+// // (...) Three ... jo he bo he spread operator
+// const joinedArray = [...nums1, ...nums2]
+
+// let sum = 0;
+
+// for(let i = 0; i < joinedArray.length; i++){
+//         sum = sum + joinedArray[i]
+// }
+// console.log(sum);
+
+
+
+          // Use rest params
+
+// let numberarray = [23,4,6,2,3,4,5]
+
+// function add(...nums) {
+// return nums.reduce((acc, curr) => acc + curr)
+// }
+
+// const result = add(...numberarray)
+// console.log(result);
+
 
 
 // STRING METHOD START 
