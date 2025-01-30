@@ -454,29 +454,29 @@
     // pData9();
 
 
-    function fetchData() {
-      return new Promise((resolve, reject) => {
-          console.log("Fetching data...");
-          setTimeout(() => {
-              let success = true; 
-              if (success) {
-                  resolve("Data fetched successfully!");
-              } else {
-                  reject("Failed to fetch data.");
-              }
-          }, 2000);
-      });
-  }
+  //   function fetchData() {
+  //     return new Promise((resolve, reject) => {
+  //         console.log("Fetching data...");
+  //         setTimeout(() => {
+  //             let success = true; 
+  //             if (success) {
+  //                 resolve("Data fetched successfully!");
+  //             } else {
+  //                 reject("Failed to fetch data.");
+  //             }
+  //         }, 2000);
+  //     });
+  // }
   
-  // Using the Promise
-  fetchData()
-      .then((result) => {
-          console.log("Success:", result);
-      })
-      .catch((error) => {
-          console.error("Error:", error);
-      })
-      .finally(() => {
-          console.log("Operation complete.");
-      });
+  // // Using the Promise
+  // fetchData()
+  //     .then((result) => {
+  //         console.log("Success:", result);
+  //     })
+  //     .catch((error) => {
+  //         console.error("Error:", error);
+  //     })
+  //     .finally(() => {
+  //         console.log("Operation complete.");
+  //     });
   
