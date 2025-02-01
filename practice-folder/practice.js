@@ -1182,16 +1182,21 @@
 // console.log(result);
 
 
-let animals = ["dog", "cat", "rabbit"];
-let removedAnimals = animals.splice(1, 1, "lion", "tiger"); 
-console.log(animals); // Output: ["dog", "lion", "tiger", "rabbit"]
-console.log(removedAnimals); // Output: ["cat"]
+// let animals = ["dog", "cat", "rabbit"];
+// let removedAnimals = animals.splice(1, 1, "lion", "tiger"); 
+// console.log(animals); // Output: ["dog", "lion", "tiger", "rabbit"]
+// console.log(removedAnimals); // Output: ["cat"]
 
 
 
 
 
 // STRING METHOD START 
+
+let text = "JavaScript is awesome";
+console.log(text.startsWith("JavaScript")); // Output: true
+console.log(text.startsWith("awesome")); // Output: false
+
 
 // 1.LENGTH 
 
