@@ -1193,11 +1193,6 @@
 
 // STRING METHOD START 
 
-let text = "JavaScript is awesome";
-console.log(text.startsWith("JavaScript")); // Output: true
-console.log(text.startsWith("awesome")); // Output: false
-
-
 // 1.LENGTH 
 
 // LENGTH:- string ke length method ka use kisi bhi variabal me di gaye value ki length ko pta karna se hota he 
