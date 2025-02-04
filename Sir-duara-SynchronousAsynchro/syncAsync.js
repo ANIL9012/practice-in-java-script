@@ -354,16 +354,16 @@
 // }, 2000)
 
 
-async function fetchData() {
-    console.log("Fetching data...");
+// async function fetchData() {
+//     console.log("Fetching data...");
     
-    let promise = new Promise((resolve, reject) => {
-        setTimeout(() => resolve("Data received!"), 2000);
-    });
+//     let promise = new Promise((resolve, reject) => {
+//         setTimeout(() => resolve("Data received!"), 2000);
+//     });
 
-    let result = await promise;  // Wait until promise resolves
-    console.log(result);
-}
+//     let result = await promise;  // Wait until promise resolves
+//     console.log(result);
+// }
 
-fetchData();
-console.log("This will print before data is received");
+// fetchData();
+// console.log("This will print before data is received");
