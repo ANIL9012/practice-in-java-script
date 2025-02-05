@@ -1411,6 +1411,13 @@
 // let a = str+str2.toString();
 // console.log(a);
 
+// 23. replaceAll 
+
+// replaec:-string replaceAll method ka use di gayi string ko all replace karne me hota he 
+
+// let str = "I love Java. Java is great!";
+// console.log(str.replaceAll("Java", "JavaScript")); // "I love JavaScript. JavaScript is great!"
+
 
     //    Number Method Start 
 
