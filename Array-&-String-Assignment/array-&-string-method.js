@@ -23,6 +23,9 @@
 // console.log(concat3);
 
 
+
+
+
 // 3. Using the string `"I love cats"`, write a program to replace `"cats"` with `"dogs"` using the `replace()` method.
 
 // let replace1 = "I love cats";
