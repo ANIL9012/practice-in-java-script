@@ -23,9 +23,6 @@
 // console.log(concat3);
 
 
-
-
-
 // 3. Using the string `"I love cats"`, write a program to replace `"cats"` with `"dogs"` using the `replace()` method.
 
 // let replace1 = "I love cats";
@@ -69,13 +66,13 @@
 
 // 7. Write a JavaScript program to extract the word `"Frontend"` from the string `"Frontend Developer"` using the `slice()` method.
 
-// let slice1 = "Frontend Developer";
-//             // without using slice 
-// console.log(slice1);
+let slice1 = "Frontend Developer";
+            // without using slice 
+console.log(slice1);
 
-//         //    After using with slice 
-// let slice2 = slice1.slice(0,8);
-// console.log(slice2);
+        //    After using with slice 
+let slice2 = slice1.slice(0,8);
+console.log(slice2);
 
 
 // 8. Write a program to convert the string `"HELLO WORLD"` to lowercase using the `toLowerCase()` method.
