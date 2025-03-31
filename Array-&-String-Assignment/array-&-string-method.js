@@ -170,14 +170,14 @@
 
 // search the Specific User in user object
 
-let user = [
-  { id: 101, name: "Anil", age: 25 },
-  { id: 102, name: "Rajeev", age: 30 },
-  { id: 103, name: "Sagar", age: 22 },
-];
+// let user = [
+//   { id: 101, name: "Anil", age: 25 },
+//   { id: 102, name: "Rajeev", age: 30 },
+//   { id: 103, name: "Sagar", age: 22 },
+// ];
 
-const users = user.find(userid => userid.id === 102)
-console.log(users);
+// const users = user.find(userid => userid.id === 102)
+// console.log(users);
 
 
 
@@ -210,19 +210,34 @@ console.log(users);
 //     console.log(`value= ${value} Sum= ${sum} index= ${index} array= ${array}`);
 // }
 
+
+                //   YA 
+
+// let users = [
+//     { name: "Anil", age: 25 },
+//     { name: "Rajeev", age: 30 },
+//     { name: "Sagar", age: 28 }
+// ];
+
+// users.forEach(user => {
+//     console.log(`${user.name} is ${user.age} years old.`);
+// });
+
+// users.forEach((user,index)=> console.log(`Index: ${index}, user:${user.name} user:${user.age}`));
+
 // 18. Write a program that multiplies each element of the array `[2, 4, 6, 8]` by 2 using the `map()` method.
 
-// let map1 = [2,4,6,8];
-//         //   Without using map method array
-// console.log(map1);
+let map1 = [2,4,6,8];
+        //   Without using map method array
+console.log(map1);
 
-//             //   After using map method array
-// let map2 = map1.map(mapMethod);
-// console.log(map2);
+            //   After using map method array
+let map2 = map1.map(mapMethod);
+console.log(map2);
 
-// function mapMethod(multiply){
-//     return multiply * 2
-// }
+function mapMethod(multiply){
+    return multiply * 2
+}
 //         //    Ya multiplies * 5
 
 // let arrayMap = [2,4,6,8];
