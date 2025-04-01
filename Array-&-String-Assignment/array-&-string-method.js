@@ -227,17 +227,17 @@
 
 // 18. Write a program that multiplies each element of the array `[2, 4, 6, 8]` by 2 using the `map()` method.
 
-let map1 = [2,4,6,8];
-        //   Without using map method array
-console.log(map1);
+// let map1 = [2,4,6,8];
+//         //   Without using map method array
+// console.log(map1);
 
-            //   After using map method array
-let map2 = map1.map(mapMethod);
-console.log(map2);
+//             //   After using map method array
+// let map2 = map1.map(mapMethod);
+// console.log(map2);
 
-function mapMethod(multiply){
-    return multiply * 2
-}
+// function mapMethod(multiply){
+//     return multiply * 2
+// }
 //         //    Ya multiplies * 5
 
 // let arrayMap = [2,4,6,8];
@@ -245,6 +245,18 @@ function mapMethod(multiply){
 
 // let multipliesInarray = arrayMap.map(val=> val*5);
 // console.log(multipliesInarray);
+
+        //  Object ke liye map method 
+
+        // let users = [
+        //     {name: "Anil", age: 22},
+        //     {name: "Lokesh", age: 23},
+        //     {name: "Rahul", age: 26}
+        // ]
+
+        // let useMap = users.map(user=> user.name);
+
+        // console.log(useMap);
 
 // 19. Write a program to filter out all numbers less than 10 from the array `[5, 12, 8, 19, 3]` using the `filter()` method.
 
