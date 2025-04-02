@@ -547,7 +547,6 @@
 //   function calculator2(){
 //     let number1 = parseInt(prompt("Enter the first value"));
 //     let number2 = parseInt(prompt("Enter the second value"));
-//     // let number2 = parseInt(prompt("Enter the second value"));
 //     let operaror2 = prompt("+, -, *, /, %, x,");
 //     let result2;
 
