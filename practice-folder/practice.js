@@ -1364,6 +1364,14 @@
 // document.write(a)
 // console.log(a);
 
+                //      Ya 
+
+                let str = "Red Green Blue Yellow";
+                let colors = str.split(" ", 2);
+                
+                console.log(colors); // ["Red", "Green"]
+                
+
 // 18.repeat
 
 // repeat:- string ke repeat method ka use variable me di gaye value ko repeat karbane ke liye hota he 
