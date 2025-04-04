@@ -1366,10 +1366,10 @@
 
                 //      Ya 
 
-                let str = "Red Green Blue Yellow";
-                let colors = str.split(" ", 2);
+                // let str = "Red Green Blue Yellow";
+                // let colors = str.split(" ", 2);
                 
-                console.log(colors); // ["Red", "Green"]
+                // console.log(colors); // ["Red", "Green"]
                 
 
 // 18.repeat
@@ -1450,6 +1450,13 @@
 // let conInteger = Number.parseInt(decimal);
 
 // console.log(conInteger);
+
+        //     Ya 
+
+// parseInt("100");      // 100
+// parseInt("42.75");    // 42 (decimal part is ignored)
+// parseInt("abc123");   // NaN (not a number)
+        
 
 
 // 3.parseFloat
