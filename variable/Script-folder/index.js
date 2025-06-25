@@ -20,7 +20,7 @@
 // console.log(outside);
 // console.log(outsideTwo);
 
-// inside-block
+// // inside-block
 
 // {
 //     let inside = "Inside-Block"
@@ -118,7 +118,7 @@
 
 // var Anil;
 // let kumar;
-// const class;
+// const constValue;
 
 // 11. Create variables for a first name, last name, and age. Apply camelCase naming convention .
 

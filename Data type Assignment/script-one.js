@@ -50,12 +50,12 @@
 
 // 6. What data type is returned by the expression `3 + '3'`?
 
-// let exprension = 3+'3';
+// let exprension = 3 + '3';
 // console.log(typeof(exprension)); //answer string
 
-// 7. What will be the result of the following code?
+// // 7. What will be the result of the following code?
 
-// let num = 10; //number
+// let num = 10; //number 
 // let str = '10'; //number but into a typeof in string
 // console.log(num == str); true
 // console.log(num === str);  false
@@ -145,7 +145,7 @@
 // javascript type conversion
 
 // 1. implicit conevrsion=> type automatically
-// 1.impicit conversion to string
+// 1.implicit conversion to string
 
 //  const res="3"+2; //=>type string =>"32"
 // console.log(res);
@@ -182,6 +182,7 @@
 
 
 // example3: non-numeric string
+
 // let result6="hello"-"world"; //  =>NAN
 // console.log(result6);
 
@@ -246,7 +247,7 @@
 // 1.convert to number
 
 
-// let res=Number("342"-true);
+// let res=("342"-true);
 // console.log(typeof(res));
 
 
@@ -256,7 +257,7 @@
 // let res=parseInt(29.94649);
 // console.log(res);
 
-// let res=parseFloat(29.000);
+// let res=parseFloat(29.8700);
 // console.log(res);
 
 
@@ -297,17 +298,17 @@
 // }
 
 // var ary = [
-//     ["Anil",20,"male","Bca"],
-//     ["Herry",18,"male","B.com"],
-//     ["Sarah",19,"Female","Mba"],
-//     ["Tom",21,"male","B.A"]
+//     ["Anil",20,"male","Bca","IFTM"],
+//     ["Herry",18,"male","B.com","SM"],
+//     ["Sarah",19,"Female","Mba","GIC"],
+//     ["Tom",21,"male","B.A","SPS"]
 // ];
 // // document.write(ary);
-// document.write(ary.length);
+// // document.write(ary.length);
 // document.write("<table border='1px' cellspacing='0'>");
 // for(var a = 0; a < 4; a++){
 //     document.write("<tr>");
-//     for(var b = 0; b < 4; b++){
+//     for(var b = 0; b < 5; b++){
 //         document.write("<td>" + ary[a][b] + "</td>");
 //     }
 //     document.write("</tr>");
