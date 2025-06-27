@@ -297,23 +297,24 @@
 //     document.write("<br>");
 // }
 
-// var ary = [
-//     ["Anil",20,"male","Bca","IFTM"],
-//     ["Herry",18,"male","B.com","SM"],
-//     ["Sarah",19,"Female","Mba","GIC"],
-//     ["Tom",21,"male","B.A","SPS"]
-// ];
-// // document.write(ary);
-// // document.write(ary.length);
-// document.write("<table border='1px' cellspacing='0'>");
-// for(var a = 0; a < 4; a++){
-//     document.write("<tr>");
-//     for(var b = 0; b < 5; b++){
-//         document.write("<td>" + ary[a][b] + "</td>");
-//     }
-//     document.write("</tr>");
-// }
-// document.write("</table");
+var ary = [
+    ["Anil",20,"male","Bca","IFTM"],
+    ["Herry",18,"male","B.com","SM"],
+    ["Sarah",19,"Female","Mba","GIC"],
+    ["Tom",21,"male","B.A","SPS"]
+];
+// document.write(ary);
+// document.write(ary.length);
+
+document.write("<table border='1px' cellspacing='0'>");
+for(let a = 0; a < 4; a++){
+    document.write("<tr>");
+    for(let b = 0; b < 5; b++){
+        document.write("<td>" + ary[a][b] + "</td>");
+    }
+    document.write("</tr>");
+}
+document.write("</table");
 
 // Array ke 24 Method
 
