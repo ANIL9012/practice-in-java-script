@@ -387,9 +387,11 @@
 // if(gen == 'male') {
 //     console.log('He reads newspaper daily')
 // }
-// else 
+// else if(gen == 'female')
 // {
 //     console.log('She reads newspaper daily')
+// }else{
+//     console.log("Others");
 // }
 
 
@@ -474,6 +476,7 @@
 // }
 
 // // Use the switch statement with the categorized range
+
 // switch (range) {
 //   case 'A':
 //     console.log(`${userName} Your score is between 85% to 100%.`);
@@ -527,4 +530,26 @@
 //     default:
 //       console.log("Please enter a valid age.");
 //   }
+// }
+
+// 4. Write code that uses a `if else` statement to print the name of the day based on the variable `day`. Use the following values:
+
+// let day = parseInt(prompt("Enter a number(1 to 7):"));
+
+// if(day === 1){
+//     console.log("Sunday");
+// }else if(day === 2){
+//     console.log("Monday");
+// }else if(day === 3){
+//     console.log("Tuesday");
+// }else if(day === 4){
+//     console.log("Wednesday");
+// }else if(day === 5){
+//     console.log("Thursday");
+// }else if(day === 6){
+//     console.log("Friday");
+// }else if(day === 5){
+//     console.log("Saturday");
+// }else{
+//      alert("Invalid input! Please enter a number between 1 and 7.");
 // }

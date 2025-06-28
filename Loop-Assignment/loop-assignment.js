@@ -62,8 +62,8 @@
 // let m = 4;
 
 
-// row-i = 4;
-// col-j = 4;
+// // row-i = 4;
+// // col-j = 4;
 
 // for(let i=1; i<=4; i++){
 //     let str ="";
@@ -243,7 +243,6 @@
         //     }
 
         //    }
-
 
 
         // Example For in Loop 
