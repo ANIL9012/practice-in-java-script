@@ -1,0 +1,27 @@
+
+
+h1{
+    color: #6baa0b;
+    text-align: center;
+    margin: 10px;
+}
+
+.card1{
+    width: 70px;
+    height: 70px;
+    background-color: #800909;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid brown;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.cards-display{
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
