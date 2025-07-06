@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #faebd7;
+}
+
+.popup {
+  width: 600px;
+  height: 300px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 16px;
+  position: fixed;
+  box-shadow: 0px 5px 12px #5e5a5a;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s ease-in-out;
+  top: 0;
+  left: 0;
+}
+.popup-open .popup{
+  transform: scale(1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup h2 {
+  color: #78db52;
+  margin-top: 20px;
+}
+.popup p {
+  color: #808080;
+  margin-top: 10px;
+}
+
+.popup .img-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.img-container {
+  margin-top: 60px;
+}
+.img-container .Eagle-1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  object-fit: cover;
+  box-shadow: 0 4px 8px #0000004d;
+  cursor: pointer;
+  border: 2px solid #9d91914d;
+}
+
+.img-container .Eagle-1:hover {
+  transform: rotate(50deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  border: 3px solid #00bfff;
+}
+.close-icon {
+  position: absolute;
+  right: 15px;
+  font-size: 28px;
+  font-weight: 800;
+  cursor: pointer;
+}
+button {
+  background-color: #3e5f83;
+  color: #fff;
+  font-size: 10px;
+  border: 1px solid #3e5f83;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-open .overlay {
+    display: block;
+}
