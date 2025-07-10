@@ -29,9 +29,9 @@
 //   });
   
 //   // arrow function
-//   let promise1 = new Promise((resolve, reject) => {
-//     //coding here .....
-//   })
+  // let promise1 = new Promise((resolve, reject) => {
+  //   //coding here .....
+  // })
   
   
   
@@ -99,32 +99,32 @@
 
   
 
-  // user = {
-  //   name: "mujeeb",
-  //   rollno: 1
-  // }
+  user = {
+    name: "mujeeb",
+    rollno: 1
+  }
   
-  // const pro1 = new Promise((resolve, reject) => {
+  const pro1 = new Promise((resolve, reject) => {
   
-  //   const apicall = true;
+    const apicall = true;
   
-  //   if (apicall) {
-  //     resolve(user)
-  //   } else {
-  //     reject("Error: something is wrong.....")
+    if (apicall) {
+      resolve(user)
+    } else {
+      reject("Error: something is wrong.....")
   
-  //   }
+    }
   
-  // })
+  })
   
-  // pro1.then((value) => {
-  //   console.log(value)
-  //   return value.name
-  // }).then((username) => {
-  //   console.log(username)
-  // }).catch((e) => {
-  //   console.log(e)
-  // })
+  pro1.then((value) => {
+    console.log(value)
+    return value.name
+  }).then((username) => {
+    console.log(username)
+  }).catch((e) => {
+    console.log(e)
+  })
   
 
 
