@@ -1,0 +1,55 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="../05_Builda25+5Clock/style.css" />
+  </head>
+  <body>
+    <div id="pomodoro-clock">
+      <div id="length-controls">
+        <div id="break-control" class="control-group">
+          <div id="break-label" class="label">Break Length</div>
+          <button id="break-decrement" class="btn">-</button>
+          <span id="break-length" class="length">5</span>
+          <button id="break-increment" class="btn">+</button>
+        </div>
+
+        <div id="session-control" class="control-group">
+          <div id="session-label" class="label">Session Length</div>
+          <button id="session-decrement" class="btn">-</button>
+          <span id="session-length" class="length">25</span>
+          <button id="session-increment" class="btn">+</button>
+        </div>
+      </div>
+
+      <div id="timer">
+        <div id="timer-label">Session</div>
+        <div id="time-left">25:00</div>
+      </div>
+
+      <div id="controls">
+        <button id="start_stop" class="btn">Start/Stop</button>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+
+      <audio
+        id="beep"
+        preload="auto"
+        src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"
+      ></audio>
+    </div>
+
+    <script src="../05_Builda25+5Clock/script.js"></script>
+  </body>
+</html>
