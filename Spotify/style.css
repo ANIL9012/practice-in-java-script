@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+}
+
+nav {
+  font-family: "Ubuntu", sans-serif;
+  position: fixed; /* top par chipka rahe */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.4s ease;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+}
+nav ul li {
+  padding: 0 12px;
+}
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.container {
+  min-height: 75vh;
+  background-color: black;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  margin: 80px auto;
+  width: 60%;
+  border-radius: 12px;
+  padding: 20px;
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bottom {
+  position: sticky;
+  height: 80px;
+  background-color: black;
+  bottom: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.icons {
+  margin-top: 8px;
+  cursor: pointer;
+}
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+.songList h1 {
+  font-size: 20px;
+}
+.songItems {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  /* width: 80%; */
+  margin: 12px 0;
+  border-radius: 20px;
+}
+.spanOne {
+  font-size: 13px;
+}
+.songItems img {
+  width: 30px;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+.timestamp {
+  margin: 0 15px;
+}
+.timestamp i {
+  cursor: pointer;
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Varela Round", sans-serif;
+}
+.songInfo img {
+  width: 40px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+/* ---------- Media quary ------------- */
+
+@media (min-width: 344px) {
+  .container {
+    width: 95vw;
+  }
+  .songList h1 {
+    font-size: 18px;
+  }
+  .songItems {
+    height: 40px;
+  }
+  .spanOne {
+    font-size: 10px;
+  }
+  .timestamp {
+    margin: 0 5px;
+  }
+  .icons {
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  #myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+  }
+  .bottom {
+    height: 100px;
+  }
+  .songInfo {
+    position: absolute;
+    left: 10vw;
+    top: 28px;
+  }
+}
