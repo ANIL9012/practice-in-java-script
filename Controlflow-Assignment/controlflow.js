@@ -39,7 +39,7 @@
                 // Ya 
 
 // let num1 = prompt("Enter a value");
-// if(num1>=0){
+// if(num1>0){
 //     console.log("Number is Positive");
 // }else{
 //     console.log("Number is Negative");
@@ -221,6 +221,25 @@
 //   // Call the function
 //   checkEvenOrOdd();
   
+//               LOOOP INNER FUNCTION 
+
+// function LoopFunction (){
+//     let numbers = parseInt(prompt("Enter any Number"));
+//     let evenNumber = [];
+//     let oddNumber = [];
+//     for(let i = 1; i <= numbers; i++){
+//         if(i %2 === 0){
+//             evenNumber.push(i);
+//         }else{
+//             oddNumber.push(i);
+//         }
+//     }
+//     console.log("evenNumber", evenNumber);
+//     console.log("oddNumber", oddNumber);
+//     // return {evenNumber, oddNumber};
+// }
+
+// LoopFunction();
 
 // 8. Write code that uses a `switch` statement to print the type of vehicle based on the variable `vehicleType`. Use the following values:
 //    - "car" for "Car"
