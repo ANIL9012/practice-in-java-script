@@ -18,6 +18,5 @@ let obj2 = {
 
 let {name : a, age : b, city : c} = obj2;
 console.log(a);
-console.log(b);
 console.log(c);
 
