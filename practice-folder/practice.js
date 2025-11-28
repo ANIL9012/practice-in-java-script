@@ -1981,4 +1981,34 @@
 // let now = new Date("Febuary 5 2025");
 // // now.setDate(5)
 // document.write(now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear())
-        
+
+
+
+      //    Interview Quetions 
+
+// let str = "I am Anil";
+
+// let splitedString = str.split("").reverse();
+// let reversedArr = [];
+// splitedString.forEach((Element)=> {
+//         let split = Element.split("").reverse()
+//         reversedArr.push(split);
+// })
+// console.log(reversedArr)
+
+let str1 = "anil";
+let str2 = "Kumar";
+let str3 = "";
+
+function mergeString(){
+        for(let i = 0; i<str1.length+str2.length; i++){
+                if(i < str1.length){
+                        str3 = str3+str1[i];
+                }
+                if(i < str2.length){
+                        str3 = str3+str2[i]
+                }
+        }
+}
+mergeString()
+console.log(str3)
