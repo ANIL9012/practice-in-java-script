@@ -187,7 +187,7 @@
 
 // let userNumber = parseInt(prompt("Enter a number:"));
 
-// // Arrays to store even and odd numbers
+// Arrays to store even and odd numbers
 // let evenNumbers = [];
 // let oddNumbers = [];
 
@@ -227,7 +227,7 @@
 //     let numbers = parseInt(prompt("Enter any Number"));
 //     let evenNumber = [];
 //     let oddNumber = [];
-//     for(let i = 1; i <= numbers; i++){
+//     for(let i = 0; i <= numbers; i++){
 //         if(i %2 === 0){
 //             evenNumber.push(i);
 //         }else{
@@ -375,8 +375,7 @@
 // let studentAge = 18;
 
 // if(studentAge >= 18 && studentAge <= 24){
-//     console.log("He is a student");
-//     console.log("He is a learning computer science");
+//     console.log("He is a student learning computer science");
 // }
 
 // 12.Write code that classifies the user name get the user age of a person based on the variable `working` `Professional ` get the user and prints:
@@ -385,8 +384,7 @@
 // let userAge = prompt("please enter your Age");
 
 // if(userAge >= 25 && userAge <= 45){
-//     console.log(userName,"is a working Professional ");
-//     console.log("He is a web Developer");
+//     console.log(userName,"is a working Professional and He is a web Developer");
 // }
 
 
@@ -468,7 +466,7 @@
 //     console.log('Your score is between 30% to 50%')
 //     break
 //   default:
-//     console.log('Sorry, you are failed.')
+//     console.log('Sorry, you wretare failed.')
 // }
 
                 //   Example----2 Start
