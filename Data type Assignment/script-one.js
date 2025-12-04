@@ -21,6 +21,11 @@
 
 // 3. What is the difference between `null` and `undefined` in JavaScript?
 
+// let nullVal = null;
+// let undefineVal = undefined;
+// console.log("Null Value", typeof nullVal);
+// console.log("undefine  value", typeof undefineVal);
+
 //  (i) Undefined means a bariable has been declared but has not yet been assigned a value.
 // (ii) Null is an assignment value , meaning that a bariable has been declared and given the value of null.
 
@@ -195,8 +200,6 @@
 // console.log("implicit boolean conversion to number",result); //3
 
 
-
-
 // let result2=4+true;
 // console.log("implicit boolean conversion to number",result2); //5
 
@@ -205,6 +208,9 @@
 
 // let result3=4+false;
 // console.log("implicit boolean conversion to number",result3); //4
+
+// let result4=4*false;
+// console.log("implicit boolean conversion to number",result4); //4
 
 
 // implicit null conversion to number
