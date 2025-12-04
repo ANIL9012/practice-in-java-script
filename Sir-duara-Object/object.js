@@ -139,10 +139,10 @@
 
 // // without parameter
 
-function Men (){
-    this.name="Shamshad",
-    this.age=80
-}
+// function Men (){
+//     this.name="Shamshad",
+//     this.age=80
+// }
 
 
 // // create an objects
