@@ -23,4 +23,5 @@ class manager extends employee{
 let a = new manager(" Anil Kumar");
 a.info();
 
-console.log("Hii Anil");
+// console.log("Hii Anil");
+console.log("Hellow Anil");
