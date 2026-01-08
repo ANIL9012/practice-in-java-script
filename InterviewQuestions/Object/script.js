@@ -162,7 +162,7 @@
 
 // Output: 0
 
-// 🏢 TCS / Infosys / Wipro (Service-Based)
+// TCS / Infosys / Wipro (Service-Based)
 
 // Output based (very common)
 
@@ -198,7 +198,7 @@
 
 // Output: undefined true
 
-// 🏢 Accenture / Cognizant / Capgemini
+// Accenture / Cognizant / Capgemini
 
 //Freeze vs modify
 
@@ -241,7 +241,7 @@
 
 // Output: {"a":1}
 
-// 🏢 Product-Based (Flipkart / Amazon / Paytm)
+// Product-Based (Flipkart / Amazon / Paytm)
 
 // Object comparison
 
