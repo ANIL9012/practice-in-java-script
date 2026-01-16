@@ -275,7 +275,7 @@
 //   return Promise.all(results);
 // }
 
-// STEP 10: Custom Promise.all Implementation 🔥
+// STEP 10: Custom Promise.all Implementation 
 // Task: Promise.all khud implement karo.
 
 // Solution
