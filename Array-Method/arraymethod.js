@@ -106,62 +106,62 @@
 // let arr5 = [1, 2, 3].forEach(x => console.log(x));
 // console.log(arr5);
 // 11. map()
-// [1,2,3].map(x => x * 2); // [2,4,6]
-
+// let arr6 = [1,2,3].map(x => x * 2); // [2,4,6]
+// console.log(arr6);
 // 12. filter()
-// [1,2,3,4].filter(x => x > 2); // [3,4]
-
+// let arr7 = [1,2,3,4].filter(x => x > 2); // [3,4]
+// console.log(arr7);
 // 13. reduce()
-// [1,2,3].reduce((sum,x)=>sum+x,0); // 6
-
+// let arr8 = [1,2,3].reduce((sum,x)=>sum+x,0); // 6
+// console.log(arr8);
 // 14. some()
-// [1,2,3].some(x => x > 2); // true
-
+// let arr9 = [1,2,3].some(x => x > 2); // true
+// console.log(arr9);
 // 15. every()
-// [2,4,6].every(x => x % 2 === 0); // true
-
+// let arr10 = [2,4,6].every(x => x % 2 === 0); // true
+// console.log(arr10);
 // Convert
 // 16. join()
-// ["a","b","c"].join("-"); // "a-b-c"
-
+// let arr11 = ["a","b","c"].join("-"); // "a-b-c"
+// console.log(arr11)
 // 17. toString()
-// [1,2,3].toString(); // "1,2,3"
-
+// let arr12 = [1,2,3].toString(); // "1,2,3"
+// console.log(arr12)
 // 18. flat()
-// [1,[2,3]].flat(); // [1,2,3]
-
+// let arr13 = [1,[2,3]].flat(); // [1,2,3]
+// console.log(arr13)
 // Order / Arrange
 // 19. sort()
-// [3,1,2].sort(); // [1,2,3]
-
+// let arr14 = [3,1,2].sort(); // [1,2,3]
+// console.log(arr14)
 // 20. reverse()
-// [1,2,3].reverse(); // [3,2,1]
-
+// let arr15 = [1,2,3].reverse(); // [3,2,1]
+// console.log(arr15)
 // 21. slice() (no change original)
-// [1,2,3,4].slice(1,3); // [2,3]
-
+// let arr16 = [1,2,3,4].slice(1,3); // [2,3]
+// console.log(arr16)
 // 22. concat()
-// [1,2].concat([3,4]); // [1,2,3,4]
-
+// let arr17 = [1,2].concat([3,4]); // [1,2,3,4]
+// console.log(arr17)
 // Special / Interview Tricky
 // 23. isArray()
-// Array.isArray([1,2]); // true
-
+// let arr18 = Array.isArray([1,2]); // true
+// console.log(arr18)
 // 24. fill()
-// [1,2,3].fill(0); // [0,0,0]
-
+// let arr19 = [1,2,3].fill(0); // [0,0,0]
+// console.log(arr19)
 // 25. copyWithin()
-// [1,2,3,4].copyWithin(1,2); // [1,3,4,4]
-
+// let arr20 = [1,2,3,4].copyWithin(1,2); // [1,3,4,4]
+// console.log(arr20)
 // 26. entries()
-// [10,20].entries(); // iterator
-
+// let arr21 = [10,20].entries(); // iterator
+// console.log(arr21)
 // 27. keys()
-// [10,20].keys(); // index iterator
-
+// let arr22 = [10,20].keys(); // index iterator
+// console.log(arr22)
 // 28. values()
-// [10,20].values(); // value iterator
-
+// let arr23 = [10,20].values(); // value iterator
+// console.log(arr23)
 // MOST IMPORTANT (Interview focus)
 
 // map()
