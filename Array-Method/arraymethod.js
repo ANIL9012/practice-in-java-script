@@ -162,6 +162,7 @@
 // 28. values()
 // let arr23 = [10,20].values(); // value iterator
 // console.log(arr23)
+
 // MOST IMPORTANT (Interview focus)
 
 // map()
@@ -181,3 +182,4 @@
 // slice() vs splice()
 
 // push() vs pop()
+// This Method compulsory used in our program 
