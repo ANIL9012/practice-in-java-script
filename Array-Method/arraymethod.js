@@ -182,4 +182,3 @@
 // slice() vs splice()
 
 // push() vs pop()
-// This Method compulsory used in our program 
