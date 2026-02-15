@@ -1,4 +1,4 @@
-// 1 length
+// 1 length;
 // let str = "Hello";
 // console.log(str.length); // 5
 
@@ -7,7 +7,7 @@
 // console.log(str.toUpperCase()); // HELLO
 // console.log(str.toLowerCase()); // hello
 
-// 3 trim()
+// 3 trim();
 
 // (extra spaces remove karta hai)
 
