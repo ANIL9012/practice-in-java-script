@@ -156,7 +156,7 @@
 
 // Output: undefined 10
 
-                // Real interview coding questions
+// Real interview coding questions
 
 // Reverse a string (without built-in reverse)
 
@@ -324,3 +324,9 @@
 // }
 
 // Output: 6
+
+// function reverseString(str) {
+//   return str.split("").reverse().join("");
+// }
+
+// console.log(reverseString("hello")); // olleh
