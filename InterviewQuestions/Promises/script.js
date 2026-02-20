@@ -74,7 +74,7 @@
 //   Promise.resolve("C")
 // ]).then(console.log).catch(console.log);
 
-// Answer:B //Ek bhi reject = poora Promise.all fail 
+// Answer:B //Ek bhi reject = poora Promise.all fail
 
 // 9. Promise.race() vs Promise.any()
 // Promise.any([
@@ -120,7 +120,7 @@
 // Answer: caught nahi hoga
 
 
-                        //  Live coding interview tasks
+//  Live coding interview tasks
 
 // STEP 1: Delay Function (Promise basics)
 // Task: n milliseconds ke baad promise resolve ho.
@@ -275,7 +275,7 @@
 //   return Promise.all(results);
 // }
 
-// STEP 10: Custom Promise.all Implementation 
+// STEP 10: Custom Promise.all Implementation
 // Task: Promise.all khud implement karo.
 
 // Solution
@@ -304,3 +304,13 @@
 //   Promise.resolve(2),
 //   Promise.resolve(3)
 // ]).then(console.log);
+
+
+// let p = new Promise((resolve) => {
+//   resolve(5);
+// });
+
+// p.then(val => {
+//   val * 2;
+// })
+// .then(val => console.log(val));
