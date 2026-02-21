@@ -305,12 +305,3 @@
 //   Promise.resolve(3)
 // ]).then(console.log);
 
-
-// let p = new Promise((resolve) => {
-//   resolve(5);
-// });
-
-// p.then(val => {
-//   val * 2;
-// })
-// .then(val => console.log(val));
