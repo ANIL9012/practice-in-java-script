@@ -145,3 +145,7 @@
 // console.log(new Array(1,2));
 
 // Output: [empty × 5] [1,2]
+
+// const arr = [1,2,2,3,4,4,5];
+// const unique = [...new Set(arr)];
+// console.log(unique);
