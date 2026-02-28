@@ -149,3 +149,10 @@
 // const arr = [1,2,2,3,4,4,5];
 // const unique = [...new Set(arr)];
 // console.log(unique);
+
+// 10. Shallow copy vs deep copy?
+
+// let a = [1, {x: 10}];
+// let b = [...a];
+// b[1].x = 99;
+// console.log(a[1].x);
