@@ -309,3 +309,12 @@
 // console.log(obj?.a);
 
 // Output: undefined
+
+// const obj1 = { a: 1 };
+// const obj2 = { b: 2 };
+
+// const map = {};
+// map[obj1] = "first";
+// map[obj2] = "second";
+
+// console.log(map);
