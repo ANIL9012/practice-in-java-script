@@ -318,3 +318,13 @@
 // map[obj2] = "second";
 
 // console.log(map);
+
+// const obj = { a: 1, b: 2 };
+// const obj2 = obj;
+// obj2.a = 100;
+// console.log(obj.a);
+
+// const user = { name: "Anil", age: 25 };
+// const copy = user;
+// copy.age = 30;
+// console.log(user.age);
