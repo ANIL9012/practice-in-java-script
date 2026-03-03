@@ -328,3 +328,10 @@
 // const copy = user;
 // copy.age = 30;
 // console.log(user.age);
+
+// const obj = {
+//   a: 1,
+//   b: undefined,
+//   c: function(){}
+// };
+// console.log(JSON.stringify(obj));
