@@ -340,3 +340,8 @@
 // obj[1] = "one";
 // obj["1"] = "string one";
 // console.log(obj);
+
+// const obj = {};
+// obj[1] = "one";
+// obj["1"] = "ONE";
+// console.log(obj[1]);
