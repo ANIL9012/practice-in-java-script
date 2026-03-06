@@ -345,3 +345,7 @@
 // obj[1] = "one";
 // obj["1"] = "ONE";
 // console.log(obj[1]);
+
+// const obj = {};
+// obj.__proto__.x = 10;
+// console.log(obj.x);
