@@ -156,3 +156,11 @@
 // let b = [...a];
 // b[1].x = 99;
 // console.log(a[1].x);
+
+// const arr = [1, 2, [3, [4, 5]]];
+// console.log(arr.flat());          // [1, 2, 3, [4, 5]]
+// console.log(arr.flat(2));         // [1, 2, 3, 4, 5]
+
+// const phrases = ["hello world", "good morning"];
+// console.log(phrases.flatMap(p => p.split(" ")));
+// ['hello', 'world', 'good', 'morning']
