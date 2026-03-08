@@ -164,3 +164,13 @@
 // const phrases = ["hello world", "good morning"];
 // console.log(phrases.flatMap(p => p.split(" ")));
 // ['hello', 'world', 'good', 'morning']
+
+// Bad - creates intermediate arrays
+// const arr = [1, 2, 3, 4, 5];
+// const result = arr.filter(x => x > 2).map(x => x * 2).slice(0, 2);
+
+// // Good - single pass with reduce
+// const result2 = arr.reduce((acc, x) => {
+//   if (x > 2 && acc.length < 2) acc.push(x * 2);
+//   return acc;
+// }, []);
