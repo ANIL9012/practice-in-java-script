@@ -174,3 +174,11 @@
 //   if (x > 2 && acc.length < 2) acc.push(x * 2);
 //   return acc;
 // }, []);
+
+// const sparse = [1, , , 4];
+// console.log(sparse.length);           // 4
+// console.log(sparse[1]);               // undefined
+// console.log(Object.keys(sparse));     // ['0', '3'] - only indices with values
+
+// // map skips empty slots
+// console.log(sparse.map(x => x * 2));  // [2, empty, empty, 8]
