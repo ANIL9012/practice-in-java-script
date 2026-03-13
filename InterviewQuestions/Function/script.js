@@ -325,3 +325,22 @@
 
 // Output: 6
 
+// function outer(x) {
+//   return function inner(y) {
+//     return x + y;
+//   };
+// }
+
+// const add5 = outer(5);
+// console.log(add5(3)); // 8
+
+// function greet(greeting, punctuation) {
+//   console.log(greeting + ', ' + this.name + punctuation);
+// }
+
+// const person = { name: 'John' };
+
+// greet.call(person, 'Hello', '!');    // Hello, John!
+// greet.apply(person, ['Hi', '?']);    // Hi, John?
+// const bound = greet.bind(person);    // Returns new function
+// bound('Hey', '.');                    // Hey, John.
