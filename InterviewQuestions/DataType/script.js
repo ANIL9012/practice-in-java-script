@@ -48,3 +48,8 @@
 // console.log("A" < "a");
 // console.log("10" < "2");
 // console.log("abc" < "ab");
+
+// let str = "Hello 123 World 456";
+// console.log(str.match(/\d+/g));
+// console.log(str.split(/\d+/));
+// console.log(str.replace(/\d+/, "NUM"));
