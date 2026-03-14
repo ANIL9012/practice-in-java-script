@@ -344,3 +344,17 @@
 // greet.apply(person, ['Hi', '?']);    // Hi, John?
 // const bound = greet.bind(person);    // Returns new function
 // bound('Hey', '.');                    // Hey, John.
+
+// let str = "Hello 123 World 456";
+// console.log(str.match(/\d+/g));
+// console.log(str.split(/\d+/));
+// console.log(str.replace(/\d+/, "NUM"));
+
+// function areAnagrams(str1, str2) {
+//   const clean = (s) => s.toLowerCase().replace(/[^a-z]/g, "").split("").sort().join("");
+//   return clean(str1) === clean(str2);
+// }
+
+// console.log(areAnagrams("listen", "silent"));
+// console.log(areAnagrams("hello", "world"));
+// console.log(areAnagrams("Dormitory", "dirty room"));
