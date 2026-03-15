@@ -2,12 +2,8 @@
 // A  function is a block of code designed to perform a particular task.
 // A JavaScript function is executed when "something" invokes it (calls it).
 
-
-
-
-
 // A. JavaScript Function Syntax:
-//            A JavaScript function is defined with the function keyword, followed by a 
+//            A JavaScript function is defined with the function keyword, followed by a
 //            name, followed by parentheses ().
 // Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
 // The parentheses may include parameter names separated by commas:
@@ -15,10 +11,9 @@
 
 // The code to be executed, by the function, is placed inside curly brackets: {}
 
-
 // OR Declare the function name myNameFunction() without parameter
 // function myNameFunction() {
-//     function body   
+//     function body
 // }
 // exp:
 
@@ -31,14 +26,11 @@
 
 // addition();
 
-
-
 // Declare the function with parameters
 // function secondNameOfFunction(parameter1, parameter2, parameter3) {
-//   function body 
+//   function body
 // }
 // example:
-
 
 // parametrize function
 // define
@@ -52,7 +44,7 @@
 // addition(4,6);// 10
 // addition(7);//5
 
-        //  Example-2
+//  Example-2
 
 // function additionFormate (a,b,c,d,e,f,g,h){
 //     let i = a+b+c+d+e+f+g+h;
@@ -60,7 +52,6 @@
 // }
 
 // additionFormate(14,15,18,14,17,24,44,74)
-
 
 // Function parameters are listed inside the parentheses () in the function definition.
 // function myFunction(x, y) {
@@ -70,20 +61,17 @@
 // Inside the function, the arguments (the parameters) behave as local variables.
 
 // B. Calling Function:
-// The code inside the function will execute when "something" invokes (calls)   
+// The code inside the function will execute when "something" invokes (calls)
 // the function:
 // When an event occurs (when a user clicks a button)
-// When it is invoked (called) from JavaScript code 
+// When it is invoked (called) from JavaScript code
 // Automatically (self invoked)
-
-
 
 // declaring a function :
 
 // function myFirstFunction() {
 //     console.log("Hello World");
 // }
-
 
 // calling
 // myFirstFunction();
@@ -106,7 +94,6 @@
 // let myvalue=myFunction(3,5)
 // console.log(myvalue)
 
-
 // let addition = myFunction1(2,4)
 
 // function myFunction1(){
@@ -128,8 +115,7 @@
 // }
 // myFunction1()
 
-
-        //    Example 2 Multipllication 
+//    Example 2 Multipllication
 
 // function multipleMlValue(a,b,c,d,e,f){
 
@@ -168,7 +154,6 @@
 // AreaofCircle(5)
 // AreaofCircle(56)
 
-
 // function AreaofCircle(radius){
 
 //     let area=Math.PI*Math.pow(radius,2)
@@ -176,7 +161,6 @@
 // }
 // AreaofCircle(5)
 // AreaofCircle(56)
-
 
 // 3. AreaofTriangle
 // area= 1/2*base*height
@@ -187,7 +171,6 @@
 // }
 // AreaofTriangle(3,40)
 // AreaofTriangle(4,7)
-
 
 // celciusTOFahrenheit
 // celcius=(c*9/5)+32
@@ -205,11 +188,10 @@
 // }
 // fahrenheittocelcius(45)
 
-
 // Function to generate OTP
 
 // function generateOTP() {
-		
+
 // 	// Declare a digits variable
 // 	// which stores all digits
 // 	var digits = '0123456789';
@@ -222,27 +204,22 @@
 
 // console.log("OTP of 4 digits: ", generateOTP())
 
-
-
 // JavaScript Hoisting:
 
-// 	Hoisting in JavaScript is a behavior in which a function or a variable can be 
+// 	Hoisting in JavaScript is a behavior in which a function or a variable can be
 //            used before declaration.
 
-           
 //  Example:
- // using test before declaring
+// using test before declaring
 //  console.log(test);   // undefined
 //  var test = "Hello";
- 
- 
+
 // using declaring before test
 // var test = "Hello";
-// console.log(test); // Hello 
-
+// console.log(test); // Hello
 
 // Note: In hoisting, though it seems that the declaration has moved up
-//  in the program, the actual thing that happens is that the function 
+//  in the program, the actual thing that happens is that the function
 //  and variable declarations are added to memory during the compile phase.
 // (execution context phase created or global execution context )
 
@@ -251,7 +228,7 @@
 // Function Hoisting
 
 // A. Variable Hoisting:
-//   	In terms of variables and constants, keyword var is hoisted and let and const 
+//   	In terms of variables and constants, keyword var is hoisted and let and const
 // does not allow hoisting.
 
 // Example:
@@ -267,7 +244,6 @@
 // a = 5;
 // console.log(a); // 5
 
-
 // However in JavaScript, initializations are not hoisted. For example,
 // program to display value
 // console.log(a);
@@ -277,8 +253,6 @@
 // var a;
 // console.log(a);
 // a = 5;
-
-
 
 // Only the declaration is moved to the memory in the compile phase. Hence, the value of variable a is undefined because a is printed without initializing it.
 
@@ -296,10 +270,7 @@
 // greet(); // hello
 // console.log(b);
 
-
 // In the above example, variable b is hoisted to the top of the function greet and becomes a local variable. Hence b is only accessible inside the function. b does not become a global variable.
-
-
 
 // B. Function Hoisting
 // A function can be called before declaring it.
@@ -310,16 +281,14 @@
 //     console.log('Hi, there.');
 // }
 
-
-
 // 17. JavaScript Recursion:
-//     Recursion is a process of calling itself. A function that calls itself is called a 
-//    recursive function. 
-// The syntax for recursive function is: 
+//     Recursion is a process of calling itself. A function that calls itself is called a
+//    recursive function.
+// The syntax for recursive function is:
 // function recurse() {
-    // function code
+// function code
 //     recurse();
-    // function code
+// function code
 // }
 
 // recurse();
@@ -337,8 +306,6 @@
 // }
 
 // recurse();
-
-
 
 // find factorial
 // 5=5*4*3*2*1=120    x * factorial(x - 1);
@@ -365,14 +332,11 @@
 //     console.log(`The factorial of ${num} is ${result}`);
 // }
 
-
-
 // x * factorial(x - 1);
 // 3* factorial(2)
 // 3*  2*factorial(1)
 // 3*2*1*factorial(0)
 // 3*2*1*1
-
 
 // var x =5;
 // function myfunction(){
@@ -381,11 +345,7 @@
 // console.log(x)
 // myfunction();
 
-
-
-
-// function ===>Otp , 4 digit , random 
-
+// function ===>Otp , 4 digit , random
 
 // string=""
 
@@ -393,7 +353,6 @@
 
 // console.log(digits[4])
 // let OTP ="";
-
 
 // Math.random =0-1 decimal
 
@@ -408,15 +367,12 @@
 // console.log(Math.random()*10);
 // console.log(Math.random()*10);
 
-
 // console.log(Math.floor(1.2))//
 
 // console.log(Math.floor(3.4))//
 // console.log(Math.floor(5.9))//
 // console.log(Math.floor(6.0))//
 // console.log(Math.floor(7.1))//
-
-
 
 // function OTPgenerate(){
 //     var digits="0123456789"
@@ -437,8 +393,6 @@
 // OTPgenerate();
 // OTPgenerate();
 
-
-
 // hoisting:
 
 // console.log(x)//8
@@ -457,47 +411,59 @@
 // }
 // var and function
 
-
-
-
-              // Uses arrow function 
+// Uses arrow function
 
 // let hello = ()=>{
 //     console.log("Hii arrow function are you great");
-//     // yadi arow funtion me return value get karni ho to function call karte time kisi dusre variable me calling function ko add karte he 
+//     // yadi arow funtion me return value get karni ho to function call karte time kisi dusre variable me calling function ko add karte he
 //     return "Hii Anil Kumar" ;
 // };
 
-// // return value get karne pehle function me di gayi console ki value print hogi 
-// hello();  //Hii arrow function are you great 
+// // return value get karne pehle function me di gayi console ki value print hogi
+// hello();  //Hii arrow function are you great
 
-//     // yadi arow funtion me return value get karni ho to function call karte time kisi dusre variable me calling function ko add karte he 
+//     // yadi arow funtion me return value get karni ho to function call karte time kisi dusre variable me calling function ko add karte he
 // let returnValueget = hello();
 // console.log(returnValueget);
 
+// Practice Recursive Function
 
+//   function factorial(n) {
+//     // Base case: Factorial of 0 or 1 is 1
+//     if (n === 0 || n === 1) {
+//         return 1;
+//     }
+//     // Recursive case: n! = n * (n - 1)!
+//     return n * factorial(n - 1);
+// }
 
-          // Practice Recursive Function 
+// // Example usage:
+// console.log(factorial(5)); // Output: 120
 
-        //   function factorial(n) {
-        //     // Base case: Factorial of 0 or 1 is 1
-        //     if (n === 0 || n === 1) {
-        //         return 1;
-        //     }
-        //     // Recursive case: n! = n * (n - 1)!
-        //     return n * factorial(n - 1);
-        // }
-        
-        // // Example usage:
-        // console.log(factorial(5)); // Output: 120
-        
+// function sumArray(arr) {
+//     if (arr.length === 0) { // Base case
+//         return 0;
+//     }
+//     return arr[0] + sumArray(arr.slice(1)); // Recursive case
+// }
 
-        // function sumArray(arr) {
-        //     if (arr.length === 0) { // Base case
-        //         return 0;
-        //     }
-        //     return arr[0] + sumArray(arr.slice(1)); // Recursive case
-        // }
-        
-        // console.log(sumArray([1, 2, 3, 4])); // Output: 10
-        
+// console.log(sumArray([1, 2, 3, 4])); // Output: 10
+
+// function outer(x) {
+//   return function inner(y) {
+//     return x + y; // inner function has access to outer's variables
+//   };
+// }
+
+// const add5 = outer(5);
+// console.log(add5(3)); // 8
+
+// // Practical example: Private variables
+// function createCounter() {
+//   let count = 0;
+//   return {
+//     increment: () => ++count,
+//     decrement: () => --count,
+//     getCount: () => count,
+//   };
+// }
