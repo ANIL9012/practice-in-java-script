@@ -467,3 +467,38 @@
 //     getCount: () => count,
 //   };
 // }
+
+// function areAnagrams(str1, str2) {
+//   const clean = (str) => str
+//     .toLowerCase()
+//     .replace(/[^a-z0-9]/g, '')
+//     .split('')
+//     .sort()
+//     .join('');
+  
+//   return clean(str1) === clean(str2);
+// }
+
+// // Using character count
+// function areAnagrams2(str1, str2) {
+//   const getCharCount = (str) => {
+//     const count = {};
+//     for (let char of str.toLowerCase()) {
+//       count[char] = (count[char] || 0) + 1;
+//     }
+//     return count;
+//   };
+  
+//   const count1 = getCharCount(str1);
+//   const count2 = getCharCount(str2);
+  
+//   if (Object.keys(count1).length !== Object.keys(count2).length) {
+//     return false;
+//   }
+  
+//   for (let key in count1) {
+//     if (count1[key] !== count2[key]) return false;
+//   }
+  
+//   return true;
+// }
