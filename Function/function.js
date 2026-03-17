@@ -249,10 +249,6 @@
 // console.log(a);
 // var a = 5;
 
-// The above program behaves as:
-// var a;
-// console.log(a);
-// a = 5;
 
 // Only the declaration is moved to the memory in the compile phase. Hence, the value of variable a is undefined because a is printed without initializing it.
 
