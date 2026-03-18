@@ -126,3 +126,12 @@
 // var last_Name = "Kumar";
 // var age22 = "22";
 // console.log(age22);
+
+// var a = 1;
+// function test() {
+//   if (!a) {
+//     var a = 2;
+//   }
+//   console.log(a);
+// }
+// test(); // Output: 2 (due to hoisting)
