@@ -75,6 +75,13 @@
 // let x = 0;
 // let result = x ? "Yes" : "No";// "No"
 
-for (let i = 0, j = 10; i < j; i++, j--) {
-  console.log(i, j);
-}
+// for (let i = 0, j = 10; i < j; i++, j--) {
+//   console.log(i, j);
+// }
+
+// console.log(2 ** 3);        // 8
+// console.log(2 ** 3 ** 2);   // 512 (right to left: 2 ** (3 ** 2))
+// console.log(2 ** 2 ** 3);   // 256 (2 ** 8)
+
+// // Equivalent to Math.pow()
+// console.log(Math.pow(2, 3)); // 8
