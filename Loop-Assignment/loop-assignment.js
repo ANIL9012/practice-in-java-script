@@ -6,7 +6,6 @@
 // **
 // *
 
-
 // let n = 5;
 // let m = 5;
 
@@ -34,11 +33,10 @@
 // row             space                  star
 
 // 3. i = 3         j = 0  n-i              k = 5
-                   
+
 // 2. i = 3         j = 2  n-i              k = 3
 
 // 1. i = 3         j = 1  n-i              k = 1
-
 
 // for(let i=3; i>=1; i--){
 //     let str = "";
@@ -51,16 +49,14 @@
 //     console.log(str);
 // }
 
-
 // 3.
 //  1
 //  2 3
 //  4 5 6
-//  7 8 9 10 
+//  7 8 9 10
 
 // let n = 1;
 // let m = 4;
-
 
 // // row-i = 4;
 // // col-j = 4;
@@ -80,18 +76,17 @@
 //   ***
 //  ****
 
-// row             space               star 
+// row             space               star
 // 1.  i = 4       j = 0  n-i           k = 1
 // 2.  i = 4       j = 1  n-i           k = 2
 // 3.  i = 4       j = 2  n-i           k = 3
 // 4.  i = 4       j = 3  n-i           k = 4
 
-// let n = 4; 
-// let m = 6; 
+// let n = 4;
+// let m = 6;
 
 // // row-i = 4;
 // // col-j = 4;
-
 
 // for (let i = 1; i <= n; i++) {
 //     let str = "";
@@ -112,13 +107,11 @@
 //  1 2
 //  1
 
-
 // let n = 5;
 // let m = 5;
 
 // row-i = 5;
 // col-j = 5;
-
 
 // for(let i=5; i>=1; i--){
 
@@ -127,7 +120,7 @@
 //     for(let j=1; j<=i; j++){
 
 //         str = str +j + " ";
-        
+
 //     }
 //     console.log(str);
 // }
@@ -138,14 +131,13 @@
 //  *   *
 //  *****
 
-
 // row i = 4;
 // let n=4;
 // col j = 5;
 //  let m=5;
 
 // star    i=1,  i=n ,j=1 ,j=m
-// space 
+// space
 
 // let n=4;
 // let m=5;
@@ -162,151 +154,168 @@
 // console.log(str)
 // }
 
+// practice
 
-             // practice
+//  1.While Loop
 
-            //  1.While Loop
+//  debugger
+// let step = 1;
+//  while (step <= 100) {
+//     // Runs 5 times, with values of step 0 through 4.
+//     console.log(step + 1);
+//     step++
+//   }
 
-            //  debugger
-            // let step = 1;
-            //  while (step <= 100) {
-            //     // Runs 5 times, with values of step 0 through 4.
-            //     console.log(step + 1);
-            //     step++
-            //   }
+//  //  debugger
+// [debugger ka use code ko line by line execuite karne me karte ]
 
-        //  //  debugger 
-            // [debugger ka use code ko line by line execuite karne me karte ]
-           
-            // 2.Do While Loop 
+// 2.Do While Loop
 
+// let i = 0;
 
-            // let i = 0;
+// do{
+//     console.log("Hii Anil Kumar");
 
-            // do{
-            //     console.log("Hii Anil Kumar");
+//     i++
+// }while(i < 10)
 
-            //     i++
-            // }while(i < 10)
+//    for loop ka use karke Array Ki value prapt karte he
 
+// let friends = ["Anil","Lalit","Yunish","Labi","Harshit","Ramesh"]
 
+// let num = 0
+// while(num < friends.length){
 
+//     console.log(`${num + 1}. ${friends[num]}`);
 
+//     // friends[num] = friends[num] + "developer"
+//     num++
+// }
 
-         //    for loop ka use karke Array Ki value prapt karte he 
+// // debugger
 
+// let friends = ["Anil","Lalit","Yunish","Labi","Harshit","Ramesh"]
 
-            // let friends = ["Anil","Lalit","Yunish","Labi","Harshit","Ramesh"]
+// for(let i = 0; i < friends.length; i++){
+//     // console.log("Anil Kumar");
+//     console.log(`${i + 1}. ${friends[i]}`);
+// }
 
+// Example-2
 
-            // let num = 0
-            // while(num < friends.length){
-    
-            //     console.log(`${num + 1}. ${friends[num]}`);
+//    3.For Loop
 
-            //     // friends[num] = friends[num] + "developer"
-            //     num++
-            // }
+// Use For Loop  get Even number
 
-           // // debugger
-            
-            // let friends = ["Anil","Lalit","Yunish","Labi","Harshit","Ramesh"]
+//    for(let i = 0; i <= 100; i++){
 
+//     if(i % 2 === 0){
+//         console.log(i);
+//     }
 
-            // for(let i = 0; i < friends.length; i++){
-            //     // console.log("Anil Kumar");
-            //     console.log(`${i + 1}. ${friends[i]}`);
-            // }
+//    }
 
-           // Example-2
+// Example-2
+// Use For Loop  get Odd number
 
-        //    3.For Loop 
+//    for(let i = 0; i <= 100; i++){
 
-           // Use For Loop  get Even number 
-           
-        //    for(let i = 0; i <= 100; i++){
+//     if(i % 2 === 1){
+//         console.log(i);
+//     }
 
-        //     if(i % 2 === 0){
-        //         console.log(i);
-        //     }
+//    }
 
-        //    }
+// Example For in Loop
 
+// for in loop ka use object ki value prapt karne me hota he
 
-              // Example-2
-           // Use For Loop  get Odd number 
-           
-        //    for(let i = 0; i <= 100; i++){
+//   Example--1
 
-        //     if(i % 2 === 1){
-        //         console.log(i);
-        //     }
+// let friends = {
+//     Anil: "anil",
+//     Lalit: "lalit",
+//     Rajeev: "rajeev",
+//     Labi: "labi",
+//     Harshit: "harshit",
+//     Ramesh: "Ramesh"
+// };
 
-        //    }
+// let count = 1; // Counter for numbering
+// for (let key in friends) {
+//     console.log(`${count}. ${key}: ${friends[key]}`);
+//     count++;
+// }
 
+// Example--2
 
-        // Example For in Loop 
+// let NestedObject = {
+//     firstName: "Anil",
+//     lastName: "Kumar",
+//     course: {
+//         class: "BCA",
+//         marks: "80%",
+//         University: "IFTM",
+//         population: {
+//             UniversityMember: 13963,
+//             area: "1380 burg sqr",
+//             student: 294283,
+//         },
+//     },
+// };
 
-        // for in loop ka use object ki value prapt karne me hota he 
+// let count1 = 1;
 
+// for (let key in NestedObject) {
+//     if (typeof NestedObject[key] === "object") {
+//         console.log(`${count1}. ${key}:`);
+//         let nestedCount = 1;
+//         for (let subKey in NestedObject[key]) {
+//             if (typeof NestedObject[key][subKey] === "object") {
+//                 console.log(`   ${nestedCount}. ${subKey}:`);
+//                 let subNestedCount = 1;
+//                 for (let innerKey in NestedObject[key][subKey]) {
+//                     console.log(`      ${subNestedCount}. ${innerKey}: ${NestedObject[key][subKey][innerKey]}`);
+//                     subNestedCount++;
+//                 }
+//             } else {
+//                 console.log(`   ${nestedCount}. ${subKey}: ${NestedObject[key][subKey]}`);
+//             }
+//             nestedCount++;
+//         }
+//     } else {
+//         console.log(`${count1}. ${key}: ${NestedObject[key]}`);
+//     }
+//     count1++;
+// }
 
-                    //   Example--1
+// // Prefer for...of for arrays when index not needed
+// const items = [1, 2, 3, 4, 5];
+// for (const item of items) {
+//   console.log(item);
+// }
 
-                    // let friends = {
-                    //     Anil: "anil",
-                    //     Lalit: "lalit",
-                    //     Rajeev: "rajeev",
-                    //     Labi: "labi",
-                    //     Harshit: "harshit",
-                    //     Ramesh: "Ramesh"
-                    // };
-                    
-                    // let count = 1; // Counter for numbering
-                    // for (let key in friends) {
-                    //     console.log(`${count}. ${key}: ${friends[key]}`);
-                    //     count++;
-                    // }
+// // Use array methods for transformations
+// const doubled = items.map((x) => x * 2); // Instead of manual loop
+// const even = items.filter((x) => x % 2 === 0);
+// const sum = items.reduce((acc, x) => acc + x, 0);
 
-                    // Example--2
+// // Break early when possible
+// function findFirstEven(numbers) {
+//   for (const num of numbers) {
+//     if (num % 2 === 0) {
+//       return num; // Early return
+//     }
+//   }
+//   return null;
+// }
 
-                    // let NestedObject = {
-                    //     firstName: "Anil",
-                    //     lastName: "Kumar",
-                    //     course: {
-                    //         class: "BCA",
-                    //         marks: "80%",
-                    //         University: "IFTM",
-                    //         population: {
-                    //             UniversityMember: 13963,
-                    //             area: "1380 burg sqr",
-                    //             student: 294283,
-                    //         },
-                    //     },
-                    // };
-                    
-                    // let count1 = 1;
-                    
-                    // for (let key in NestedObject) {
-                    //     if (typeof NestedObject[key] === "object") {
-                    //         console.log(`${count1}. ${key}:`);
-                    //         let nestedCount = 1;
-                    //         for (let subKey in NestedObject[key]) {
-                    //             if (typeof NestedObject[key][subKey] === "object") {
-                    //                 console.log(`   ${nestedCount}. ${subKey}:`);
-                    //                 let subNestedCount = 1;
-                    //                 for (let innerKey in NestedObject[key][subKey]) {
-                    //                     console.log(`      ${subNestedCount}. ${innerKey}: ${NestedObject[key][subKey][innerKey]}`);
-                    //                     subNestedCount++;
-                    //                 }
-                    //             } else {
-                    //                 console.log(`   ${nestedCount}. ${subKey}: ${NestedObject[key][subKey]}`);
-                    //             }
-                    //             nestedCount++;
-                    //         }
-                    //     } else {
-                    //         console.log(`${count1}. ${key}: ${NestedObject[key]}`);
-                    //     }
-                    //     count1++;
-                    // }
-                    
+// // Use for...of with destructuring
+// const users = [
+//   { id: 1, name: "John" },
+//   { id: 2, name: "Jane" },
+// ];
 
+// for (const { id, name } of users) {
+//   console.log(`${id}: ${name}`);
+// }
