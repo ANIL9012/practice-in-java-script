@@ -319,3 +319,48 @@
 // for (const { id, name } of users) {
 //   console.log(`${id}: ${name}`);
 // }
+
+// function flattenArray(arr) {
+//     const result = [];
+    
+//     for (let i = 0; i < arr.length; i++) {
+//         if (Array.isArray(arr[i])) {
+//             const flattened = flattenArray(arr[i]);
+//             for (let j = 0; j < flattened.length; j++) {
+//                 result.push(flattened[j]);
+//             }
+//         } else {
+//             result.push(arr[i]);
+//         }
+//     }
+    
+//     return result;
+// }
+
+// // Using stack (iterative)
+// function flattenArrayIterative(arr) {
+//     const result = [];
+//     const stack = [...arr];
+    
+//     while (stack.length) {
+//         const next = stack.pop();
+//         if (Array.isArray(next)) {
+//             stack.push(...next);
+//         } else {
+//             result.unshift(next);
+//         }
+//     }
+    
+//     return result;
+// }
+
+// // Using reduce
+// function flattenArrayReduce(arr) {
+//     return arr.reduce((acc, val) => {
+//         return acc.concat(Array.isArray(val) ? flattenArrayReduce(val) : val);
+//     }, []);
+// }
+
+// // Test
+// const nested = [1, [2, [3, 4], 5], 6];
+// console.log(flattenArray(nested)); // [1, 2, 3, 4, 5, 6]
