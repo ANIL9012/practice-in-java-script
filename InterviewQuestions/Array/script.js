@@ -182,3 +182,36 @@
 
 // // map skips empty slots
 // console.log(sparse.map(x => x * 2));  // [2, empty, empty, 8]
+
+// // Shallow copy methods
+// const original = [1, 2, [3, 4]];
+
+// // Method 1: spread operator
+// const copy1 = [...original];
+
+// // Method 2: slice()
+// const copy2 = original.slice();
+
+// // Method 3: Array.from()
+// const copy3 = Array.from(original);
+
+// // Method 4: concat()
+// const copy4 = [].concat(original);
+
+// // Shallow copy issues
+// copy1[2][0] = 99;
+// console.log(original[2][0]); // 99 (nested array is shared)
+
+// // Deep copy methods
+// // Method 1: JSON (limitations)
+// const deepCopy1 = JSON.parse(JSON.stringify(original));
+
+// // Method 2: structuredClone (modern)
+// const deepCopy2 = structuredClone(original);
+
+// // Method 3: recursive function
+// function deepCopy(arr) {
+//     return arr.map(item => 
+//         Array.isArray(item) ? deepCopy(item) : item
+//     );
+// }
