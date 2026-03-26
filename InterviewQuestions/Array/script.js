@@ -215,3 +215,34 @@
 //         Array.isArray(item) ? deepCopy(item) : item
 //     );
 // }
+
+// // Array.from - create arrays from iterables
+// const arrayFromString = Array.from('hello'); // ['h', 'e', 'l', 'l', 'o']
+// const arrayFromSet = Array.from(new Set([1, 2, 3])); // [1, 2, 3]
+// const arrayWithMap = Array.from({ length: 5 }, (_, i) => i ** 2); // [0, 1, 4, 9, 16]
+
+// // Array.of - create array from arguments
+// const arr1 = Array.of(7); // [7] (not length 7)
+// const arr2 = Array.of(1, 2, 3); // [1, 2, 3]
+
+// // find and findIndex
+// const users = [
+//     { id: 1, name: 'John' },
+//     { id: 2, name: 'Jane' },
+//     { id: 3, name: 'Bob' }
+// ];
+
+// const user = users.find(u => u.id === 2); // { id: 2, name: 'Jane' }
+// const index = users.findIndex(u => u.id === 2); // 1
+
+// // flat and flatMap
+// const nested = [1, [2, [3]]];
+// console.log(nested.flat(2)); // [1, 2, 3]
+
+// const sentences = ['Hello world', 'How are you'];
+// const words = sentences.flatMap(s => s.split(' ')); // ['Hello', 'world', 'How', 'are', 'you']
+
+// // includes (ES2016)
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.includes(3)); // true
+// console.log(numbers.includes(6)); // false
