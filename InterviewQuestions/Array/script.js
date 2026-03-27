@@ -246,3 +246,40 @@
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(numbers.includes(3)); // true
 // console.log(numbers.includes(6)); // false
+
+// const nested = [1, [2, [3, [4, 5]]]];
+
+// // Method 1: flat() (ES2019)
+// console.log(nested.flat(2)); // [1, 2, 3, [4, 5]]
+// console.log(nested.flat(Infinity)); // [1, 2, 3, 4, 5]
+
+// // Method 2: recursive function
+// function flatten(arr, depth = Infinity) {
+//     return arr.reduce((acc, val) => {
+//         if (Array.isArray(val) && depth > 0) {
+//             acc.push(...flatten(val, depth - 1));
+//         } else {
+//             acc.push(val);
+//         }
+//         return acc;
+//     }, []);
+// }
+
+// // Method 3: using stack (iterative)
+// function flattenIterative(arr) {
+//     const result = [];
+//     const stack = [...arr];
+    
+//     while (stack.length) {
+//         const next = stack.pop();
+//         if (Array.isArray(next)) {
+//             stack.push(...next);
+//         } else {
+//             result.unshift(next);
+//         }
+//     }
+//     return result;
+// }
+
+// // Method 4: toString() (only for numbers/strings)
+// const flattened = nested.toString().split(',').map(Number);
