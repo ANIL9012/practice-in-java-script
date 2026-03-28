@@ -283,3 +283,64 @@
 
 // // Method 4: toString() (only for numbers/strings)
 // const flattened = nested.toString().split(',').map(Number);
+
+// Custom map
+// Array.prototype.myMap = function(callback, thisArg) {
+//     if (typeof callback !== 'function') {
+//         throw new TypeError('callback must be a function');
+//     }
+    
+//     const result = [];
+//     for (let i = 0; i < this.length; i++) {
+//         if (i in this) { // Skip holes
+//             result[i] = callback.call(thisArg, this[i], i, this);
+//         }
+//     }
+//     return result;
+// };
+
+// // Custom filter
+// Array.prototype.myFilter = function(callback, thisArg) {
+//     const result = [];
+//     for (let i = 0; i < this.length; i++) {
+//         if (i in this && callback.call(thisArg, this[i], i, this)) {
+//             result.push(this[i]);
+//         }
+//     }
+//     return result;
+// };
+
+// // Custom reduce
+// Array.prototype.myReduce = function(callback, initialValue) {
+//     if (typeof callback !== 'function') {
+//         throw new TypeError('callback must be a function');
+//     }
+    
+//     let accumulator = initialValue;
+//     let startIndex = 0;
+    
+//     if (accumulator === undefined) {
+//         if (this.length === 0) {
+//             throw new TypeError('Reduce of empty array with no initial value');
+//         }
+//         // Find first defined element
+//         while (startIndex < this.length && !(startIndex in this)) {
+//             startIndex++;
+//         }
+//         accumulator = this[startIndex++];
+//     }
+    
+//     for (let i = startIndex; i < this.length; i++) {
+//         if (i in this) {
+//             accumulator = callback(accumulator, this[i], i, this);
+//         }
+//     }
+    
+//     return accumulator;
+// };
+
+// // Test custom methods
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr.myMap(x => x * 2)); // [2, 4, 6, 8, 10]
+// console.log(arr.myFilter(x => x % 2 === 0)); // [2, 4]
+// console.log(arr.myReduce((acc, x) => acc + x, 0)); // 15
