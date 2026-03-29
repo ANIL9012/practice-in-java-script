@@ -344,3 +344,22 @@
 // console.log(arr.myMap(x => x * 2)); // [2, 4, 6, 8, 10]
 // console.log(arr.myFilter(x => x % 2 === 0)); // [2, 4]
 // console.log(arr.myReduce((acc, x) => acc + x, 0)); // 15
+
+// const numbers = [1, 2, 3];
+
+// // forEach() - performs side effects, returns undefined
+// const result1 = numbers.forEach((num, index) => {
+//     numbers[index] = num * 2;
+// });
+// console.log(result1);  // undefined
+// console.log(numbers);  // [2, 4, 6]
+
+// // map() - transforms data, returns new array
+// const numbers2 = [1, 2, 3];
+// const result2 = numbers2.map(num => num * 2);
+// console.log(result2);  // [2, 4, 6]
+// console.log(numbers2); // [1, 2, 3] (unchanged)
+
+// When to use each:
+// forEach: logging, DOM updates, mutations
+// map: data transformation
