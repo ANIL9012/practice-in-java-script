@@ -363,3 +363,25 @@
 // When to use each:
 // forEach: logging, DOM updates, mutations
 // map: data transformation
+
+// const arr = [1, 2, 3, 4, 5];
+
+// // toReversed() - returns reversed array (non-mutating)
+// const reversed = arr.toReversed();
+// console.log(reversed); // [5, 4, 3, 2, 1]
+// console.log(arr); // [1, 2, 3, 4, 5] (unchanged)
+
+// // toSorted() - returns sorted array (non-mutating)
+// const sorted = arr.toSorted((a, b) => b - a);
+// console.log(sorted); // [5, 4, 3, 2, 1]
+// console.log(arr); // [1, 2, 3, 4, 5] (unchanged)
+
+// // toSpliced() - returns spliced array (non-mutating)
+// const spliced = arr.toSpliced(1, 2);
+// console.log(spliced); // [1, 4, 5]
+// console.log(arr); // [1, 2, 3, 4, 5] (unchanged)
+
+// // with() - replaces element at index (non-mutating)
+// const withReplaced = arr.with(2, 99);
+// console.log(withReplaced); // [1, 2, 99, 4, 5]
+// console.log(arr); // [1, 2, 3, 4, 5] (unchanged)
