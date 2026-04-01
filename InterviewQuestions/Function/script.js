@@ -179,7 +179,6 @@
 //   return true;
 // }
 
-// Remove duplicates from array
 
 // function removeDuplicates(arr) {
 //   return [...new Set(arr)];
