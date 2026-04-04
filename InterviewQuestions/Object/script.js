@@ -161,7 +161,6 @@
 
 // Output: 0
 
-// TCS / Infosys / Wipro (Service-Based)
 
 // Output based (very common)
 
