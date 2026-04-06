@@ -75,7 +75,6 @@
 
 // Output: 25
 
-// delete operator
 
 // const obj = { a: 1, b: 2 };
 // delete obj.a;
