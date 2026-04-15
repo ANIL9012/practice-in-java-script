@@ -1,5 +1,4 @@
 // 2. Call Stack order (Very common)
-// Q: Output kya hoga?
 
 // console.log("A");
 // console.log("B");
@@ -7,7 +6,7 @@
 
 // Answer:A,B,C Sab synchronous → order same
 
-// 3. setTimeout(0) trick 
+// 3. setTimeout(0) trick
 // console.log("start");
 
 // setTimeout(() => console.log("timeout"), 0);
@@ -66,7 +65,6 @@
 //   console.log("Caught");
 // }
 
-
 // Answer: Caught nahi hoga Async errors ko try-catch nahi pakad sakta
 
 // 9. Promise chain sync or async?
@@ -83,7 +81,6 @@
 //   console.log("promise");
 // });
 
-
 // Answer:promise,timeout
 
 // 11. Synchronous recursion vs async recursion
@@ -92,14 +89,12 @@
 // }
 // syncRec();
 
-
 // Answer:Stack overflow
 
 // function asyncRec() {
 //   setTimeout(asyncRec, 0);
 // }
 // asyncRec();
-
 
 // Answer: ✔ No stack overflow
 
@@ -119,7 +114,7 @@
 
 // Answer: Asynchronous, returns a Promise
 
-// 14. Output based mega trick 
+// 14. Output based mega trick
 // console.log("1");
 
 // setTimeout(() => console.log("2"), 0);
@@ -129,7 +124,6 @@
 //   .then(() => console.log("4"));
 
 // console.log("5");
-
 
 // Answer:
 // 1
