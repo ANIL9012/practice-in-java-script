@@ -43,8 +43,6 @@
 // let toUpperCase = "ß".toUpperCase()
 // console.log(toUpperCase) //Answer:"SS"
 
-// // Unicode ka effect
-
 // // 8. trim() kya remove karta hai?
 
 // let reactN = "  React\n".trim()
