@@ -119,7 +119,6 @@
 //   .catch(() => console.log("caught"));
 // Answer: caught nahi hoga
 
-
 //  Live coding interview tasks
 
 // STEP 1: Delay Function (Promise basics)
@@ -147,7 +146,6 @@
 // getUser().then(user => console.log(user.name));
 
 // STEP 3: String Reverse using Promise
-// Task: Promise ke andar string reverse karo.
 
 // Solution
 // function reverseString(str) {
@@ -159,7 +157,6 @@
 // reverseString("react").then(console.log);
 
 // STEP 4: Sequential Promise Execution
-// Task: Tasks ko order me run karna hai.
 
 // Solution
 // function task1() {
@@ -304,4 +301,3 @@
 //   Promise.resolve(2),
 //   Promise.resolve(3)
 // ]).then(console.log);
-
