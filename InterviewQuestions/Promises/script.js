@@ -181,7 +181,6 @@
 //   .then(console.log);
 
 // STEP 5: Parallel API Calls (Promise.all)
-// Task: Multiple promises ek saath run karo.
 
 // Solution
 // function fetchUsers() {
@@ -195,7 +194,6 @@
 // fetchUsers().then(console.log);
 
 // STEP 6: Promise with Timeout
-// Task: Agar promise time me resolve na ho → reject.
 
 // Solution
 // function promiseWithTimeout(promise, ms) {
