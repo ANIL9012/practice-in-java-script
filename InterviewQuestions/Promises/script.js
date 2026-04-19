@@ -210,7 +210,6 @@
 // ).catch(console.log);
 
 // STEP 7: Retry Promise (Very Common Interview Task)
-// Task: Fail hone par 3 baar retry.
 
 // Solution
 // function retry(fn, retries) {
@@ -234,7 +233,6 @@
 // retry(apiCall, 3).then(console.log);
 
 // STEP 8: Cancel Promise (AbortController)
-// Task: API request cancel karni hai.
 
 // Solution
 // function cancelableFetch(url) {
