@@ -246,7 +246,6 @@
 // controller.abort();
 
 // STEP 9: Promise Queue (Concurrency Control)
-// Task: Ek time par sirf 2 promises run ho.
 
 // Solution
 // async function promiseQueue(tasks, limit) {
