@@ -122,7 +122,6 @@
 //  Live coding interview tasks
 
 // STEP 1: Delay Function (Promise basics)
-// Task: n milliseconds ke baad promise resolve ho.
 
 // Solution
 // function delay(ms) {
@@ -268,7 +267,6 @@
 // }
 
 // STEP 10: Custom Promise.all Implementation
-// Task: Promise.all khud implement karo.
 
 // Solution
 // function myPromiseAll(promises) {
