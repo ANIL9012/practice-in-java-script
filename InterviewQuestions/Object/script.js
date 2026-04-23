@@ -75,7 +75,6 @@
 
 // Output: 25
 
-
 // const obj = { a: 1, b: 2 };
 // delete obj.a;
 // console.log(obj);
@@ -145,7 +144,6 @@
 //   return JSON.stringify(a) === JSON.stringify(b);
 // }
 
-
 // Optional chaining
 
 // const user = {};
@@ -159,7 +157,6 @@
 // console.log(user.age ?? 18);
 
 // Output: 0
-
 
 // Output based (very common)
 
