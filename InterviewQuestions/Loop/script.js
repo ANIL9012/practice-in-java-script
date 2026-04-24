@@ -77,8 +77,6 @@
 
 // Output: 123 let block-scoped
 
-
-
 // forEach + return
 
 // [1,2,3].forEach(n => {
