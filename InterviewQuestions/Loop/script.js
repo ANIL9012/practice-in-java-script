@@ -7,7 +7,6 @@
 // for (let i = 0; i < 3; i++) {
 //   setTimeout(() => console.log(i), 0);
 // }
-
 // Output:012
 
 // break vs continue
@@ -15,7 +14,6 @@
 //   if (i === 3) continue;
 //   console.log(i);
 // }
-
 // Output:0124
 
 // Loop + closure trap
@@ -24,7 +22,6 @@
 //   arr.push(() => i);
 // }
 // console.log(arr[0](), arr[1](), arr[2]());
-
 // Output:3 3 3 Sab functions same i ko reference kar rahe hain.
 
 // for...in vs for...of
@@ -40,7 +37,6 @@
 //   console.log(i);
 //   i++;
 // }
-
 // Output: 024 Loop ke andar bhi i++ ho raha hai.
 
 // while loop trick
@@ -48,7 +44,6 @@
 // while (i--) {
 //   console.log(i);
 // }
-
 // Output: 43210 i-- pehle check hota hai, baad me decrement.
 
 // forEach + async/await
