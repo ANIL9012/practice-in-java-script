@@ -19,10 +19,8 @@
 // let undefinedNull2 =  undefined === null;
 // console.log(undefinedNull2) //false
 
-
 // let obj = {} + {} ; //"[object Object][object Object]"
 // lekin browser console mai NaN bhi dikha sakta hai (context par depend karta hai)
-
 
 // JavaScript me total kitne data types hote hain?
 
