@@ -23,23 +23,15 @@
 // lekin browser console mai NaN bhi dikha sakta hai (context par depend karta hai)
 
 // JavaScript me total kitne data types hote hain?
-
 // 8 Data Types
 
 // String
-
 // Number
-
 // Boolean
-
 // Undefined
-
 // Null
-
 // Symbol
-
 // BigInt
-
 // Object
 
 // console.log("a" < "b");
