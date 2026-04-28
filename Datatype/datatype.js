@@ -5,9 +5,6 @@
 
 // console.log("hitech-mentorsaknfashjfadhjkhfdjhjfd","  sam","mentor",name ,age, rollno)
 
-
-
-
 // 0101010101010101010101010000010101010
 // 1mb= 1024 bytes
 // 1bytes=8 bits
@@ -16,16 +13,15 @@
 // 1.  primitive //predifined // single data
 // 2.non-primitive // userdefined //sequence data
 
-
 // types of datatypes javascript
-// 1.number 
+// 1.number
 // A. integer =1,2,3 ,4 5, 6,-4
 // B. floaing point = 1.02, 1.4455,0.00000000234, -0.3435,
 // 2.string  //let name="",let name1='',
-// 3.BigInt   
+// 3.BigInt
 // 4.Boolean
 // 5.undefined
-// 6.null 
+// 6.null
 // 7.Symbol
 // 8.Object //non
 
@@ -46,7 +42,6 @@
 // const name3 =`the names are ${name} and ${name2} and ${number1} and ${number5}`
 // console.log(name3)
 
-
 // bigInt
 // above 2^53-1    below-(2^53 -1)
 // const num=34n;
@@ -54,12 +49,10 @@
 // const result =val1+1n;
 // console.log(result)
 
-
 // // Boolean
 // const datacheck=true;
 // const valuecounted=false;
 // console.log(typeof (datacheck,valuecounted));
-
 
 //undefined
 // let name5;
@@ -69,7 +62,7 @@
 // const number=null; //casesensitive
 // console.log(number);
 // Symbol Es6(Es2015 ) immutable and unique
-// const value1 =Symbol('hello');  
+// const value1 =Symbol('hello');
 // console.log(value1)
 // const value2 =Symbol('hello');
 
@@ -99,7 +92,6 @@
 // left ,right(values,variables)= operands
 // Symbol= operators
 
-
 // 1.assignment op  =>   a=7;
 // 2.Arithmetic op  => +,-,*,/,%,++,--,**
 
@@ -109,10 +101,8 @@
 // 6.string= >``
 // 7.others=>,?:,delete,typof,void,in, instanceof,
 
-
-
 // javascript type conversion
-// 1. implicit conevrsion=> type automatically 
+// 1. implicit conevrsion=> type automatically
 // 1.implicit conversion to string
 //  const res="3"+2; //=>type string =>"32"
 
@@ -121,51 +111,46 @@
 // const res1="3"+true;  //3true
 // console.log(res1)
 
-// const res2="3"+undefined;  
+// const res2="3"+undefined;
 // console.log(res2)
 
-// const res3="3"+null; 
+// const res3="3"+null;
 // console.log(res3)
-
 
 // ex2: impilicit conversion to number
 
 // const val= "8"-"2";  //2
 // console.log("impilicit conversion to number",val)
 
-// const val2= "4"*"2";  
+// const val2= "4"*"2";
 // console.log("impilicit conversion to number",val2)
 
 // const val3 ="8"/"2";
 // console.log(typeof(val3));
 
-
-// example3: non-numeric string 
+// example3: non-numeric string
 // let result6="hello"-"world"; // =>NAN
 // console.log(result6);
 
 // implicit boolean conversion to number
 
-// let result="4"-true; 
+// let result="4"-true;
 // console.log("implicit boolean conversion to number",result)//3
 
-
-// let result2=4+true; 
+// let result2=4+true;
 // console.log("implicit boolean conversion to number",result2)///5
 
-
-// let result3=4+false; 
+// let result3=4+false;
 // console.log("implicit boolean conversion to number",result3)///4
-
 
 // implicit null conversion to number
 // implicit null conversion to number
 // let result7 =4+null; //4
 // console.log("implicit null  conversion to number",result7)///4
-// let result8 =4-null; 
+// let result8 =4-null;
 // console.log("implicit null  conversion to number",result8)///4
 
-// implicit undefined used with number,boolean, null 
+// implicit undefined used with number,boolean, null
 // let result= 4+undefined; //NaN
 // console.log(typeof(result));
 // let result= 4-undefined; //NaN
@@ -175,19 +160,17 @@
 // console.log(result);
 // console.log(typeof(result));
 
-
 // let result= null+undefined; //NaN
 // console.log(result);
 // console.log(typeof(result));
 
-
 // 2. explicit conevrsion=> type manually
 
-// 1.convert to number 
+// 1.convert to number
 
 // let res=Number("342"-true);
 
-// console.log(typeof(res)); 
+// console.log(typeof(res));
 
 // let result=Number(true); //
 // console.log(result);
@@ -195,10 +178,8 @@
 // let res1=parseInt(29.94645);
 // console.log(res1)
 
-
 // let res2=parseFloat(29.000);
 // console.log(typeof(res2));
-
 
 // 1.convert to string
 
@@ -207,7 +188,6 @@
 
 // let res1=(25423).toString();
 // console.log(typeof(res1));
-
 
 // let res=Boolean(25423);
 // console.log(typeof(res));
@@ -219,4 +199,3 @@
 
 // let res=obj.toString();
 // console.log(typeof(res));
-
