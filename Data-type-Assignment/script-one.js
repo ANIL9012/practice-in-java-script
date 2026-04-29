@@ -1,9 +1,8 @@
 // 1. What are the two main categories of data types in JavaScript?
 
 // two typse catagorias in javaScript
-// (i) Primitive 
+// (i) Primitive
 // (ii) Non-Primitive
-
 
 // 2. What is a primitive data type? List all the primitive data types in JavaScript.
 // (i) Primitive data type
@@ -47,7 +46,6 @@
 // console.log(typeof [1, 2, 3]);
 // console.log(typeof(array));
 
-
 // 6. What data type is returned by the expression `3 + '3'`?
 
 // let exprension = 3 + '3';
@@ -55,15 +53,14 @@
 
 // // 7. What will be the result of the following code?
 
-// let num = 10; //number 
+// let num = 10; //number
 // let str = '10'; //number but into a typeof in string
 // console.log(num == str); true
 // console.log(num === str);  false
 
-
 // 8. Explain the difference between `==` and `===` in JavaScript.
 
-// (i) '==' equal represent same value 
+// (i) '==' equal represent same value
 // (ii) '===' equal reprsent same value but a represent typeof
 
 // 9. What data type is used to represent a sequence of characters in JavaScript?
@@ -82,19 +79,18 @@
 // 1. Object
 // 2.Array
 
-
 // 10. What will be the output of the following code?
 
 // let obj = { a: 1, b: 2 };
 // console.log(typeof obj);
-// console.log(typeof obj.a); 
+// console.log(typeof obj.a);
 
-// let obj = { 
+// let obj = {
 //     a: 1,
 //     b: 2,
 // };
 // console.log(typeof (obj));
-// console.log(typeof (obj.a)); 
+// console.log(typeof (obj.a));
 
 // 11.What are the datatypes of `a`, `b`, `c`, `d`, `e`, `f`, and `g`?Identify the datatype:
 
@@ -153,59 +149,38 @@
 // const res1="3"+true;  //3true
 // console.log(res1)
 
-
-// const res2="3"+undefined;  
+// const res2="3"+undefined;
 // console.log(res2)
-
 
 // const res3="3"*null;
 // console.log(res3)
 
-
-
-
 // ex2: impilicit conversion to number
-
 
 // const val= "4"-"2";  //2
 // console.log("impilicit conversion to number",val);
 
-
 // const val2= "4"*"2";  //8
 // console.log("impilicit conversion to number",val2);
 
-
 // const val3 ="8"/"2"; //4
 // console.log(val3);
-
-
-
 
 // example3: non-numeric string
 
 // let result6="hello"-"world"; //  =>NAN
 // console.log(result6);
 
-
-
 // implicit boolean conversion to number
-
 
 // let result="4"-true;
 // console.log("implicit boolean conversion to number",result); //3
 
-
-
-
 // let result2=4+true;
 // console.log("implicit boolean conversion to number",result2); //5
 
-
-
-
 // let result3=4+false;
 // console.log("implicit boolean conversion to number",result3); //4
-
 
 // implicit null conversion to number
 // implicit null conversion to number
@@ -217,7 +192,7 @@
 // console.log("implicit null  conversion to number",result8); //4
 
 // let result9 =4*null;
-// console.log("implicit null  conversion to number",result9); 
+// console.log("implicit null  conversion to number",result9);
 
 // implicit undefined used with number,boolean, null
 // let result= 4+undefined; //NaN
@@ -226,30 +201,20 @@
 // let result= 4-undefined; //NaN
 // console.log(result);
 
-
 // let result= true+undefined; //NaN
 // console.log(result);
 // console.log(typeof(result));
-
-
-
 
 // let result= null+undefined; //NaN
 // console.log(result);
 // console.log(typeof(result));
 
-
-
-
 // 2. explicit conevrsion=> type manually
-
 
 // 1.convert to number
 
-
 // let res=("342"-true);
 // console.log(typeof(res));
-
 
 // let result=Number(true);
 // console.log(typeof(result));
@@ -260,33 +225,24 @@
 // let res=parseFloat(29.8700);
 // console.log(res);
 
-
 // 1.convert to string
-
 
 // let res=String(25423);
 // console.log(typeof(res));
 
-
 // let res1=(25423).toString();
 // console.log(typeof(res1));
 
-
-
-
 // let res=Boolean(25423);
 // console.log(typeof(res));
-
 
 // let obj={
 //     name:"hitech"
 // }
 // console.log(typeof(obj));
 
-
 // let res=obj.toString();
 // console.log(typeof(res));
-
 
 // You tube Practice in JavaScript
 
@@ -316,10 +272,7 @@
 // }
 // document.write("</table");
 
-
-// Even and Odd Number 
-
-
+// Even and Odd Number
 
 // Array ke 24 Method
 
@@ -355,7 +308,7 @@
 //  var e = d.join(" <br> ");
 //  document.write(e);
 
-// Slice Methode Start 
+// Slice Methode Start
 
 // var x = ["Raghab","Raheem","Rahul","Rani"];
 // document.write(x + "<br><br>");
@@ -372,10 +325,10 @@
 // var x2 = "Rahul";
 // document.write(x2 + "<br><br>");
 // if(Array.isArray(x2)){
-    // document.write("This is an Array");
+// document.write("This is an Array");
 // }
 // else{
-    // document.write("This is not an Array");
+// document.write("This is not an Array");
 // }
 
 // var x3 = ["Anil","Pramod","Himanshu","Lalit","Anil"];
@@ -393,8 +346,7 @@
 // var z2 = z1.includes("Rahul");
 // document.write(z2 + "<br><br>");
 
-
-// Find Index Function Start 
+// Find Index Function Start
 
 // var age = [10,23,19,20];
 // document.write(age + "<br><br>");
@@ -429,11 +381,11 @@
 //   if (obj === null || typeof obj !== 'object') return obj;
 //   if (obj instanceof Date) return new Date(obj);
 //   if (obj instanceof RegExp) return new RegExp(obj);
-  
+
 //   if (Array.isArray(obj)) {
 //     return obj.map(item => deepClone(item));
 //   }
-  
+
 //   const cloned = {};
 //   for (let key in obj) {
 //     if (obj.hasOwnProperty(key)) {
