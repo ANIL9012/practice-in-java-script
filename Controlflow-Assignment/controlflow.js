@@ -1,17 +1,13 @@
 // 1. Write code that checks if the variable `num` is greater than 10. If it is, print "Greater than 10".
 //    let num = 15;  // You can change this value to test
 
-
-
-// let num = 15; 
+// let num = 15;
 
 // if (num > 10) {
 //   console.log("Number is Greater than 10");
 // }
 
-
-                // Ya
-
+// Ya
 
 // let num  = prompt("Enter the value");
 // if(num>10){
@@ -26,7 +22,7 @@
 
 // 2. Write code that checks if the variable `num` is greater than or equal to 0. If it is, print "Non-negative"; otherwise, print "Negative".
 //    let num = -3;  // You can change this value to test
-  
+
 // let num = -3;
 
 // if(num >=0 ){
@@ -35,8 +31,7 @@
 //     console.log("Number is Negative");
 // }
 
-
-                // Ya 
+// Ya
 
 // let num1 = prompt("Enter a value");
 // if(num1>0){
@@ -61,7 +56,7 @@
 //   console.log("Needs Improvement");
 // }
 
-                //  YA
+//  YA
 
 // let per = prompt("Enter percentage");
 //  if(per >= 90 && per <= 100){
@@ -74,7 +69,6 @@
 //     console.log("Please enter valid percentage");
 //  }
 
-
 // 4. Write code that uses a `switch` statement to print the name of the day based on the variable `day`. Use the following values:
 //    - 1 for "Monday"
 //    - 2 for "Tuesday"
@@ -84,7 +78,6 @@
 //    - 6 for "Saturday"
 //    - 7 for "Sunday"
 //    let day = 4;  // You can change this value to test
-
 
 // let day = parseInt(prompt("Enter day number"));
 
@@ -100,7 +93,7 @@
 //     case 3:
 //         console.log("Tuesday");
 //     break;
-    
+
 //     case 4:
 //         console.log("Wednesday");
 //     break;
@@ -135,7 +128,7 @@
 // 6. Write code that checks if the variable `num` is positive. If it is, then check if it is greater than 100. Print "Large Positive" if it is greater than 100; otherwise, print "Small Positive".
 //    let num = 120;  // You can change this value to test
 
-// let num = 120; 
+// let num = 120;
 
 // if (num > 0) {
 //   if (num > 100) {
@@ -147,7 +140,7 @@
 //   console.log("Not Positive");
 // }
 
-                  //  Ya
+//  Ya
 
 // let num100 = parseInt(prompt("Enter the number"))
 
@@ -161,7 +154,6 @@
 //   console.log("Enter Valid Number");
 // }
 
-   
 //    7.Write code that checks if the variable `num` is even or odd. Print "Even" if it is even, and "Odd" if it is odd.
 
 //    let num = 5;  // You can change this value to test
@@ -172,7 +164,7 @@
 //     console.log("Odd");
 // }
 
-            //  Get User Number Odd and Even 
+//  Get User Number Odd and Even
 
 // let oddEven = parseInt(prompt("Enter Any Number"));
 
@@ -182,8 +174,7 @@
 //   console.log("Odd Number");
 // }
 
-
-            //  Get User Number 100 hw many different Odd and Even  
+//  Get User Number 100 hw many different Odd and Even
 
 // let userNumber = parseInt(prompt("Enter a number:"));
 
@@ -202,14 +193,12 @@
 // console.log("Even Numbers:", evenNumbers);
 // console.log("Odd Numbers:", oddNumbers);
 
-
-
-            //    FUNTION SE ODD OR EVEN NUMBER RECIEVE 
+//    FUNTION SE ODD OR EVEN NUMBER RECIEVE
 
 // function checkEvenOrOdd() {
 //     // Get user input and convert it to a number
 //     let num = parseFloat(prompt("Enter a number:"));
-  
+
 //     // Check if the input is a valid number
 //     if (num %2 === 0) {
 //       console.log("Even");
@@ -217,11 +206,11 @@
 //       console.log("Odd");
 //     }
 //   }
-  
+
 //   // Call the function
 //   checkEvenOrOdd();
-  
-//               LOOOP INNER FUNCTION 
+
+//               LOOOP INNER FUNCTION
 
 // function LoopFunction (){
 //     let numbers = parseInt(prompt("Enter any Number"));
@@ -251,7 +240,7 @@
 
 //    let vehicleType = "plane";  // You can change this value to test
 
-// let vehicletype = prompt("Enter name") 
+// let vehicletype = prompt("Enter name")
 
 // switch(vehicletype){
 
@@ -277,7 +266,6 @@
 
 // }
 
-
 // 9.Write code that classifies the age of a person based on the variable `age` and prints:
 //    - "Child" for ages less than 13
 //    - "Teenager" for ages between 13 and 19
@@ -293,82 +281,78 @@
 //     console.log("Adult");
 // }
 
-
-
 // 10.Write code that uses a `switch` statement to print a message based on the variable `month`. Use the following values:
-    // - 1 for "January"
-    // - 2 for "February"
-    // - 3 for "March"
-    // - 4 for "April"
-    // - 5 for "May"
-    // - 6 for "June"
-    // - 7 for "July"
-    // - 8 for "August"
-    // - 9 for "September"
-    // - 10 for "October"
-    // - 11 for "November"
-    // - 12 for "December"
+// - 1 for "January"
+// - 2 for "February"
+// - 3 for "March"
+// - 4 for "April"
+// - 5 for "May"
+// - 6 for "June"
+// - 7 for "July"
+// - 8 for "August"
+// - 9 for "September"
+// - 10 for "October"
+// - 11 for "November"
+// - 12 for "December"
 
+// let month = 7;  // You can change this value to test
 
-    // let month = 7;  // You can change this value to test
+// let month = prompt("Enter the month number");
 
+// switch (month){
+//     case "1":
+//         console.log("January");
+//     break;
 
-    // let month = prompt("Enter the month number");
+//     case "2":
+//         console.log("Fruary");
+//     break;
 
-    // switch (month){
-    //     case "1":
-    //         console.log("January");
-    //     break;
+//     case "3":
+//         console.log("March");
+//     break;
 
-    //     case "2":
-    //         console.log("Fruary");
-    //     break;
+//     case "4":
+//         console.log("April");
+//     break;
 
-    //     case "3":
-    //         console.log("March");
-    //     break;
+//     case "5":
+//         console.log("may");
+//     break;
 
-    //     case "4":
-    //         console.log("April");
-    //     break;        
+//     case "6":
+//         console.log("June");
+//     break;
 
-    //     case "5":
-    //         console.log("may");
-    //     break;
+//     case "7":
+//         console.log("July");
+//     break;
 
-    //     case "6":
-    //         console.log("June");
-    //     break;
+//     case "8":
+//         console.log("August");
+//     break;
 
-    //     case "7":
-    //         console.log("July");
-    //     break;
+//     case "9":
+//         console.log("September");
+//     break;
 
-    //     case "8":
-    //         console.log("August");
-    //     break;
+//     case "10":
+//         console.log("Ouktuber");
+//     break;
 
-    //     case "9":
-    //         console.log("September");
-    //     break;
+//     case "11":
+//         console.log("Nobember");
+//     break;
 
-    //     case "10":
-    //         console.log("Ouktuber");
-    //     break;
+//     case "12":
+//         console.log("Desember");
+//     break;
 
-    //     case "11":
-    //         console.log("Nobember");
-    //     break;
+//     default:{
+//         console.log("Enter the valide month number");
+//     }
 
-    //     case "12":
-    //         console.log("Desember");
-    //     break;
-
-    //     default:{
-    //         console.log("Enter the valide month number");
-    //     }
-
-    // }
+// }
 
 // 11.Write code that classifies the age of a person/student based on the variable `student working` `leraning person` and prints:
 
@@ -387,14 +371,11 @@
 //     console.log(userName,"is a working Professional and He is a web Developer");
 // }
 
-
-
 // 13.Write code that classifies the name age gender of a person based on the variable `working` `Professional` get the user and prints:
-// // He/she part can also be doen with the help of if else, i have tried 
-
+// // He/she part can also be doen with the help of if else, i have tried
 
 // const name = prompt('enter you name')  || ('Educational')
-// const age = prompt('enter you age') || (25) 
+// const age = prompt('enter you age') || (25)
 // const gen  = prompt('enter you gender as Male or Female') || (`Others`)
 
 // console.log( `Name of the Student is : ${name}`)
@@ -410,7 +391,6 @@
 // }else{
 //     console.log("Others");
 // }
-
 
 // 14. Write code that uses a `if` statement to print the name of the day based on the variable `dayNumber`. Use the following values:
 //    - 1 for "Monday"
@@ -446,7 +426,6 @@
 //    - "Good" for scores between 70 and 89
 //    - "Needs Improvement" for scores below 70
 
-
 // const grade = prompt("Enter the grade");
 
 // switch (grade) {
@@ -469,7 +448,7 @@
 //     console.log('Sorry, you wretare failed.')
 // }
 
-                //   Example----2 Start
+//   Example----2 Start
 
 // let userName = prompt("Enter user name")
 // let grade = parseFloat(prompt("Enter the grade/percentage"));
@@ -514,8 +493,7 @@
 //     console.log(`${userName} Sorry, you failed.`);
 // }
 
-                //   Example----2 END
-
+//   Example----2 END
 
 // 16. Write code that checks the variable `age` and prints a grade based on the following criteria:
 // Get user input
