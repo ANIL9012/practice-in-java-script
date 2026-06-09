@@ -386,15 +386,3 @@
 //         })
 
 // })
-
-// 2. iterating over studentdata for-----of
-
-// let studentdata=[
-//     ['sam',23],
-//     ['jesica',25]
-// ];
-// for (let i of studentdata){
-//     for (let j of i){
-//         console.log(j)
-//     }
-// }
