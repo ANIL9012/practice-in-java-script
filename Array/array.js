@@ -374,15 +374,3 @@
 // iterating over studentdata
 // iterating over studentdata
 
-// let studentdata1=[
-//     ['jack',23],
-//     ['sara',25]
-// ];
-// // iterating over studentdata
-
-// studentdata1.forEach((val)=>{
-//         val.forEach((data,ind)=>{
-//             console.log("name is ",data,"  index is ",ind)
-//         })
-
-// })
