@@ -366,11 +366,3 @@
 // mularray.pop()
 // mularray[1][4].pop()
 // console.log(mularray)
-
-// iterating over studentdata
-// iterating over studentdata
-// iterating over studentdata
-// iterating over studentdata
-// iterating over studentdata
-// iterating over studentdata
-
