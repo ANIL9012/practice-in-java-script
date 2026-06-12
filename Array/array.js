@@ -282,8 +282,6 @@
 
 // 8.includes()
 // 8.includes()
-// 8.includes()
-// 8.includes()
 
 // let text="Hello javascript,welcome to the universe."
 // let resulttext=text.includes("universe");
