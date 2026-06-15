@@ -53,15 +53,10 @@
 // flat()
 
 // 5. Order / Arrange methods
-
 // Used to change order:
-
 // sort()
-
 // reverse()
-
 // slice()
-
 // concat()
 
 // Add / Remove Methods
