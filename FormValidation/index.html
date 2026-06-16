@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Form Validation</h1>
+
+    <form id="myform" novalidate>
+      <div class="form-title">Create Account</div>
+      <p class="form-subtitle">Fill in your details to get started</p>
+
+      <!-- Name -->
+      <div class="form-group" id="name-group">
+        <label for="name">
+          Full Name
+          <span class="required">*</span>
+        </label>
+        <div class="input-wrapper">
+          <i class="fas fa-user input-icon"></i>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="e.g. John Doe"
+            autocomplete="name"
+          />
+        </div>
+        <div class="error-message" id="name-error">
+          <i class="fas fa-exclamation-circle"></i>
+          Please enter your full name.
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group" id="email-group">
+        <label for="email">
+          Email Address
+          <span class="required">*</span>
+        </label>
+        <div class="input-wrapper">
+          <i class="fas fa-envelope input-icon"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+          />
+        </div>
+        <div class="error-message" id="email-error">
+          <i class="fas fa-exclamation-circle"></i>
+          Please enter a valid email address.
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group" id="password-group">
+        <label for="password">
+          Password
+          <span class="required">*</span>
+        </label>
+        <div class="input-wrapper">
+          <i class="fas fa-lock input-icon"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Min. 8 characters"
+            autocomplete="new-password"
+          />
+        </div>
+        <div class="error-message" id="password-error">
+          <i class="fas fa-exclamation-circle"></i>
+          Password must be at least 8 characters.
+        </div>
+        <div class="password-hint">
+          <i class="fas fa-info-circle"></i>
+          Use at least 8 characters
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit" id="submitBtn">
+        <i class="fas fa-arrow-right-to-bracket"></i>
+        Submit
+      </button>
+
+      <!-- Global success message -->
+      <div class="global-success" id="globalSuccess">
+        <i class="fas fa-check-circle"></i>
+        All fields are valid — form submitted!
+      </div>
+
+      <div class="form-footer">
+        <i
+          class="fas fa-shield-alt"
+          style="margin-right: 0.3rem; opacity: 0.6"
+        ></i>
+        Your information is <span>secure</span> and private.
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
