@@ -1,12 +1,10 @@
 (function () {
   "use strict";
 
-  // ─── DOM refs ──────────────────────────────────────────────
   const resultEl = document.getElementById("result");
   const expressionEl = document.getElementById("expression");
   const buttonsContainer = document.getElementById("buttons");
 
-  // ─── State ─────────────────────────────────────────────────
   let currentInput = "0";
   let previousInput = "";
   let operator = null;
@@ -14,7 +12,6 @@
   let justEvaluated = false;
   let expressionString = "";
 
-  // ─── Helpers ──────────────────────────────────────────────
   function updateDisplay() {
     // format number with commas for readability (only integer part)
     let displayValue = currentInput;
@@ -26,7 +23,6 @@
       displayValue = Number(displayValue).toLocaleString("en-US");
     }
 
-    // if too long, shrink font
     if (displayValue.length > 12) {
       resultEl.classList.add("shrink");
     } else {
@@ -212,7 +208,6 @@
     btn.style.setProperty("--y", y + "%");
   }
 
-  // ─── Button click handler ────────────────────────────────
   function onButtonClick(e) {
     const btn = e.currentTarget;
     handleRipple(e, btn);
@@ -247,13 +242,11 @@
     }
   }
 
-  // ─── Attach events ────────────────────────────────────────
   const allButtons = buttonsContainer.querySelectorAll(".btn");
   allButtons.forEach((btn) => {
     btn.addEventListener("click", onButtonClick);
   });
 
-  // ─── Keyboard support ─────────────────────────────────────
   document.addEventListener("keydown", (e) => {
     const key = e.key;
 
@@ -315,10 +308,8 @@
     }
   });
 
-  // ─── Init ─────────────────────────────────────────────────
   resetCalculator();
 
-  // ─── (optional) Prevent context menu on buttons ──────────
   allButtons.forEach((btn) => {
     btn.addEventListener("contextmenu", (e) => e.preventDefault());
   });
