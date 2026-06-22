@@ -13,7 +13,6 @@
   let expressionString = "";
 
   function updateDisplay() {
-    // format number with commas for readability (only integer part)
     let displayValue = currentInput;
     if (displayValue.includes(".")) {
       const parts = displayValue.split(".");
@@ -199,7 +198,6 @@
     updateDisplay();
   }
 
-  // ─── Ripple effect ────────────────────────────────────────
   function handleRipple(e, btn) {
     const rect = btn.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 100;
