@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Canvas · Premium UI</title>
+    <!-- Font Awesome 6 (Free) for modern icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font for better typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #080b17;
+        background-image:
+          radial-gradient(ellipse at 10% 20%, #1a2a5e 0%, transparent 60%),
+          radial-gradient(ellipse at 90% 80%, #2d1b4e 0%, transparent 50%),
+          radial-gradient(ellipse at 50% 50%, #0d1229 0%, #03050c 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+        padding: 1.8rem;
+        color: #eef4ff;
+      }
+
+      /* ----- main card – premium glassmorphism ----- */
+      .card {
+        background: rgba(12, 16, 35, 0.75);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-radius: 3.2rem;
+        padding: 2.4rem 2.6rem 2.6rem;
+        box-shadow:
+          0 40px 80px -16px rgba(0, 0, 0, 0.95),
+          0 0 0 1px rgba(90, 160, 255, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        max-width: 860px;
+        width: 100%;
+        transition:
+          box-shadow 0.4s ease,
+          transform 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle at 30% 40%,
+          rgba(80, 140, 255, 0.03),
+          transparent 60%
+        );
+        pointer-events: none;
+        animation: shimmer 12s linear infinite;
+      }
+
+      @keyframes shimmer {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .card:hover {
+        box-shadow:
+          0 50px 100px -20px #05080f,
+          0 0 0 2px rgba(80, 170, 255, 0.12),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      /* ----- header + search row ----- */
+      .header-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem 1.2rem;
+        margin-bottom: 0.4rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      h1 {
+        font-weight: 650;
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+        background: linear-gradient(
+          135deg,
+          #c8e4ff 0%,
+          #7aafff 40%,
+          #b88cff 80%,
+          #ff8cf0 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-shadow: none;
+        filter: drop-shadow(0 0 30px rgba(70, 140, 255, 0.15));
+      }
+
+      h1 i {
+        font-size: 2.1rem;
+        background: linear-gradient(135deg, #7ab8ff, #b07cff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+        border-radius: 60px;
+        filter: drop-shadow(0 0 20px rgba(100, 150, 255, 0.2));
+      }
+
+      /* ----- search bar (premium) ----- */
+      .search-wrap {
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 60px;
+        padding: 0.25rem 0.25rem 0.25rem 1.2rem;
+        backdrop-filter: blur(8px);
+        transition: all 0.35s ease;
+        min-width: 190px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .search-wrap:focus-within {
+        border-color: rgba(100, 180, 255, 0.35);
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow:
+          0 0 30px rgba(60, 140, 255, 0.06),
+          inset 0 0 30px rgba(60, 140, 255, 0.03);
+        transform: scale(1.01);
+      }
+
+      .search-wrap i {
+        color: #7a9ad6;
+        font-size: 0.9rem;
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+
+      .search-wrap:focus-within i {
+        opacity: 1;
+        color: #8ab8ff;
+      }
+
+      .search-wrap input {
+        background: transparent;
+        border: none;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        color: #e4eeff;
+        outline: none;
+        width: 140px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        font-family: "Inter", sans-serif;
+      }
+
+      .search-wrap input::placeholder {
+        color: #5d71a0;
+        font-weight: 350;
+        letter-spacing: 0.2px;
+      }
+
+      .search-wrap button {
+        background: linear-gradient(
+          135deg,
+          rgba(60, 130, 255, 0.25),
+          rgba(120, 80, 255, 0.15)
+        );
+        border: none;
+        border-radius: 40px;
+        padding: 0.55rem 1.4rem;
+        color: #c8ddff;
+        font-size: 0.85rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        font-family: "Inter", sans-serif;
+      }
+
+      .search-wrap button:hover {
+        background: linear-gradient(
+          135deg,
+          rgba(70, 150, 255, 0.35),
+          rgba(140, 100, 255, 0.25)
+        );
+        color: white;
+        box-shadow:
+          0 0 30px rgba(60, 130, 255, 0.15),
+          inset 0 0 30px rgba(60, 130, 255, 0.05);
+        transform: scale(1.02);
+      }
+
+      .search-wrap button:active {
+        transform: scale(0.95);
+      }
+
+      .search-wrap button i {
+        font-size: 0.8rem;
+        color: #aac4ff;
+        opacity: 1;
+      }
+
+      /* ----- sub / description ----- */
+      .sub {
+        color: #8ea3d0;
+        font-size: 0.9rem;
+        margin-bottom: 1.6rem;
+        padding-left: 6px;
+        border-left: 3px solid #4b7bec;
+        padding-left: 16px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        opacity: 0.9;
+        position: relative;
+        z-index: 1;
+      }
+
+      .sub i {
+        color: #5b8cff;
+      }
+
+      /* ----- canvas wrapper ----- */
+      .canvas-wrapper {
+        position: relative;
+        border-radius: 2.2rem;
+        overflow: hidden;
+        box-shadow:
+          inset 0 0 60px rgba(0, 20, 60, 0.5),
+          0 20px 50px rgba(0, 0, 0, 0.8),
+          0 0 0 1px rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        background: #090c1a;
+        transition: box-shadow 0.4s ease;
+      }
+
+      .canvas-wrapper:hover {
+        box-shadow:
+          inset 0 0 60px rgba(0, 20, 60, 0.6),
+          0 24px 60px rgba(0, 0, 0, 0.9),
+          0 0 0 1px rgba(80, 160, 255, 0.08);
+      }
+
+      canvas {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        background: radial-gradient(circle at 20% 30%, #141b33, #070a16);
+        cursor: crosshair;
+        touch-action: none;
+      }
+
+      /* ----- control bar (premium buttons) ----- */
+      .control-bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.8rem;
+        gap: 0.8rem 0.5rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+      }
+
+      /* ----- ATTRACTIVE BUTTONS with gradients & glow ----- */
+      .btn {
+        position: relative;
+        background: rgba(20, 28, 58, 0.6);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border: none;
+        padding: 0.65rem 1.6rem;
+        border-radius: 60px;
+        font-weight: 550;
+        font-size: 0.85rem;
+        color: #d6e4ff;
+        box-shadow:
+          0 4px 16px rgba(0, 0, 0, 0.35),
+          inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        letter-spacing: 0.2px;
+        font-family: "Inter", sans-serif;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        overflow: hidden;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 60px;
+        padding: 1px;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.05),
+          transparent,
+          rgba(255, 255, 255, 0.02)
+        );
+        -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+
+      .btn i {
+        font-size: 1rem;
+        color: #8ab4ff;
+        transition: all 0.3s ease;
+        filter: drop-shadow(0 0 8px rgba(80, 150, 255, 0.1));
+      }
+
+      .btn:hover {
+        transform: translateY(-2px) scale(1.02);
+        color: white;
+        background: rgba(35, 50, 100, 0.7);
+        box-shadow:
+          0 8px 30px rgba(60, 130, 255, 0.15),
+          inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        border-color: rgba(120, 180, 255, 0.15);
+      }
+
+      .btn:hover i {
+        color: #b8d4ff;
+        filter: drop-shadow(0 0 15px rgba(80, 150, 255, 0.3));
+        transform: scale(1.1);
+      }
+
+      .btn:active {
+        transform: scale(0.94) translateY(0);
+        transition-duration: 0.08s;
+      }
+
+      /* Primary button - extra glow */
+      .btn-primary {
+        background: linear-gradient(135deg, #2f53b0, #4a3fbf);
+        color: white;
+        box-shadow:
+          0 4px 24px rgba(50, 100, 255, 0.2),
+          inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        border-color: rgba(100, 150, 255, 0.15);
+      }
+
+      .btn-primary i {
+        color: #c5ddff;
+        filter: drop-shadow(0 0 12px rgba(100, 180, 255, 0.2));
+      }
+
+      .btn-primary::before {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.15),
+          rgba(255, 255, 255, 0.02)
+        );
+      }
+
+      .btn-primary:hover {
+        background: linear-gradient(135deg, #3a62c8, #5a4fd8);
+        box-shadow:
+          0 8px 40px rgba(50, 120, 255, 0.25),
+          0 0 60px rgba(50, 120, 255, 0.05),
+          inset 0 1px 0 rgba(255, 255, 255, 0.12);
+        transform: translateY(-2px) scale(1.02);
+        border-color: rgba(100, 170, 255, 0.25);
+      }
+
+      .btn-primary:active {
+        transform: scale(0.94) translateY(0);
+      }
+
+      /* Special color button with rainbow hover */
+      .btn-color {
+        background: linear-gradient(
+          135deg,
+          rgba(60, 40, 120, 0.5),
+          rgba(120, 40, 100, 0.3)
+        );
+      }
+
+      .btn-color:hover {
+        background: linear-gradient(
+          135deg,
+          rgba(100, 60, 180, 0.6),
+          rgba(180, 60, 140, 0.4)
+        );
+        box-shadow: 0 8px 30px rgba(160, 80, 255, 0.15);
+      }
+
+      .btn-color i {
+        color: #c88bff;
+      }
+
+      .btn-color:hover i {
+        color: #ddb0ff;
+        filter: drop-shadow(0 0 20px rgba(160, 80, 255, 0.3));
+      }
+
+      /* ----- badges (premium) ----- */
+      .badge-group {
+        display: flex;
+        gap: 0.9rem;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .badge {
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(6px);
+        padding: 0.4rem 1.2rem;
+        border-radius: 60px;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        color: #b6caf0;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 450;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        transition: all 0.3s ease;
+      }
+
+      .badge:hover {
+        border-color: rgba(100, 160, 255, 0.08);
+        background: rgba(0, 0, 0, 0.4);
+      }
+
+      .badge i {
+        color: #7a9fe0;
+        font-size: 0.9rem;
+        filter: drop-shadow(0 0 8px rgba(80, 150, 255, 0.05));
+      }
+
+      .badge span {
+        color: #cae4ff;
+        font-weight: 600;
+        font-size: 0.95rem;
+        min-width: 1.8rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 0 0.2rem;
+        border-radius: 4px;
+      }
+
+      .badge .highlight {
+        color: #f7c948;
+        text-shadow: 0 0 20px rgba(247, 200, 72, 0.15);
+      }
+
+      /* ----- footer hints ----- */
+      .footer-hint {
+        margin-top: 1.6rem;
+        color: #4d6090;
+        font-size: 0.75rem;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.03);
+        padding-top: 1.2rem;
+        letter-spacing: 0.2px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem 1.4rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-hint span {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: 0.3s;
+      }
+
+      .footer-hint span:hover {
+        color: #7a90c0;
+      }
+
+      .footer-hint kbd {
+        background: rgba(20, 30, 60, 0.6);
+        padding: 0.1rem 0.7rem;
+        border-radius: 30px;
+        color: #b0c8f0;
+        font-weight: 400;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        font-size: 0.7rem;
+        font-family: "Inter", sans-serif;
+        backdrop-filter: blur(4px);
+      }
+
+      .footer-hint i {
+        font-size: 0.7rem;
+        color: #4a6a9a;
+      }
+
+      /* ----- responsive ----- */
+      @media (max-width: 640px) {
+        .card {
+          padding: 1.4rem;
+          border-radius: 2.2rem;
+        }
+        .header-row {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .search-wrap {
+          width: 100%;
+        }
+        .search-wrap input {
+          width: 100%;
+        }
+        .btn {
+          padding: 0.45rem 1.1rem;
+          font-size: 0.78rem;
+          gap: 6px;
+        }
+        .badge {
+          padding: 0.25rem 0.9rem;
+          font-size: 0.7rem;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        .control-bar {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .btn-group {
+          justify-content: center;
+        }
+        .badge-group {
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .btn {
+          padding: 0.4rem 0.9rem;
+          font-size: 0.7rem;
+        }
+        .btn i {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <!-- header + search -->
+      <div class="header-row">
+        <h1><i class="fas fa-bolt"></i> neon·canvas</h1>
+        <div class="search-wrap">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="filter events…" id="searchInput" />
+          <button id="searchBtn"><i class="fas fa-arrow-right"></i> go</button>
+        </div>
+      </div>
+      <div class="sub">
+        <i
+          class="fas fa-circle"
+          style="color: #5b8cff; font-size: 0.6rem; margin-right: 8px"
+        ></i>
+        multiple events · click, drag, key, resize &amp; more
+      </div>
+
+      <!-- canvas -->
+      <div class="canvas-wrapper">
+        <canvas id="canvas" width="800" height="450"></canvas>
+      </div>
+
+      <!-- controls with attractive buttons -->
+      <div class="control-bar">
+        <div class="btn-group">
+          <button class="btn" id="clearBtn">
+            <i class="fas fa-eraser"></i> clear
+          </button>
+          <button class="btn btn-primary" id="randomBtn">
+            <i class="fas fa-dice"></i> random
+          </button>
+          <button class="btn btn-color" id="colorBtn">
+            <i class="fas fa-palette"></i> hue
+          </button>
+        </div>
+        <div class="badge-group">
+          <div class="badge">
+            <i class="fas fa-mouse-pointer"></i> clicks
+            <span id="clickCounter">0</span>
+          </div>
+          <div class="badge">
+            <i class="fas fa-crosshairs"></i>
+            <span id="coordDisplay">0, 0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer hints -->
+      <div class="footer-hint">
+        <span><i class="fas fa-hand-pointer"></i> <kbd>click</kbd> draw</span>
+        <span><i class="fas fa-arrows-alt"></i> <kbd>drag</kbd> line</span>
+        <span><kbd>r</kbd> random</span>
+        <span><kbd>c</kbd> clear</span>
+        <span><kbd>h</kbd> hue</span>
+        <span><i class="fas fa-expand"></i> <kbd>resize</kbd> adapt</span>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        // ----- canvas setup -----
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        const W = 800,
+          H = 450;
+        canvas.width = W;
+        canvas.height = H;
+
+        // ----- state -----
+        let drawing = false;
+        let lastX = 0,
+          lastY = 0;
+        let clickCount = 0;
+        let currentHue = 200;
+        let hueShift = 0;
+
+        // DOM refs
+        const clickSpan = document.getElementById("clickCounter");
+        const coordSpan = document.getElementById("coordDisplay");
+        const searchInput = document.getElementById("searchInput");
+        const searchBtn = document.getElementById("searchBtn");
+
+        // ----- drawing helpers -----
+        function drawDot(x, y, color) {
+          ctx.beginPath();
+          ctx.arc(x, y, 6, 0, Math.PI * 2);
+          ctx.fillStyle = color || `hsl(${currentHue + hueShift}, 85%, 65%)`;
+          ctx.shadowColor = "rgba(120, 200, 255, 0.6)";
+          ctx.shadowBlur = 22;
+          ctx.fill();
+          ctx.shadowBlur = 40;
+          ctx.fill();
+          ctx.shadowBlur = 0;
+        }
+
+        function drawLine(x1, y1, x2, y2) {
+          ctx.beginPath();
+          ctx.moveTo(x1, y1);
+          ctx.lineTo(x2, y2);
+          ctx.strokeStyle = `hsl(${currentHue + hueShift}, 80%, 60%)`;
+          ctx.lineWidth = 4.5;
+          ctx.shadowColor = "rgba(80, 180, 255, 0.5)";
+          ctx.shadowBlur = 20;
+          ctx.stroke();
+          ctx.shadowBlur = 0;
+        }
+
+        function drawRandomPattern() {
+          for (let i = 0; i < 16; i++) {
+            const x = Math.random() * W;
+            const y = Math.random() * H;
+            const hue = Math.floor(Math.random() * 360);
+            ctx.beginPath();
+            ctx.arc(x, y, 5 + Math.random() * 14, 0, Math.PI * 2);
+            ctx.fillStyle = `hsl(${hue}, 85%, 65%)`;
+            ctx.shadowColor = `hsl(${hue}, 80%, 70%)`;
+            ctx.shadowBlur = 35;
+            ctx.fill();
+          }
+          for (let i = 0; i < 4; i++) {
+            ctx.beginPath();
+            ctx.moveTo(Math.random() * W, Math.random() * H);
+            ctx.lineTo(Math.random() * W, Math.random() * H);
+            ctx.strokeStyle = `hsl(${Math.floor(Math.random() * 360)}, 80%, 60%)`;
+            ctx.lineWidth = 3 + Math.random() * 5;
+            ctx.shadowBlur = 28;
+            ctx.stroke();
+          }
+          ctx.shadowBlur = 0;
+        }
+
+        function drawBackground() {
+          const grad = ctx.createRadialGradient(200, 100, 40, 400, 200, 500);
+          grad.addColorStop(0, "#18204a");
+          grad.addColorStop(0.7, "#0a0d1f");
+          ctx.fillStyle = grad;
+          ctx.fillRect(0, 0, W, H);
+          ctx.strokeStyle = "rgba(90, 140, 255, 0.04)";
+          ctx.lineWidth = 1;
+          for (let i = 0; i < W; i += 40) {
+            ctx.beginPath();
+            ctx.moveTo(i, 0);
+            ctx.lineTo(i, H);
+            ctx.stroke();
+          }
+          for (let i = 0; i < H; i += 40) {
+            ctx.beginPath();
+            ctx.moveTo(0, i);
+            ctx.lineTo(W, i);
+            ctx.stroke();
+          }
+        }
+
+        function clearCanvas() {
+          drawBackground();
+        }
+
+        function updateClickCounter() {
+          clickSpan.textContent = clickCount;
+        }
+
+        function updateCoords(x, y) {
+          coordSpan.textContent = `${Math.round(x)}, ${Math.round(y)}`;
+        }
+
+        // ----- init -----
+        function init() {
+          drawBackground();
+          for (let i = 0; i < 6; i++) {
+            const x = 100 + i * 100 + Math.random() * 40;
+            const y = 100 + Math.sin(i) * 60 + 40;
+            drawDot(x, y, `hsl(${180 + i * 30}, 80%, 60%)`);
+          }
+          drawDot(400, 220, "#ffb3b3");
+          drawDot(600, 150, "#b3d9ff");
+          updateClickCounter();
+        }
+
+        // ----- get canvas coords (mouse/touch) -----
+        function getCanvasCoords(e) {
+          const rect = canvas.getBoundingClientRect();
+          const scaleX = canvas.width / rect.width;
+          const scaleY = canvas.height / rect.height;
+          let clientX, clientY;
+          if (e.touches) {
+            clientX = e.touches[0].clientX;
+            clientY = e.touches[0].clientY;
+            e.preventDefault();
+          } else {
+            clientX = e.clientX;
+            clientY = e.clientY;
+          }
+          const canvasX = (clientX - rect.left) * scaleX;
+          const canvasY = (clientY - rect.top) * scaleY;
+          return {
+            x: Math.min(Math.max(canvasX, 0), W),
+            y: Math.min(Math.max(canvasY, 0), H),
+          };
+        }
+
+        // ----- pointer events -----
+        function handlePointerDown(e) {
+          const { x, y } = getCanvasCoords(e);
+          drawing = true;
+          lastX = x;
+          lastY = y;
+          drawDot(x, y);
+          clickCount++;
+          updateClickCounter();
+          updateCoords(x, y);
+        }
+
+        function handlePointerMove(e) {
+          const { x, y } = getCanvasCoords(e);
+          updateCoords(x, y);
+          if (drawing) {
+            drawLine(lastX, lastY, x, y);
+            drawDot(x, y);
+            lastX = x;
+            lastY = y;
+          }
+        }
+
+        function handlePointerUp() {
+          drawing = false;
+        }
+
+        function handlePointerLeave() {
+          drawing = false;
+        }
+
+        // attach canvas events
+        canvas.addEventListener("mousedown", handlePointerDown);
+        canvas.addEventListener("mousemove", handlePointerMove);
+        canvas.addEventListener("mouseup", handlePointerUp);
+        canvas.addEventListener("mouseleave", handlePointerLeave);
+        canvas.addEventListener("touchstart", handlePointerDown, {
+          passive: false,
+        });
+        canvas.addEventListener("touchmove", handlePointerMove, {
+          passive: false,
+        });
+        canvas.addEventListener("touchend", handlePointerUp);
+        canvas.addEventListener("touchcancel", handlePointerUp);
+
+        // double click
+        canvas.addEventListener("dblclick", function (e) {
+          const { x, y } = getCanvasCoords(e);
+          for (let i = 0; i < 10; i++) {
+            const angle = (i / 10) * Math.PI * 2;
+            const r = 25 + Math.sin(i * 5) * 10;
+            const dx = x + Math.cos(angle) * r;
+            const dy = y + Math.sin(angle) * r;
+            drawDot(dx, dy, `hsl(${currentHue + hueShift + i * 20}, 90%, 70%)`);
+          }
+          clickCount += 2;
+          updateClickCounter();
+        });
+
+        // ----- buttons -----
+        document
+          .getElementById("clearBtn")
+          .addEventListener("click", function () {
+            clearCanvas();
+            clickCount = 0;
+            updateClickCounter();
+            coordSpan.textContent = "0, 0";
+          });
+
+        document
+          .getElementById("randomBtn")
+          .addEventListener("click", function () {
+            drawRandomPattern();
+            clickCount++;
+            updateClickCounter();
+          });
+
+        document
+          .getElementById("colorBtn")
+          .addEventListener("click", function () {
+            hueShift = (hueShift + 45) % 360;
+            drawDot(W / 2, H / 2, `hsl(${currentHue + hueShift}, 90%, 70%)`);
+            clickCount++;
+            updateClickCounter();
+          });
+
+        // ----- keyboard events -----
+        document.addEventListener("keydown", function (e) {
+          const key = e.key.toLowerCase();
+          if (key === "r") {
+            document.getElementById("randomBtn").click();
+            e.preventDefault();
+          } else if (key === "c") {
+            document.getElementById("clearBtn").click();
+            e.preventDefault();
+          } else if (key === "h") {
+            document.getElementById("colorBtn").click();
+            e.preventDefault();
+          }
+        });
+
+        // ----- resize event (visual feedback) -----
+        window.addEventListener("resize", function () {
+          ctx.shadowBlur = 10;
+          ctx.fillStyle = "rgba(255,255,255,0.02)";
+          ctx.fillRect(0, 0, W, H);
+          ctx.shadowBlur = 0;
+        });
+
+        // ----- SEARCH functionality -----
+        function handleSearch() {
+          const query = searchInput.value.trim().toLowerCase();
+          if (!query) {
+            alert(
+              '🔍 Please enter a search term. (e.g. "click", "key", "resize")',
+            );
+            return;
+          }
+          const events = [
+            "click",
+            "mousemove",
+            "mouseup",
+            "mousedown",
+            "touchstart",
+            "touchmove",
+            "keydown",
+            "resize",
+            "dblclick",
+          ];
+          const found = events.filter((ev) => ev.includes(query));
+          if (found.length) {
+            alert(
+              `✨ Found ${found.length} event(s) matching "${query}":\n\n${found.join(" · ")}`,
+            );
+          } else {
+            alert(
+              `🔎 No events match "${query}". Try: click, key, resize, touch, etc.`,
+            );
+          }
+          searchBtn.style.transform = "scale(0.94)";
+          setTimeout(() => (searchBtn.style.transform = ""), 150);
+        }
+
+        searchBtn.addEventListener("click", handleSearch);
+        searchInput.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            handleSearch();
+          }
+        });
+
+        // ----- start -----
+        init();
+        console.log("✨ neon canvas · premium UI with attractive buttons");
+      })();
+    </script>
+  </body>
+</html>
