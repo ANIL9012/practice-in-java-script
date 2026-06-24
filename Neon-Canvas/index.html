@@ -647,7 +647,6 @@
 
     <script>
       (function () {
-        // ----- canvas setup -----
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
         const W = 800,
@@ -655,7 +654,6 @@
         canvas.width = W;
         canvas.height = H;
 
-        // ----- state -----
         let drawing = false;
         let lastX = 0,
           lastY = 0;
@@ -663,13 +661,11 @@
         let currentHue = 200;
         let hueShift = 0;
 
-        // DOM refs
         const clickSpan = document.getElementById("clickCounter");
         const coordSpan = document.getElementById("coordDisplay");
         const searchInput = document.getElementById("searchInput");
         const searchBtn = document.getElementById("searchBtn");
 
-        // ----- drawing helpers -----
         function drawDot(x, y, color) {
           ctx.beginPath();
           ctx.arc(x, y, 6, 0, Math.PI * 2);
@@ -752,7 +748,6 @@
           coordSpan.textContent = `${Math.round(x)}, ${Math.round(y)}`;
         }
 
-        // ----- init -----
         function init() {
           drawBackground();
           for (let i = 0; i < 6; i++) {
@@ -765,7 +760,6 @@
           updateClickCounter();
         }
 
-        // ----- get canvas coords (mouse/touch) -----
         function getCanvasCoords(e) {
           const rect = canvas.getBoundingClientRect();
           const scaleX = canvas.width / rect.width;
@@ -787,7 +781,6 @@
           };
         }
 
-        // ----- pointer events -----
         function handlePointerDown(e) {
           const { x, y } = getCanvasCoords(e);
           drawing = true;
@@ -818,7 +811,6 @@
           drawing = false;
         }
 
-        // attach canvas events
         canvas.addEventListener("mousedown", handlePointerDown);
         canvas.addEventListener("mousemove", handlePointerMove);
         canvas.addEventListener("mouseup", handlePointerUp);
@@ -832,7 +824,6 @@
         canvas.addEventListener("touchend", handlePointerUp);
         canvas.addEventListener("touchcancel", handlePointerUp);
 
-        // double click
         canvas.addEventListener("dblclick", function (e) {
           const { x, y } = getCanvasCoords(e);
           for (let i = 0; i < 10; i++) {
@@ -846,7 +837,6 @@
           updateClickCounter();
         });
 
-        // ----- buttons -----
         document
           .getElementById("clearBtn")
           .addEventListener("click", function () {
@@ -873,7 +863,6 @@
             updateClickCounter();
           });
 
-        // ----- keyboard events -----
         document.addEventListener("keydown", function (e) {
           const key = e.key.toLowerCase();
           if (key === "r") {
@@ -888,7 +877,6 @@
           }
         });
 
-        // ----- resize event (visual feedback) -----
         window.addEventListener("resize", function () {
           ctx.shadowBlur = 10;
           ctx.fillStyle = "rgba(255,255,255,0.02)";
@@ -896,7 +884,6 @@
           ctx.shadowBlur = 0;
         });
 
-        // ----- SEARCH functionality -----
         function handleSearch() {
           const query = searchInput.value.trim().toLowerCase();
           if (!query) {
@@ -938,7 +925,6 @@
           }
         });
 
-        // ----- start -----
         init();
         console.log("✨ neon canvas · premium UI with attractive buttons");
       })();
