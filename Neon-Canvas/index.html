@@ -36,7 +36,6 @@
         color: #eef4ff;
       }
 
-      /* ----- main card – premium glassmorphism ----- */
       .card {
         background: rgba(12, 16, 35, 0.75);
         backdrop-filter: blur(16px);
@@ -89,7 +88,6 @@
           inset 0 1px 0 rgba(255, 255, 255, 0.06);
       }
 
-      /* ----- header + search row ----- */
       .header-row {
         display: flex;
         flex-wrap: wrap;
@@ -133,7 +131,6 @@
         filter: drop-shadow(0 0 20px rgba(100, 150, 255, 0.2));
       }
 
-      /* ----- search bar (premium) ----- */
       .search-wrap {
         display: flex;
         align-items: center;
@@ -232,7 +229,6 @@
         opacity: 1;
       }
 
-      /* ----- sub / description ----- */
       .sub {
         color: #8ea3d0;
         font-size: 0.9rem;
@@ -251,7 +247,6 @@
         color: #5b8cff;
       }
 
-      /* ----- canvas wrapper ----- */
       .canvas-wrapper {
         position: relative;
         border-radius: 2.2rem;
@@ -282,7 +277,6 @@
         touch-action: none;
       }
 
-      /* ----- control bar (premium buttons) ----- */
       .control-bar {
         display: flex;
         flex-wrap: wrap;
@@ -300,7 +294,6 @@
         gap: 0.7rem;
       }
 
-      /* ----- ATTRACTIVE BUTTONS with gradients & glow ----- */
       .btn {
         position: relative;
         background: rgba(20, 28, 58, 0.6);
@@ -374,7 +367,6 @@
         transition-duration: 0.08s;
       }
 
-      /* Primary button - extra glow */
       .btn-primary {
         background: linear-gradient(135deg, #2f53b0, #4a3fbf);
         color: white;
@@ -411,7 +403,6 @@
         transform: scale(0.94) translateY(0);
       }
 
-      /* Special color button with rainbow hover */
       .btn-color {
         background: linear-gradient(
           135deg,
@@ -438,7 +429,6 @@
         filter: drop-shadow(0 0 20px rgba(160, 80, 255, 0.3));
       }
 
-      /* ----- badges (premium) ----- */
       .badge-group {
         display: flex;
         gap: 0.9rem;
@@ -489,7 +479,6 @@
         text-shadow: 0 0 20px rgba(247, 200, 72, 0.15);
       }
 
-      /* ----- footer hints ----- */
       .footer-hint {
         margin-top: 1.6rem;
         color: #4d6090;
@@ -534,7 +523,6 @@
         color: #4a6a9a;
       }
 
-      /* ----- responsive ----- */
       @media (max-width: 640px) {
         .card {
           padding: 1.4rem;
@@ -587,7 +575,6 @@
   </head>
   <body>
     <div class="card">
-      <!-- header + search -->
       <div class="header-row">
         <h1><i class="fas fa-bolt"></i> neon·canvas</h1>
         <div class="search-wrap">
@@ -609,7 +596,6 @@
         <canvas id="canvas" width="800" height="450"></canvas>
       </div>
 
-      <!-- controls with attractive buttons -->
       <div class="control-bar">
         <div class="btn-group">
           <button class="btn" id="clearBtn">
@@ -634,7 +620,6 @@
         </div>
       </div>
 
-      <!-- footer hints -->
       <div class="footer-hint">
         <span><i class="fas fa-hand-pointer"></i> <kbd>click</kbd> draw</span>
         <span><i class="fas fa-arrows-alt"></i> <kbd>drag</kbd> line</span>
