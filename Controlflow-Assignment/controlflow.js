@@ -207,7 +207,6 @@
 //     }
 //   }
 
-//   // Call the function
 //   checkEvenOrOdd();
 
 //               LOOOP INNER FUNCTION
