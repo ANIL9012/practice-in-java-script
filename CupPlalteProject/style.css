@@ -1,0 +1,483 @@
+/* style.css – clean, cool, professional */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(145deg, #f7f3eb 0%, #e8dfd3 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  padding: 1.5rem;
+}
+
+.scene {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* card */
+.table-card {
+  background: #fffcf7;
+  border-radius: 56px 56px 40px 40px;
+  box-shadow:
+    0 30px 50px -20px rgba(0, 0, 0, 0.25),
+    0 10px 20px -8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 4px rgba(255, 255, 240, 0.6);
+  padding: 2.5rem 2rem 1.8rem;
+  backdrop-filter: blur(2px);
+}
+
+.table-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem 2.5rem;
+  position: relative;
+  min-height: 380px;
+}
+
+/* ---------- PERSON (holding cup + eating) ---------- */
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.06));
+  transition: transform 0.2s;
+  transform-origin: bottom center;
+  flex-shrink: 0;
+}
+
+.head {
+  width: 76px;
+  height: 76px;
+  background: #fce3d4;
+  border-radius: 50%;
+  position: relative;
+  box-shadow:
+    0 6px 0 #dbbca8,
+    0 8px 12px rgba(0, 0, 0, 0.05);
+  border: 2px solid #f5d4bf;
+  z-index: 2;
+}
+.face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.eye {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #2d221c;
+  border-radius: 50%;
+  top: 32px;
+}
+.left-eye {
+  left: 16px;
+}
+.right-eye {
+  right: 16px;
+}
+.mouth {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 8px;
+  border-radius: 30px 30px 10px 10px;
+  background: #af6d5a;
+  transition: all 0.25s ease;
+}
+.hair {
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  width: 72px;
+  height: 36px;
+  background: #6f4a3a;
+  border-radius: 80px 80px 20px 20px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.body {
+  position: relative;
+  width: 86px;
+  height: 68px;
+  margin-top: -10px;
+  background: #c7d4dd;
+  border-radius: 40px 40px 24px 24px;
+  box-shadow: 0 6px 0 #a8b7c2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+.torso {
+  width: 54px;
+  height: 34px;
+  background: #dbe5ed;
+  border-radius: 20px 20px 0 0;
+}
+
+/* arms & hands */
+.arm {
+  position: absolute;
+  top: -6px;
+  width: 26px;
+  height: 50px;
+  background: #fce3d4;
+  border-radius: 40px 40px 16px 16px;
+  box-shadow: inset -2px -2px 0 #dbbca8;
+  transition: transform 0.45s cubic-bezier(0.34, 1.2, 0.64, 1);
+  transform-origin: top center;
+  z-index: 3;
+}
+.left-arm {
+  left: -14px;
+  transform: rotate(10deg);
+}
+.right-arm {
+  right: -14px;
+  transform: rotate(-10deg);
+}
+
+.hand {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.05));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* mini cup in hand */
+.cup-in-hand {
+  display: inline-block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin-top: 6px;
+}
+.mini-cup {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  background: #f2eae0;
+  border-radius: 0 0 20px 20px / 0 0 30px 30px;
+  border: 2px solid #dacfc1;
+  border-top: 3px solid #e5d8c8;
+  box-shadow: 0 4px 0 #d6c9bb;
+  display: inline-block;
+}
+.mini-tea {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  width: calc(100% - 6px);
+  height: 55%;
+  background: radial-gradient(circle at 30% 20%, #a67b5b, #6d4f3a);
+  border-radius: 0 0 16px 16px / 0 0 24px 24px;
+}
+.mini-handle {
+  position: absolute;
+  right: -10px;
+  top: 8px;
+  width: 14px;
+  height: 18px;
+  border: 4px solid #dacfc1;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  background: transparent;
+}
+
+/* snack in right hand */
+.snack-in-hand {
+  font-size: 32px;
+  line-height: 1;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1));
+  transform: rotate(8deg);
+}
+
+/* ---------- STATES: sipping / eating ---------- */
+.person.sipping .left-arm {
+  transform: rotate(0deg) translateX(8px) translateY(-4px);
+}
+.person.sipping .right-arm {
+  transform: rotate(-32deg) translateX(-6px) translateY(-6px);
+}
+.person.sipping .mouth {
+  width: 12px;
+  height: 10px;
+  background: #8f5a48;
+  border-radius: 30px 30px 10px 10px;
+}
+
+.person.eating .left-arm {
+  transform: rotate(6deg) translateX(2px);
+}
+.person.eating .right-arm {
+  transform: rotate(18deg) translateX(-18px) translateY(-18px);
+}
+.person.eating .mouth {
+  width: 20px;
+  height: 12px;
+  background: #a1644f;
+  border-radius: 10px 10px 30px 30px;
+}
+
+/* ---------- PLATE ---------- */
+.plate-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.plate {
+  position: relative;
+  width: 160px;
+  height: 54px;
+  background: #f6f0e8;
+  border-radius: 100px / 40px;
+  box-shadow:
+    0 6px 0 #d6c9bb,
+    0 12px 20px -8px rgba(70, 50, 30, 0.15);
+  border: 2px solid #e3d7c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.plate:hover {
+  transform: scale(1.02);
+}
+
+.biscuit {
+  width: 32px;
+  height: 32px;
+  background: #dbb88c;
+  border-radius: 50% 50% 40% 40%;
+  box-shadow:
+    inset -2px -4px 0 #b28a62,
+    0 4px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #c8a074;
+  transform: rotate(6deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.biscuit::after {
+  content: "🍪";
+}
+.b2 {
+  transform: rotate(-12deg);
+  background: #cfaa7a;
+}
+
+.namkeen {
+  width: 22px;
+  height: 22px;
+  background: #d9b382;
+  border-radius: 6px 30% 6px 30%;
+  box-shadow: inset -2px -2px 0 #b38b60;
+  transform: rotate(20deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.namkeen::after {
+  content: "🥨";
+}
+.n2 {
+  transform: rotate(-10deg);
+}
+.n3 {
+  transform: rotate(45deg);
+}
+
+.label {
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+  color: #4f3f32;
+  background: #ede5db;
+  padding: 0.2rem 1rem;
+  border-radius: 40px;
+  box-shadow: inset 0 1px 4px rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+/* ---------- EXTRA CUP (prop) ---------- */
+.cup-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.cup {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background: #f2eae0;
+  border-radius: 0 0 36px 36px / 0 0 54px 54px;
+  box-shadow:
+    0 8px 0 #d6c9bb,
+    0 12px 20px -8px rgba(90, 60, 40, 0.2);
+  border: 2px solid #dacfc1;
+  border-top: 4px solid #e5d8c8;
+  cursor: default;
+}
+.tea-liquid {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: 55%;
+  background: radial-gradient(circle at 30% 20%, #a67b5b, #6d4f3a);
+  border-radius: 0 0 28px 28px / 0 0 36px 36px;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.cup-handle {
+  position: absolute;
+  right: -16px;
+  top: 24px;
+  width: 26px;
+  height: 34px;
+  border: 6px solid #dacfc1;
+  border-left: none;
+  border-radius: 0 30px 30px 0;
+  background: transparent;
+  box-shadow: 4px 4px 0 #c4b6a6;
+}
+.steam {
+  position: absolute;
+  width: 8px;
+  height: 18px;
+  background: rgba(255, 245, 230, 0.5);
+  border-radius: 40px;
+  filter: blur(3px);
+  animation: rise 2.8s infinite ease-in-out;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.s1 {
+  left: 18px;
+  top: -16px;
+  animation-delay: 0s;
+}
+.s2 {
+  left: 40px;
+  top: -24px;
+  animation-delay: 0.9s;
+  height: 22px;
+}
+.s3 {
+  left: 62px;
+  top: -12px;
+  animation-delay: 1.6s;
+}
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(0.9);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-42px) scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* ---------- ACTION BAR ---------- */
+.action-bar {
+  margin-top: 2.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 2px dashed #dacfc1;
+}
+#action-status {
+  font-weight: 500;
+  color: #3d322a;
+  background: #f2ebe3;
+  padding: 0.4rem 1.2rem;
+  border-radius: 60px;
+  font-size: 0.9rem;
+  box-shadow: inset 0 1px 6px rgba(255, 255, 240, 0.6);
+}
+.btn-group {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.btn-group button {
+  background: #ede5db;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 60px;
+  font-weight: 500;
+  color: #3d322a;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  box-shadow:
+    0 4px 0 #d6c9bb,
+    0 4px 8px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  transition: 0.1s ease;
+  border: 1px solid #f3ede6;
+}
+.btn-group button:active {
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 #d6c9bb;
+}
+.btn-group button:hover {
+  background: #f5efe8;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .table-card {
+    padding: 1.5rem;
+  }
+  .table-top {
+    gap: 1.2rem;
+  }
+  .person {
+    transform: scale(0.9);
+  }
+  .plate {
+    width: 130px;
+    height: 46px;
+  }
+  .cup {
+    width: 70px;
+    height: 70px;
+  }
+}
