@@ -1,4 +1,3 @@
-/* Reset CSS */
 *,
 *::before,
 *::after {
@@ -8,7 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Body styling */
 body {
   height: 100vh;
   display: flex;
@@ -21,14 +19,12 @@ body {
   animation: fadeIn 1s ease-in;
 }
 
-/* Heading */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   animation: slideDown 1s ease;
 }
 
-/* Container */
 .container {
   background: rgba(255, 255, 255, 0.1);
   padding: 2rem;
@@ -39,7 +35,6 @@ h1 {
   animation: zoomIn 0.8s ease;
 }
 
-/* Label */
 .container label {
   font-size: 1.1rem;
   font-weight: 500;
@@ -47,7 +42,6 @@ h1 {
   display: inline-block;
 }
 
-/* Input */
 #number {
   padding: 10px 15px;
   border-radius: 8px;
@@ -63,7 +57,6 @@ h1 {
   box-shadow: 0 0 8px #fff;
 }
 
-/* Button */
 #convert-btn {
   padding: 10px 20px;
   border: none;
@@ -82,7 +75,6 @@ h1 {
   box-shadow: 0 5px 15px rgba(255, 65, 108, 0.6);
 }
 
-/* Output */
 #output {
   display: inline-block;
   margin-top: 2rem;
@@ -92,7 +84,6 @@ h1 {
   animation: fadeIn 1s ease;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
