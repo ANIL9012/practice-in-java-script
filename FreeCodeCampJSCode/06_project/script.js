@@ -1,8 +1,6 @@
-// RPG Creature Search App
 // API docs: https://rpg-creature-api.freecodecamp.rocks/
 const API_BASE = "https://rpg-creature-api.freecodecamp.rocks/api";
 
-// Elements
 const inputEl = document.getElementById("search-input");
 const btnEl = document.getElementById("search-button");
 const nameEl = document.getElementById("creature-name");
@@ -68,7 +66,6 @@ function updateUI(data) {
   if (data.height !== undefined)
     heightEl.textContent = `Height: ${data.height}`;
 
-  // Types
   typesEl.innerHTML = "";
   const types = Array.isArray(data.types) ? data.types : [];
   types.forEach((t) => {
@@ -78,7 +75,6 @@ function updateUI(data) {
     typesEl.appendChild(chip);
   });
 
-  // Stats
   const stats = data.stats;
   let hp, atk, def, spa, spd, spe;
   if (Array.isArray(stats)) {
