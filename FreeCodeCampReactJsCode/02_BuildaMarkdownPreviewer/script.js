@@ -22,10 +22,6 @@ INSTRUCTIONS:
     along the way!
     ************/
 
-// PLEASE NOTE: Adding global style rules using the * selector, or by adding rules to body {..} or html {..}, or to all elements within body or html, i.e. h1 {..}, has the potential to pollute the test suite's CSS. Try adding: * { color: red }, for a quick example!
-
-// Once you have read the above messages, you can delete all comments.
-// Default markdown text (must include elements specified)
 const defaultMarkdown = `# Heading H1
 
 ## Subheading H2
@@ -53,13 +49,8 @@ greet('World');
 const editor = document.getElementById("editor");
 const preview = document.getElementById("preview");
 
-// Function to update the preview area
 function updatePreview() {
-  // Using marked to convert markdown to HTML
-  // Optional: interpret carriage returns as <br> with breaks: marked.setOptions({ breaks: true });
   const markdownText = editor.value;
-
-  // Enable GFM and breaks for optional bonus
   marked.setOptions({
     gfm: true,
     breaks: true,
@@ -67,12 +58,9 @@ function updatePreview() {
 
   preview.innerHTML = marked.parse(markdownText);
 }
-
-// Initialize editor with default markdown and update preview
 window.addEventListener("DOMContentLoaded", () => {
   editor.value = defaultMarkdown;
   updatePreview();
 });
 
-// Update preview as user types
 editor.addEventListener("input", updatePreview);
