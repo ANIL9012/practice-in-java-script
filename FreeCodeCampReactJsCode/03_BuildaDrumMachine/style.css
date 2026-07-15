@@ -1,4 +1,3 @@
-/* Basic styling for the drum machine container */
 #drum-machine {
   width: 400px;
   margin: 40px auto;
@@ -12,7 +11,6 @@
   text-align: center;
 }
 
-/* Display area */
 #display {
   background: #444;
   padding: 15px 0;
@@ -21,14 +19,12 @@
   font-size: 1.3em;
 }
 
-/* Drum pads container - grid layout */
 #drum-machine {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
 }
 
-/* Each drum pad style */
 .drum-pad {
   background: #555;
   border-radius: 10px;
@@ -42,7 +38,6 @@
   position: relative;
 }
 
-/* Show pressed effect */
 .drum-pad:active,
 .drum-pad.active {
   background: #ff6f61;
@@ -50,7 +45,6 @@
   transform: translateY(2px);
 }
 
-/* Hide the audio tags */
 .drum-pad audio {
   display: none;
 }
