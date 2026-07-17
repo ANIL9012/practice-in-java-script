@@ -1,5 +1,3 @@
-// !! IMPORTANT README:
-
 // You may add additional external JS and CSS as needed to complete the project, however the current external resource MUST remain in place for the tests to work. BABEL must also be left in place.
 
 /***********
@@ -41,21 +39,19 @@ const beepSound = document.getElementById("beep");
 const MIN_LENGTH = 1;
 const MAX_LENGTH = 60;
 
-let breakLength = 5; // in minutes
-let sessionLength = 25; // in minutes
-let timer; // the interval ID
+let breakLength = 5; 
+let sessionLength = 25;
+let timer;
 let timerRunning = false;
 let isSession = true;
-let timeRemaining = sessionLength * 60; // in seconds
+let timeRemaining = sessionLength * 60;
 
-// Utility: Format seconds as mm:ss
 function formatTime(secs) {
   const m = Math.floor(secs / 60);
   const s = secs % 60;
   return `${m < 10 ? "0" + m : m}:${s < 10 ? "0" + s : s}`;
 }
 
-// Update display for lengths and time-left
 function updateDisplay() {
   breakLengthEl.textContent = breakLength;
   sessionLengthEl.textContent = sessionLength;
@@ -63,7 +59,6 @@ function updateDisplay() {
   timeLeft.textContent = formatTime(timeRemaining);
 }
 
-// Reset everything to defaults and stop timer
 function reset() {
   clearInterval(timer);
   timerRunning = false;
@@ -76,7 +71,6 @@ function reset() {
   updateDisplay();
 }
 
-// Change break length by delta, with limits
 function changeBreakLength(delta) {
   if (timerRunning) return;
   const newLength = breakLength + delta;
@@ -89,7 +83,6 @@ function changeBreakLength(delta) {
   }
 }
 
-// Change session length by delta, with limits
 function changeSessionLength(delta) {
   if (timerRunning) return;
   const newLength = sessionLength + delta;
@@ -102,17 +95,14 @@ function changeSessionLength(delta) {
   }
 }
 
-// Timer countdown tick
 function tick() {
   if (timeRemaining > 0) {
     timeRemaining--;
     timeLeft.textContent = formatTime(timeRemaining);
   } else {
-    // Play beep sound
     beepSound.currentTime = 0;
     beepSound.play();
 
-    // Switch sessions/breaks
     isSession = !isSession;
     timerLabel.textContent = isSession ? "Session" : "Break";
 
@@ -121,20 +111,16 @@ function tick() {
   }
 }
 
-// Start or stop the timer
 function startStop() {
   if (timerRunning) {
-    // Pause timer
     clearInterval(timer);
     timerRunning = false;
   } else {
-    // Start timer
     timer = setInterval(tick, 1000);
     timerRunning = true;
   }
 }
 
-// Event listeners
 breakDecrement.addEventListener("click", () => changeBreakLength(-1));
 breakIncrement.addEventListener("click", () => changeBreakLength(1));
 sessionDecrement.addEventListener("click", () => changeSessionLength(-1));
@@ -142,5 +128,4 @@ sessionIncrement.addEventListener("click", () => changeSessionLength(1));
 startStopBtn.addEventListener("click", startStop);
 resetBtn.addEventListener("click", reset);
 
-// Initialize default display on load
 updateDisplay();
