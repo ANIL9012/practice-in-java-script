@@ -24,7 +24,6 @@ INSTRUCTIONS:
 
 // PLEASE NOTE: Adding global style rules using the * selector, or by adding rules to body {..} or html {..}, or to all elements within body or html, i.e. h1 {..}, has the potential to pollute the test suite's CSS. Try adding: * { color: red }, for a quick example!
 
-// Once you have read the above messages, you can delete all comments.
 const display = document.getElementById("display");
 const clearBtn = document.getElementById("clear");
 const equalsBtn = document.getElementById("equals");
@@ -36,7 +35,6 @@ let currentInput = "0";
 let formula = "";
 let justCalculated = false;
 
-// Helpers
 const operators = ["+", "-", "*", "/"];
 
 function updateDisplay(value) {
@@ -47,7 +45,6 @@ function isOperator(char) {
   return operators.includes(char);
 }
 
-// Clear the calculator
 clearBtn.addEventListener("click", () => {
   currentInput = "0";
   formula = "";
@@ -55,13 +52,11 @@ clearBtn.addEventListener("click", () => {
   updateDisplay(currentInput);
 });
 
-// Handle number button click
 numberButtons.forEach((button) => {
   button.addEventListener("click", () => {
     let num = button.textContent;
 
     if (justCalculated) {
-      // Start new input after calculation unless operator pressed
       currentInput = num;
       formula = "";
       justCalculated = false;
@@ -69,25 +64,21 @@ numberButtons.forEach((button) => {
       return;
     }
 
-    // Prevent starting number with multiple zeros
     if (currentInput === "0") {
       if (num === "0") {
-        // do nothing
         return;
       } else {
-        currentInput = num; // Replace initial zero
+        currentInput = num;
         updateDisplay(currentInput);
         return;
       }
     }
 
-    // Append number
     currentInput += num;
     updateDisplay(currentInput);
   });
 });
 
-// Handle decimal input
 decimalBtn.addEventListener("click", () => {
   if (justCalculated) {
     currentInput = "0.";
@@ -97,7 +88,6 @@ decimalBtn.addEventListener("click", () => {
     return;
   }
 
-  // Only add decimal if not already present in the current number
   const lastNumber = getLastNumber(currentInput);
   if (!lastNumber.includes(".")) {
     currentInput += ".";
@@ -105,21 +95,17 @@ decimalBtn.addEventListener("click", () => {
   }
 });
 
-// Utility to get last number in a string
 function getLastNumber(str) {
-  // Split by operators and return last segment
   let parts = str.split(/[\+\-\*\/]/);
   return parts[parts.length - 1];
 }
 
-// Handle operator click
 operatorButtons.forEach((button) => {
   button.addEventListener("click", () => {
     let op = button.id;
     let opSymbol = getOperatorSymbol(op);
 
     if (justCalculated) {
-      // Continue calculation on previous result
       formula = currentInput;
       justCalculated = false;
     }
@@ -128,7 +114,6 @@ operatorButtons.forEach((button) => {
       formula = currentInput;
     } else {
       if (endsWithOperator(formula)) {
-        // Replace operator unless negative sign handled differently
         if (opSymbol === "-" && !formula.endsWith("-")) {
           formula += opSymbol; // allow negative number
         } else {
@@ -145,7 +130,6 @@ operatorButtons.forEach((button) => {
   });
 });
 
-// Convert button id to operator symbol
 function getOperatorSymbol(id) {
   switch (id) {
     case "add":
@@ -161,16 +145,12 @@ function getOperatorSymbol(id) {
   }
 }
 
-// Check if string ends with operator (not including trailing negative sign)
 function endsWithOperator(str) {
-  // Ends with *, +, or / or single minus (but exclude negative number, e.g. 5*-4)
   return /[\+\*\/\-]$/.test(str);
 }
 
-// Handle equals button
 equalsBtn.addEventListener("click", () => {
   if (currentInput === "" && endsWithOperator(formula)) {
-    // If formula ends with operator and no current input, remove operator
     formula = formula.slice(0, -1);
   } else if (currentInput !== "") {
     formula += currentInput;
@@ -183,7 +163,6 @@ equalsBtn.addEventListener("click", () => {
   }
 
   try {
-    // Evaluate formula with reasonable decimal precision
     const result = evaluateFormula(formula);
     updateDisplay(result);
     currentInput = String(result);
@@ -198,20 +177,13 @@ equalsBtn.addEventListener("click", () => {
 });
 
 function evaluateFormula(expr) {
-  // Sanitize expression to allow digits, operators, and decimals only
   if (!/^[0-9+\-*/.]+$/.test(expr)) {
     throw "Invalid characters in expression";
   }
 
-  // Use Function constructor to evaluate expression safely in this context
-  // It respects operator precedence (formula logic)
   let result = Function(`return (${expr})`)();
 
-  // Round to 6 decimal places for display, can handle decimals and division precision
   return Number.isInteger(result) ? result : parseFloat(result.toFixed(6));
 }
 
-// Prevent multiple consecutive zeros at start of number input already handled in numberButtons
-
-// Initialize display
 updateDisplay(currentInput);
