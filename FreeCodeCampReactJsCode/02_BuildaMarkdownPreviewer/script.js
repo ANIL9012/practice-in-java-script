@@ -1,5 +1,3 @@
-
-
 const defaultMarkdown = `# Heading H1
 
 ## Subheading H2
