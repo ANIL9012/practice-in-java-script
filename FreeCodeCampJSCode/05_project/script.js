@@ -57,11 +57,9 @@ document.getElementById("purchase-btn").addEventListener("click", () => {
     return;
   }
 
-  // Otherwise, try to give change
   let changeArray = [];
   let remaining = changeNeeded;
 
-  // Iterate from highest to lowest
   for (let i = cid.length - 1; i >= 0; i--) {
     let unit = cid[i][0];
     let unitValue = currencyUnit[unit];
@@ -84,7 +82,6 @@ document.getElementById("purchase-btn").addEventListener("click", () => {
     return;
   }
 
-  // Format result
   let result = "Status: OPEN";
   changeArray.forEach((item) => {
     result += ` ${item[0]}: $${item[1]}`;
