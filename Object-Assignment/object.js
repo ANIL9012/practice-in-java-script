@@ -7,7 +7,6 @@
 //     };
 // console.log(person.firstName,person.lastName,person.age);
 
-
 // 2. Access and log the `firstName` property of the person object.
 
 // let person2 = {
@@ -60,7 +59,6 @@
   
 //   console.log(person4); 
   
-
 // 5. change the `lastName` property from the person object.
 
 // const person5 = {
@@ -76,7 +74,6 @@
   
 //   console.log(person5.firstName,person5.lastName,person5.age); 
   
-
 // 6. Check if the `age` property exists in the person object (without using `in` or `hasOwnProperty`).
 
 // let person6 = {
@@ -91,7 +88,6 @@
 //     console.log('The age property does not exist.');
 //   }
   
-
 // 7. Create an object representing a `book` with properties `title`, `author`, and `year`. Log the `author` property.
 
 // let book = {
@@ -103,7 +99,6 @@
 //   // Log the 'author' property
 //   console.log(book.author);
   
-
 // 8. Create an object `student` with properties: `name`, `grade`, and `subject`. Update the `grade` property to "A+".
 
 // let student = {
@@ -119,7 +114,6 @@
   
 //   console.log(student);
 
-  
 // 9. Create an object `car` with properties: `make`, `model`, and `year`. Change the `model` property to "Tesla Model S".
 
 // let car = {
@@ -152,7 +146,6 @@
 // movie.rating = "**"
 
 // console.log(movie);
-
 
 // 11. Create an object `person` with properties `firstName`, `lastName`, and `age`. Write a function `greet()` that logs "Hello, [firstName] [lastName]!"
 
@@ -193,7 +186,6 @@
 //   counter.increase();
 //   console.log("Increasing the count value =", counter.count);
 
-
 // 13. Create an object `dog` with properties: `name`, `breed`, and `age`. Add a method `bark()` that logs "Woof!" when called.
 
 // let dog = {
@@ -208,7 +200,6 @@
 
 //   dog.bark();
   
-
 // 14. Create an object `product` with properties `name`, `price`, and `quantity`. Write a function `getTotalPrice()` that returns the total price (`price * quantity`).
 
 // let product = {
@@ -247,7 +238,6 @@
 
 // console.log(address);
 
-
 // 17. Create an object `person` with properties `name` and `age`. Write a function `isAdult()` that returns `true` if `age` is 18 or above.
 
 // let person9 = {
@@ -283,7 +273,6 @@
   
 //   console.log(teamMember);
   
-
 // 20. Create a constructor function `Person` that accepts `name`, `age`, and `gender` as arguments, and creates a new object with these properties.
 
 // function person10(name,age,gender){
@@ -299,7 +288,6 @@
 // console.log(person_1);
 // console.log(person_2);
 // console.log(person_3);
-
 
 // // object me value ko nested karna ka tarika 
 
@@ -324,7 +312,6 @@
 // // object me value ko delete karne ka tarika
 
 // delete user2.firstName
-
 
 // // object ki sabhi value ko freez karne ka tarika jisse koie bhi person delete ya value assign na kar sake 
 
