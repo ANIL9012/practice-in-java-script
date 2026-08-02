@@ -31,7 +31,6 @@
 
 // console.log(person2.percentage.firstName2.firstName);
 
-
 // 3. Update the `age` property of the person object to 25.
 
 // const person3 = {
@@ -46,7 +45,6 @@
   
 //   console.log(person3);
   
-
 // 4. Add a `city` property to the person object and log it.
 
 // const person4 = {
