@@ -5,7 +5,6 @@
 // let publicationYear;
 // let bookPrice;
 
-
 // 2.Write a program that declares three variables (one for each data type: string, number, and boolean), assigns values to them, and then prints the values and types of these variables.
 
 // let a = "This is a string value";
@@ -26,18 +25,14 @@
 // pre_inc++;
 // console.log(pre_inc++); //post-increment
 
-
 // 4.Create a program that calculates and displays the area of a rectangle. Prompt the user for the length and width of the rectangle, store the values in variables, and use them to calculate the area.
-
 
 // let length = prompt("Enter the length value");
 // let width = prompt("Enter the width value");
 
 // console.log("Area of rectangle", length * width);
 
-
 // 5.Write a program that takes a user's first name, last name, and age as input and then outputs a message using variables to concatenate and format the strings.
-
 
 // let fname = prompt("Enter your first name");
 // let lname = prompt("Enter your last name");
@@ -46,7 +41,6 @@
 // let message = "Hello"+ " " + fname + " " + lname + " " + age;
 
 // console.log(message);
-
 
 // 6.Write a program that takes two numbers as input from the user and performs arithmetic operations (addition, subtraction, multiplication, division). Display the results of each operation.
 
@@ -60,7 +54,6 @@
 // let modulas = num1 % num2;
 
 // console.log( "Get are the value of user =",`Addition= ${addition} and Subtraction= ${subtrection} and Multiplication= ${multiplication} and Division= ${division} and Modulas= ${modulas}`);
-
 
 // 7.Create a program that compares two numbers entered by the user using comparison operators. Output whether the first number is greater than, less than, or equal to the second number.
 
@@ -76,7 +69,6 @@
 //     console.log("The first number is == second number");
 // }
 
-
 // 8.Implement a program that checks if a user-entered number is divisible by 
 //    both 3 and 5. Use logical AND (&&) to make this determination.
 
@@ -87,7 +79,6 @@
 // }else{
 //     console.log("The number is not divisible by both 3 and 5.");
 // }
-
 
 // 9.Create a program that calculates the total price of items in a shopping cart. Prompt the user for the price of an item and the quantity, then use the assignment operators to update the total price.
 
@@ -121,7 +112,6 @@
 // }else{
 //     console.log("Number is zero");
 // }
-
 
 // 12.Write a JavaScript program that classifies students into different grade categories based on their exam scores. Prompt the user to enter a numeric score, and then use if-else if-else statements to determine and display the corresponding grade category.
 
@@ -177,8 +167,6 @@
 //     }
 // }
 
-
-
 // 14.Implement a program that uses a while loop to print the numbers from 1 to 10.
 
 // let loop_number = 1;
@@ -203,7 +191,6 @@
 
 // }
 
-
 // 16.Write a JavaScript program that prompts the user to enter a number and generates the multiplication table for that number. Use a for loop to calculate and display the multiplication table from 1 to 10 for the entered number.
 
 // let number = parseInt(prompt("Enter the number multiplication table"))
@@ -212,8 +199,6 @@
 //     let result = number * i;
 //     console.log(`number= ${number} and i= ${i} and result= ${result}`);
 // }
-
-
 
 // 17.Write a JavaScript program that defines a function called  greet which takes a person's name as a parameter and displays a personalized greeting message. Then, call this function with a user-provided name and show the greeting message.
 
@@ -224,8 +209,6 @@
 // let username = prompt("Enter your name")
 
 // greet(username)
-
-
 
 // 18.Write a JavaScript program that defines a function called EvenOrOdd which takes an integer as a parameter and displays whether the number is even or odd. Then, call this function with a user-provided integer.
 
@@ -240,7 +223,6 @@
 // let usernumber = prompt("Enter number");
 
 // evenodd(usernumber)
-
 
 // 19.Write a JavaScript program that defines a function called RepeatCharacter which takes a character and a number as parameters and displays a string composed of the repeated character. Then, call this function with a user-provided character and number.
 
@@ -264,8 +246,6 @@
 // let repeatCount = parseInt(prompt("Enter a number:"));
 // RepeatCharacter(characterrryp, repeatCount);
 
-
-
 // 20.Write a JavaScript program that defines a recursive function called calculateFactorial which takes a positive integer as a parameter and calculates its factorial. Then, call this function with a user-provided positive integer.
 
 // function calculateFactorial(n) {
@@ -274,7 +254,6 @@
 // }
 // let num = parseInt(prompt("Enter a positive integer:"));
 // console.log("Factorial:", calculateFactorial(num));
-
 
                //  Practice Function in Self Study 
 
@@ -311,17 +290,12 @@
         //  return a+b;
         // }
 
-
         // const result = AddNumber(4,6);
         // console.log(result);
         // const result1 = AddNumber(AddNumber(15,5),AddNumber(20,10));
         // console.log(result1);
 
-
-        
         //    Execution Context in JavaScript
-
-        
 
         // outer[(bahar bale function ko kahte he Heigher function),(Inner function ko kahte he callback function)]
 
@@ -339,7 +313,6 @@
         //   const add1 = outer()
           
         //   console.dir(add1)
-
 
         // Mathod and Function Different 
 
@@ -359,7 +332,6 @@
         //     }
         //   }
 
-
         // Arrow Functions in JavaScript
 
         // let ArrowFunction = (a,b)=> a + b 
@@ -372,9 +344,7 @@
 
         // const random = () => Math.floor(Math.random() * 10) + 1
 
-
         // for of vs for in Loop  practice
-
 
         // let fruits = ["Banana","Apple","Guava","Pineapple"] // use for of loop in array
 
@@ -389,13 +359,11 @@
         //     console.log(fruit);
         // }
 
-
         // let String = "Anil Kumar" // use for of loop in string
 
         // for(let latter of String){
         //     console.log(latter);
         // }
-
 
     //     const person = {
     //         firstName: 'John',
@@ -423,9 +391,6 @@
     //     console.log(key);
     //    }
 
-
-    
-
                 //  forEach Array Method
 
 
@@ -446,6 +411,3 @@
                 //    let upper =  Mvegitable.toUpperCase();
                 //    return upper
                 // })
-
-
-
