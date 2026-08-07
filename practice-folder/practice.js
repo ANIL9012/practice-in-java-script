@@ -7,7 +7,6 @@
 // 1 2 3 4
 // 1 2 3 4 5
 
-
 // let n = 5;
 // let m = 5;
 
@@ -19,7 +18,6 @@
 //     console.log(str);
 // }
 
-
 // 2.
 
 // 1
@@ -27,7 +25,6 @@
 // 3 3 3
 // 4 4 4 4
 // 5 5 5 5 5
-
 
 // let n = 5;
 // let m = 5;
@@ -48,7 +45,6 @@
 // 2 2
 // 1
 
-
 // let n = 5;
 // let m = 5;
 
@@ -68,7 +64,6 @@
 // 2 1
 // 1
 
-
 // let n = 5;
 // let m = 5;
 
@@ -80,14 +75,12 @@
 //     console.log(str);
 // }
 
-
 // 5.
 // *****
 // ****
 // ***
 // **
 // *
-
 
 // let n = 5;
 // let m = 5;
@@ -104,7 +97,6 @@
 // *****
 //  ***
 //   *
-
 
  // row      space      star      
     // i=3        j= 0 n-i    k=5
@@ -131,7 +123,6 @@
 //  4 5 6
 //  7 8 9 10 
 
-
 // let n = 1;
 // let m = 4;
 
@@ -143,7 +134,6 @@
 //     }
 //     console.log(str);
 // }
-
 
 //  8.
 //     *
@@ -172,7 +162,6 @@
 //  1 2
 //  1
 
-
 // let n = 5;
 // let m = 5;
 
@@ -190,8 +179,6 @@
 //  *   *
 //  *****
 
-
-
 // let n = 4;
 // let m = 5;
 
@@ -206,7 +193,6 @@
 //    }
 //    console.log(str);
 // }
-
 
 // 3.CONTROLFLOW-STETMENT-START 
 
@@ -242,7 +228,6 @@
 
 // let grade= prompt("Enter the percentage");
 
-
 // if(grade >=90 && grade <= 100){
 //     console.log("Excellent");
 // }else if(grade >= 70 && grade <= 89){
@@ -264,7 +249,6 @@
 //    let day = 4;  // You can change this value to test
 
 // let day = prompt("Enter the day");
-
 
 // switch(day){
 
@@ -338,7 +322,6 @@
 //    - "truck" for "Truck"
 //    - "other" for "Other"
 
-
 // let vehicletype = prompt("Enter name") 
 
 // switch(vehicletype){
@@ -380,7 +363,6 @@
 //     console.log("Adult");
 // }
 
-
 // 10.Write code that uses a `switch` statement to print a message based on the variable `month`. Use the following values:
     // - 1 for "January"
     // - 2 for "February"
@@ -394,7 +376,6 @@
     // - 10 for "October"
     // - 11 for "November"
     // - 12 for "December"
-
 
     // let month = prompt("Enter the month number");
 
@@ -453,9 +434,7 @@
 
     // }
 
-
 // 10.what is switch controlflow statement in javaScript with example in calculator
-
 
 // function calculator(num1, num2, operator) {
 //     let result;
@@ -497,7 +476,6 @@
 //   console.log(calculator(num1, 0, '/'));    // Output: Error: Division by zero is not allowed.
 //   console.log(calculator(num1, num2, '%')); // Output: Error: Invalid operator.
   
-
 // 11.what is switch controlflow statement in javaScript with example in calculator value Get user input for numbers and operatoruser 
 
 // exam.1 
@@ -541,7 +519,6 @@
 //   // Run the calculator
 //   console.log(calculator());
   
-
 // exam.2
 
 //   function calculator2(){
@@ -584,9 +561,6 @@
 
 // console.log(calculator2());
 
-
-
-
 // 1. ARRAY ALL CONCEPT START 
 
                 // 0        1    2     3 ye array ke index number he 
@@ -594,7 +568,6 @@
 
 // console.log(array);
 // console.log(array[0]);
-
 
 // 1. multidimensional Array start 
 
@@ -621,7 +594,6 @@
 // }
 // document.write("</table>");
 
-
 // let array2 = [
 //     ["Name", "age", "gender", "class"],
 //     ["Sunjana", 3, "Female", "LKG"],
@@ -639,7 +611,6 @@
 //     document.write("</tr>");
 // }
 // document.write("</table>");
-
 
 // 2. MODIFY & DELETE ARRAY START
 
@@ -693,7 +664,6 @@
 // let sortmethod = method.sort();
 // console.log(sortmethod);
 
-
 // // REVERSE:-reverse method ka use sequense by kisi bhi data ko reverse state me represent karne me hota he
 // let method = ["Ritu", "Mohan", "Raman", "PHD"]
 // console.log(method);
@@ -717,7 +687,6 @@
 // let pushmethod = method2.push("Harshit");
 // console.log(method2);
 
-
 // 3. SHIFT & UNSHIFT 
 
 // // SHIFT:- shift method ka use array ki start bali value ko delete karne me hota he
@@ -735,7 +704,6 @@
 // let unshiftmethod = metod3.unshift("Prembabu");
 // console.log(unshiftmethod);
 
-
 // 4. CONCAT & JOIN
 
 // CONCAT:- concat method ka use multiple array ko concat karana ya marge karne me hota he 
@@ -750,7 +718,6 @@
 
 // JOIN:- join method ka use array me di gayi kisi bhi value ko ek string ke roop me represent karna hota he or hum chahe to eske beech me koi bhi sighn ya space create kar sakte he 
 
-
 // let a = ["Anil","keshav","Rohit","Hitesh"];
 // let b = ["Somveer","Vebhab","Tilak","Lucky"];
 // let c = [87,90,45,60];
@@ -760,7 +727,6 @@
 // console.log(e)
 // let f = e.join(" / ")
 // console.log(f)
-
 
 // 5. SLICE & SPLICE 
 
@@ -785,7 +751,6 @@
 // a.splice(0,4,"Rajeev","Shorabh")
 // console.log(a)
 
-
 // 6. ISARRAY
 
 // IsArray:- isarray method ka use karke hum ye pta lga sakte he ki kisi bhi variable me de gaye value array he ya nahi
@@ -808,7 +773,6 @@
 //     console.log("This is not an Araay");
 // }
 
-
 // 7. INDEXOF & LASTINDEXOF
 
 // INDEXOF:- indexOf method ka use array me di gaye kisi bhi value ka index number nikalne ke liye hota he chahe usme value ka name ya value same de rakhi ho 
@@ -818,7 +782,6 @@
 // let b = a.indexOf("keshav"2)
 // console.log(b);
  
-
 // // LASTINDEXOF:- lastIndexOf method ka use array me di gaye value ke last bali value se suru karta he
 
 // let a = ["Anil","keshav","Rohit","Hitesh","lovlesh","keshav","Mohit","Nakul"];
@@ -849,7 +812,6 @@
 // function checkAdult(age){
 //     return age < 12;
 // }
-
 
                 //   Ya
 
@@ -891,7 +853,6 @@
 
 // console.log(result2);
         
-
 // 10. FIND & FINDINDEX
 
 // FIND:- find method ka use array me di gaye value ko funtion me di gaye condition value ko pass karne ke bad value ko print karana 
@@ -917,7 +878,6 @@
 // function checkAdult(age){
 //     return age >= 18;
 // }
-
 
 // 11. FILTER
 
@@ -945,7 +905,6 @@
 //     // console.log(val,index,arry);
 // }
 
-
             //    YA
          
                    
@@ -957,8 +916,6 @@
 //     let sq = val*val;
 //        console.log(`Value = ${val} Burg = ${sq} index= ${index} array = ${array}`);
 // }
-
-
 
 // 13.MAP  
 
@@ -981,8 +938,6 @@
 // }
 // console.log(b);
 
-
-
 // 14.multidimantional array
 
 // let multiplearray = [
@@ -992,9 +947,6 @@
 // ]
 // console.log(multiplearray);
 // console.log(multiplearray[2][3][8][2][8][1]);
-
-
-
 
 // 15.iterating
 
@@ -1012,7 +964,6 @@
 
 // })
 
-
 // let student = [
 //     ["Anil",22],
 //     ["Lokesh",28],
@@ -1025,7 +976,6 @@
 //                 console.log(`data = ${data} index= ${ind}`);
 //             })
 // });
-
 
 // 2. iterating over studentdeta
 
@@ -1051,7 +1001,6 @@
 //     }
 // }
 
-
 // 16. toString , value , fill method 
 
 // toString:- toString method ka use array me di gaye value ko string me convert karne me hota he 
@@ -1062,10 +1011,7 @@
 // let r = s.toString();
 // console.log(r);
 
-
-
 // Reduce method in Array 
-
 
 // Reduce:- Array ke reduce method ka use array me di gayi value ki accumulation and current value or 
 // array ki indexvalue ko get karne me hota he 
@@ -1078,7 +1024,6 @@
 
 // console.log(sum); 
 
-
 // Exa--2.
 
 // Flatten an Array 
@@ -1090,7 +1035,6 @@
 // }, []);
 
 // console.log(flattened); // Output: [1, 2, 3, 4, 5, 6]
-
 
 // Exam---3
 
@@ -1107,8 +1051,6 @@
 
 // // Output: { apple: 3, banana: 2, orange: 1 }
 
-
-
 // Exam---4
 
 // Create an Object from an Array
@@ -1122,9 +1064,7 @@
 
 // console.log(obj); 
 
-
 // // Output: { name: 'John', age: 30, city: 'New York' }
-
 
         //     ARGUMENT CONVERT TO ARRAY  With Example 
 
@@ -1136,7 +1076,6 @@
 // }
         
 // convertToArray(1, 2, 3, 4);
-
 
 // Exam--2
 
@@ -1167,8 +1106,6 @@
 // }
 // console.log(sum);
 
-
-
           // Use rest params
 
 // let numberarray = [23,4,6,2,3,4,5]
@@ -1180,15 +1117,10 @@
 // const result = add(...numberarray)
 // console.log(result);
 
-
 // let animals = ["dog", "cat", "rabbit"];
 // let removedAnimals = animals.splice(1, 1, "lion", "tiger"); 
 // console.log(animals); // Output: ["dog", "lion", "tiger", "rabbit"]
 // console.log(removedAnimals); // Output: ["cat"]
-
-
-
-
 
 // STRING METHOD START 
 
@@ -1201,7 +1133,6 @@
 // let a = str.length;
 // console.log(a);
 
-
 // 2.toLowerCase
 
 // toLowerCase:- string ke toLowerCase method ka use kisi bhi variabal me di gaye value ko lower case me ya bole o small case me karne ka 
@@ -1211,44 +1142,36 @@
 // let a = str.toLowerCase();
 // console.log(a);
 
-
 // 3. toUpperCase
 
 // toUpperCase:- string ke toUpperCase method ka use kisi bhi variabal me di gaye value ko uppercase me convert karne ka hota he 
-
 
 // let str = "javascript is a great language"
 // // console.log(str);
 // let a = str.toUpperCase();
 // console.log(a);
 
-
 // 4.Includes 
 
 // Includes:- string ke includes method ka use kisi bhi variabal me di gaye vakue me ye pta karna hota he ki variabal me bo value he ya nahi
-
 
 // let str = "JavaScript is a GREAT Language"
 // // console.log(str);
 // let a = str.includes("is");
 // console.log(a);
 
-
 // 5.startWith 
 
 // startWith:- string ke startWith method ka use variabal me di gaye kisi bhi value ke start bali value ko print karna 
-
 
 // let str = "JavaScript is a GREAT Language"
 // // console.log(str);
 // let a = str.startsWith("J");
 // console.log(a);
 
-
 // 6.endWith
 
 // endWith:- string ke  endWith method ka use kisi bhi variabal me di gaye gaye value ke end bale part ko print karna 
-
 
 // let str = "JavaScript is a GREAT Language"
 // // console.log(str);
@@ -1259,7 +1182,6 @@
 
 // search:-string ke serch method ka use kisi bhi variabal me di gaye value ka index number provide karna 
 
-
 // let str = "JavaScript is a GREAT Language"
 // // console.log(str);
 // let a = str.search("Language");
@@ -1268,7 +1190,6 @@
 // 8.match
 
 // match:- string ke match method ka use kisi bhi variabal me di gaye value ko array me convert karna ya 
-
 
 // let str = "JavaScript is a  is GREAT Language"
 // // console.log(str);
@@ -1324,7 +1245,6 @@
 // // console.log(str);
 // let a = str.charAt(14);
 // console.log(a);
-
 
 // 14.charCodeAt
 
@@ -1440,7 +1360,6 @@
 // let num = Number(string);
 // console.log(typeof (num));
 
-
 // 2.parseInt 
 
 // parseInt:- number method ke parseInt method ka use kisi bhi variable me di gaye decimal value ko Integer me conbert karne me hota he 
@@ -1457,8 +1376,6 @@
 // parseInt("42.75");    // 42 (decimal part is ignored)
 // parseInt("abc123");   // NaN (not a number)
         
-
-
 // 3.parseFloat
 
 // parseFloat:- Number method ke parseFloat method ka use kisi bhi variable me de gaye value jo decimal ke roop me he use  parseFloatdecimal me hi print karta he 
@@ -1467,7 +1384,6 @@
 
 // let flot = Number.parseFloat(decimal2);
 // console.log(flot);
-
 
 // 4.isFinite
 
@@ -1485,7 +1401,6 @@
 // console.log(count3); // False examle ho gaya
 // console.log(typeof count3); // False examle ho gaya
 
-
       // true ke liye example 
 
 // let num4 = 100;
@@ -1494,7 +1409,6 @@
 // console.log(count4);
 // console.log(typeof count4);
  
-
 // 5.isInteger 
 
 // isInteger:- number method ke isInteger method ka use kisi bhi variable me di value ko count karne liye hota he (yadi value decimal number ya string me di gaye hogi to count nahi karega)
@@ -1515,7 +1429,6 @@
 
 // console.log(countInt1);
 
-
 // 6.toFixed 
 
 // toFixed:- Number method ke toFixed method ka use kisi bhi variable me di gaye decimale value ko index number dekar value ke point me se tiFixed badi se badi value ko leta he 
@@ -1525,7 +1438,6 @@
 // let aberage = tofixed.toFixed(2)
 // console.log(aberage);
 
-
 // 7.toPrecision
 
 // toPrecision:- Number method ke toPrecision method ka use kisi bhi variable me di gaye decimale value ko index number dekar value ke point me badi se badi value ko leta he 
@@ -1534,7 +1446,6 @@
 
 // let aberage2 = toPrecision.toFixed(2)
 // console.log(aberage2);
-
 
         //   MATH METHODS START 
 
@@ -1550,7 +1461,6 @@
 // let ceilnega = Math.ceil(-3.34)   
 // console.log(ceilnega);     // value -3 aayi
 
-
 // 2.FLOOR
 
  // floor:- MATH method ke floor method ka use number float ke roop me di gaye value ko down afferd value pirdan karega jub value non negative hogi (yadi value negative form hogi to upper afferd me value dega). 
@@ -1563,7 +1473,6 @@
 // let floornega = Math.floor(-5.34)   
 // console.log(floornega);     // value -6 aayi
 
-
 // 3.ROUND
 
 // round:- Math method ke round method ka use decimal number float ki di gaye value me .50 se kam hogi to ye niche bali value dega yadi .50 hue ya .50 se jyada hue to ye jyada bali value dega 
@@ -1571,10 +1480,8 @@
 // let round1 = Math.round(2.33); //value 2 aayi (jub value .50 se kam thi)
 // console.log(round1);
 
-
 // let round2 = Math.round(2.63); //value 3 aayi (jub value .50 se jyada thi)
 // console.log(round2);
-
 
 // 4.TRUNC
 
@@ -1582,7 +1489,6 @@
 
 // let trunc1 = Math.trunc(2.34);
 // console.log(trunc1);
-
 
 // 5.MAX 
 
@@ -1598,21 +1504,17 @@
 //       let max2 = Math.max(-76.234,-32.324,)
 //       console.log(max2);
  
-
 // 5.MIN 
 
 // min:- Math ke min method ka use kisi bhi variable me di gaye multiple value me se min value ko lega (ya bole to sabse chhoti bali value lega)
 
         // min method jo he bo (x axes or y axes per kam karta he)          
 
-
 // let min1 = Math.min(32, 4, 87, 34,90, 76,)
 // console.log(min1);
 
-
 // let min2 = Math.min(-10, -2,)
 // console.log(min2);
-
 
 // 6.SQRT
 
@@ -1624,8 +1526,6 @@
 // let sqrt2 = Math.sqrt(144); // 12 ka sqr he 
 // console.log(sqrt2);
 
-
-
 // 6.CBRT
 
 // cbrt:- Math ke cbrt method ka use kisi bhi value ka cbrt ya bole to kisi bhi value ka 3 ki ghat nikalne me kiya jata he 
@@ -1636,7 +1536,6 @@
 // let cbrt2 = Math.cbrt(27); // 3 ka sqr he 
 // console.log(cbrt2);
 
-
 // 7.POW
 
 // pow:- Math ke pow method ka use kisi bhi value ka power nikalne me kiya jata he 
@@ -1646,7 +1545,6 @@
 
 // let pow2 = Math.pow(4,3); // 4 ka sqr he 3
 // console.log(pow2);
-
 
 // 8.RANDOM 
 
@@ -1664,7 +1562,6 @@
 
 // let random3 = Math.floor(Math.random()*100)
 // console.log(random3);
-
 
 // 9.ABS 
 
@@ -1688,16 +1585,12 @@
 // let abs4 = Math.abs("Anil");
 // console.log(abs4);
 
-
-
 // 9. PI 
 
 // PI:- Math method ke PI metho ka use PI ki value ko represent karne ke liye hota he 
 
 // let pi1 = Math.PI; // PI is not a function
 // console.log(pi1);
-
-
 
         //    DATE MATHOD START 
 
@@ -1713,14 +1606,12 @@
 // let now = new Date();
 // console.log(now.toDateString());
 
-
 // 2.getDate 
 
 // getDate:- Date method ke getDate method ka use kisi bhi date ko print karne me hota he 
 
 // let now1 = new Date();
 // console.log(now1.getDate());
-
 
 // 3.getMonth
 
@@ -1738,7 +1629,6 @@
 
 // let now4 = new Date();
 // console.log(now4.getFullYear());
-
 
 // 5.getDay
 
@@ -1783,7 +1673,6 @@
 // let seconds2 = new Date('january 06 2013');
 // console.log(seconds2.getSeconds());
 
-
 // 9.getMilliseconds
 
 // getMilliseconds:- Date method ke getMilliseconds ka use Milliseconds ko print karne me use hota he 
@@ -1793,7 +1682,6 @@
 
 // let milliseconds1 = new Date('may 30 2009');
 // console.log(milliseconds1.getMilliseconds());
-
 
 // 10.setDate
 
@@ -1805,7 +1693,6 @@
 
 // console.log(setdate1);
 
-
 // 11.setFullYear
 
 // setFullYear:-Date method ke setFullYear method ka use Year ko full set karne me hota he 
@@ -1816,7 +1703,6 @@
 
 // console.log(setyear1);
 
-
 // 12.setMonth
 
 // setMonth:-Date method ke setMonth method ka use month ko set karne me hota he 
@@ -1825,7 +1711,6 @@
 // setmonth1.setMonth(4)
 
 // console.log(setmonth1);
-
 
 // 13.setHours
 
@@ -1837,7 +1722,6 @@
 
 // console.log(sethours1);
 
-
 // 14.setMinutes 
 
 // setMinutes:- Date method ke set setMinutes method ka use minutes ko set karne me hota
@@ -1847,7 +1731,6 @@
 // setminut1.setMinutes(24)
 // console.log(setminut1);
 
-
 // 15.setSeconds
 
 // setSeconds:-Date method ke setSeconds method ka seconds set karne me ota he
@@ -1855,7 +1738,6 @@
 // let setseconds1 = new Date();
 // setseconds1.setSeconds(23);
 // console.log(setseconds1);
-
 
 // 16.setMilliSeconde 
 
@@ -1872,9 +1754,7 @@
 
         //     console.log(nowall.getDay() + "/" + nowall.getMonth() + "/" + nowall.getFullYear() + "/" + nowall.getHours() + "/" + nowall.getMinutes() + "/" + nowall.getSeconds() + "/" + nowall.getMilliseconds());
 
-
 // 4.Function concept start
-
 
 //  function addition (a=3,b=5){
 
@@ -1886,14 +1766,11 @@
 //     addition(4,6);// 10
 //     addition(7);//5
     
-
 // function calling(){
 //     console.log("Hi! Anil Kumar");
 // }
 
 // calling();
-
-
 
 // function addition(a=30, b=30){
 //     // let a = 65;
@@ -1927,8 +1804,6 @@
 // perameters(20,5);
 // perameters(9);
 
-
-
 // function fullname(math,eng,scie){
 //     let a = math + eng + scie;
 
@@ -1945,7 +1820,6 @@
 
 // per(fn)
 
-
 // function generatotp(){
 //     let degite = "1234567895";
 //     let otp2 = "";
@@ -1957,7 +1831,6 @@
 // }
 // console.log("OTP generate 6 degite: ", generatotp());
 
-
 // function generateotp3(){
 //     let degite2 = "128393748875379";
 //     let otp3 = "";
@@ -1968,21 +1841,12 @@
 // }
 // console.log("OTP generate 8 degite: ", generateotp3());
 
-
-
-
-
-
-
-
         //     JavaScript Tutorial practice
 
 
 // let now = new Date("Febuary 5 2025");
 // // now.setDate(5)
 // document.write(now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear())
-
-
 
       //    Interview Quetions 
 
@@ -1996,19 +1860,19 @@
 // })
 // console.log(reversedArr)
 
-let str1 = "anil";
-let str2 = "Kumar";
-let str3 = "";
+// let str1 = "anil";
+// let str2 = "Kumar";
+// let str3 = "";
 
-function mergeString(){
-        for(let i = 0; i<str1.length+str2.length; i++){
-                if(i < str1.length){
-                        str3 = str3+str1[i];
-                }
-                if(i < str2.length){
-                        str3 = str3+str2[i]
-                }
-        }
-}
-mergeString()
-console.log(str3)
+// function mergeString(){
+//         for(let i = 0; i<str1.length+str2.length; i++){
+//                 if(i < str1.length){
+//                         str3 = str3+str1[i];
+//                 }
+//                 if(i < str2.length){
+//                         str3 = str3+str2[i]
+//                 }
+//         }
+// }
+// mergeString()
+// console.log(str3)
