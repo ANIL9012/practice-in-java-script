@@ -4,15 +4,11 @@
 //  it is used to find out if the asynchronous operation is successfully
 //  completed or not 
 
-
 // there are three states of any Promise
-
-
 
 // 1.pending ...the promise starts and process is not complete
 // 2.fullfilled/successfull .resolve...the promise starts and process is not complete
 // 3.reject...
-
 
 // real world example
 // hotel order , you have ordered and told 
@@ -20,7 +16,6 @@
 // // how to create 
 // 1. with constructor function
 // 2. with object promise (new)
-
 
 // note:promise constructor passes   an executer function and executer functions passed resolve and reject function as an argument 
 
@@ -33,10 +28,7 @@
   //   //coding here .....
   // })
   
-  
-  
 //   const Order = false;
-  
   
 //    let OrderStatus =new Promise( (resolve,reject)=>{
   
@@ -59,13 +51,9 @@
 //      console.log(err)
 //   })
 
-
-
-
   // 2nd case 
   
   // get student api and print roll no 
-  
   
   // let promiseOfStudentData = new Promise( (resolve, reject)=>{
   //   setTimeout(()=>{
@@ -81,7 +69,6 @@
   
   //         }
   
-  
   //   },5000)
   
   // });
@@ -92,44 +79,36 @@
   // console.log(e)
   // })
 
-
-
 //   console.log("other program is here......")
   
-
+  // user = {
+  //   name: "mujeeb",
+  //   rollno: 1
+  // }
   
-
-  user = {
-    name: "mujeeb",
-    rollno: 1
-  }
+  // const pro1 = new Promise((resolve, reject) => {
   
-  const pro1 = new Promise((resolve, reject) => {
+  //   const apicall = true;
   
-    const apicall = true;
+  //   if (apicall) {
+  //     resolve(user)
+  //   } else {
+  //     reject("Error: something is wrong.....")
   
-    if (apicall) {
-      resolve(user)
-    } else {
-      reject("Error: something is wrong.....")
+  //   }
   
-    }
+  // })
   
-  })
+  // pro1.then((value) => {
+  //   console.log(value)
+  //   return value.name
+  // }).then((username) => {
+  //   console.log(username)
+  // }).catch((e) => {
+  //   console.log(e)
+  // })
   
-  pro1.then((value) => {
-    console.log(value)
-    return value.name
-  }).then((username) => {
-    console.log(username)
-  }).catch((e) => {
-    console.log(e)
-  })
-  
-
-
             // Example-2
-
 
 //   let userObject = {
 //     firstName: "Anil",
@@ -166,9 +145,6 @@
 //   console.log(WrongAnswer);
 // })
 
-
-
-
   // promises methods (apis)
   // 1.Promise.all
   // 2.Promise.allSettled
@@ -176,10 +152,6 @@
   // 4.Promise.any
   // 5.Promise.resolve
   // 6.Promise.reject
-  
-  
-  
-  
   
   // 1.Promise.all===> it waits and gives an reslut wrapping inside an array after finish of all apis 
   
@@ -215,9 +187,6 @@
   
   // })
   
- 
-
-  
   // it waits for all of them to finish and if all are resolved  it gives an array of all result if any of them is rejected it will give error
  
   // Promise.all([p1, p2, p3])
@@ -235,7 +204,6 @@
   //     console.log(e)
   // })
   
-  
   // it waits for first settled api result
   // Promise.race([p1, p2, p3]).then((result) => {
   //   console.log(result)
@@ -250,7 +218,6 @@
   //   }).catch((e) => {
   //     console.log(e.errors)
   // })
-  
   
   // async await...
   // async await...
@@ -274,9 +241,6 @@
   // data.then((result) => {
   //   console.log(result)
   // })
-  
-  
-  
   
 //   const p = new Promise(function (resolve, reject) {
   
@@ -319,7 +283,6 @@
   
   // asynch Example-3
 
-
 // let async4 = new Promise((resolve,reject)=>{
 //   resolve("async4 is successfull")
 // })
@@ -334,8 +297,6 @@
 
 // AllDeta();
 
-
-  
   // const p4 = new Promise(function (resolve, reject) {
   
   //   setTimeout(()=>{
@@ -367,7 +328,6 @@
   // }
   
   // handlePromise();
-  
   
 //   // Error handling is handled by using try and catch in asunc await 
   
@@ -428,8 +388,6 @@
     //     console.log(error)
     //   }
       
-      
-  
     // }
     // const response=api()
     // response.then((users)=>{
@@ -443,7 +401,6 @@
     //   },2000);
     // })
 
-
     // async function pData9(){
 
     //   const value = await p99;
@@ -452,7 +409,6 @@
     // }
 
     // pData9();
-
 
   //   function fetchData() {
   //     return new Promise((resolve, reject) => {
@@ -479,4 +435,3 @@
   //     .finally(() => {
   //         console.log("Operation complete.");
   //     });
-  
