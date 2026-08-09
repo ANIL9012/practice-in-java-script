@@ -167,7 +167,6 @@
   //     // resolve("p1 is success")
   //   }, 5000)
   
-  
   // })
   
   // const p2 = new Promise((resolve, reject) => {
@@ -247,8 +246,7 @@
 //     resolve("promise 2 is resolved ......")
   
 //   })
-  
-  
+
 //   async function getData() {
   
 //     return p;
@@ -279,8 +277,7 @@
 //   }
   
 //   getDataP3();
-  
-  
+
   // asynch Example-3
 
 // let async4 = new Promise((resolve,reject)=>{
@@ -303,7 +300,6 @@
   //     resolve("promise 4 is resolved ......")
   //   },10000)
     
-  
   // })
 
   // const p5 = new Promise(function (resolve, reject) {
@@ -311,7 +307,6 @@
   //   setTimeout(()=>{
   //     resolve("promise 5 is resolved ......")
   //   },5000)
-    
   
   // })
   
@@ -337,7 +332,6 @@
   //     reject("promise 6 is reject......")
   //   },5000)
     
-  
   // })
   
   // async function handlePromisewithTryCatch(){
@@ -352,8 +346,7 @@
   // }
   
   // handlePromisewithTryCatch();
-  
-  
+
 //   // fetch apis wit promises
   
   // const p7= new Promise((resolve,reject)=>{
@@ -374,10 +367,8 @@
   //     console.log(e)
   //   })
   
-  
     // fetch apis with async await 
-  
-  
+
     //  async function api(){
   
     //   try {
@@ -393,7 +384,6 @@
     // response.then((users)=>{
     //   console.log(users)
     // })
-
 
     // let p99 = new Promise(function(resolve,reject){
     //   setTimeout(() => {
