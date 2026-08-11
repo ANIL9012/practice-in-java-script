@@ -1,5 +1,4 @@
 // Initialize the variable
-
 let songIndex = 0;
 let audioElement = new Audio("songs/1.mp3");
 let masterPlay = document.getElementById("masterPlay");
@@ -9,8 +8,6 @@ let masterSongName = document.getElementById("masterSongName");
 let songItems = Array.from(document.getElementsByClassName("songItems"));
 
 // header part scrolling
-
-
 let songs = [
   {
     songName: "Jindagi-shop-haath-deenanath-ke",
@@ -138,4 +135,3 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach(
     });
   }
 );
-

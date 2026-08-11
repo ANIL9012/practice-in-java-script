@@ -6,7 +6,6 @@
 body {
   background-color: antiquewhite;
 }
-
 nav {
   font-family: "Ubuntu", sans-serif;
   position: fixed; /* top par chipka rahe */
@@ -52,7 +51,6 @@ nav ul li {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .bottom {
   position: sticky;
   height: 80px;
@@ -110,9 +108,7 @@ nav ul li {
   opacity: 0;
   transition: opacity 0.4s ease-in;
 }
-
 /* ---------- Media quary ------------- */
-
 @media (min-width: 344px) {
   .container {
     width: 95vw;
