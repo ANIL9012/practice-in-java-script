@@ -16,16 +16,13 @@
 // user.name "Anil"
             //   email=>     git config --global
 // user . email "9012kumaranil@gmail.com"
-                            //   git config --list 
-
-
+                            //   git config --list
 
 // _____________________________________
 // untracked ===> new files that git does not track
 // modified =======> change in files 
 // staged ========> add , when we add code 
 // unmodified  ======
-
 
 // commands for first time when repo is created and want to send our code to github repo 
 // or create a new repository on the command line 
