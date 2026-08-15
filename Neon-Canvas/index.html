@@ -20,7 +20,6 @@
         padding: 0;
         box-sizing: border-box;
       }
-
       body {
         background: #080b17;
         background-image:
@@ -35,7 +34,6 @@
         padding: 1.8rem;
         color: #eef4ff;
       }
-
       .card {
         background: rgba(12, 16, 35, 0.75);
         backdrop-filter: blur(16px);
@@ -55,7 +53,6 @@
         position: relative;
         overflow: hidden;
       }
-
       .card::before {
         content: "";
         position: absolute;
@@ -71,7 +68,6 @@
         pointer-events: none;
         animation: shimmer 12s linear infinite;
       }
-
       @keyframes shimmer {
         0% {
           transform: rotate(0deg);
@@ -80,14 +76,12 @@
           transform: rotate(360deg);
         }
       }
-
       .card:hover {
         box-shadow:
           0 50px 100px -20px #05080f,
           0 0 0 2px rgba(80, 170, 255, 0.12),
           inset 0 1px 0 rgba(255, 255, 255, 0.06);
       }
-
       .header-row {
         display: flex;
         flex-wrap: wrap;
@@ -98,7 +92,6 @@
         position: relative;
         z-index: 1;
       }
-
       h1 {
         font-weight: 650;
         font-size: 2rem;
@@ -119,7 +112,6 @@
         text-shadow: none;
         filter: drop-shadow(0 0 30px rgba(70, 140, 255, 0.15));
       }
-
       h1 i {
         font-size: 2.1rem;
         background: linear-gradient(135deg, #7ab8ff, #b07cff);
@@ -130,7 +122,6 @@
         border-radius: 60px;
         filter: drop-shadow(0 0 20px rgba(100, 150, 255, 0.2));
       }
-
       .search-wrap {
         display: flex;
         align-items: center;
@@ -143,7 +134,6 @@
         min-width: 190px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
       }
-
       .search-wrap:focus-within {
         border-color: rgba(100, 180, 255, 0.35);
         background: rgba(255, 255, 255, 0.07);
@@ -152,19 +142,16 @@
           inset 0 0 30px rgba(60, 140, 255, 0.03);
         transform: scale(1.01);
       }
-
       .search-wrap i {
         color: #7a9ad6;
         font-size: 0.9rem;
         opacity: 0.6;
         transition: 0.3s;
       }
-
       .search-wrap:focus-within i {
         opacity: 1;
         color: #8ab8ff;
       }
-
       .search-wrap input {
         background: transparent;
         border: none;
@@ -177,13 +164,11 @@
         letter-spacing: 0.2px;
         font-family: "Inter", sans-serif;
       }
-
       .search-wrap input::placeholder {
         color: #5d71a0;
         font-weight: 350;
         letter-spacing: 0.2px;
       }
-
       .search-wrap button {
         background: linear-gradient(
           135deg,
@@ -205,7 +190,6 @@
         border: 1px solid rgba(255, 255, 255, 0.04);
         font-family: "Inter", sans-serif;
       }
-
       .search-wrap button:hover {
         background: linear-gradient(
           135deg,
@@ -218,17 +202,14 @@
           inset 0 0 30px rgba(60, 130, 255, 0.05);
         transform: scale(1.02);
       }
-
       .search-wrap button:active {
         transform: scale(0.95);
       }
-
       .search-wrap button i {
         font-size: 0.8rem;
         color: #aac4ff;
         opacity: 1;
       }
-
       .sub {
         color: #8ea3d0;
         font-size: 0.9rem;
@@ -242,11 +223,9 @@
         position: relative;
         z-index: 1;
       }
-
       .sub i {
         color: #5b8cff;
       }
-
       .canvas-wrapper {
         position: relative;
         border-radius: 2.2rem;
@@ -259,14 +238,12 @@
         background: #090c1a;
         transition: box-shadow 0.4s ease;
       }
-
       .canvas-wrapper:hover {
         box-shadow:
           inset 0 0 60px rgba(0, 20, 60, 0.6),
           0 24px 60px rgba(0, 0, 0, 0.9),
           0 0 0 1px rgba(80, 160, 255, 0.08);
       }
-
       canvas {
         display: block;
         width: 100%;
@@ -276,7 +253,6 @@
         cursor: crosshair;
         touch-action: none;
       }
-
       .control-bar {
         display: flex;
         flex-wrap: wrap;
@@ -287,13 +263,11 @@
         position: relative;
         z-index: 1;
       }
-
       .btn-group {
         display: flex;
         flex-wrap: wrap;
         gap: 0.7rem;
       }
-
       .btn {
         position: relative;
         background: rgba(20, 28, 58, 0.6);
@@ -318,7 +292,6 @@
         border: 1px solid rgba(255, 255, 255, 0.04);
         overflow: hidden;
       }
-
       .btn::before {
         content: "";
         position: absolute;
@@ -338,14 +311,12 @@
         mask-composite: exclude;
         pointer-events: none;
       }
-
       .btn i {
         font-size: 1rem;
         color: #8ab4ff;
         transition: all 0.3s ease;
         filter: drop-shadow(0 0 8px rgba(80, 150, 255, 0.1));
       }
-
       .btn:hover {
         transform: translateY(-2px) scale(1.02);
         color: white;
@@ -355,18 +326,15 @@
           inset 0 1px 0 rgba(255, 255, 255, 0.08);
         border-color: rgba(120, 180, 255, 0.15);
       }
-
       .btn:hover i {
         color: #b8d4ff;
         filter: drop-shadow(0 0 15px rgba(80, 150, 255, 0.3));
         transform: scale(1.1);
       }
-
       .btn:active {
         transform: scale(0.94) translateY(0);
         transition-duration: 0.08s;
       }
-
       .btn-primary {
         background: linear-gradient(135deg, #2f53b0, #4a3fbf);
         color: white;
@@ -375,12 +343,10 @@
           inset 0 1px 0 rgba(255, 255, 255, 0.1);
         border-color: rgba(100, 150, 255, 0.15);
       }
-
       .btn-primary i {
         color: #c5ddff;
         filter: drop-shadow(0 0 12px rgba(100, 180, 255, 0.2));
       }
-
       .btn-primary::before {
         background: linear-gradient(
           135deg,
@@ -388,7 +354,6 @@
           rgba(255, 255, 255, 0.02)
         );
       }
-
       .btn-primary:hover {
         background: linear-gradient(135deg, #3a62c8, #5a4fd8);
         box-shadow:
@@ -398,11 +363,9 @@
         transform: translateY(-2px) scale(1.02);
         border-color: rgba(100, 170, 255, 0.25);
       }
-
       .btn-primary:active {
         transform: scale(0.94) translateY(0);
       }
-
       .btn-color {
         background: linear-gradient(
           135deg,
@@ -410,7 +373,6 @@
           rgba(120, 40, 100, 0.3)
         );
       }
-
       .btn-color:hover {
         background: linear-gradient(
           135deg,
@@ -419,23 +381,19 @@
         );
         box-shadow: 0 8px 30px rgba(160, 80, 255, 0.15);
       }
-
       .btn-color i {
         color: #c88bff;
       }
-
       .btn-color:hover i {
         color: #ddb0ff;
         filter: drop-shadow(0 0 20px rgba(160, 80, 255, 0.3));
       }
-
       .badge-group {
         display: flex;
         gap: 0.9rem;
         align-items: center;
         flex-wrap: wrap;
       }
-
       .badge {
         background: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(6px);
@@ -451,18 +409,15 @@
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
         transition: all 0.3s ease;
       }
-
       .badge:hover {
         border-color: rgba(100, 160, 255, 0.08);
         background: rgba(0, 0, 0, 0.4);
       }
-
       .badge i {
         color: #7a9fe0;
         font-size: 0.9rem;
         filter: drop-shadow(0 0 8px rgba(80, 150, 255, 0.05));
       }
-
       .badge span {
         color: #cae4ff;
         font-weight: 600;
@@ -473,12 +428,10 @@
         padding: 0 0.2rem;
         border-radius: 4px;
       }
-
       .badge .highlight {
         color: #f7c948;
         text-shadow: 0 0 20px rgba(247, 200, 72, 0.15);
       }
-
       .footer-hint {
         margin-top: 1.6rem;
         color: #4d6090;
@@ -494,18 +447,15 @@
         position: relative;
         z-index: 1;
       }
-
       .footer-hint span {
         display: inline-flex;
         align-items: center;
         gap: 6px;
         transition: 0.3s;
       }
-
       .footer-hint span:hover {
         color: #7a90c0;
       }
-
       .footer-hint kbd {
         background: rgba(20, 30, 60, 0.6);
         padding: 0.1rem 0.7rem;
@@ -517,12 +467,10 @@
         font-family: "Inter", sans-serif;
         backdrop-filter: blur(4px);
       }
-
       .footer-hint i {
         font-size: 0.7rem;
         color: #4a6a9a;
       }
-
       @media (max-width: 640px) {
         .card {
           padding: 1.4rem;
@@ -561,7 +509,6 @@
           justify-content: center;
         }
       }
-
       @media (max-width: 420px) {
         .btn {
           padding: 0.4rem 0.9rem;
@@ -590,12 +537,10 @@
         ></i>
         multiple events · click, drag, key, resize &amp; more
       </div>
-
       <!-- canvas -->
       <div class="canvas-wrapper">
         <canvas id="canvas" width="800" height="450"></canvas>
       </div>
-
       <div class="control-bar">
         <div class="btn-group">
           <button class="btn" id="clearBtn">
@@ -619,7 +564,6 @@
           </div>
         </div>
       </div>
-
       <div class="footer-hint">
         <span><i class="fas fa-hand-pointer"></i> <kbd>click</kbd> draw</span>
         <span><i class="fas fa-arrows-alt"></i> <kbd>drag</kbd> line</span>
@@ -629,7 +573,6 @@
         <span><i class="fas fa-expand"></i> <kbd>resize</kbd> adapt</span>
       </div>
     </div>
-
     <script>
       (function () {
         const canvas = document.getElementById("canvas");
@@ -638,19 +581,16 @@
           H = 450;
         canvas.width = W;
         canvas.height = H;
-
         let drawing = false;
         let lastX = 0,
           lastY = 0;
         let clickCount = 0;
         let currentHue = 200;
         let hueShift = 0;
-
         const clickSpan = document.getElementById("clickCounter");
         const coordSpan = document.getElementById("coordDisplay");
         const searchInput = document.getElementById("searchInput");
         const searchBtn = document.getElementById("searchBtn");
-
         function drawDot(x, y, color) {
           ctx.beginPath();
           ctx.arc(x, y, 6, 0, Math.PI * 2);
@@ -662,7 +602,6 @@
           ctx.fill();
           ctx.shadowBlur = 0;
         }
-
         function drawLine(x1, y1, x2, y2) {
           ctx.beginPath();
           ctx.moveTo(x1, y1);
@@ -674,7 +613,6 @@
           ctx.stroke();
           ctx.shadowBlur = 0;
         }
-
         function drawRandomPattern() {
           for (let i = 0; i < 16; i++) {
             const x = Math.random() * W;
@@ -698,7 +636,6 @@
           }
           ctx.shadowBlur = 0;
         }
-
         function drawBackground() {
           const grad = ctx.createRadialGradient(200, 100, 40, 400, 200, 500);
           grad.addColorStop(0, "#18204a");
@@ -720,19 +657,15 @@
             ctx.stroke();
           }
         }
-
         function clearCanvas() {
           drawBackground();
         }
-
         function updateClickCounter() {
           clickSpan.textContent = clickCount;
         }
-
         function updateCoords(x, y) {
           coordSpan.textContent = `${Math.round(x)}, ${Math.round(y)}`;
         }
-
         function init() {
           drawBackground();
           for (let i = 0; i < 6; i++) {
@@ -744,7 +677,6 @@
           drawDot(600, 150, "#b3d9ff");
           updateClickCounter();
         }
-
         function getCanvasCoords(e) {
           const rect = canvas.getBoundingClientRect();
           const scaleX = canvas.width / rect.width;
@@ -765,7 +697,6 @@
             y: Math.min(Math.max(canvasY, 0), H),
           };
         }
-
         function handlePointerDown(e) {
           const { x, y } = getCanvasCoords(e);
           drawing = true;
@@ -776,7 +707,6 @@
           updateClickCounter();
           updateCoords(x, y);
         }
-
         function handlePointerMove(e) {
           const { x, y } = getCanvasCoords(e);
           updateCoords(x, y);
@@ -787,15 +717,12 @@
             lastY = y;
           }
         }
-
         function handlePointerUp() {
           drawing = false;
         }
-
         function handlePointerLeave() {
           drawing = false;
         }
-
         canvas.addEventListener("mousedown", handlePointerDown);
         canvas.addEventListener("mousemove", handlePointerMove);
         canvas.addEventListener("mouseup", handlePointerUp);
@@ -808,7 +735,6 @@
         });
         canvas.addEventListener("touchend", handlePointerUp);
         canvas.addEventListener("touchcancel", handlePointerUp);
-
         canvas.addEventListener("dblclick", function (e) {
           const { x, y } = getCanvasCoords(e);
           for (let i = 0; i < 10; i++) {
@@ -821,7 +747,6 @@
           clickCount += 2;
           updateClickCounter();
         });
-
         document
           .getElementById("clearBtn")
           .addEventListener("click", function () {
@@ -830,7 +755,6 @@
             updateClickCounter();
             coordSpan.textContent = "0, 0";
           });
-
         document
           .getElementById("randomBtn")
           .addEventListener("click", function () {
@@ -838,7 +762,6 @@
             clickCount++;
             updateClickCounter();
           });
-
         document
           .getElementById("colorBtn")
           .addEventListener("click", function () {
@@ -847,7 +770,6 @@
             clickCount++;
             updateClickCounter();
           });
-
         document.addEventListener("keydown", function (e) {
           const key = e.key.toLowerCase();
           if (key === "r") {
@@ -861,14 +783,12 @@
             e.preventDefault();
           }
         });
-
         window.addEventListener("resize", function () {
           ctx.shadowBlur = 10;
           ctx.fillStyle = "rgba(255,255,255,0.02)";
           ctx.fillRect(0, 0, W, H);
           ctx.shadowBlur = 0;
         });
-
         function handleSearch() {
           const query = searchInput.value.trim().toLowerCase();
           if (!query) {
@@ -901,7 +821,6 @@
           searchBtn.style.transform = "scale(0.94)";
           setTimeout(() => (searchBtn.style.transform = ""), 150);
         }
-
         searchBtn.addEventListener("click", handleSearch);
         searchInput.addEventListener("keydown", function (e) {
           if (e.key === "Enter") {
@@ -909,7 +828,6 @@
             handleSearch();
           }
         });
-
         init();
         console.log("✨ neon canvas · premium UI with attractive buttons");
       })();
