@@ -1,5 +1,3 @@
-
-
 class employee{
     constructor(name){
         this.empname = name
