@@ -1,4 +1,3 @@
-
 // let user = ["Anil Kumar", 22, "Rampur", ["male", 25000]];
 
 // let [name,age,city,[gender,salary]] = user
@@ -17,9 +16,9 @@
 
 // user(["Anil Kumar", 24, "Rampur"]);
 
-function user2(){
-    return["Anil Kumar", 23, "Shahabad"]
-}
+// function user2(){
+//     return["Anil Kumar", 23, "Shahabad"]
+// }
 
-let[name,age,city] = user2();
-console.log(city)
+// let[name,age,city] = user2();
+// console.log(city)
