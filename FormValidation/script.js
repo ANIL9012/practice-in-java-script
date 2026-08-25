@@ -76,7 +76,6 @@ form.addEventListener("submit", function (event) {
 
   globalSuccess.classList.remove("show");
 
-  // Validate all fields
   const isNameValid = validateField(nameInput);
   const isEmailValid = validateField(emailInput);
   const isPasswordValid = validateField(passwordInput);
