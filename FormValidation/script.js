@@ -26,7 +26,6 @@ function validateField(field) {
   }
 
   if (field === emailInput) {
-    // Simple email regex (basic validation)
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (value === "" || !emailRegex.test(value)) {
       emailGroup.classList.add("error");
@@ -70,7 +69,6 @@ passwordInput.addEventListener("blur", () => validateField(passwordInput));
   });
 });
 
-// ---------- FORM SUBMIT ----------
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -88,7 +86,6 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  // ---------- ALL FIELDS VALID ----------
   const formData = {
     name: nameInput.value.trim(),
     email: emailInput.value.trim(),
