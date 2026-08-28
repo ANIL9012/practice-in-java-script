@@ -363,4 +363,3 @@
 // When to use each:
 // forEach: logging, DOM updates, mutations
 // map: data transformation
-
