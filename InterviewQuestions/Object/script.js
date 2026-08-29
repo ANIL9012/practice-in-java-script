@@ -184,8 +184,6 @@
 
 // Object.keys(obj).length
 
-// Key exists or not
-
 // const obj = { a: undefined };
 // console.log(obj.a);
 // console.log("a" in obj);
