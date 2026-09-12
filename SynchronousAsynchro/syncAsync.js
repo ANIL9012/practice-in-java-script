@@ -1,24 +1,24 @@
-// // Synchronous: Executes line-by-line, blocking the next line until the current one finishes.
-// // Asynchronous: Allows tasks to run concurrently without blocking the main thread.
-// // Callback: A function passed into another function to execute after an async operation completes.
-// // Callback Hell: Nested callbacks, which make code harder to read and maintain.
-// // Promise: An object that represents a future result of an async operation.
-// // async/await: Syntax that makes asynchronous code look synchronous, improving readability.
-// // A web API is an application programming interface (API) for either a web server or a web browser.
-// //event loop ==it manages async operations and  ensures non-blocking behavior.
+// Synchronous: Executes line-by-line, blocking the next line until the current one finishes.
+// Asynchronous: Allows tasks to run concurrently without blocking the main thread.
+// Callback: A function passed into another function to execute after an async operation completes.
+// Callback Hell: Nested callbacks, which make code harder to read and maintain.
+// Promise: An object that represents a future result of an async operation.
+// async/await: Syntax that makes asynchronous code look synchronous, improving readability.
+// A web API is an application programming interface (API) for either a web server or a web browser.
+//event loop ==it manages async operations and  ensures non-blocking behavior.
 //  while javascript code is executed sequentially , asynchronous tasks, such as timers 
 // ajax requests are scheduled and managed by event loop.
 
 
-// // 1. Synchronous vs. Asynchronous JavaScript
+// 1. Synchronous vs. Asynchronous JavaScript
 
-// // JavaScript is single-threaded, meaning it executes code line-by-line in a single flow.
-// //  In synchronous code, each line waits for the previous one to finish before executing.
+// JavaScript is single-threaded, meaning it executes code line-by-line in a single flow.
+//  In synchronous code, each line waits for the previous one to finish before executing.
  
 
 
 
-// //  Synchronous Example:
+//  Synchronous Example:
 //  console.log("Start");
 
 // for (let i = 0; i < 5; i++) {
@@ -182,14 +182,14 @@
 // console.log("other code !!!!")
 
 
-// // async 
-// // async 
-// // async 
-// // async 
+// async 
+// async 
+// async 
+// async 
 
 // function waitForthreeSeconds(){
 //   let ms=3000+ new Date().getTime();
-// //   let ms=new Date().getTime();
+//   let ms=new Date().getTime();
 //   while (new Date()<ms){}
 // }
 
@@ -243,7 +243,7 @@
 
 
 
-// // example:2 handle async work !!!!
+// example:2 handle async work !!!!
 
 // function register(callback){
 //     setTimeout(()=>{
