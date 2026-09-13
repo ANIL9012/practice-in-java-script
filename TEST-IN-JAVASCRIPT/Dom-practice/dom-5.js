@@ -51,19 +51,19 @@
 
                 // resizeBy & resizeTo
 
-var myWindow;
-function openWindow(){
-    myWindow =  window.open("","","width=500px,height=200px,left=30px,top=30px");
-    myWindow.document.write("mobving the window")
-}
+// var myWindow;
+// function openWindow(){
+//     myWindow =  window.open("","","width=500px,height=200px,left=30px,top=30px");
+//     myWindow.document.write("mobving the window")
+// }
                             
-function closeWindow(){
-    myWindow.close();
-}
+// function closeWindow(){
+//     myWindow.close();
+// }
                 
-function resizeWindow(){
-    // myWindow.resizeTo(100,100)
-    myWindow.resizeBy(100,100)
+// function resizeWindow(){
+//     // myWindow.resizeTo(100,100)
+//     myWindow.resizeBy(100,100)
 }
                 
 
