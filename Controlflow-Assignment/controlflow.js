@@ -371,7 +371,7 @@
 // }
 
 // 13.Write code that classifies the name age gender of a person based on the variable `working` `Professional` get the user and prints:
-// // He/she part can also be doen with the help of if else, i have tried
+// He/she part can also be doen with the help of if else, i have tried
 
 // const name = prompt('enter you name')  || ('Educational')
 // const age = prompt('enter you age') || (25)
@@ -452,7 +452,7 @@
 // let userName = prompt("Enter user name")
 // let grade = parseFloat(prompt("Enter the grade/percentage"));
 
-// // Classify the grade into a range
+// Classify the grade into a range
 
 // let range;
 
@@ -470,7 +470,7 @@
 //   range = 'F';
 // }
 
-// // Use the switch statement with the categorized range
+// Use the switch statement with the categorized range
 
 // switch (range) {
 //   case 'A':
@@ -500,7 +500,7 @@
 // let username = prompt("Enter your name:");
 // let userAge = parseInt(prompt("Enter your age:"), 10);
 
-// // Validate the userAge input
+// Validate the userAge input
 // if (isNaN(userAge) || userAge < 0 || userAge > 120) {
 //   console.log("Please enter a valid age between 0 and 120.");
 // } else {
