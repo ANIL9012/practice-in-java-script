@@ -32,7 +32,7 @@
 
 
 
-// // how to handle 
+// how to handle 
 
 // try, catch, and finally in JavaScript
 
