@@ -1,110 +1,110 @@
-const form = document.getElementById("myform");
-const nameInput = document.getElementById("name");
-const emailInput = document.getElementById("email");
-const passwordInput = document.getElementById("password");
+// const form = document.getElementById("myform");
+// const nameInput = document.getElementById("name");
+// const emailInput = document.getElementById("email");
+// const passwordInput = document.getElementById("password");
 
-const nameGroup = document.getElementById("name-group");
-const emailGroup = document.getElementById("email-group");
-const passwordGroup = document.getElementById("password-group");
+// const nameGroup = document.getElementById("name-group");
+// const emailGroup = document.getElementById("email-group");
+// const passwordGroup = document.getElementById("password-group");
 
-const globalSuccess = document.getElementById("globalSuccess");
+// const globalSuccess = document.getElementById("globalSuccess");
 
-function validateField(field) {
-  const value = field.value.trim();
-  let isValid = false;
+// function validateField(field) {
+//   const value = field.value.trim();
+//   let isValid = false;
 
-  if (field === nameInput) {
-    if (value === "") {
-      nameGroup.classList.add("error");
-      nameGroup.classList.remove("success");
-      isValid = false;
-    } else {
-      nameGroup.classList.remove("error");
-      nameGroup.classList.add("success");
-      isValid = true;
-    }
-  }
+//   if (field === nameInput) {
+//     if (value === "") {
+//       nameGroup.classList.add("error");
+//       nameGroup.classList.remove("success");
+//       isValid = false;
+//     } else {
+//       nameGroup.classList.remove("error");
+//       nameGroup.classList.add("success");
+//       isValid = true;
+//     }
+//   }
 
-  if (field === emailInput) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (value === "" || !emailRegex.test(value)) {
-      emailGroup.classList.add("error");
-      emailGroup.classList.remove("success");
-      isValid = false;
-    } else {
-      emailGroup.classList.remove("error");
-      emailGroup.classList.add("success");
-      isValid = true;
-    }
-  }
+//   if (field === emailInput) {
+//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     if (value === "" || !emailRegex.test(value)) {
+//       emailGroup.classList.add("error");
+//       emailGroup.classList.remove("success");
+//       isValid = false;
+//     } else {
+//       emailGroup.classList.remove("error");
+//       emailGroup.classList.add("success");
+//       isValid = true;
+//     }
+//   }
 
-  if (field === passwordInput) {
-    if (value.length < 8) {
-      passwordGroup.classList.add("error");
-      passwordGroup.classList.remove("success");
-      isValid = false;
-    } else {
-      passwordGroup.classList.remove("error");
-      passwordGroup.classList.add("success");
-      isValid = true;
-    }
-  }
+//   if (field === passwordInput) {
+//     if (value.length < 8) {
+//       passwordGroup.classList.add("error");
+//       passwordGroup.classList.remove("success");
+//       isValid = false;
+//     } else {
+//       passwordGroup.classList.remove("error");
+//       passwordGroup.classList.add("success");
+//       isValid = true;
+//     }
+//   }
 
-  return isValid;
-}
+//   return isValid;
+// }
 
-nameInput.addEventListener("blur", () => validateField(nameInput));
-emailInput.addEventListener("blur", () => validateField(emailInput));
-passwordInput.addEventListener("blur", () => validateField(passwordInput));
+// nameInput.addEventListener("blur", () => validateField(nameInput));
+// emailInput.addEventListener("blur", () => validateField(emailInput));
+// passwordInput.addEventListener("blur", () => validateField(passwordInput));
 
-[nameInput, emailInput, passwordInput].forEach((input) => {
-  input.addEventListener("input", () => {
-    const group = input.closest(".form-group");
-    if (
-      group.classList.contains("error") ||
-      group.classList.contains("success")
-    ) {
-      validateField(input);
-    }
-  });
-});
+// [nameInput, emailInput, passwordInput].forEach((input) => {
+//   input.addEventListener("input", () => {
+//     const group = input.closest(".form-group");
+//     if (
+//       group.classList.contains("error") ||
+//       group.classList.contains("success")
+//     ) {
+//       validateField(input);
+//     }
+//   });
+// });
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
 
-  globalSuccess.classList.remove("show");
+//   globalSuccess.classList.remove("show");
 
-  const isNameValid = validateField(nameInput);
-  const isEmailValid = validateField(emailInput);
-  const isPasswordValid = validateField(passwordInput);
+//   const isNameValid = validateField(nameInput);
+//   const isEmailValid = validateField(emailInput);
+//   const isPasswordValid = validateField(passwordInput);
 
-  if (!isNameValid || !isEmailValid || !isPasswordValid) {
-    const firstError = form.querySelector(".form-group.error input");
-    if (firstError) {
-      firstError.focus();
-    }
-    return;
-  }
+//   if (!isNameValid || !isEmailValid || !isPasswordValid) {
+//     const firstError = form.querySelector(".form-group.error input");
+//     if (firstError) {
+//       firstError.focus();
+//     }
+//     return;
+//   }
 
-  const formData = {
-    name: nameInput.value.trim(),
-    email: emailInput.value.trim(),
-    password: passwordInput.value,
-  };
+//   const formData = {
+//     name: nameInput.value.trim(),
+//     email: emailInput.value.trim(),
+//     password: passwordInput.value,
+//   };
 
-  console.log("Form Data Submitted:");
-  console.log(formData);
-  console.log("JSON:", JSON.stringify(formData, null, 2));
+//   console.log("Form Data Submitted:");
+//   console.log(formData);
+//   console.log("JSON:", JSON.stringify(formData, null, 2));
 
-  globalSuccess.classList.add("show");
+//   globalSuccess.classList.add("show");
 
-  alert("Form submitted successfully! Check console for data.");
+//   alert("Form submitted successfully! Check console for data.");
 
-  // (Optional) Reset form after success – uncomment if needed
-  // form.reset();
-  // Remove success/error classes from all groups
-  // [nameGroup, emailGroup, passwordGroup].forEach(g => {
-  //   g.classList.remove("success", "error");
-  // });
-  // globalSuccess.classList.remove("show");
-});
+//   // (Optional) Reset form after success – uncomment if needed
+//   // form.reset();
+//   // Remove success/error classes from all groups
+//   // [nameGroup, emailGroup, passwordGroup].forEach(g => {
+//   //   g.classList.remove("success", "error");
+//   // });
+//   // globalSuccess.classList.remove("show");
+// });
