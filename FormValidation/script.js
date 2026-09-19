@@ -100,11 +100,11 @@
 
 //   alert("Form submitted successfully! Check console for data.");
 
-//   // (Optional) Reset form after success – uncomment if needed
-//   // form.reset();
-//   // Remove success/error classes from all groups
-//   // [nameGroup, emailGroup, passwordGroup].forEach(g => {
-//   //   g.classList.remove("success", "error");
-//   // });
-//   // globalSuccess.classList.remove("show");
+// (Optional) Reset form after success – uncomment if needed
+// form.reset();
+// Remove success/error classes from all groups
+// [nameGroup, emailGroup, passwordGroup].forEach(g => {
+//   g.classList.remove("success", "error");
+// });
+// globalSuccess.classList.remove("show");
 // });
