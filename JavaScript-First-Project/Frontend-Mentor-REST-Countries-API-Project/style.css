@@ -39,11 +39,11 @@ body{
 .form-control input{
     position: relative;
 } */
-.form-input .bi-search{
-    position: absolute;
+/* .form-input .bi-search{ */
+    /* position: absolute; */
     /* left: 10px; */
     /* right: 0px; */
     /* margin-left: 20px; */
-    margin: 8px 0px 0px 20px;
+    /* margin: 8px 0px 0px 20px; */
 
-}
+/* } */
