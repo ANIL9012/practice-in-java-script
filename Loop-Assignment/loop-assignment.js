@@ -9,8 +9,8 @@
 // let n = 5;
 // let m = 5;
 
-// // row-i = 5;
-// // col-j = 5;
+// row-i = 5;
+// col-j = 5;
 
 // for(let i=5; i>=1; i--){
 //     let str = ""
@@ -58,8 +58,8 @@
 // let n = 1;
 // let m = 4;
 
-// // row-i = 4;
-// // col-j = 4;
+// row-i = 4;
+// col-j = 4;
 
 // for(let i=1; i<=4; i++){
 //     let str ="";
@@ -85,8 +85,8 @@
 // let n = 4;
 // let m = 6;
 
-// // row-i = 4;
-// // col-j = 4;
+// row-i = 4;
+// col-j = 4;
 
 // for (let i = 1; i <= n; i++) {
 //     let str = "";
@@ -166,7 +166,7 @@
 //     step++
 //   }
 
-//  //  debugger
+//  debugger
 // [debugger ka use code ko line by line execuite karne me karte ]
 
 // 2.Do While Loop
@@ -192,7 +192,7 @@
 //     num++
 // }
 
-// // debugger
+// debugger
 
 // let friends = ["Anil","Lalit","Yunish","Labi","Harshit","Ramesh"]
 
@@ -289,18 +289,18 @@
 //     count1++;
 // }
 
-// // Prefer for...of for arrays when index not needed
+// Prefer for...of for arrays when index not needed
 // const items = [1, 2, 3, 4, 5];
 // for (const item of items) {
 //   console.log(item);
 // }
 
-// // Use array methods for transformations
+// Use array methods for transformations
 // const doubled = items.map((x) => x * 2); // Instead of manual loop
 // const even = items.filter((x) => x % 2 === 0);
 // const sum = items.reduce((acc, x) => acc + x, 0);
 
-// // Break early when possible
+// Break early when possible
 // function findFirstEven(numbers) {
 //   for (const num of numbers) {
 //     if (num % 2 === 0) {
@@ -310,7 +310,7 @@
 //   return null;
 // }
 
-// // Use for...of with destructuring
+// Use for...of with destructuring
 // const users = [
 //   { id: 1, name: "John" },
 //   { id: 2, name: "Jane" },
@@ -337,7 +337,7 @@
 //     return result;
 // }
 
-// // Using stack (iterative)
+// Using stack (iterative)
 // function flattenArrayIterative(arr) {
 //     const result = [];
 //     const stack = [...arr];
@@ -354,13 +354,13 @@
 //     return result;
 // }
 
-// // Using reduce
+// Using reduce
 // function flattenArrayReduce(arr) {
 //     return arr.reduce((acc, val) => {
 //         return acc.concat(Array.isArray(val) ? flattenArrayReduce(val) : val);
 //     }, []);
 // }
 
-// // Test
+// Test
 // const nested = [1, [2, [3, 4], 5], 6];
 // console.log(flattenArray(nested)); // [1, 2, 3, 4, 5, 6]
