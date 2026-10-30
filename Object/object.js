@@ -1,5 +1,5 @@
-// // how to declare javascript object 
-// // syntax:
+// how to declare javascript object 
+// syntax:
 // const objectName={
 //     key1:value1,
 //     key2:value2,
@@ -15,22 +15,22 @@
 
 // console.log(typeof student)
 // console.log( student)
-// // key=leftside values
-// // values=rightsidevalues
+// key=leftside values
+// values=rightsidevalues
 
 // const student2 ={firstName:"sam",class:"12th",section:"A",rollno:20}
 // console.log(typeof student2)
 
 
-// // how tp access property of any object
-// // 1.using dot notation
-// // 2. using bracket notation
+// how tp access property of any object
+// 1.using dot notation
+// 2. using bracket notation
 
 // console.log(student.firstName,student.rollno)
 // console.log(student["section"])
 
 
-// // B.
+// B.
 // const Student3={
 //     name:"john",
 //     age:20,
@@ -43,11 +43,11 @@
 //     }
 // }
 
-// // how to access property of nested objects
+// how to access property of nested objects
 // console.log(Student3.marks.percentage.science2)
 
 
-// // C. Objects methods
+// C. Objects methods
 
 // const person={
 //     name:"shamshad",
@@ -62,9 +62,9 @@
 // console.log("hello my name is ",person.name, "and my age is ", person.age)
 
 
-// // D. adding methods to objects
+// D. adding methods to objects
 // let car = {};
-// // adding a method
+// adding a method
 // car.speed = function (){
 //     console.log("hello   iam BMW and my speed is 600 km/hr")
 // }
@@ -97,7 +97,7 @@
 // console.log(Bike.Speed);
 
 
-// // (this)  keyword which is used for access the value of same objects within methods
+// (this)  keyword which is used for access the value of same objects within methods
 
 // const Boy ={
 //     name:"Shamshad",
@@ -135,9 +135,9 @@
 
 // studentName.prompts();
 
-// // constructor  is a function which is used to create objects!!
+// constructor  is a function which is used to create objects!!
 
-// // without parameter
+// without parameter
 
 function Men (){
     this.name="Shamshad",
@@ -145,7 +145,7 @@ function Men (){
 }
 
 
-// // create an objects
+// create an objects
 
 //    const men1 = new Men();
 //    const men2 = new Men();
@@ -161,7 +161,7 @@ function Men (){
 
 // }
 
-// // create an objects
+// create an objects
 
 //    const men1 =new Men("shamshad",50);
 //    const men2 =new Men("anil",20);
@@ -170,7 +170,7 @@ function Men (){
 //    const men5 =new Men("monish",25);
 
 
-// // //    access and print
+//   access and print
 //    console.log(men1.age)
 //    console.log(men2.name,men2.age)
 //    console.log(men3.name,men3.age)
@@ -178,20 +178,20 @@ function Men (){
 //    console.log(men5.name)
 
 
-// // how to add a new property to one particular objects
+// how to add a new property to one particular objects
 
 // men2.address="moradabad";
 
 // console.log(men2.address)
 // console.log(men1.address)   //undefined
 
-// // how to change the property of an object 
+// how to change the property of an object 
 // console.log("before change the name property",men4.name)
 
 // men4.name="shuaib";
 // console.log("after change the name property",men4.name)
 
-// // adding a method into particular object
+// adding a method into particular object
 
 // men2.greet=function (){
 //     console.log("hello anil!!!")
@@ -200,14 +200,14 @@ function Men (){
 // men2.greet()
 
 
-// // prototype
-// // prototype
-// // prototype
-// // prototype
-// // prototype   is used for adding property in constructor
+// prototype
+// prototype
+// prototype
+// prototype
+// prototype   is used for adding property in constructor
 // console.log(men2)
 
-// // adding property into construcor
+// adding property into construcor
 // Men.prototype.height=20;
 
 // console.log(men1.height)
@@ -215,10 +215,10 @@ function Men (){
 // console.log(men3.height)
 // console.log(men2.height)
 // console.log(men3.height)
-// // adding methods into construcor
+// adding methods into construcor
 
 
-// // without parameter
+// without parameter
 // Men.prototype.add= function (){
 //     let a=4;
 //     let b=5;
@@ -232,7 +232,7 @@ function Men (){
 // men1.add()
 // men5.add()
 
-// // with parametr
+// with parametr
 // Men.prototype.Subtraction= function (a,b){
    
 //     let c=a-b;
@@ -325,14 +325,14 @@ function Men (){
 //  Example: Using the `in` operator with an object
 
 
-// // Checking if the 'age' property exists in the person object
+// Checking if the 'age' property exists in the person object
 // if ('age' in person) {
 //   console.log("The 'age' property exists in the person object.");
 // } else {
 //   console.log("The 'age' property does not exist in the person object.");
 // }
 
-// // Checking if a non-existent property 'gender' exists
+// Checking if a non-existent property 'gender' exists
 // if ('gender' in person) {
 //   console.log("The 'gender' property exists.");
 // } else {
@@ -357,7 +357,7 @@ function Men (){
 //   city: 'New York'
 // };
 
-// // Looping through the properties of the object
+// Looping through the properties of the object
 // for (const key in person) {
 //   console.log(key + ': ' + person[key]);  // Logs key and its value
 // }
@@ -376,7 +376,7 @@ function Men (){
 
 // const fruits = ['apple', 'banana', 'cherry', 'date'];
 
-// // Looping over the array to access each fruit
+// Looping over the array to access each fruit
 // for (const fruit of fruits) {
 //   console.log(fruit);  // Logs each fruit in the array
 // }
@@ -394,7 +394,7 @@ function Men (){
 
 // const name = "John";
 
-// // Looping over the string to access each character
+// Looping over the string to access each character
 
 // for (const char of name) {
 //   console.log(char);  // Logs each character in the string
