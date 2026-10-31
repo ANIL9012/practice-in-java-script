@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
 }
 nav {
   font-family: "Ubuntu", sans-serif;
-  position: fixed; /* top par chipka rahe */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
@@ -80,7 +80,6 @@ nav ul li {
   justify-content: space-between;
   background-color: white;
   color: black;
-  /* width: 80%; */
   margin: 12px 0;
   border-radius: 20px;
 }
@@ -108,7 +107,6 @@ nav ul li {
   opacity: 0;
   transition: opacity 0.4s ease-in;
 }
-/* ---------- Media quary ------------- */
 @media (min-width: 344px) {
   .container {
     width: 95vw;
@@ -141,4 +139,4 @@ nav ul li {
     left: 10vw;
     top: 28px;
   }
-}
+} */
