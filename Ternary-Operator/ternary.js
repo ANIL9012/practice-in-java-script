@@ -5,7 +5,7 @@
 
 // const gender = 'F'
 
-// // debugger
+// debugger
 // const userMessage = `${gender.toLocaleLowerCase() === 'f' ? 'She' : 'He'} is a college student.`
 
 // console.log(userMessage);
