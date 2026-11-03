@@ -66,11 +66,11 @@
                 //    clientWidth & clientHeight
 
 
-var targetclient = document.querySelector("#box-5");
+// var targetclient = document.querySelector("#box-5");
 
-var clientwidth = targetclient.clientWidth;
-var clientheight = targetclient.clientHeight;
+// var clientwidth = targetclient.clientWidth;
+// var clientheight = targetclient.clientHeight;
 
-console.log("ClientWidth : " + clientwidth);
-console.log("ClientHeight : " + clientheight);
+// console.log("ClientWidth : " + clientwidth);
+// console.log("ClientHeight : " + clientheight);
                 
