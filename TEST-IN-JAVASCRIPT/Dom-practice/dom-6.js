@@ -1,9 +1,9 @@
 //         //   scrollBy & scrollTo
                 
-// // function scrollWindow(){
-// //     // window.scrollBy(50,0)
-// //     window.scrollTo(50,0)
-// // }
+// function scrollWindow(){
+//     // window.scrollBy(50,0)
+//     window.scrollTo(50,0)
+// }
 
 
 
