@@ -1,5 +1,5 @@
 #wrapper{
-    /* width: 1140px; */
+    width: 1140px;
     background-color: #eee;
     box-sizing: border-box;
     margin: auto;
@@ -7,15 +7,15 @@
 
 }
 #header{
-    /* background-color: red; */
-    /* color: #fff; */
+    background-color: red;
+    color: #fff;
     margin-top: 0px;
     border: 1px solid black;
     
 
 }
 #header h1{
-    /* font-size: 14px; */
+    font-size: 14px;
     padding: 10px 0px 10px 5px;
 }
 .abc{
@@ -32,7 +32,7 @@
     display: flex;
     gap: 10px;
     list-style: none;
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 #menu ul a{
     text-decoration: none;
@@ -43,10 +43,10 @@
 .content-and-sidbar{
     display: flex;
     justify-content: space-between;
-    /* padding: 0px 10px 0px 10px; */
+    padding: 0px 10px 0px 10px;
 }
 #content .content-image{
-    /* display: flex; */
+    display: flex;
     width: 200px;
     float: inline-start;
     padding: 0px 10px 0 10px;
