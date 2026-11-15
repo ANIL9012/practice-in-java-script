@@ -20,7 +20,7 @@
 // console.log(outside);
 // console.log(outsideTwo);
 
-// // inside-block
+// inside-block
 
 // {
 //     let inside = "Inside-Block"
@@ -109,7 +109,7 @@
 //   console.log("Inside block - globalConst:", globalConst);   // Accessible here
 // }
 
-// // Trying to access block-scoped variables outside the block
+// Trying to access block-scoped variables outside the block
 // console.log("Outside block - blockVar:", typeof blockVar);      // undefined
 // console.log("Outside block - blockConst:", typeof blockConst);  // undefined
 
