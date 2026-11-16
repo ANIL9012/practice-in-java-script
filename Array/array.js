@@ -1,4 +1,4 @@
-// array======>
+
 //            an array is an object in javascript that can store multple values at once .
 // let a =1;
 // let b=2;
