@@ -1,11 +1,11 @@
 // let null = null;
-//  console.log(typeof null) //object // null actually primitive hai lekin JS ka Old bug hone ki bajah se "object" return karta hai
+//  console.log(typeof null) //object null actually primitive hai lekin JS ka Old bug hone ki bajah se "object" return karta hai
 
 // let NaN = NaN
 // console.log(typeof NaN) //"number" NaN Not a Number hai lekin type "number" hi hota hai
 
 // let arr = [] == []
-// console.log(arr) //false // kyuki arrays reference type hote hai value compare nahi hoti
+// console.log(arr) //false kyuki arrays reference type hote hai value compare nahi hoti
 
 // let arr2 = [] == ![];
 // console.log(arr2); //true
