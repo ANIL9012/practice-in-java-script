@@ -169,7 +169,7 @@
 // const arr = [1, 2, 3, 4, 5];
 // const result = arr.filter(x => x > 2).map(x => x * 2).slice(0, 2);
 
-// // Good - single pass with reduce
+// Good - single pass with reduce
 // const result2 = arr.reduce((acc, x) => {
 //   if (x > 2 && acc.length < 2) acc.push(x * 2);
 //   return acc;
@@ -180,52 +180,52 @@
 // console.log(sparse[1]);               // undefined
 // console.log(Object.keys(sparse));     // ['0', '3'] - only indices with values
 
-// // map skips empty slots
+// map skips empty slots
 // console.log(sparse.map(x => x * 2));  // [2, empty, empty, 8]
 
-// // Shallow copy methods
+// Shallow copy methods
 // const original = [1, 2, [3, 4]];
 
-// // Method 1: spread operator
+// Method 1: spread operator
 // const copy1 = [...original];
 
-// // Method 2: slice()
+// Method 2: slice()
 // const copy2 = original.slice();
 
-// // Method 3: Array.from()
+// Method 3: Array.from()
 // const copy3 = Array.from(original);
 
-// // Method 4: concat()
+// Method 4: concat()
 // const copy4 = [].concat(original);
 
-// // Shallow copy issues
+// Shallow copy issues
 // copy1[2][0] = 99;
 // console.log(original[2][0]); // 99 (nested array is shared)
 
-// // Deep copy methods
-// // Method 1: JSON (limitations)
+// Deep copy methods
+// Method 1: JSON (limitations)
 // const deepCopy1 = JSON.parse(JSON.stringify(original));
 
-// // Method 2: structuredClone (modern)
+// Method 2: structuredClone (modern)
 // const deepCopy2 = structuredClone(original);
 
-// // Method 3: recursive function
+// Method 3: recursive function
 // function deepCopy(arr) {
 //     return arr.map(item => 
 //         Array.isArray(item) ? deepCopy(item) : item
 //     );
 // }
 
-// // Array.from - create arrays from iterables
+// Array.from - create arrays from iterables
 // const arrayFromString = Array.from('hello'); // ['h', 'e', 'l', 'l', 'o']
 // const arrayFromSet = Array.from(new Set([1, 2, 3])); // [1, 2, 3]
 // const arrayWithMap = Array.from({ length: 5 }, (_, i) => i ** 2); // [0, 1, 4, 9, 16]
 
-// // Array.of - create array from arguments
+// Array.of - create array from arguments
 // const arr1 = Array.of(7); // [7] (not length 7)
 // const arr2 = Array.of(1, 2, 3); // [1, 2, 3]
 
-// // find and findIndex
+// find and findIndex
 // const users = [
 //     { id: 1, name: 'John' },
 //     { id: 2, name: 'Jane' },
@@ -235,25 +235,25 @@
 // const user = users.find(u => u.id === 2); // { id: 2, name: 'Jane' }
 // const index = users.findIndex(u => u.id === 2); // 1
 
-// // flat and flatMap
+// flat and flatMap
 // const nested = [1, [2, [3]]];
 // console.log(nested.flat(2)); // [1, 2, 3]
 
 // const sentences = ['Hello world', 'How are you'];
 // const words = sentences.flatMap(s => s.split(' ')); // ['Hello', 'world', 'How', 'are', 'you']
 
-// // includes (ES2016)
+// includes (ES2016)
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(numbers.includes(3)); // true
 // console.log(numbers.includes(6)); // false
 
 // const nested = [1, [2, [3, [4, 5]]]];
 
-// // Method 1: flat() (ES2019)
+// Method 1: flat() (ES2019)
 // console.log(nested.flat(2)); // [1, 2, 3, [4, 5]]
 // console.log(nested.flat(Infinity)); // [1, 2, 3, 4, 5]
 
-// // Method 2: recursive function
+// Method 2: recursive function
 // function flatten(arr, depth = Infinity) {
 //     return arr.reduce((acc, val) => {
 //         if (Array.isArray(val) && depth > 0) {
@@ -265,7 +265,7 @@
 //     }, []);
 // }
 
-// // Method 3: using stack (iterative)
+// Method 3: using stack (iterative)
 // function flattenIterative(arr) {
 //     const result = [];
 //     const stack = [...arr];
@@ -281,7 +281,7 @@
 //     return result;
 // }
 
-// // Method 4: toString() (only for numbers/strings)
+// Method 4: toString() (only for numbers/strings)
 // const flattened = nested.toString().split(',').map(Number);
 
 // Custom map
@@ -299,7 +299,7 @@
 //     return result;
 // };
 
-// // Custom filter
+// Custom filter
 // Array.prototype.myFilter = function(callback, thisArg) {
 //     const result = [];
 //     for (let i = 0; i < this.length; i++) {
@@ -310,7 +310,7 @@
 //     return result;
 // };
 
-// // Custom reduce
+// Custom reduce
 // Array.prototype.myReduce = function(callback, initialValue) {
 //     if (typeof callback !== 'function') {
 //         throw new TypeError('callback must be a function');
@@ -339,7 +339,7 @@
 //     return accumulator;
 // };
 
-// // Test custom methods
+// Test custom methods
 // const arr = [1, 2, 3, 4, 5];
 // console.log(arr.myMap(x => x * 2)); // [2, 4, 6, 8, 10]
 // console.log(arr.myFilter(x => x % 2 === 0)); // [2, 4]
@@ -347,14 +347,14 @@
 
 // const numbers = [1, 2, 3];
 
-// // forEach() - performs side effects, returns undefined
+// forEach() - performs side effects, returns undefined
 // const result1 = numbers.forEach((num, index) => {
 //     numbers[index] = num * 2;
 // });
 // console.log(result1);  // undefined
 // console.log(numbers);  // [2, 4, 6]
 
-// // map() - transforms data, returns new array
+// map() - transforms data, returns new array
 // const numbers2 = [1, 2, 3];
 // const result2 = numbers2.map(num => num * 2);
 // console.log(result2);  // [2, 4, 6]
