@@ -110,7 +110,7 @@
 // }
 // console.log(fact); // 120
 
-// // Question: What will this output?
+//Question: What will this output?
 // outer: for (let i = 0; i < 3; i++) {
 //   inner: for (let j = 0; j < 3; j++) {
 //     if (i === 1 && j === 1) {
@@ -119,13 +119,13 @@
 //     console.log(`i=${i}, j=${j}`);
 //   }
 // }
-// // Output:
-// // i=0, j=0
-// // i=0, j=1
-// // i=0, j=2
-// // i=1, j=0
+//Output:
+//i=0, j=0
+//i=0, j=1
+//i=0, j=2
+//i=1, j=0
 
-// // Question: What if we used continue outer?
+//Question: What if we used continue outer?
 // outer: for (let i = 0; i < 3; i++) {
 //   for (let j = 0; j < 3; j++) {
 //     if (i === 1 && j === 1) {
