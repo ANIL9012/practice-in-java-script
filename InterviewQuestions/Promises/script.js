@@ -208,7 +208,7 @@
 //   1000
 // ).catch(console.log);
 
-// STEP 7: Retry Promise (Very Common Interview Task)
+// STEP 7: Retry Promise
 
 // Solution
 // function retry(fn, retries) {
