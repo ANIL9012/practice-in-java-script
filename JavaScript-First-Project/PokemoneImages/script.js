@@ -43,19 +43,19 @@
 
 /*CODE KA SORT  TREEKA*/
 
-const container = document.querySelector('.container');
+// const container = document.querySelector('.container');
 
-let myHTML = ``;
+// let myHTML = ``;
 
-for(let i = 1; i <= 100; i++){
+// for(let i = 1; i <= 100; i++){
 
-    myHTML += `
-    <div class="img-container">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png">
-    <p>${i}</p>
-    </div>
-    `
-}
+//     myHTML += `
+//     <div class="img-container">
+//     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png">
+//     <p>${i}</p>
+//     </div>
+//     `
+// }
 
 container.innerHTML = myHTML;
 
